@@ -1,0 +1,25 @@
+/*
+Default Custom Style Sheet for Project Nyx
+
+*/
+
+/* Standards */
+.checkbox-blue[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+}
+
+
+.logo-small{
+    background: url("../images/logo_small.png") no-repeat;
+    max-width: 160px;max-height: 93px;
+}
+
+
+
+
+/* Page-Login */
+.pg_login_backgroung{
+    background-color: #323232;
+
+}
