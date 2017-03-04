@@ -15,11 +15,34 @@ Default Custom Style Sheet for Project Nyx
     max-width: 160px;max-height: 93px;
 }
 
+.alert-error{
+    font-family:"Roboto", sans-serif;
+    border: 1px solid #e87f7d;
+    background-color:#F2DEDE;
+    color:#A94442;
+    border-radius:5px;
+    width: 100%;
+    margin: 5px;
+    padding:5px
+}
 
 
 
 /* Page-Login */
-.pg_login_backgroung{
-    background-color: #323232;
+.pg_login_background{
+    background: url("../images/server_room.jpg");
+    background-size: cover;
+}
+
+.pg_login_dimmer{
+    background-color: #000000;
+    opacity: 0.6;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.pg_login_tabtitle{
+    font-size: 24px;
 
 }
