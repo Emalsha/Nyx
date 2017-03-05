@@ -73,12 +73,12 @@ Default Custom Style Sheet for Project Nyx
         margin-left:300px !important;
     }
 
-    .main_sidemenu{
-        display: block !important;
+    #sidemenu_toggle{
+        display: none !important;
     }
 
     .toppanel{
-        /*display: none !important;*/
+        display: none !important;
     }
 }
 
@@ -89,8 +89,8 @@ Default Custom Style Sheet for Project Nyx
         margin-left:0 !important;
     }
 
-    .main_sidemenu{
-        display: none !important;
+    #sidemenu_toggle{
+        display: block !important;
     }
 
     .toppanel{
@@ -155,7 +155,6 @@ Default Custom Style Sheet for Project Nyx
 }
 
 .sidemenu_li{
-    padding:15px;
     font-family:"Roboto", sans-serif;
     color:white;
     font-size:18px;
@@ -205,3 +204,42 @@ Default Custom Style Sheet for Project Nyx
 
 
 /* Member */
+.main_container{
+    padding:20px 40px;
+}
+
+.contentbox{
+    padding: 10px !important;
+    border-right: 2px solid #ccc;
+}
+
+.contentbox:last-child{
+    border-right: 0px solid;
+}
+
+
+.contentbox_main{
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.contentbox_txt_up{
+    font-size: 14px;
+    line-height: 1;
+    color: #666;
+
+}
+
+.contentbox_txt_down{
+    font-size: 12px;
+    line-height: 1;
+    color: #666;
+
+}
+
+.graph_row{
+    width: 100%;
+    height:350px;
+    max-height:350px;
+}
