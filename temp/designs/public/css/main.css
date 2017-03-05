@@ -69,21 +69,32 @@ Default Custom Style Sheet for Project Nyx
 
 @media only screen and (min-width: 993px) {
     .main_content {
-        width: calc(100vw - 300px);
+        width: calc(100vw - 300px) !important;
+        margin-left:300px !important;
     }
 
     .main_sidemenu{
         display: block !important;
     }
+
+    .toppanel{
+        /*display: none !important;*/
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .main_content {
-        width: 100vw;
+        width: 100vw !important;
+
+        margin-left:0 !important;
     }
 
     .main_sidemenu{
         display: none !important;
+    }
+
+    .toppanel{
+        display: block !important;
     }
 }
 
@@ -114,6 +125,35 @@ Default Custom Style Sheet for Project Nyx
     padding: 0px !important;
 }
 
+
+.toppanel_profileimg{
+    background-size: cover;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:2px solid #212121;
+    margin-left:-10px;
+
+}
+
+.toppanel_name{
+    color: #212121;
+    font-family:"Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:4px;
+    padding: 0px !important;
+
+}
+
+.toppanel_role{
+    color: #292929;
+    font-family:"Roboto", sans-serif;
+    font-size:12px;
+    padding: 0px !important;
+    margin-top:-3px;
+}
+
 .sidemenu_li{
     padding:15px;
     font-family:"Roboto", sans-serif;
@@ -130,7 +170,19 @@ Default Custom Style Sheet for Project Nyx
 
 .sidemenu_li_icon{
     font-family: 'Material Icons';
+}
 
+.toppanel{
+    background-color:white;
+    height: 60px;
+    width: 100%;
+
+}
+
+.toppanel_user{
+    width: 300px;
+    height: 60px;
+    padding-top: 6px;
 }
 
 /* Page-Login */
@@ -149,7 +201,6 @@ Default Custom Style Sheet for Project Nyx
 
 .pg_login_tabtitle{
     font-size: 24px;
-
 }
 
 
