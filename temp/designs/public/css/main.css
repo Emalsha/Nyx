@@ -52,6 +52,86 @@ Default Custom Style Sheet for Project Nyx
 }
 
 
+/* Side Menu and Conetent */
+.main_sidemenu{
+
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    background-color: #212121;
+}
+
+.main_content{
+    width: 100vw;
+
+}
+
+
+@media only screen and (min-width: 993px) {
+    .main_content {
+        width: calc(100vw - 300px);
+    }
+
+    .main_sidemenu{
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main_content {
+        width: 100vw;
+    }
+
+    .main_sidemenu{
+        display: none !important;
+    }
+}
+
+.sidemenu_profileimg{
+    background-size: cover;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:2px solid #eee;
+    margin-left:15px;
+
+}
+
+.sidemenu_name{
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:4px;
+    padding: 0px !important;
+
+}
+
+.sidemenu_role{
+    color: #797979;
+    font-family:"Roboto", sans-serif;
+    font-size:12px;
+    padding: 0px !important;
+}
+
+.sidemenu_li{
+    padding:15px;
+    font-family:"Roboto", sans-serif;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition: all 0.1s linear;
+
+}
+
+.sidemenu_li:hover{
+    background: #ed242a;
+}
+
+.sidemenu_li_icon{
+    font-family: 'Material Icons';
+
+}
 
 /* Page-Login */
 .pg_login_background{
@@ -71,3 +151,6 @@ Default Custom Style Sheet for Project Nyx
     font-size: 24px;
 
 }
+
+
+/* Member */

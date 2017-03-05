@@ -27,7 +27,7 @@
     <div class="row">
         <div class="col m2 l3"></div>
         <div class="col m8 l6">
-            <div class="card blue">
+            <div class="card grey darken-4">
                 <div class="card-content white-text waves-effect">
                     <div class="col s12 m4">
                         <div style="padding: 10px;"></div>
@@ -55,13 +55,13 @@
                             </p>
                         </div>
                         <div class="row">
-                            <div class="input-field col s12 blue-text">
+                            <div class="input-field col s12 grey-text darken-4">
                                 <input id="username" type="text" class="validate">
-                                <label for="username" class="blue-text">Username</label>
+                                <label for="username" class="grey-text darken-4">Username</label>
                             </div>
-                            <div class="input-field col s12 blue-text">
+                            <div class="input-field col s12 grey-text darken-4">
                                 <input id="password" type="password" class="validate">
-                                <label for="password" class="blue-text" >Password</label>
+                                <label for="password" class="grey-text darken-4" >Password</label>
                             </div>
                             <div class="col s6">
                                 <input type="checkbox" class="filled-in checkbox-blue" id="filled-in-box" checked="checked" />
@@ -69,7 +69,7 @@
                             </div>
 
                             <div class="col s6 right-align">
-                                <button class="btn waves-effect blue" type="submit" name="action">Login
+                                <button class="btn waves-effect grey darken-4" type="submit" name="action">Login
                                     <i class="material-icons right">send</i>
                                 </button>
 
@@ -82,9 +82,9 @@
                     <div id="test3" style="display: none;">
                         <!--register-->
                         <div class="row">
-                            <div class="input-field col s12 blue-text">
+                            <div class="input-field col s12 green-text darken-4">
                                 <input id="fname" type="text" class="validate">
-                                <label for="fname" class="blue-text">Email Address</label>
+                                <label for="fname" class="green-text darken-4">Email Address</label>
                             </div>
 
                         </div>
@@ -104,9 +104,83 @@
             <i class="material-icons">live_help</i>
         </a>
         <ul>
-            <li><a href="#contactmodal" class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Administrator"><i class="material-icons">call</i></a></li>
-            <li><a class="btn-floating red darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Report and Issue"><i class="material-icons">announcement</i></a></li>
+            <li><a href="#contactmodal" onclick="$('#contactmodal').modal({dismissible: false})" class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Administrator"><i class="material-icons">call</i></a></li>
+            <li><a href="#issuemodal" onclick="$('#issuemodal').modal({dismissible: false})" class="btn-floating red darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Report and Issue"><i class="material-icons">announcement</i></a></li>
         </ul>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="contactmodal" class="modal" style="max-width: 600px;">
+        <div class="modal-content">
+            <h4>Contact Administrator</h4>
+            <p>You can contact the following system administrators for help</p>
+            <table>
+                <thead>
+                <tr>
+                    <th data-field="id">Name</th>
+                    <th data-field="name">Email</th>
+                    <th data-field="price">Phone Number</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Sulochana Kodituwakku</td>
+                    <td>sulochana.456@live.com</td>
+                    <td>071-589-5565</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="grey darken-4 white-text modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="issuemodal" class="modal" style="max-width: 800px;">
+        <div class="modal-content">
+            <h4>Report a problem</h4>
+            <p>You can contact the following system administrators for help</p>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Enter your email address" id="first_name" type="text" class="validate">
+                    <label for="first_name">Contact Email Address</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" placeholder="Briefly explain what happened and what steps we can take to reproduce the problem ..."></textarea>
+                    <label for="textarea1">Explain the problem</label>
+                </div>
+                <div class="col s12">
+                    <p>Include a screenshot with your report to make it easy for the developers to understand the problem</p>
+                </div>
+                <div class="file-field input-field col s12">
+
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                    </div>
+                    <div class="btn grey darken-4">
+                        <span>Attach a Screenshot</span>
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="grey darken-4 white-text modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
     </div>
 
 </div>
