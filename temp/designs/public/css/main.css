@@ -238,6 +238,15 @@ Default Custom Style Sheet for Project Nyx
 
 }
 
+
+.contentbox_detail_field{
+    color: #666666;
+}
+
+.contentbox_detail_value{
+    color: #212121;
+}
+
 .graph_row{
     width: 100%;
     height:350px;
