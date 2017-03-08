@@ -1,0 +1,254 @@
+/*
+Default Custom Style Sheet for Project Nyx
+
+*/
+
+/* Standards */
+.checkbox-blue[type="checkbox"].filled-in:checked + label:after{
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+}
+
+
+.logo-small{
+    background: url("../images/logo_small.png") no-repeat;
+    max-width: 160px;max-height: 93px;
+}
+
+.alert-error{
+    font-family:"Roboto", sans-serif;
+    border: 1px solid #e87f7d;
+    background-color:#F2DEDE;
+    color:#A94442;
+    border-radius:5px;
+    width: 100%;
+    margin: 5px;
+    padding:10px;
+    font-size:16px;
+}
+
+.alert-warning{
+    font-family:"Roboto", sans-serif;
+    border: 1px solid #ffce6a;
+    background-color:#fcf8e3;
+    color:#8a6d3b;
+    border-radius:5px;
+    width: 100%;
+    margin: 5px;
+    padding:10px;
+    font-size:16px;
+}
+
+.alert-success{
+    font-family:"Roboto", sans-serif;
+    border: 1px solid #4caf50;
+    background-color:#dff0d8;
+    color:#3c763d;
+    border-radius:5px;
+    width: 100%;
+    margin: 5px;
+    padding:10px;
+    font-size:16px;
+}
+
+
+/* Side Menu and Conetent */
+.main_sidemenu{
+
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    background-color: #212121;
+}
+
+.main_content{
+    width: 100vw;
+
+}
+
+
+@media only screen and (min-width: 993px) {
+    .main_content {
+        width: calc(100vw - 300px) !important;
+        margin-left:300px !important;
+    }
+
+    #sidemenu_toggle{
+        display: none !important;
+    }
+
+    .toppanel{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main_content {
+        width: 100vw !important;
+
+        margin-left:0 !important;
+    }
+
+    #sidemenu_toggle{
+        display: block !important;
+    }
+
+    .toppanel{
+        display: block !important;
+    }
+}
+
+.sidemenu_profileimg{
+    background-size: cover;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:2px solid #eee;
+    margin-left:15px;
+
+}
+
+.sidemenu_name{
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:4px;
+    padding: 0px !important;
+
+}
+
+.sidemenu_role{
+    color: #797979;
+    font-family:"Roboto", sans-serif;
+    font-size:12px;
+    padding: 0px !important;
+}
+
+
+.toppanel_profileimg{
+    background-size: cover;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    border:2px solid #212121;
+    margin-left:-10px;
+
+}
+
+.toppanel_name{
+    color: #212121;
+    font-family:"Roboto", sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:4px;
+    padding: 0px !important;
+
+}
+
+.toppanel_role{
+    color: #292929;
+    font-family:"Roboto", sans-serif;
+    font-size:12px;
+    padding: 0px !important;
+    margin-top:-3px;
+}
+
+.sidemenu_li{
+    font-family:"Roboto", sans-serif;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition: all 0.1s linear;
+
+}
+
+.sidemenu_li:hover{
+    background: #ed242a;
+}
+
+.sidemenu_li_icon{
+    font-family: 'Material Icons';
+}
+
+.toppanel{
+    background-color:white;
+    height: 60px;
+    width: 100%;
+
+}
+
+.toppanel_user{
+    width: 300px;
+    height: 60px;
+    padding-top: 6px;
+}
+
+/* Page-Login */
+.pg_login_background{
+    background: url("../images/server_room.jpg");
+    background-size: cover;
+}
+
+.pg_login_dimmer{
+    background-color: #000000;
+    opacity: 0.6;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.pg_login_tabtitle{
+    font-size: 24px;
+}
+
+
+/* Member */
+.main_container{
+    padding:20px 40px;
+}
+
+.contentbox{
+    padding: 10px !important;
+    border-right: 2px solid #ccc;
+}
+
+.contentbox:last-child{
+    border-right: 0px solid;
+}
+
+
+.contentbox_main{
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.contentbox_txt_up{
+    font-size: 14px;
+    line-height: 1;
+    color: #666;
+
+}
+
+.contentbox_txt_down{
+    font-size: 12px;
+    line-height: 1;
+    color: #666;
+
+}
+
+
+.contentbox_detail_field{
+    color: #666666;
+}
+
+.contentbox_detail_value{
+    color: #212121;
+}
+
+.graph_row{
+    width: 100%;
+    height:350px;
+    max-height:350px;
+}
