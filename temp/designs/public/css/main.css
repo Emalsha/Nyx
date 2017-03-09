@@ -314,3 +314,7 @@ Default Custom Style Sheet for Project Nyx
     margin:0;
     padding:0;
 }
+
+.chartbox{
+    min-height: 350px !important;
+}
