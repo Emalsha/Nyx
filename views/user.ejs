@@ -1,0 +1,268 @@
+<!DOCTYPE html lang="en" >
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/main.css"  media="screen,projection"/>
+    <title><%= title %>></title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="row">
+    <div>
+        <ul id="slide-out" class="side-nav fixed">
+            <div class="main_sidemenu" id="main_sidemenu">
+                <div class="row">
+                    <div class="row" ></div>
+                    <div class="row" style="text-align: center">
+                        <img src="images/logo_small.png" style="width: 100%;height: auto;max-width: 160px;max-height: 93px;margin: 20px 0;" class="s12">
+                    </div>
+                    <div class="col sidemenu_profileimg" style="background-image: url('images/profilepic.jpg')"></div>
+                    <div class="col s9">
+                        <div class="row">
+                            <div class="col s12 sidemenu_name truncate">Sulochana Kodituwakku</div>
+                            <div class="col s12 sidemenu_role">System Administrator</div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">dashboard</i>Dashboard</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">description</i>My Files</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">work</i>Public Files</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">live_help</i>About</a></li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="main_content">
+
+        <div class="toppanel z-depth-1">
+            <div class="col s4">
+                <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                    <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+                </a>
+
+            </div>
+            <div class="col s4">
+                <div class="row" style="text-align: center">
+                    <img src="images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                </div>
+            </div>
+            <div class="col s4 right-align">
+
+            </div>
+        </div>
+
+
+
+        <div class="row main_container">
+            <h4>Pending Downloads</h4>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><span class="new badge light-green accent-3 black-text" data-badge-caption="Downloading 32%"></span><i class="material-icons">library_books</i>Ubuntu 16.04 ISO Image</div>
+                    <div class="collapsible-body">
+                        <div class="row">
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">Status</div>
+                                <div class="col s12 contentbox_main">34%</div>
+                                <div class="col s12 contentbox_txt_down">Downloaded</div>
+                            </div>
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">Speed</div>
+                                <div class="col s12 contentbox_main">974.58 Kbps</div>
+                                <div class="col s12 contentbox_txt_down">Max 4.2Mbps | Avg 955.75Kbps</div>
+                            </div>
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">Estimated Time</div>
+                                <div class="col s12 contentbox_main">3h 52 mins</div>
+                                <div class="col s12 contentbox_txt_down">Total time 1h 21mins</div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l4">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="col s12 l8">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h5>Download Details</h5>
+                                    </div>
+                                    <div class="col s12 l2 contentbox_detail_field">Download Link</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Approved Date</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Approved By</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana Kodituwakku</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Started Date</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">MD5</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Availability</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Administrator Notes</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Description</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+
+                                    <div class="col s12 l2 contentbox_detail_field">Tags</div>
+                                    <div class="col s12 l10 truncate  contentbox_detail_value">
+                                        <div class="chip">
+                                            ubuntu
+                                        </div>
+                                        <div class="chip">
+                                            linux
+                                        </div>
+                                        <div class="chip">
+                                            foss
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 right-align">
+                                        <a class="waves-effect waves-light btn green white-text"><i class="material-icons left">play_arrow</i>Resume</a>
+                                        <a class="waves-effect waves-light btn yellow black-text"><i class="material-icons left ">pause</i>Pause</a>
+                                        <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><span class="new badge  yellow accent-3 black-text" data-badge-caption="Approval Pending"></span><i class="material-icons">place</i>Mint ISO Image</div>
+                    <div class="collapsible-body">
+                        <div class="row">
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">Status</div>
+                                <div class="col s12 contentbox_main amber-text accent-4">Approval Pending</div>
+                                <div class="col s12 contentbox_txt_down">3h 53mins</div>
+                            </div>
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">File Size</div>
+                                <div class="col s12 contentbox_main">999.99 kB</div>
+                                <div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>
+                            </div>
+                            <div class="col s12 l4 contentbox">
+                                <div class="col s12 contentbox_txt_up">Estimated Time</div>
+                                <div class="col s12 contentbox_main">3h 52 mins</div>
+                                <div class="col s12 contentbox_txt_down">To complete download</div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <h5>Download Details</h5>
+                            </div>
+                            <div class="col s12 l2 contentbox_detail_field">Download Link</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+
+                            <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                            <div class="col s12 l2 contentbox_detail_field">MD5</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+
+                            <div class="col s12 l2 contentbox_detail_field">Availability</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
+
+                            <div class="col s12 l2 contentbox_detail_field">Description</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+
+                            <div class="col s12 l2 contentbox_detail_field">Tags</div>
+                            <div class="col s12 l10 truncate  contentbox_detail_value">
+                                <div class="chip">
+                                    ubuntu
+                                </div>
+                                <div class="chip">
+                                    linux
+                                </div>
+                                <div class="chip">
+                                    foss
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col s12 right-align">
+                                <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><span class="new badge  red darken-1 white-text" data-badge-caption="Rejected"></span><i class="material-icons">filter_drama</i>Batman vs. Superman</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+<script type="text/javascript" src="javascripts/materialize.js"></script>
+<script>
+
+    $(".button-collapse").sideNav();
+
+
+</script>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+            labels: ['10', '20', '30', '40', '50', '60', '70','80','90'],
+            datasets: [{
+                label: 'Download Speed',
+                data: [900, 1024, 500, 247, 304, 125, 420],
+                backgroundColor: "rgba(5, 176, 36,0.8)"
+            }]
+        }
+    });
+</script>
+
+</body>
+</html>
