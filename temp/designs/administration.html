@@ -1,0 +1,195 @@
+<html lang="en" >
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="public/css/main.css"  media="screen,projection"/>
+    <title>N Y X! Administration</title>
+    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="row">
+    <!--side menu-->
+    <div>
+        <ul id="slide-out" class="side-nav fixed">
+            <div class="main_sidemenu" id="main_sidemenu">
+                <div class="row">
+                    <div class="row" ></div>
+                    <div class="row" style="text-align: center">
+                        <img src="public/images/logo_small.png" style="width: 100%;height: auto;max-width: 160px;max-height: 93px;margin: 20px 0;" class="s12">
+                    </div>
+                    <div class="col sidemenu_profileimg" style="background-image: url('public/images/profilepic.jpg')"></div>
+                    <div class="col s9">
+                        <div class="row">
+                            <div class="col s12 sidemenu_name truncate">Sulochana Kodituwakku</div>
+                            <div class="col s12 sidemenu_role">System Administrator</div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">dashboard</i>Dashboard</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">description</i>My Files</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">work</i>Public Files</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a></li>
+                    <li class="sidemenu_li"><a class="white-text"><i class="material-icons left" style="color: #ffffff;">live_help</i>About</a></li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+
+    <!--page content-->
+    <div class="main_content">
+
+        <div class="toppanel z-depth-1">
+            <div class="col s4">
+                <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                    <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+                </a>
+
+            </div>
+            <div class="col s4">
+                <div class="row" style="text-align: center">
+                    <img src="public/images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                </div>
+            </div>
+            <div class="col s4 right-align">
+
+            </div>
+        </div>
+
+
+
+        <div class="row main_container">
+            <!--Header-->
+            <div class="row">
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">8</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72 GB )</div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">18.72 GB</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">11.79 GB</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 20.0 GB used</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress">
+                            <div class="determinate" style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in 12h 35mins</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress deep-orange  lighten-4">
+                            <div class="determinate deep-orange" style="width: 20%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="subsection_title_sub">Network Usage</div>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="subsection_title_sub">System Load</div>
+                    <canvas id="myChart1"></canvas>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="subsection_title_sub">File System</div>
+                    <canvas id="myChart2"></canvas>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+<script type="text/javascript" src="public/js/materialize.js"></script>
+<script>
+
+    $(".button-collapse").sideNav();
+
+
+</script>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+            labels: ['10', '20', '30', '40', '50', '60', '70','80','90'],
+            datasets: [{
+                label: 'Download Speed',
+                data: [900, 1024, 500, 247, 304, 125, 420],
+                backgroundColor: "rgba(5, 176, 36,0.8)"
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart1').getContext('2d');
+    var myChart1 = new Chart(ctx, {
+        type: 'line',
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+            labels: ['10', '20', '30', '40', '50', '60', '70','80','90'],
+            datasets: [{
+                label: 'Download Speed',
+                data: [356, 55, 33, 247, 304, 125, 420],
+                backgroundColor: "rgba(5, 176, 36,0.8)"
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart2').getContext('2d');
+    var myChart2 = new Chart(ctx, {
+        type: 'line',
+        responsive: true,
+        maintainAspectRatio: false,
+        data: {
+            labels: ['10', '20', '30', '40', '50', '60', '70','80','90'],
+            datasets: [{
+                label: 'Download Speed',
+                data: [59, 55, 215, 247, 22, 125, 420],
+                backgroundColor: "rgba(5, 176, 36,0.8)"
+            }]
+        }
+    });
+</script>
+
+</body>
+</html>
