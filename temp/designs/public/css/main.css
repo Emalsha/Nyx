@@ -208,14 +208,25 @@ Default Custom Style Sheet for Project Nyx
     padding:20px 40px;
 }
 
-.contentbox{
+.contentbox_mainbox{
     padding: 10px !important;
-    border-right: 2px solid #ccc;
+    border-right: 1px solid #d3d3d3;
 }
 
-.contentbox:last-child{
+.contentbox_mainbox:last-child{
     border-right: 0px solid;
 }
+
+.contentbox_mainbox:last-child{
+    border-right: 0px solid;
+}
+
+.contentbox_reject_title{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
 
 
 .contentbox_main{
@@ -251,4 +262,55 @@ Default Custom Style Sheet for Project Nyx
     width: 100%;
     height:350px;
     max-height:350px;
+}
+
+.subsection_title{
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+    font-size: 1.6em;
+    padding: 10px 15px;
+    color:#212121;
+}
+
+.subsection_title_sub{
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+    font-size: 1.6em;
+    padding: 10px 15px;
+    color:#535353;
+}
+
+
+
+.notificationbox_dashboard{
+    font-family:"Roboto",sans-serif;
+    font-size: 14px;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.2s linear;
+    border-bottom:1px solid #ccc
+}
+
+.notificationbox_dashboard:first-child{
+    padding-top: 20px;
+    border-top-left-radius : 5px;
+    border-top-right-radius : 5px;
+
+}
+
+.notificationbox_dashboard:last-child{
+    padding-bottom: 20px;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius : 5px;
+}
+
+.notificationbox_dashboard:hover{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.file_description{
+    font-size:12px;
+    font-family:"Roboto",sans-serif;
+    margin:0;
+    padding:0;
 }
