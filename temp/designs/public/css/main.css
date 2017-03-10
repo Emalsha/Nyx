@@ -24,7 +24,7 @@ Default Custom Style Sheet for Project Nyx
     width: 100%;
     margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 .alert-warning{
@@ -36,7 +36,7 @@ Default Custom Style Sheet for Project Nyx
     width: 100%;
     margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 .alert-success{
@@ -48,14 +48,14 @@ Default Custom Style Sheet for Project Nyx
     width: 100%;
     margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 
 /* Side Menu and Conetent */
 .main_sidemenu{
 
-    width: 300px;
+    width: 250px;
     position: fixed;
     height: 100vh;
     background-color: #212121;
@@ -69,8 +69,8 @@ Default Custom Style Sheet for Project Nyx
 
 @media only screen and (min-width: 993px) {
     .main_content {
-        width: calc(100vw - 300px) !important;
-        margin-left:300px !important;
+        width: calc(100vw - 250px) !important;
+        margin-left:250px !important;
     }
 
     #sidemenu_toggle{
@@ -104,7 +104,7 @@ Default Custom Style Sheet for Project Nyx
     height:48px;
     border-radius:50%;
     border:2px solid #eee;
-    margin-left:15px;
+    margin-left:10px;
 
 }
 
@@ -199,13 +199,19 @@ Default Custom Style Sheet for Project Nyx
 }
 
 .pg_login_tabtitle{
-    font-size: 24px;
+    font-size: 1.25em;
+}
+
+.login_intro_txt{
+    font-size: 0.85em;
 }
 
 
 /* Member */
 .main_container{
-    padding:20px 40px;
+    overflow-y: hidden;
+    margin-left: 250px;
+    padding: 10px 20px;
 }
 
 .contentbox_mainbox{
