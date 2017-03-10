@@ -1,6 +1,10 @@
+.idea/
 .idea/*
 .idea/copyright
 .idea/modules.xml
 .idea/Nyx.iml
 .idea/vcs.xml
 .idea/workspace.xml
+# Dependency directories
+node_modules
+
