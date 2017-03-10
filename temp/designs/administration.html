@@ -67,7 +67,7 @@
 
 
 
-        <div class="row main_container">
+        <div>
             <!--Header-->
             <div class="row">
                 <div class="col s4 m3 contentbox_mainbox">
@@ -119,12 +119,7 @@
                     <div class="subsection_title_sub">File System</div>
                     <canvas id="myChart2"></canvas>
                 </div>
-
-
             </div>
-
-
-
         </div>
 
     </div>
@@ -140,6 +135,12 @@
 <script>
 
     $(".button-collapse").sideNav();
+
+    $('.button-collapse').sideNav({
+                menuWidth: 250, // Default is 300
+                edge: 'left', // Choose the horizontal origin
+            }
+    );
 
 
 </script>
