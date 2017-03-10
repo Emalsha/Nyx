@@ -5,3 +5,6 @@
 .idea/Nyx.iml
 .idea/vcs.xml
 .idea/workspace.xml
+# Dependency directories
+node_modules
+
