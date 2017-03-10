@@ -8,10 +8,8 @@ To run,
 
 On MacOS or Linux, run the app with this command:
 
-'''
-npm install
-DEBUG=myapp:**** npm start
-'''
+    npm install
+    DEBUG=myapp:* npm start
 
 On Windows, use this command:
 
