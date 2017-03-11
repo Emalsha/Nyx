@@ -21,6 +21,10 @@ Default Custom Style Sheet for Project Nyx
     font-size: 1em;
 }
 
+.display{
+    display: block !important;
+}
+
 
 .logo-small{
     background: url("../images/logo_small.png") no-repeat;
@@ -339,3 +343,10 @@ Default Custom Style Sheet for Project Nyx
 .chartbox{
     min-height: 350px !important;
 }
+
+
+/*Download Requests*/
+.pg_admin_dlreq_headrer{
+    font-weight: bold;
+}
+
