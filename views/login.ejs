@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <head>
 
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css"
-          media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="/public/stylesheets/main.css" media="screen,projection"/>
-    <title><%= title %></title>
-    <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
+    <!--header files -->
+    <% include includes/head.ejs %>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="pg_login_background">
+
 
 
 <div class="pg_login_dimmer"></div>
 
 <div class="container">
     <div class="row">
-        <div class="col l12" style="padding: 50px"></div>
+        <div class="col l12" style="padding: 5px"></div>
 
     </div>
     <div class="row">
@@ -32,95 +24,79 @@
                     <div class="col s12 m4">
                         <div style="padding: 10px;"></div>
                         <div class="row">
-                            <img src="/public/images/logo_small.png"
-                                 style="width: 100%;height: auto;max-width: 160px;max-height: 93px;" class="s12">
+                            <img src="public/images/logo_small.png" style="width: 100%;height: auto;max-width: 160px;max-height: 93px;" class="s12">
                         </div>
                     </div>
                     <div class="col s12 m8">
-                        <p>Bassa solves the problem of wasting internet bandwidth by queuing a download if it is larger
-                            than a given threshold value in high traffic and when the traffic is low, it completes the
-                            download of the files. After the files are downloaded, the users can get their files from
-                            the local servers which do not require external internet bandwidth.</p>
+                        <p class="login_intro_txt">Bassa solves the problem of wasting internet bandwidth by queuing a download if it is larger than a given threshold value in high traffic and when the traffic is low</p>
                     </div>
                 </div>
                 <div class="card-tabs">
                     <ul class="tabs tabs-fixed-width tabs-transparent">
-                        <li class="tab"><a class="active" href="#test2"><span class="pg_login_tabtitle">Login</span></a>
-                        </li>
+                        <li class="tab"><a class="active" href="#test2"><span class="pg_login_tabtitle">Login</span></a></li>
                         <li class="tab"><a href="#test3"><span class="pg_login_tabtitle">Register</span></a></li>
-                        <div class="indicator red darken-4" style="right: 165.5px; left: 165.5px;height: 4px;"></div>
-                    </ul>
+                        <div class="indicator red darken-4" style="right: 165.5px; left: 165.5px;height: 4px;"></div></ul>
                 </div>
                 <div class="card-content white">
                     <div id="test2" class="active" style="display: block;">
                         <!--login-->
-                        <div class="alert-error">
+                        <div class="alert-error hide">
                             <p>
                                 <b>Invalid Username Password Combination</b><br>
                                 The Username and password you provided does not match
                             </p>
                         </div>
-                        <form action="/users/user" method="post">
-
-                            <div class="row">
-                                <div class="input-field col s12 grey-text darken-4">
-                                    <input id="username" type="text" class="validate">
-                                    <label for="username" class="grey-text darken-4">Username</label>
-                                </div>
-                                <div class="input-field col s12 grey-text darken-4">
-                                    <input id="password" type="password" class="validate">
-                                    <label for="password" class="grey-text darken-4">Password</label>
-                                </div>
-                                <div class="col s6">
-                                    <input type="checkbox" class="filled-in checkbox-blue" id="filled-in-box"
-                                           checked="checked"/>
-                                    <label for="filled-in-box">Keep me logged in</label>
-                                </div>
-
-                                <div class="col s6 right-align">
-                                    <button class="btn waves-effect grey darken-4" type="submit" name="action">Login
-                                        <i class="material-icons right">send</i>
-                                    </button>
-                                </div>
-
-                                <div class="col s12">
-                                    <a href="#" class="red-text">Forgot Password ?</a>
-                                </div>
+                        <div class="row">
+                            <div class="input-field col s12 grey-text darken-4">
+                                <input id="username" type="text" class="validate">
+                                <label for="username" class="grey-text darken-4">Username</label>
                             </div>
-                        </form>
-                </div>
-                <div id="test3" style="display: none;">
-                    <!--register-->
-                    <div class="row">
-                        <div class="input-field col s12 green-text darken-4">
-                            <input id="fname" type="text" class="validate">
-                            <label for="fname" class="green-text darken-4">Email Address</label>
-                        </div>
+                            <div class="input-field col s12 grey-text darken-4">
+                                <input id="password" type="password" class="validate">
+                                <label for="password" class="grey-text darken-4" >Password</label>
+                            </div>
+                            <div class="col s6">
+                                <input type="checkbox" class="filled-in checkbox-blue" id="filled-in-box" checked="checked" />
+                                <label for="filled-in-box">Keep me logged in</label>
+                            </div>
 
+                            <div class="col s6 right-align">
+                                <button class="btn waves-effect grey darken-4" type="submit" name="action">Login
+                                    <i class="material-icons right">send</i>
+                                </button>
+
+                            </div>
+                            <div class="col s12">
+                                <a href="#" class="red-text">Forgot Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="test3" style="display: none;">
+                        <!--register-->
+                        <div class="row">
+                            <div class="input-field col s12 green-text darken-4">
+                                <input id="fname" type="text" class="validate">
+                                <label for="fname" class="green-text darken-4">Email Address</label>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="s12 center-align white-text"> (C) 2014-2017 Allahuakbar, All rights reserved.</div>
 
+        </div>
+        <div class="col m2 l3"></div>
     </div>
-    <div class="col m2 l3"></div>
-</div>
 </div>
 <div>
     <!--help and support-->
     <div class="fixed-action-btn horizontal click-to-toggle">
-        <a class="btn-floating btn-large blue tooltipped" data-position="top" data-delay="50"
-           data-tooltip="Administration Support">
+        <a class="btn-floating btn-large blue tooltipped" data-position="top" data-delay="50" data-tooltip="Administration Support">
             <i class="material-icons">live_help</i>
         </a>
         <ul>
-            <li><a href="#contactmodal" onclick="$('#contactmodal').modal({dismissible: false})"
-                   class="btn-floating green tooltipped" data-position="top" data-delay="50"
-                   data-tooltip="Contact Administrator"><i class="material-icons">call</i></a></li>
-            <li><a href="#issuemodal" onclick="$('#issuemodal').modal({dismissible: false})"
-                   class="btn-floating red darken-1 tooltipped" data-position="top" data-delay="50"
-                   data-tooltip="Report and Issue"><i class="material-icons">announcement</i></a></li>
+            <li><a href="#contactmodal" onclick="$('#contactmodal').modal({dismissible: false})" class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Administrator"><i class="material-icons">call</i></a></li>
+            <li><a href="#issuemodal" onclick="$('#issuemodal').modal({dismissible: false})" class="btn-floating red darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Report and Issue"><i class="material-icons">announcement</i></a></li>
         </ul>
     </div>
 
@@ -173,13 +149,11 @@
                     <label for="first_name">Contact Email Address</label>
                 </div>
                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"
-                              placeholder="Briefly explain what happened and what steps we can take to reproduce the problem ..."></textarea>
+                    <textarea id="textarea1" class="materialize-textarea" placeholder="Briefly explain what happened and what steps we can take to reproduce the problem ..."></textarea>
                     <label for="textarea1">Explain the problem</label>
                 </div>
                 <div class="col s12">
-                    <p>Include a screenshot with your report to make it easy for the developers to understand the
-                        problem</p>
+                    <p>Include a screenshot with your report to make it easy for the developers to understand the problem</p>
                 </div>
                 <div class="file-field input-field col s12">
 
