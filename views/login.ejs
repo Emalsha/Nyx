@@ -44,12 +44,15 @@
                 <div class="card-content white">
                     <div id="test2" class="active" style="display: block;">
                         <!--login-->
-                        <div class="alert-error hide">
-                            <p>
-                                <b>Invalid Username Password Combination</b><br>
-                                The Username and password you provided does not match
-                            </p>
+                        <!--<p>-->
+                        <!--<b>Invalid Username Password Combination</b><br>-->
+                        <!--The Username and password you provided does not match-->
+                        <!--</p>-->
+                        <% if(message){ %>
+                        <div class="alert-error">
+                            <p><%= message %> </p>
                         </div>
+                        <% } %>
                         <form action="/login" method="post">
                             <div class="row">
                                 <div class="input-field col s12 grey-text darken-4">
@@ -81,13 +84,28 @@
                     </div>
                     <div id="test3" style="display: none;">
                         <!--register-->
-                        <div class="row">
-                            <div class="input-field col s12 green-text darken-4">
-                                <input id="fname" type="text" class="validate">
-                                <label for="fname" class="green-text darken-4">Email Address</label>
-                            </div>
+                        <form action="/register" method="post">
+                            <div class="row">
+                                <div class="input-field col s12 green-text darken-4">
+                                    <input id="username" name="username" type="text" class="validate">
+                                    <label for="username" class="green-text darken-4">Username</label>
+                                </div>
+                                <div class="input-field col s12 red-text darken-4">
+                                    <input id="pw1" name="password" type="password" class="validate">
+                                    <label for="pw1" class="green-text darken-4">Password</label>
+                                </div>
+                                <div class="input-field col s12 red-text darken-4">
+                                    <input id="pw2" type="password" class="validate">
+                                    <label for="pw2" class="green-text darken-4">Confirm password</label>
+                                </div>
+                                <div class="col s6" style="float: right">
+                                    <button class="btn waves-effect grey darken-4" type="submit" name="action">Register
+                                        <i class="material-icons right">send</i>
+                                    </button>
 
-                        </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

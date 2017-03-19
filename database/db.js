@@ -3,7 +3,8 @@
  */
 
 var mongoClient = require('mongodb').MongoClient;
-var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
+// var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
+var dburl = "mongodb://localhost:27017/project_nyx";
 
 var state = {
     db : null,

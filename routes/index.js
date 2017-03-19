@@ -4,11 +4,11 @@ var passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('login', { title: 'NYX' });
+  res.render('login', { title: 'NYX',message:req.flash('error') });
 });
 
 // Register new users
-router.post('/local-reg',passport.authenticate('local-signup',{
+router.post('/register',passport.authenticate('local-signup',{
     successRedirect:'/users/user',
     failureRedirect:'/'
 })

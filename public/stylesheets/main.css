@@ -20,9 +20,9 @@ Default Custom Style Sheet for Project Nyx
     border: 1px solid #e87f7d;
     background-color:#F2DEDE;
     color:#A94442;
-    border-radius:5px;
+    border-radius:2px;
     width: 100%;
-    margin: 5px;
+    text-transform: capitalize;
     padding:10px;
     font-size:16px;
 }
