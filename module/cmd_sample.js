@@ -2,9 +2,12 @@
  * Created by emalsha on 3/19/17.
  */
 
-var exec = require('child_process').exec;
+var netstat = require('net-stat');
 
-exec('ifconfig',function (err, stdout, stderr) {
-    console.log(stdout);
-})
+
+setInterval(function(data){
+    console.log(netstat.raw().wlp2s0);
+},1000);
+
+1000*1000
 
