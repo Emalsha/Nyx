@@ -7,6 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('login', { title: 'NYX' });
 });
 
+// Register new users
+router.post('/local-reg',passport.authenticate('local-signup',{
+    successRedirect:'/users/user',
+    failureRedirect:'/'
+})
+);
+
 // Send login request throug passport midleware and redirect policy
 router.post('/login',passport.authenticate('local-signin',{
   successRedirect:'/users/user',
