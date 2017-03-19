@@ -2,6 +2,9 @@
 Default Custom Style Sheet for Project Nyx
 
 */
+html{
+    box-sizing: unset;
+}
 
 /* Standards */
 .checkbox-blue[type="checkbox"].filled-in:checked + label:after{

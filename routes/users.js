@@ -4,7 +4,7 @@ var database = require('../database/db');
 
 /* GET users listing. */
 router.get('/user', function(req, res, next) {
-  res.render('user',{title:'NYX | USER'});
+    res.render('user',{title:'NYX | USER'});
 });
 
 router.get('/administration',function(req,res,next){

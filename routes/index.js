@@ -25,9 +25,8 @@ router.post('/logout',function (req, res) {
     var name = req.user.username;
     console.log('Loggin out '+req.user.username);
     req.logout();
+    req.flash('error',"You have been logged out.");
     res.redirect('/');
-    req.session.notice = "You have been logged out.";
-
 });
 
 

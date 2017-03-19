@@ -59,6 +59,16 @@ var localAuth = function (username, password) {
     return defer.promise;
 };
 
+// Used to serialize the user
+passport.serializeUser(function (user, done) {
+    done(null,user);
+});
+
+//Used to deserialize the user
+passport.deserializeUser(function(id,done){
+    done(null,id);
+});
+
 // Use local strategy to signin and signup
 passport.use('local-signin',new localStrategy({passReqToCallback:true},function(req,username,password,done){
     localAuth(username,password)
@@ -92,13 +102,3 @@ passport.use('local-signup',new localStrategy({passReqToCallback:true},function 
             console.log(err.body);
         })
 }));
-
-// Used to serialize the user
-passport.serializeUser(function (user, done) {
-    done(null,user.id);
-});
-
-//Used to deserialize the user
-passport.deserializeUser(function(id,done){
-    done(null,id);
-})
