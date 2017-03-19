@@ -4,6 +4,9 @@
 <head>
 
     <% include includes/head.ejs %>
+
+    <!--Import footer part-->
+    <% include includes/foot.ejs %>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 </head>
 <body>
@@ -24,8 +27,7 @@
             </div>
             <div class="col s4">
                 <div class="row" style="text-align: center">
-                    <img src="public/images/logo_small.png"
-                         style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                    <img src="/public/images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
                 </div>
             </div>
             <div class="col s4 right-align">
@@ -633,8 +635,8 @@
 </div>
 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="public/js/materialize.js"></script>
+
+
 <script>
 
     $(".button-collapse").sideNav();
