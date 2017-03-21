@@ -9,6 +9,7 @@ var passport = require('passport');
 var passport_fn = require('./module/passport_fn');
 var flash = require('connect-flash');
 
+// Route configs
 var index = require('./routes/index');
 var users = require('./routes/users');
 var info = require('./routes/info');

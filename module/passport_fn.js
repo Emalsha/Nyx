@@ -4,7 +4,7 @@
 
 var passport = require('passport');
 var localStrategy = require('passport-local');
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 var database = require('../database/db');
 var Q = require('q');
 
