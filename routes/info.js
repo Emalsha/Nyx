@@ -6,6 +6,7 @@ var express = require('express');
 var router = express.Router();
 var netstat = require('net-stat');
 var fixed_array = require('fixed-array');
+var server = express.server;
 
 var rxArray = fixed_array(12);
 var txArray = fixed_array(12);

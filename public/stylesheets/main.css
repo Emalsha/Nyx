@@ -2,7 +2,8 @@
 Default Custom Style Sheet for Project Nyx
 
 */
-html{
+
+body{
     box-sizing: unset;
 }
 
@@ -10,6 +11,22 @@ html{
 .checkbox-blue[type="checkbox"].filled-in:checked + label:after{
     border: 2px solid #2196F3;
     background-color: #2196F3;
+}
+
+.no_bottom_margin{
+    margin-bottom: 0 !important;
+}
+
+.no_padding{
+    padding: 0 !important;
+}
+
+.control_button{
+    font-size: 1em;
+}
+
+.display{
+    display: block !important;
 }
 
 
@@ -23,11 +40,11 @@ html{
     border: 1px solid #e87f7d;
     background-color:#F2DEDE;
     color:#A94442;
-    border-radius:2px;
+    border-radius:5px;
     width: 100%;
-    text-transform: capitalize;
+    margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 .alert-warning{
@@ -39,7 +56,7 @@ html{
     width: 100%;
     margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 .alert-success{
@@ -51,14 +68,14 @@ html{
     width: 100%;
     margin: 5px;
     padding:10px;
-    font-size:16px;
+    font-size:1em;
 }
 
 
 /* Side Menu and Conetent */
 .main_sidemenu{
 
-    width: 300px;
+    width: 250px;
     position: fixed;
     height: 100vh;
     background-color: #212121;
@@ -72,8 +89,8 @@ html{
 
 @media only screen and (min-width: 993px) {
     .main_content {
-        width: calc(100vw - 300px) !important;
-        margin-left:300px !important;
+        width: calc(100vw - 250px) !important;
+        margin-left:250px !important;
     }
 
     #sidemenu_toggle{
@@ -107,7 +124,7 @@ html{
     height:48px;
     border-radius:50%;
     border:2px solid #eee;
-    margin-left:15px;
+    margin-left:10px;
 
 }
 
@@ -202,40 +219,56 @@ html{
 }
 
 .pg_login_tabtitle{
-    font-size: 24px;
+    font-size: 1.25em;
+}
+
+.login_intro_txt{
+    font-size: 0.85em;
 }
 
 
 /* Member */
 .main_container{
-    padding:20px 40px;
+    overflow-y: hidden;
+    padding: 10px 20px;
 }
 
-.contentbox{
+.contentbox_mainbox{
     padding: 10px !important;
-    border-right: 2px solid #ccc;
+    border-right: 1px solid #d3d3d3;
 }
 
-.contentbox:last-child{
+.contentbox_mainbox:last-child{
     border-right: 0px solid;
 }
 
+.contentbox_mainbox:last-child{
+    border-right: 0px solid;
+}
+
+.contentbox_reject_title{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+
 
 .contentbox_main{
-    font-size: 2.2em;
+    font-size: 1.6em;
     font-weight: bold;
     line-height: 1.4;
 }
 
 .contentbox_txt_up{
-    font-size: 14px;
+    font-size: 0.8em;
     line-height: 1;
     color: #666;
 
 }
 
 .contentbox_txt_down{
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 1;
     color: #666;
 
@@ -244,10 +277,12 @@ html{
 
 .contentbox_detail_field{
     color: #666666;
+    font-size: 0.8em;
 }
 
 .contentbox_detail_value{
     color: #212121;
+    font-size: 0.8em;
 }
 
 .graph_row{
@@ -255,3 +290,66 @@ html{
     height:350px;
     max-height:350px;
 }
+
+.subsection_title{
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+    font-size: 1.6em;
+    padding: 0 15px 5px 15px;
+    color:#212121;
+}
+
+.subsection_title_sub{
+    font-family: "Roboto",sans-serif;
+    font-weight:bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color:#535353;
+}
+
+
+
+.notificationbox_dashboard{
+    font-family:"Roboto",sans-serif;
+    font-size: 0.8em;
+    padding: 10px 15px 10px 15px;
+    transition: all 0.2s linear;
+    border-bottom:1px solid #ccc
+}
+
+.notificationbox_dashboard:first-child{
+    margin-top: 9px;
+    padding-top: 20px;
+    border-top-left-radius : 5px;
+    border-top-right-radius : 5px;
+
+}
+
+.notificationbox_dashboard:last-child{
+    padding-bottom: 20px;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius : 5px;
+}
+
+.notificationbox_dashboard:hover{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.file_description{
+    font-size:12px;
+    font-family:"Roboto",sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.chartbox{
+    min-height: 350px !important;
+}
+
+
+/*Download Requests*/
+.pg_admin_dlreq_headrer{
+    font-weight: bold;
+}
+

@@ -1,0 +1,62 @@
+<!-- Created by emalsha on 3/20/17. -->
+
+<!DOCTYPE html>
+<head>
+
+    <% include includes/head.ejs %>
+
+    <!--Import footer part-->
+    <% include includes/foot.ejs %>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <!--side menu-->
+    <% include includes/main_nav.ejs %>
+
+    <!--page content-->
+    <div class="main_content">
+
+        <!--responsive - mobile size menu-->
+        <div class="toppanel z-depth-1">
+            <div class="col s4">
+                <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                    <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+                </a>
+
+            </div>
+            <div class="col s4">
+                <div class="row" style="text-align: center">
+                    <img src="/public/images/logo_small.png"
+                         style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                </div>
+            </div>
+            <div class="col s4 right-align">
+
+            </div>
+        </div>
+
+
+        <div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--Import footer part-->
+<% include includes/foot.ejs %>
+
+<script>
+
+    $('.button-collapse').sideNav({
+            menuWidth: 250, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+        }
+    );
+
+</script>
+</body>
+</html>
+
