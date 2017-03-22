@@ -3,27 +3,13 @@ var router = express.Router();
 var database = require('../database/db');
 var passport = require('passport');
 var session = require('express-session');
+var acl = require('../module/acl_fn');
 
 var isAdmin =true;
 
-function isAdministrator(username) {
-    console.log('gothrou this.....');
-    database.get().collection('user').findOne({'username':username})
-        .then(function (result) {
-            if(result != null){
-                var i = result.password;
-                if(i == i){
-                    isAdmin = true;
-                }else{
-                    isAdmin = false;
-                }
-            }
-        });
-}
-
 /* GET users listing. */
-router.get('/user',function(req, res, next) {
-    res.render('user',{title:'NYX | USER',isAdmin:isAdmin});
+router.get('/user',acl(),function(req, res, next) {
+    res.render('user',{title:'NYX | USER'});
 });
 
 router.get('/myfile',function(req,res,next){

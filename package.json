@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "accesscontrol": "^1.5.0",
+    "acl": "^0.4.10",
     "aria2": "^3.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "~1.16.0",

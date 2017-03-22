@@ -41,6 +41,15 @@ app.use(function (req, res, next) {
     req.flash('error'," Please sign-in !");
     res.redirect('/')
 });
+
+app.use(function(req,res,next){
+   app.locals.currentUser = {
+       'uname':req.session.passport.user.username,
+       'role' :req.session.passport.user._id,
+   };
+   next();
+});
+
 app.use('/users', users);
 app.use('/info',info);
 

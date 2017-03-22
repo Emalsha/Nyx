@@ -8,7 +8,6 @@ var bcrypt = require('bcryptjs');
 var database = require('../database/db');
 var Q = require('q');
 
-
 // Register new user
 var localReg = function (username, password) {
 
@@ -60,13 +59,15 @@ var localAuth = function (username, password) {
 };
 
 // Used to serialize the user
+
 passport.serializeUser(function (user, done) {
-    done(null,user);
+    var uid = { '_id': user._id,'username': user.username};
+    done(null,uid);
 });
 
 //Used to deserialize the user
-passport.deserializeUser(function(id,done){
-    done(null,id);
+passport.deserializeUser(function(uid,done){
+    done(null,uid);
 });
 
 // Use local strategy to signin and signup
