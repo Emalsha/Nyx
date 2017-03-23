@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const debug = require('debug')('nyx:server');
-let debugw = require('debug')('nyx:worker');
+// let debugw = require('debug')('nyx:worker');
 const http = require('http');
 const database = require('../database/db');
 const cluster =require('cluster');
