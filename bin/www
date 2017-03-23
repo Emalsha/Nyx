@@ -9,7 +9,7 @@ const numCPU = require('os').cpus().length;
 const app = require('../app');
 
 const port = normalizePort(process.env.PORT || '3000');
-let server;
+var server;
 
 database.connect(function (err) {
     if (err){
