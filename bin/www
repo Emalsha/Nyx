@@ -5,6 +5,7 @@
  */
 
 var debug = require('debug')('nyx:server');
+let debugw = require('debug')('nyx:worker');
 var http = require('http');
 var database = require('../database/db');
 var cluster =require('cluster');
@@ -29,17 +30,17 @@ if(cluster.isMaster){
     }
 
     cluster.on('exit',(worker,code,signal)=>{
-        debug(`Worker ${worker.process.pid} died.`);
+        debugw(`Worker ${worker.process.pid} died.`);
     });
 }else{
 
     var app = require('../app');
-    var aria2app = require('../aria2app');
+    // var aria2app = require('../aria2app');
 
     app.set('port', port);
 
     var server = http.createServer(app);
-    var aria2server = http.createServer(aria2app);
+    // var aria2server = http.createServer(aria2app);
 
     /**
      * Create database instant
@@ -52,7 +53,7 @@ if(cluster.isMaster){
             process.exit(1);
         }else{
             server.listen(port);
-            aria2server.listen(port+1);
+            // aria2server.listen(port+1);
         }
     });
 
@@ -60,10 +61,10 @@ if(cluster.isMaster){
     server.on('listening', onListening);
 
 
-    aria2server.on('error', onError);
-    aria2server.on('listening', onListeningAriaServer);
+    // aria2server.on('error', onError);
+    // aria2server.on('listening', onListeningAriaServer);
 
-    debug(`Worker ${process.pid} start`);
+    debugw(`Worker ${process.pid} start`);
 }
 
 
