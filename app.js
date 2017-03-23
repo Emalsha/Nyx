@@ -1,20 +1,22 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var passport = require('passport');
-var passport_fn = require('./module/passport_fn');
-var flash = require('connect-flash');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const passport = require('passport');
+const passport_fn = require('./module/passport_fn');
+const flash = require('connect-flash');
+const MongoStore = require('connect-mongo')(session);
+
 
 // Route configs
-var index = require('./routes/index');
-var users = require('./routes/users');
-var info = require('./routes/info');
+const index = require('./routes/index');
+const users = require('./routes/users');
+const info = require('./routes/info');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,7 +28,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret:'project-nyx',saveUninitialized: true,resave:true}));
+// app.use(session({secret:'project-nyx',saveUninitialized: true,resave:true}));
+// Due to cluster store sesion data on mongo db
+app.use(session({
+    secret:'project-nyx',
+    saveUninitialized: true,
+    resave:true,
+    store:new MongoStore({url:"mongodb://localhost:27017/project_nyx"}),
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
