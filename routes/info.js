@@ -13,22 +13,23 @@ const debug = require('debug')('nyx:info');
 // Get network interface
 let ifaces = os.networkInterfaces();
 let len = Object.keys(ifaces).length;
-const iface = Object.keys(ifaces)[len-1];
-debug(iface);
+const reqIface = Object.keys(ifaces)[len-1];
+debug(`Get data from : ${reqIface}`);
 
-let rxArray = fixed_array(12);
-let txArray = fixed_array(12);
+let rxArray = fixed_array(30);
+let txArray = fixed_array(30);
 
 setInterval(function () {
-    letrx = netstat.raw().iface.bytes.receive;
-    rx = (rx/(1000*1000*1000));
-    rxArray.push(rx);
 
-    let tx = netstat.raw().iface.bytes.transmit;
-    tx = (tx/(1000*1000*1000));
-    txArray.push(tx);
+    let rxfn = netstat.usageRx({iface:reqIface,units:'MiB',sampleMs:'1000'},rx =>{
+        rxArray.push(rx );
+    });
 
-},1000*60*5);
+    let txfn = netstat.usageTx({iface:reqIface,units:'MiB',sampleMs:'1000'},tx =>{
+        txArray.push(tx);
+    });
+
+},1000);
 
 router.get('/network_usage', function(req, res, next) {
 
