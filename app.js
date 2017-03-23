@@ -7,7 +7,9 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var passport = require('passport');
 var passport_fn = require('./module/passport_fn');
-var flash = require('connect-flash');
+const flash = require('connect-flash');
+const MongoStore = require('connect-mongo')(session);
+
 
 // Route configs
 var index = require('./routes/index');
@@ -26,7 +28,14 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret:'project-nyx',saveUninitialized: true,resave:true}));
+// app.use(session({secret:'project-nyx',saveUninitialized: true,resave:true}));
+// Due to cluster store sesion data on mongo db
+app.use(session({
+    secret:'project-nyx',
+    saveUninitialized: true,
+    resave:true,
+    store:new MongoStore({url:"mongodb://localhost:27017/project_nyx"}),
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());

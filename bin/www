@@ -4,54 +4,75 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var aria2app = require('../aria2app');
 var debug = require('debug')('nyx:server');
 var http = require('http');
 var database = require('../database/db');
-
+var cluster =require('cluster');
+const numCPU = require('os').cpus().length;
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+const port = normalizePort(process.env.PORT || '3000');
 
 /**
  * Create HTTP server.
+ * Use Cluster for better performance
  */
 
-var server = http.createServer(app);
-var aria2server = http.createServer(aria2app);
+if(cluster.isMaster){
+    debug(`Master ${process.pid} is running`);
 
-/**
- * Create database instant
- * Listen on provided port, on all network interfaces.
- */
-
-database.connect(function (err) {
-    if (err){
-      console.log('Unable to connect MongoDB');
-      process.exit(1);
-    }else{
-        server.listen(port);
-        aria2server.listen(port+1);
+    // Fork works
+    for (let i =0;i<numCPU;i++){
+        cluster.fork();
     }
-});
 
-server.on('error', onError);
-server.on('listening', onListening);
+    cluster.on('exit',(worker,code,signal)=>{
+        debug(`Worker ${worker.process.pid} died.`);
+    });
+}else{
+
+    var app = require('../app');
+    var aria2app = require('../aria2app');
+
+    app.set('port', port);
+
+    var server = http.createServer(app);
+    var aria2server = http.createServer(aria2app);
+
+    /**
+     * Create database instant
+     * Listen on provided port, on all network interfaces.
+     */
+
+    database.connect(function (err) {
+        if (err){
+            debug('Unable to connect MongoDB');
+            process.exit(1);
+        }else{
+            server.listen(port);
+            aria2server.listen(port+1);
+        }
+    });
+
+    server.on('error', onError);
+    server.on('listening', onListening);
 
 
-aria2server.on('error', onError);
-aria2server.on('listening', onListeningAriaServer);
+    aria2server.on('error', onError);
+    aria2server.on('listening', onListeningAriaServer);
+
+    debug(`Worker ${process.pid} start`);
+}
+
 
 /**
  * Normalize a port into a number, string, or false.
  */
 
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  let port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -75,7 +96,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
+  let bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -99,16 +120,16 @@ function onError(error) {
  */
 
 function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
+  let addr = server.address();
+  let bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
 
 function onListeningAriaServer() {
-    var addr = aria2server.address();
-    var bind = typeof addr === 'string'
+    let addr = aria2server.address();
+    let bind = typeof addr === 'string'
         ? 'pipe ' + addr
         : 'port ' + addr.port;
     debug('Listening on ' + bind);

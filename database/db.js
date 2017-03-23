@@ -2,11 +2,12 @@
  * Created by emalsha on 3/18/17.
  */
 
-var mongoClient = require('mongodb').MongoClient;
+let mongoClient = require('mongodb').MongoClient;
 // var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
-var dburl = "mongodb://localhost:27017/project_nyx";
+let dburl = "mongodb://localhost:27017/project_nyx";
+let debug = require('debug')('nyx:database');
 
-var state = {
+let state = {
     db : null,
 };
 
@@ -20,7 +21,7 @@ exports.connect = function (done) {
             return done(err);
         }else{
             state.db = db;
-            console.log("Database connection done...");
+            debug("Connection establish...");
             done();
         }
     })
@@ -39,13 +40,3 @@ exports.close = function (done) {
         })
     }
 };
-
-// module.exports = mongoClient.connect(dburl, function (err, db) {
-//     if (err) {
-//         return console.log('Database connection error !');
-//     }else{
-//         console.log('Database connection done...');
-//         return db;
-//     }
-//
-// });
