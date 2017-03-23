@@ -353,3 +353,8 @@ body{
     font-weight: bold;
 }
 
+/*public file*/
+
+td, th {
+    padding: 8px 5px!important;
+}
