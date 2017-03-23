@@ -4,18 +4,18 @@
  * Module dependencies.
  */
 
-var debug = require('debug')('nyx:server');
+const debug = require('debug')('nyx:server');
 let debugw = require('debug')('nyx:worker');
-var http = require('http');
-var database = require('../database/db');
-var cluster =require('cluster');
+const http = require('http');
+const database = require('../database/db');
+const cluster =require('cluster');
 const numCPU = require('os').cpus().length;
 /**
  * Get port from environment and store in Express.
  */
 
 const port = normalizePort(process.env.PORT || '3000');
-
+let server;
 /**
  * Create HTTP server.
  * Use Cluster for better performance
@@ -34,12 +34,12 @@ if(cluster.isMaster){
     });
 }else{
 
-    var app = require('../app');
+    const app = require('../app');
     // var aria2app = require('../aria2app');
 
     app.set('port', port);
 
-    var server = http.createServer(app);
+    server = http.createServer(app);
     // var aria2server = http.createServer(aria2app);
 
     /**
@@ -128,10 +128,11 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-function onListeningAriaServer() {
-    let addr = aria2server.address();
-    let bind = typeof addr === 'string'
-        ? 'pipe ' + addr
-        : 'port ' + addr.port;
-    debug('Listening on ' + bind);
-}
+//
+// function onListeningAriaServer() {
+//     let addr = aria2server.address();
+//     let bind = typeof addr === 'string'
+//         ? 'pipe ' + addr
+//         : 'port ' + addr.port;
+//     debug('Listening on ' + bind);
+// }

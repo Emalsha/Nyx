@@ -2,21 +2,29 @@
  * Created by emalsha on 3/20/17.
  */
 
-var express = require('express');
-var router = express.Router();
-var netstat = require('net-stat');
-var fixed_array = require('fixed-array');
-var server = express.server;
+const express = require('express');
+const router = express.Router();
+const netstat = require('net-stat');
+const fixed_array = require('fixed-array');
+const server = express.server;
+const os = require('os');
+const debug = require('debug')('nyx:info');
 
-var rxArray = fixed_array(12);
-var txArray = fixed_array(12);
+// Get network interface
+let ifaces = os.networkInterfaces();
+let len = Object.keys(ifaces).length;
+const iface = Object.keys(ifaces)[len-1];
+debug(iface);
+
+let rxArray = fixed_array(12);
+let txArray = fixed_array(12);
 
 setInterval(function () {
-    var rx = netstat.raw().wlp2s0.bytes.receive;
+    letrx = netstat.raw().iface.bytes.receive;
     rx = (rx/(1000*1000*1000));
     rxArray.push(rx);
 
-    var tx = netstat.raw().wlp2s0.bytes.transmit;
+    let tx = netstat.raw().iface.bytes.transmit;
     tx = (tx/(1000*1000*1000));
     txArray.push(tx);
 
@@ -24,7 +32,7 @@ setInterval(function () {
 
 router.get('/network_usage', function(req, res, next) {
 
-    var sendArray = [rxArray,txArray];
+    let sendArray = [rxArray,txArray];
     res.send(sendArray);
 
 });
