@@ -18,6 +18,10 @@ router.get('/publicfile',acl(),function(req,res,next){
     res.render('publicfile',{title:'NYX | Public File'});
 });
 
+router.get('/management',acl(),function(req,res,next){
+    res.render('userManagement',{title:'NYX | User Management'});
+});
+
 router.get('/administration',acl(),function(req,res,next){
   res.render('administrator',{title:'NYX | Administrator'});
 });
