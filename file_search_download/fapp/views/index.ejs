@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nyx</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <!-- <link href="stylesheets/style.css" rel="stylesheet"> -->
+
+  </head>
+  <body>
+    <h1>file seach and download</h1>
+    <h2>check folder exists else create</h2>
+    <form class="" action="/test/submit" method="post">
+      <input type="text" name="id">
+      <button type="submit" name="button">submit</button>
+    </form>
+    <%var b= 678%>
+    <a href="test/<%= b%>">to test</a>
+    <p>file search in a folder,
+       enter folder name(try folder test)</p>
+    <form class="" action="/search/submit" method="post">
+      <input type="text" name="id">
+      <button type="submit" name="button">submit</button>
+    </form>
+
+  </body>

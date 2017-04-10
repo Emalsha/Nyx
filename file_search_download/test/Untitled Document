@@ -1,0 +1,11 @@
+ifconfig|grep wlp1s0 -A 10|tail -n1|awk '{print $2}{print $6}'
+
+
+//loop witha timeout
+ for((a=0;a<10;a++))
+ do 
+	ifconfig|grep wlp1s0 -A 10|tail -n1|awk '{print $2}{print $6}'
+ 	sleep 2 
+done
+
+

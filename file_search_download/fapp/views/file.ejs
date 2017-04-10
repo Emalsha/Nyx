@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pivotal Search</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <!-- <link href="stylesheets/style.css" rel="stylesheet"> -->
+
+  </head>
+  <body>
+    <h1>files in the folder(click to download)</h1>
+    <!-- <p>your id:<%- output %></p> -->
+
+   <%var b= output%>
+   <%var arr = output.split(",")%>
+   <!-- <p><%=arr[1]%></p> -->
+    <% for(var i=0; i<arr.length; i++) {%>
+
+    <p> <a href="/download/<%= arr[i]%>"><%= arr[i]%></a></p>
+
+       <% } %>
+
+  </body>
