@@ -17,7 +17,7 @@ acl.addUserRoles('Sulochana','admin');
 module.exports = function(){
     return function(req,resp,next){
         let u = req.session.passport.user;
-        debug('User '+ req.session.passport.user + ' logged in...');
+        debug('User '+ req.session.passport.user + ' verified.');
         let is = acl.isAllowed(u,'administrator', 'view',function (err, res) {
             resp.locals.isAdmin = res;
             next();

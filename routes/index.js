@@ -8,12 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('login', { title: 'NYX',message:req.flash('error') });
 });
 
-// Register new users
-// router.post('/register',passport.authenticate('local-signup',{
-//     successRedirect:'/users/user',
-//     failureRedirect:'/'
-// })
-// );
 
 let User = require('../model/User');
 
@@ -43,7 +37,6 @@ router.post('/register', function(req, res,done) {
 
         })
 
-
     })
 });
 
@@ -58,7 +51,7 @@ router.post('/login',passport.authenticate('local-signin',{
 
 router.post('/logout',function (req, res) {
     let name = req.user.username;
-    console.log('Loggin out '+req.user.username);
+    debug('Loggin out '+req.user.username);
     req.logout();
     req.flash('error',"You have been logged out.");
     res.redirect('/');
