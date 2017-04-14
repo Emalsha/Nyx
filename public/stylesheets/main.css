@@ -347,9 +347,22 @@ body{
     min-height: 350px !important;
 }
 
+/*dashboard*/
+
+.link-conteiner{
+    margin-top: 6%;
+}
 
 /*Download Requests*/
 .pg_admin_dlreq_headrer{
     font-weight: bold;
 }
+
+/*public file*/
+
+td, th {
+    padding: 8px 5px!important;
+}
+
+
 
