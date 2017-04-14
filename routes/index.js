@@ -37,8 +37,8 @@ router.post('/register', function(req, res,done) {
         }
 
         debug('Trying to authenticate user');
-        passport.authenticate('local')(req,res,function(){
-            req.flash('success',"You are successfully register as "+ user.username) ;
+        passport.authenticate('local-signin')(req,res,function(){
+            req.flash('success',"You are successfully registered") ;
             res.redirect('/users/user');
 
         })
@@ -50,14 +50,10 @@ router.post('/register', function(req, res,done) {
 
 // Send login request throug passport midleware and redirect policy
 router.post('/login',passport.authenticate('local-signin',{
-  successRedirect:'/users/user',
+    successRedirect:'/users/user',
     failureRedirect:'/'
 })
 );
-
-// router.post('/login', passport.authenticate(), function(req, res) {
-//     res.redirect('/');
-// });
 
 
 router.post('/logout',function (req, res) {

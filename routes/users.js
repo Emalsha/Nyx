@@ -7,7 +7,7 @@ var acl = require('../module/acl_fn');
 
 /* GET users listing. */
 router.get('/user',acl(),function(req, res, next) {
-    res.render('user',{title:'NYX | USER'});
+    res.render('user',{title:'NYX | USER',message:req.flash('success')});
 });
 
 router.get('/myfile',acl(),function(req,res,next){

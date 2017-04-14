@@ -8,8 +8,11 @@ let debug = require('debug')('nyx:passport');
 
 let User = require('../model/User');
 
-// passport.use('local-signin',new LocalStrategy(User.authenticate()));
-// passport.use(new LocalStrategy(User.authenticate()));
+// Used to serialize the user
+passport.serializeUser(User.serializeUser());
+
+//Used to deserialize the user
+passport.deserializeUser(User.deserializeUser());
 
 // Use local strategy to signin and signup
 passport.use('local-signin',new LocalStrategy({
@@ -18,16 +21,20 @@ passport.use('local-signin',new LocalStrategy({
     passReqToCallback:true
 },(req,username,password,done)=>{
 
-    User.authenticate()(username,password,(err,user,info)=>{
-
-        debug(info);
+    User.authenticate()(username,password,(err,user)=>{
 
         if(err){
             debug(err);
-            return done(err,null);
+            return done(err);
         }
 
-        return done(null,user);
+        if(!user){
+            req.flash('error','Password or username are incorrect');
+            return done(null,false);
+        }else{
+            return done(null,user);
+        }
+
     });
 }
 ));
@@ -59,8 +66,3 @@ passport.use('local-signin',new LocalStrategy({
 //     })
 // }));
 
-// Used to serialize the user
-passport.serializeUser(User.serializeUser);
-
-//Used to deserialize the user
-passport.deserializeUser(User.deserializeUser);
