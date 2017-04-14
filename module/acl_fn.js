@@ -2,7 +2,7 @@
  * Created by emalsha on 3/21/17.
  */
 
-var acl = require('acl');
+let acl = require('acl');
 
 acl = new acl(new acl.memoryBackend());
 
@@ -15,9 +15,9 @@ acl.addUserRoles('Sulochana','admin');
 
 module.exports = function(){
     return function(req,resp,next){
-        var u = req.session.passport.user.username;
+        let u = req.session.passport.user.username;
         console.log(req.session.passport.user);
-        var is = acl.isAllowed(u,'administrator', 'view',function (err, res) {
+        let is = acl.isAllowed(u,'administrator', 'view',function (err, res) {
             resp.locals.isAdmin = res;
             next();
         });

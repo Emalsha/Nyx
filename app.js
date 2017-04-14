@@ -6,7 +6,8 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
-const passport_fn = require('./module/passport_fn');
+//const passport_fn = require('./module/passport_fn');
+const passport_fn = require('./module/passport_mongoose');
 const flash = require('connect-flash');
 const MongoStore = require('connect-mongo')(session);
 

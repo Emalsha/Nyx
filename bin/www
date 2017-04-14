@@ -1,24 +1,33 @@
 #!/usr/bin/env node
+// const numCPU = require('os').cpus().length;
+// let debugw = require('debug')('nyx:worker');
 
 const debug = require('debug')('nyx:server');
-// let debugw = require('debug')('nyx:worker');
+const debugd = require('debug')('nyx:database');
 const http = require('http');
-const database = require('../database/db');
 const cluster =require('cluster');
-const numCPU = require('os').cpus().length;
+const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 const app = require('../app');
 
 const port = normalizePort(process.env.PORT || '3000');
-var server;
+let server;
 
-database.connect(function (err) {
-    if (err){
-        debug('Unable to connect MongoDB');
+// var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
+let dburl = "mongodb://localhost:27017/project_nyx";
+mongoose.connect(dburl,(err) => {
+    if(err){
+        debugd('Unable to connect Database.');
         process.exit(1);
-    }else{
-        createServer();
     }
 });
+
+let db = mongoose.connection;
+db.on('open',function(){
+    debugd('Database connected.');
+    createServer();
+});
+
 
 function createServer() {
 
