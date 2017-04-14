@@ -30,7 +30,7 @@ router.post('/register', function(req, res,done) {
             res.redirect('/');
         }
 
-        debug('Trying to authenticate user');
+        debug('New user registering.');
         passport.authenticate('local-signin')(req,res,function(){
             req.flash('success',"You are successfully registered") ;
             res.redirect('/users/user');
@@ -49,9 +49,9 @@ router.post('/login',passport.authenticate('local-signin',{
 );
 
 
-router.post('/logout',function (req, res) {
+router.get('/logout',function (req, res) {
     let name = req.user.username;
-    debug('Loggin out '+req.user.username);
+    debug('Logout '+req.user.username);
     req.logout();
     req.flash('error',"You have been logged out.");
     res.redirect('/');
