@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var database = require('../database/db');
-var passport = require('passport');
-var session = require('express-session');
-var acl = require('../module/acl_fn');
+const express = require('express');
+const router = express.Router();
+const database = require('../database/db');
+const passport = require('passport');
+const session = require('express-session');
+const acl = require('../module/acl_fn');
 
 /* GET users listing. */
 router.get('/user',acl(),function(req, res, next) {
@@ -19,7 +19,7 @@ router.get('/publicfile',acl(),function(req,res,next){
 });
 
 router.get('/management',acl(),function(req,res,next){
-    res.render('userManagement',{title:'NYX | User Management'});
+    res.render('userManagement',{title:'NYX | User Management',user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname}});
 });
 
 router.get('/administration',acl(),function(req,res,next){
