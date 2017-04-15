@@ -43,11 +43,13 @@
 
             <!--Header-->
             <div class="row col l12 m12 s12">
-                    <!--Pending download status-->
+                <!--Pending download status-->
                 <div class="col s6 m3 l3 contentbox_mainbox">
-                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads</div>
+                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads
+                    </div>
                     <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">8</div>
-                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72 GB )
+                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72
+                        GB )
                     </div>
                 </div>
 
@@ -55,14 +57,16 @@
                 <div class="col s6 m3 l3 contentbox_mainbox">
                     <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
                     <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">18.72 GB</div>
-                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
+                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads
+                    </div>
                 </div>
 
                 <!--User available disk space status-->
                 <div class="col s6 m3 l3 contentbox_mainbox">
                     <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space</div>
                     <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">11.79 GB</div>
-                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 20.0 GB used
+                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 20.0
+                        GB used
                     </div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress">
@@ -73,9 +77,11 @@
 
                 <!--Download manager up time status-->
                 <div class="col s6 m3 l3 contentbox_mainbox">
-                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager
+                    </div>
                     <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
-                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in 12h
+                    <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in
+                        12h
                         35mins
                     </div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
@@ -115,8 +121,8 @@
                             <canvas id="system_load"></canvas>
                         </div>
                         <!--<div class="col s12 m12 l12">-->
-                            <!--<div class="subsection_title_sub">System Memory</div>-->
-                            <!--<canvas id="system_memory" height="200px" width="100%"></canvas>-->
+                        <!--<div class="subsection_title_sub">System Memory</div>-->
+                        <!--<canvas id="system_memory" height="200px" width="100%"></canvas>-->
                         <!--</div>-->
                     </div>
                     <!--Stats-->
@@ -137,7 +143,7 @@
                     <div class="subsection_title_sub">Download Requests</div>
                     <div class="row">
                         <div class="col s12">
-                            <ul class="collapsible" data-collapsible="accordion">
+                            <ul class="collapsible" data-collapsible="accordion" id="downloadRequestCollapse">
                                 <li class="collapsible-header  grey darken-4">
                                     <div class="collapsible-header  grey darken-4">
                                         <div class="col s4 white-text pg_admin_dlreq_headrer">Title</div>
@@ -146,27 +152,29 @@
                                         <div class="col s4 white-text pg_admin_dlreq_headrer">Tags</div>
                                     </div>
                                 </li>
+
+                                <!--collapse body-->
+                                <% for(let item in downloadRequest) {
+                                    let data = downloadRequest[item];
+                                    let requestedDate = new Date(data['request_date']);
+                                %>
                                 <li>
                                     <div class="collapsible-header">
-                                        <div class="col s4 truncate">Ubuntu 14.02 ISO</div>
-                                        <div class="col s2 truncate">Sulochana Kodituwakku</div>
-                                        <div class="col s2 truncate">Sunday 2017/03/05 11:26:36 PM</div>
+                                        <div class="col s4 truncate"><%= data['link'] %> </div>
+                                        <div class="col s2 truncate"><%= data['request_user'] %></div>
+                                        <div class="col s2 truncate"><%= requestedDate.toISOString() %></div>
                                         <div class="col s4 truncate">
-                                            <div class="chip">
-                                                Ubuntu
-                                            </div>
-                                            <div class="chip">
-                                                FOSS
-                                            </div>
-                                            <div class="chip">
-                                                Linux
-                                            </div>
-                                            <div class="chip">
-                                                OS
-                                            </div>
-                                            <div class="chip">
-                                                This is a long Tag
-                                            </div>
+                                            <%
+                                            var tags = data['tags'];
+                                            if(tags != ""){
+                                                for(var t in tags){
+                                                    if (!tags.hasOwnProperty(t)) continue; %>
+                                                        <div class="chip">
+                                                        <%=tags[t] %>
+                                                        </div>
+                                            <%  }
+                                            } %>
+
                                         </div>
                                     </div>
                                     <div class="collapsible-body">
@@ -328,6 +336,8 @@
                                         </div>
                                     </div>
                                 </li>
+                                <% } %>
+                                <% include element/downloadRequests.ejs %>
 
                             </ul>
                         </div>
@@ -647,7 +657,7 @@
 
 <script>
 
-//    $(".button-collapse").sideNav();
+    //    $(".button-collapse").sideNav();
 
     $('.button-collapse').sideNav({
             menuWidth: 250, // Default is 300
@@ -669,16 +679,16 @@
     $('document').ready(function () {
 
         var optionsNoAnimation = {
-            animation : false,
+            animation: false,
             //Boolean - If we want to override with a hard coded scale
-            scaleOverride : true,
+            scaleOverride: true,
             //** Required if scaleOverride is true **
             //Number - The number of steps in a hard coded scale
-            scaleSteps : 20,
+            scaleSteps: 20,
             //Number - The value jump in the hard coded scale
-            scaleStepWidth : 10,
+            scaleStepWidth: 10,
             //Number - The scale starting value
-            scaleStartValue : 0
+            scaleStartValue: 0
         }
 
         var network_usage_chart = $('#network_usage')[0].getContext('2d');
@@ -687,12 +697,12 @@
             responsive: true,
 
             maintainAspectRatio: false,
-            options:{
-                title:{
-                    display:true,
-                    text:'Last Thirty Minute Network Usage',
-                    fontSize:14,
-                    position:'bottom'
+            options: {
+                title: {
+                    display: true,
+                    text: 'Last Thirty Minute Network Usage',
+                    fontSize: 14,
+                    position: 'bottom'
                 },
                 animation: false,
                 scaleOverride: true,
@@ -709,7 +719,7 @@
                 }
             },
             data: {
-                xLabels:['','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''],
+                xLabels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
                 datasets: [
                     {
                         label: 'Upload',
@@ -722,21 +732,18 @@
             }
         });
 
-        setInterval(function(){
+        setInterval(function () {
             $.ajax({
-                url:'/info/network_usage',
-                dataType:"json",
-                success:function (data) {
+                url: '/info/network_usage',
+                dataType: "json",
+                success: function (data) {
                     network_usage.data.datasets[1].data = data[0]['array'];
                     network_usage.data.datasets[0].data = data[1]['array'];
                     network_usage.update();
                 }
             });
-        },1000*1);
+        }, 1000 * 1);
     });
-
-
-
 
 
     var system_load_chart = $('#system_load')[0].getContext('2d');
@@ -744,12 +751,12 @@
         type: 'line',
         responsive: true,
         maintainAspectRatio: false,
-        options:{
-            title:{
-                display:true,
-                text:'System Load',
-                fontSize:14,
-                position:'bottom',
+        options: {
+            title: {
+                display: true,
+                text: 'System Load',
+                fontSize: 14,
+                position: 'bottom',
             }
         },
         data: {
@@ -814,8 +821,6 @@
             ]
         }
     });
-
-
 
 
 </script>

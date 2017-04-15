@@ -25,4 +25,14 @@ router.post('/request',function(req,res){
 
 });
 
+// router.get('/getall',function (req, res) {
+//     Download.find({},(err,downloads)=>{
+//         if(err){
+//             debug(err);
+//         }
+//         res.contentType('json');
+//         res.send(downloads);
+//     })
+// });
+
 module.exports = router;
