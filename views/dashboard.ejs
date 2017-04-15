@@ -23,7 +23,7 @@
             </div>
             <div class="col s4">
                 <div class="row" style="text-align: center">
-                    <img src="images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                    <img src="/public/images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
                 </div>
             </div>
             <div class="col s4 right-align">
@@ -42,15 +42,7 @@
             </div>
             <% } %>
             <div class="row">
-                <div class="col s12">
-                    <div class="row">
-                        <div class="file-field input-field">
-                            <div>
-                                <input type="text" placeholder="Enter the link here" style="padding: 2px; padding-left: 15px; border: 1px; border-radius:3px; box-shadow: inset 0 0 0 2px #909090;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="row col l12 m12 s12">
                     <!--Pending download status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
@@ -93,6 +85,18 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col l9 m9 s9">
+                            <input type="text" id="down_link" class="validate">
+                            <label for="down_link">Download link</label>
+                        </div>
+                        <div class="input-field col l3 m3 s3">
+                            <button class="waves-effect waves-light btn" id="down_link_btn">Download</button>
+                        </div>
                     </div>
                 </div>
 
@@ -495,6 +499,8 @@
         }
     });
 </script>
+
+<script type="text/javascript" src="../public/javascript/dashboard.js"></script>
 
 </body>
 </html>
