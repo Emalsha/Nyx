@@ -35,7 +35,7 @@ router.post('/register', function(req, res,done) {
         passport.authenticate('local-signin')(req,res,function(){
             acl.addUserRoles(req.user.username,req.user.role);
             req.flash('success',"You are successfully registered") ;
-            res.redirect('/users/user');
+            res.redirect('/users/dashboard');
 
         })
 
@@ -45,7 +45,7 @@ router.post('/register', function(req, res,done) {
 
 // Send login request throug passport midleware and redirect policy
 router.post('/login',passport.authenticate('local-signin',{
-    successRedirect:'/users/user',
+    successRedirect:'/users/dashboard',
     failureRedirect:'/'
 })
 );
