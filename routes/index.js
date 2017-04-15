@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 let passport = require('passport');
 let debug = require('debug')('nyx:route');
+const acl = require('../module/acl_fn').aclobj;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,6 +33,7 @@ router.post('/register', function(req, res,done) {
 
         debug('New user registering.');
         passport.authenticate('local-signin')(req,res,function(){
+            acl.addUserRoles(req.user.username,req.user.role);
             req.flash('success',"You are successfully registered") ;
             res.redirect('/users/user');
 

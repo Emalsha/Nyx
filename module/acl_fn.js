@@ -8,11 +8,13 @@ let debug =require('debug')('nyx:acl');
 acl = new acl(new acl.memoryBackend());
 
 // create roles and give permission
-acl.allow('admin','administration','view');
-acl.allow('user1',['/users/user','/users/myfile','/users/publicfile','/users/help'],['get','post']);
+acl.allow('admin',['/admin/administration','/users'],['get','post','view']);
+acl.allow('user','/users',['get','post']);
+
+// acl.allow('user',['/users/user','/users/myfile','/users/publicfile','/users/help'],['get','post']);
 
 // add users to roles
-acl.addUserRoles('Emalsha', 'user1');
+acl.addUserRoles('Emalsha', 'user');
 acl.addUserRoles('Sulochana','admin');
 
 module.exports.aclobj = acl;
@@ -21,7 +23,7 @@ module.exports.aclfnc = function(){
     return function(req,resp,next){
         let u = req.session.passport.user;
         debug('User '+ req.session.passport.user + ' verifying.');
-        acl.isAllowed(u,'administrator', 'view',function (err, res) {
+        acl.isAllowed(u,'/admin/administration', 'view',function (err, res) {
             resp.locals.isAdmin = res;
             next();
         });

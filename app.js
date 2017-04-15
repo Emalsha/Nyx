@@ -14,6 +14,7 @@ const MongoStore = require('connect-mongo')(session);
 // Route configs
 const index = require('./routes/index');
 const users = require('./routes/users');
+const admin = require('./routes/admin');
 const info = require('./routes/info');
 
 const app = express();
@@ -60,6 +61,7 @@ app.use(function(req,res,next){
 });
 
 app.use('/users', users);
+app.use('/admin',admin);
 app.use('/info',info);
 
 // catch 404 and forward to error handler
