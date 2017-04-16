@@ -21,7 +21,6 @@ router.get('/administration',aclfn,aclf,function(req,res){
         if(err){
             debug(err);
         }
-        debug(downloads);
         res.render('administrator',{title:'NYX | Administrator',user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname},downloadRequest:downloads});
 
     });
