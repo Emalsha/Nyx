@@ -167,10 +167,9 @@
                                             <%
                                             var tags = data['tags'];
                                             if(tags != ""){
-                                                for(var t in tags){
-                                                    if (!tags.hasOwnProperty(t)) continue; %>
+                                                for(let i = 0; i<tags.length;i++){ %>
                                                         <div class="chip">
-                                                        <%=tags[t] %>
+                                                        <%=tags[i] %>
                                                         </div>
                                             <%  }
                                             } %>
