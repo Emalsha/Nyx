@@ -12,9 +12,12 @@ const donwloadSchema = new Schema({
     admin_decision:Boolean,
     admin_decision_date:Date,
     admin:String,
+    admin_note:String,
     md5:String,
     availability:String,
     description:String,
+    priority:Number,
+    state:String,
     tags:Array,
 
 });

@@ -6,7 +6,11 @@ const acl = require('../module/acl_fn').aclobj;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('login', { title: 'NYX',message:req.flash('error') });
+    if(req.isAuthenticated()){
+        res.redirect('/users/dashboard');
+    }else{
+        res.render('login', { title: 'NYX',message:req.flash('error') });
+    }
 });
 
 

@@ -16,3 +16,7 @@
 //         }
 //     })
 // });
+
+$(document).ready(function() {
+    $('s_priority').material_select();
+});

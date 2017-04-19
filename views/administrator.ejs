@@ -98,8 +98,11 @@
                 <div class="col s12">
                     <ul class="tabs">
                         <li class="tab"><a class="red-text darken-4" href="#test1">Statistics</a></li>
-                        <li class="tab"><a class="red-text darken-4" href="#test2"><span class="new badge">4</span>Download
-                                Requests</a></li>
+                        <li class="tab"><a class="red-text darken-4" href="#test2">
+                                <% if(downloadRequest.length){ %>
+                                <span class="new badge"><%=downloadRequest.length%></span>
+                                <%}%>
+                                Download Requests</a></li>
                         <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test4">Member Management</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test5">System Settings</a></li>
@@ -145,7 +148,7 @@
                         <div class="col s12">
                             <ul class="collapsible" data-collapsible="accordion" id="downloadRequestCollapse">
 
-                                <%if(downloadRequest !=""){%>
+                                <% if(downloadRequest != ""){ %>
 
                                 <li class="collapsible-header  grey darken-4">
                                     <div class="collapsible-header  grey darken-4">
@@ -156,11 +159,11 @@
                                     </div>
                                 </li>
 
-                                <%}else{%>
+                                <% }else{ %>
 
-                                <li class="collapsible-header"> No request </li>
+                                <li class="collapsible-header"> No request</li>
 
-                                <%}%>
+                                <% } %>
                                 <!--collapse body-->
                                 <% for(let item in downloadRequest) {
                                     let data = downloadRequest[item];
@@ -170,16 +173,16 @@
                                     <div class="collapsible-header">
                                         <div class="col s4 truncate"><%= data['link'] %> </div>
                                         <div class="col s2 truncate"><%= data['request_user'] %></div>
-                                        <div class="col s2 truncate"><%= requestedDate.toISOString() %></div>
+                                        <div class="col s2 truncate"><%= requestedDate.toDateString() %></div>
                                         <div class="col s4 truncate">
                                             <%
-                                            var tags = data['tags'];
-                                            if(tags != ""){
-                                                for(let i = 0; i<tags.length;i++){ %>
-                                                        <div class="chip">
-                                                        <%=tags[i] %>
-                                                        </div>
-                                            <%  }
+                                                var tags = data['tags'];
+                                            if(tags != ''){
+                                            for(let i = 0; i < tags.length;i++){ %>
+                                            <div class="chip">
+                                                <%=tags[i] %>
+                                            </div>
+                                            <% }
                                             } %>
 
                                         </div>
@@ -193,7 +196,7 @@
                                                 <div class="col s12 l2 truncate contentbox_detail_field">Download Link
                                                 </div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                                    <%= data['link'] %>
                                                 </div>
 
                                                 <div class="col s12 l2 truncate contentbox_detail_field">Reference
@@ -213,13 +216,13 @@
                                                 <div class="col s12 l2 truncate  contentbox_detail_field">Requested
                                                     Date
                                                 </div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    <%= requestedDate.toUTCString() %>
                                                 </div>
 
                                                 <div class="col s12 l2 truncate contentbox_detail_field">Description
                                                 </div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'none' %></div>
 
 
                                                 <div class="col s12 l2 truncate contentbox_detail_field">Description
@@ -239,66 +242,70 @@
                                                             Request
                                                         </div>
                                                         <div class="collapsible-body">
-                                                            <div class="row">
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Tags
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="chips-initial" data-index="0"
-                                                                         data-initialized="true">
-                                                                        <input id="4341c92a-c015-b6bf-22ec-260bed9d54e5"
-                                                                               class="input" placeholder=""
-                                                                               autocomplete="off">
+                                                            <form action="/download/approve" method="post" id="approveForm">
+                                                                <div class="row">
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Tags
                                                                     </div>
-                                                                </div>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
+                                                                        <div class="chips" id="approve_newtags"></div>
+                                                                    </div>
 
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Priority
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="row">
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Priority
+                                                                    </div>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
+                                                                        <div class="row">
+                                                                            <div class="input-field col s12">
+                                                                                <select class="display" id="s_priority" name="priority">
+                                                                                    <option value="" disabled selected>Choose your option</option>
+                                                                                    <option value="1">Priority 1
+                                                                                    </option>
+                                                                                    <option value="2">Priority 2
+                                                                                    </option>
+                                                                                    <option value="3">Priority 3
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Administrator Notes
+                                                                    </div>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
                                                                         <div class="col s12">
-                                                                            <select class="display">
-                                                                                <option value="volvo">Priority 1
-                                                                                </option>
-                                                                                <option value="saab">Priority 2</option>
-                                                                                <option value="opel">Priority 3</option>
-                                                                            </select>
+                                                                            <input placeholder="Notes ..."
+                                                                                   id="admin_notes"
+                                                                                   type="text" class="validate" name="admin_note">
                                                                         </div>
                                                                     </div>
 
-                                                                </div>
-
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Administrator Notes
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="col s12">
-                                                                        <input placeholder="Notes ..." id="first_name"
-                                                                               type="text" class="validate">
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Availability
                                                                     </div>
-                                                                </div>
-
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Availability
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="row" style="padding: 5px">
-                                                                        <div class="col s12">
-                                                                            <div class="switch">
-                                                                                <label>
-                                                                                    Private
-                                                                                    <input type="checkbox">
-                                                                                    <span class="lever"></span>
-                                                                                    Public
-                                                                                </label>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
+                                                                        <div class="row" style="padding: 5px">
+                                                                            <div class="col s12">
+                                                                                <div class="switch">
+                                                                                    <label>
+                                                                                        Private
+                                                                                        <input type="checkbox" id="availablity_switch">
+                                                                                        <span class="lever"></span>
+                                                                                        Public
+                                                                                    </label>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <input type="hidden" id="availability" name="availability">
+                                                                    <input type="hidden" id="tag_values" name="new_tags">
+                                                                    <input type="hidden" value="<%=data['_id']%>" name="download_id" >
+                                                                    <button class="waves-effect waves-light btn green" id="app_btn">Approve
+                                                                        Request</button>
                                                                 </div>
-                                                                <a class="waves-effect waves-light btn green">Approve
-                                                                    Request</a>
-                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -344,7 +351,6 @@
                                     </div>
                                 </li>
                                 <% } %>
-
 
                             </ul>
                         </div>
@@ -674,9 +680,27 @@
 
     $(document).ready(function () {
         $('ul.tabs').tabs();
+
+        $('#approve_newtags').material_chip()
+
     });
 
     $('.chips').material_chip();
+
+    $('#approveForm').submit(function(){
+//        Get tag values
+        let ar =  $('#approve_newtags').material_chip('data');
+        let new_array = [];
+        for(let i=0; i<ar.length;i++){
+            new_array.push(ar[i].tag);
+        }
+        $('#tag_values').val(new_array);
+
+//        Get switch value
+        let a = $('#availablity_switch').prop('checked');
+        $('#availability').val(a);
+
+    });
 
 
 </script>

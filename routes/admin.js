@@ -17,7 +17,7 @@ router.get('/management',aclfn,aclf,function(req,res){
 });
 
 router.get('/administration',aclfn,aclf,function(req,res){
-    Download.find({},(err,downloads)=>{
+    Download.find({state:'pending'},(err,downloads)=>{
         if(err){
             debug(err);
         }
