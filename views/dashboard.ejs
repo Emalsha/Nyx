@@ -23,7 +23,8 @@
             </div>
             <div class="col s4">
                 <div class="row" style="text-align: center">
-                    <img src="/public/images/logo_small.png" style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                    <img src="/public/images/logo_small.png"
+                         style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
                 </div>
             </div>
             <div class="col s4 right-align">
@@ -32,13 +33,12 @@
         </div>
 
 
-
         <div class="row main_container">
 
             <!--Show flash massages-->
-            <% if(message!=''){ %>
-            <div class="alert-success col l12" >
-                <p><%=message %> </p>
+            <% if(message != ''){ %>
+            <div class="alert-success col l12">
+                <p><%= message %> </p>
             </div>
             <% } %>
             <div class="row">
@@ -46,24 +46,32 @@
                 <div class="row col l12 m12 s12">
                     <!--Pending download status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
-                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending
+                            Downloads
+                        </div>
                         <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">8</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72 GB )
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active (
+                            2.72 GB )
                         </div>
                     </div>
 
                     <!--Monthly usage status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
-                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage
+                        </div>
                         <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">18.72 GB</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6
+                            Downloads
+                        </div>
                     </div>
 
                     <!--User available disk space status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
-                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space
+                        </div>
                         <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">11.79 GB</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 20.0 GB used
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of
+                            20.0 GB used
                         </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress">
@@ -74,9 +82,12 @@
 
                     <!--Download manager up time status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
-                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download
+                            Manager
+                        </div>
                         <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in 12h
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online
+                            in 12h
                             35mins
                         </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
@@ -88,6 +99,7 @@
                     </div>
                 </div>
 
+                <!--Download link div-->
                 <div class="col s12">
                     <div class="row">
                         <div class="input-field col l9 m9 s9">
@@ -100,6 +112,7 @@
                     </div>
                 </div>
 
+                <!--Navigation bar-->
                 <div class="col s12">
                     <ul class="tabs">
                         <li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>
@@ -110,11 +123,16 @@
                         <li class="tab"><a class="red-text darken-4" href="#test5">Recent public downloads</a></li>
                     </ul>
                 </div>
+
+                <!--All downloads -->
                 <div id="test1" class="col l12 m12 s12">
                     <div class="row">
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class="new badge light-green accent-3 black-text" data-badge-caption="Downloading 32%"></span><i class="material-icons">library_books</i>Ubuntu 16.04 ISO Image</div>
+                                <div class="collapsible-header"><span class="new badge light-green accent-3 black-text"
+                                                                      data-badge-caption="Downloading 32%"></span><i
+                                            class="material-icons">library_books</i>Ubuntu 16.04 ISO Image
+                                </div>
                                 <div class="collapsible-body">
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
@@ -144,27 +162,40 @@
                                                     <h5>Download Details</h5>
                                                 </div>
                                                 <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved By</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana Kodituwakku</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana
+                                                    Kodituwakku
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Started Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    056f32ee5cf49404607e368bd8d3f2af
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Availability</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
 
-                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes</div>
+                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes
+                                                </div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Description</div>
@@ -186,13 +217,15 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col s12 right-align">
-                                                    <a class="waves-effect waves-light btn green white-text"><i class="material-icons left">play_arrow</i>Resume</a>
-                                                    <a class="waves-effect waves-light btn yellow black-text"><i class="material-icons left ">pause</i>Pause</a>
-                                                    <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                                                    <a class="waves-effect waves-light btn green white-text"><i
+                                                                class="material-icons left">play_arrow</i>Resume</a>
+                                                    <a class="waves-effect waves-light btn yellow black-text"><i
+                                                                class="material-icons left ">pause</i>Pause</a>
+                                                    <a class="waves-effect waves-light btn red white-text"><i
+                                                                class="material-icons left">not_interested</i>Cancel</a>
                                                 </div>
                                             </div>
                                         </div>
-
 
 
                                     </div>
@@ -201,12 +234,16 @@
                             </li>
 
                             <li>
-                                <div class="collapsible-header"><span class="new badge  yellow accent-3 black-text" data-badge-caption="Approval Pending"></span><i class="material-icons">place</i>Mint ISO Image</div>
+                                <div class="collapsible-header"><span class="new badge  yellow accent-3 black-text"
+                                                                      data-badge-caption="Approval Pending"></span><i
+                                            class="material-icons">place</i>Mint ISO Image
+                                </div>
                                 <div class="collapsible-body">
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main amber-text accent-4">Approval Pending</div>
+                                            <div class="col s12 contentbox_main amber-text accent-4">Approval Pending
+                                            </div>
                                             <div class="col s12 contentbox_txt_down">3h 53mins</div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
@@ -226,13 +263,19 @@
                                             <h5>Download Details</h5>
                                         </div>
                                         <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05
+                                            11:26:36 PM
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            056f32ee5cf49404607e368bd8d3f2af
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Availability</div>
                                         <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
@@ -257,7 +300,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col s12 right-align">
-                                            <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                                            <a class="waves-effect waves-light btn red white-text"><i
+                                                        class="material-icons left">not_interested</i>Cancel</a>
                                         </div>
                                     </div>
 
@@ -265,7 +309,10 @@
                             </li>
 
                             <li>
-                                <div class="collapsible-header"><span class="new badge  red darken-1 white-text" data-badge-caption="Rejected"></span><i class="material-icons">filter_drama</i>Batman vs. Superman</div>
+                                <div class="collapsible-header"><span class="new badge  red darken-1 white-text"
+                                                                      data-badge-caption="Rejected"></span><i
+                                            class="material-icons">filter_drama</i>Batman vs. Superman
+                                </div>
                                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                             </li>
 
@@ -276,11 +323,22 @@
                         </ul>
                     </div>
                 </div>
+
+                <!--Download in progress div-->
                 <div id="test2" class="col l12 m12 s12">
                     <div class="row">
+                        <%
+                        if(inprogress){
+                        for(let i = 0; i < inprogress.length;i++){
+                            let data = inprogress[i];
+                        %>
+
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
-                                <div class="collapsible-header"><span class="new badge light-green accent-3 black-text" data-badge-caption="Downloading 32%"></span><i class="material-icons">library_books</i>Ubuntu 16.04 ISO Image</div>
+                                <div class="collapsible-header"><span class="new badge light-green accent-3 black-text"
+                                                                      data-badge-caption="Downloading 32%"></span><i
+                                            class="material-icons">library_books</i>Ubuntu 16.04 ISO Image
+                                </div>
                                 <div class="collapsible-body">
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
@@ -310,27 +368,40 @@
                                                     <h5>Download Details</h5>
                                                 </div>
                                                 <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved By</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana Kodituwakku</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana
+                                                    Kodituwakku
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Started Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
+                                                    2017/03/05 11:26:36 PM
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    056f32ee5cf49404607e368bd8d3f2af
+                                                </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Availability</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
 
-                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes</div>
+                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes
+                                                </div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Description</div>
@@ -352,13 +423,15 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col s12 right-align">
-                                                    <a class="waves-effect waves-light btn green white-text"><i class="material-icons left">play_arrow</i>Resume</a>
-                                                    <a class="waves-effect waves-light btn yellow black-text"><i class="material-icons left ">pause</i>Pause</a>
-                                                    <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                                                    <a class="waves-effect waves-light btn green white-text"><i
+                                                                class="material-icons left">play_arrow</i>Resume</a>
+                                                    <a class="waves-effect waves-light btn yellow black-text"><i
+                                                                class="material-icons left ">pause</i>Pause</a>
+                                                    <a class="waves-effect waves-light btn red white-text"><i
+                                                                class="material-icons left">not_interested</i>Cancel</a>
                                                 </div>
                                             </div>
                                         </div>
-
 
 
                                     </div>
@@ -366,19 +439,36 @@
                                 </div>
                             </li>
                         </ul>
+
+                        <% }
+                        } %>
                     </div>
                 </div>
+
+                <!--pending downloads-->
                 <div id="test3" class="col l12 m12 s12">
                     <div class="row">
+                        <%
+                        if(pending){
+                        for(let i = 0; i < pending.length;i++){
+                            let data = pending[i];
+                        %>
+
                         <ul class="collapsible" data-collapsible="accordion">
 
                             <li>
-                                <div class="collapsible-header"><span class="new badge  yellow accent-3 black-text" data-badge-caption="Approval Pending"></span><i class="material-icons">place</i>Mint ISO Image</div>
+                                <div class="collapsible-header">
+                                    <span class="new badge  yellow accent-3 black-text"
+                                          data-badge-caption="Approval Pending"></span>
+                                    <i class="material-icons">place</i>
+                                    <%= data['link'] %>
+                                </div>
                                 <div class="collapsible-body">
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main amber-text accent-4">Approval Pending</div>
+                                            <div class="col s12 contentbox_main amber-text accent-4">Approval Pending
+                                            </div>
                                             <div class="col s12 contentbox_txt_down">3h 53mins</div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
@@ -398,58 +488,78 @@
                                             <h5>Download Details</h5>
                                         </div>
                                         <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['link'] %>
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <% let rdata = new Date(data['request_date']); %>
+                                            <%= rdata.toDateString() %>
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            056f32ee5cf49404607e368bd8d3f2af
+                                        </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Availability</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] || 'Not set' %></div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Description</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'none' %></div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Tags</div>
                                         <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%
+                                                var tags = data['tags'];
+                                            if(tags != ''){
+                                            for(let i = 0; i < tags.length;i++){ %>
                                             <div class="chip">
-                                                ubuntu
+                                                <%= tags[i] %>
                                             </div>
-                                            <div class="chip">
-                                                linux
-                                            </div>
-                                            <div class="chip">
-                                                foss
-                                            </div>
+                                            <% }
+                                            } %>
+
                                         </div>
 
 
                                     </div>
                                     <div class="row">
                                         <div class="col s12 right-align">
-                                            <a class="waves-effect waves-light btn red white-text"><i class="material-icons left">not_interested</i>Cancel</a>
+                                            <a class="waves-effect waves-light btn red white-text"><i
+                                                        class="material-icons left">not_interested</i>Cancel</a>
                                         </div>
                                     </div>
 
                                 </div>
                             </li>
                         </ul>
+
+                        <%
+                        }
+                        } %>
                     </div>
                 </div>
+
+                <!--Rejected download-->
                 <div id="test4" class="col l12 m12 s12">
                     <div class="row">
                         <ul class="collapsible" data-collapsible="accordion">
 
                             <li>
-                                <div class="collapsible-header"><span class="new badge  red darken-1 white-text" data-badge-caption="Rejected"></span><i class="material-icons">filter_drama</i>Batman vs. Superman</div>
+                                <div class="collapsible-header"><span class="new badge  red darken-1 white-text"
+                                                                      data-badge-caption="Rejected"></span><i
+                                            class="material-icons">filter_drama</i>Batman vs. Superman
+                                </div>
                                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                             </li>
 
                         </ul>
                     </div>
                 </div>
+
+                <!--Recent public downlaod-->
                 <div id="test5" class="col l12 m12 s12">
                     <div class="row">
                         <ul class="collapsible" data-collapsible="accordion">
@@ -460,12 +570,12 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
 
     </div>
 </div>
-
 
 
 <!--Import footer part-->
@@ -490,7 +600,7 @@
         responsive: true,
         maintainAspectRatio: false,
         data: {
-            labels: ['10', '20', '30', '40', '50', '60', '70','80','90'],
+            labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90'],
             datasets: [{
                 label: 'Download Speed',
                 data: [900, 1024, 500, 247, 304, 125, 420],

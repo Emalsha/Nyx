@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const acl = require('../module/acl_fn');
+const Download = require('../model/Download');
+const debug = require('debug')('nyx:userRoute');
 
 
 let aclf = acl.aclfnc();
@@ -8,7 +10,20 @@ let aclfn = acl.aclobj.middleware(1,(req,res)=>{return req.user.username});
 
 /* GET users listing. */
 router.get('/dashboard',aclfn,aclf,function(req, res) {
-    res.render('dashboard',{title:'NYX | Dashboard',message:req.flash('success'),user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname}});
+    Download.find({request_user:req.user.username,state:'pending'})
+        .then((pendingDonwload)=>{
+            let result = [];
+            return Download.find({request_user:req.user.username,state:'approved'})
+                .then((approvedList)=>{
+                    return [pendingDonwload,approvedList];
+                })
+        })
+        .then((result)=>{
+            let pendingDonwload = result[0];
+            let approvedList = result[1];
+            res.render('dashboard',{title:'NYX | Dashboard',message:req.flash('success'),user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname},pending:pendingDonwload,inprogress:approvedList});
+        });
+
 });
 
 router.get('/myfile',aclfn,aclf,function(req,res){
