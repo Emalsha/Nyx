@@ -56,7 +56,6 @@ router.post('/login',passport.authenticate('local-signin',{
 
 
 router.get('/logout',function (req, res) {
-    let name = req.user.username;
     debug('Logout '+req.user.username);
     req.logout();
     req.flash('error',"You have been logged out.");

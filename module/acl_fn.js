@@ -16,6 +16,7 @@ acl.allow('user','/users',['get','post']);
 // add users to roles
 acl.addUserRoles('Emalsha', 'user');
 acl.addUserRoles('Sulochana','admin');
+acl.addUserRoles('nyxsys','admin');
 
 module.exports.aclobj = acl;
 
