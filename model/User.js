@@ -12,6 +12,7 @@ const userSchema = new Schema({
     username:{type:String, required:true, unique:true},
     registrationNumber:String,
     indexNumber:Number,
+    email:String,
     role:String,
     created_at:Date,
     updated_at:Date
@@ -20,4 +21,3 @@ const userSchema = new Schema({
 userSchema.plugin(passportlocalmongoose,{hashField:'password'});
 
 module.exports = mongoose.model('User',userSchema);
-
