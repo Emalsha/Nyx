@@ -1,0 +1,34 @@
+{
+  "name": "x0popup",
+  "description": "An alternative to original alert, confirm and prompt",
+  "main": "src/js/x0popup.js",
+  "authors": [
+    "Gao Sun"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "x0popup",
+    "popup"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "http://gao-sun.github.io/x0popup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "ac8fee89d1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ac8fee89d114528985f4b01acb51830f62d4c549"
+  },
+  "_source": "https://github.com/gao-sun/x0popup.git",
+  "_target": "*",
+  "_originalSource": "x0popup",
+  "_direct": true
+}
