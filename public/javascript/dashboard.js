@@ -18,19 +18,19 @@ $('#down_link_btn').click(function () {
                         method: 'POST',
                         success: function (res) {
                             if (res.data) {
-                                alert('New download request added...');
+                                x0p('Success','New download request add.','ok');
                             }
 
                         }
                     });
                 } else {
-                    alert('URL not exist.');
+                    x0p('Error','URL not exist.','error');
                 }
             }
         );
 
     } else {
-        alert('Please add url..');
+        x0p('Error','Please add URL.','error');
     }
 
 });
