@@ -65,35 +65,38 @@
             <div id="tab1"  class="col s10 m10 l10"> <!-- tab1 content -->
               <div class="row" >
                     <h6>Add new User<h6>
-                <form class="col s12">
 
+                <form class="col s12" action="/admin/register" method="post">
                 <div class="row" >
                 <div class="input-field col s6">
-                  <input id="Registration Number"  type="text" class="validate">
-                  <label for="Registration Number">Registration Number</label>
+                 <input id="username" name="username" type="text" class="validate">
+                  <label for="username">Username</label>
                 </div>
                 </div>
 
                 <div class="row">
                 <div class="input-field col s6">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" name="email" type="email" class="validate">
                   <label for="email">Email</label>
                 </div>
                 </div>
 
                 <div class="row">
                 <div class="input-field col s6">
-                  <input id="password" type="password" class="validate">
+                  <input id="password" name="password" type="password" class="validate">
                   <label for="password">Password</label>
                 </div>
                 </div>
 
 
-                <a class="waves-effect waves-light btn align="center"">Create Account</a>
+            <!--    <a class="waves-effect waves-light btn align="center"" type="submit" name="action">Create Account</a>-->
+                <button class="btn waves-effect grey darken-4" type="submit" name="action">Create Account
+                                        <i class="material-icons right">send</i>
+                </button>
                 </form>
                 </div>
 
-            </div> <!-- end of the content tab2 content -->
+            </div> <!-- end of the content of member management tab-->
              <div id="tab2" class="col s12">Test 2</div>
              <div id="tab3" class="col s12">Test 3</div>
 
