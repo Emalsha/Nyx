@@ -327,13 +327,13 @@
                 <!--Download in progress div-->
                 <div id="test2" class="col l12 m12 s12">
                     <div class="row">
-                        <%
-                        if(inprogress){
-                        for(let i = 0; i < inprogress.length;i++){
-                            let data = inprogress[i];
-                        %>
 
                         <ul class="collapsible" data-collapsible="accordion">
+                            <%
+                            if(inprogress){
+                            for(let i = 0; i < inprogress.length;i++){
+                                let data = inprogress[i];
+                            %>
                             <li>
                                 <div class="collapsible-header"><span class="new badge light-green accent-3 black-text"
                                                                       data-badge-caption="Downloading 32%"></span><i
@@ -438,23 +438,25 @@
 
                                 </div>
                             </li>
+                            <% }
+                            } %>
                         </ul>
 
-                        <% }
-                        } %>
+
                     </div>
                 </div>
 
                 <!--pending downloads-->
                 <div id="test3" class="col l12 m12 s12">
                     <div class="row">
-                        <%
-                        if(pending){
-                        for(let i = 0; i < pending.length;i++){
-                            let data = pending[i];
-                        %>
+
 
                         <ul class="collapsible" data-collapsible="accordion">
+                            <%
+                            if(pending){
+                            for(let i = 0; i < pending.length;i++){
+                                let data = pending[i];
+                            %>
 
                             <li>
                                 <div class="collapsible-header">
@@ -534,11 +536,10 @@
 
                                 </div>
                             </li>
+                            <%
+                            }
+                            } %>
                         </ul>
-
-                        <%
-                        }
-                        } %>
                     </div>
                 </div>
 
@@ -547,13 +548,94 @@
                     <div class="row">
                         <ul class="collapsible" data-collapsible="accordion">
 
+                            <%
+                            if(rejected){
+                            for(let i = 0; i < rejected.length;i++){
+                                let data = rejected[i];
+                            %>
+
                             <li>
                                 <div class="collapsible-header"><span class="new badge  red darken-1 white-text"
                                                                       data-badge-caption="Rejected"></span><i
-                                            class="material-icons">filter_drama</i>Batman vs. Superman
+                                            class="material-icons">filter_drama</i> <%= data['link'] %>
                                 </div>
-                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">Status</div>
+                                            <div class="col s12 contentbox_main red-text accent-4">Rejected</div>
+                                            <div class="col s12 contentbox_txt_down">By <%= data['admin'] %></div>
+                                        </div>
+                                        <div class="col s12 l8 contentbox">
+                                            <div class="col s12 contentbox_reject_title truncate">This File is
+                                                <%= data['reject_note'] %>.
+                                            </div>
+                                            <div class="col s12 contentbox_txt_down"><%= data['admin_note'] %>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <span class="subsection_title_sub no_padding">Download Details</span>
+                                        </div>
+                                        <div class="col s12 l2 contentbox_detail_field">Download Link</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['link'] %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['request_date'].toDateString() %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Rejected Date</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['admin_decision_date'].toDateString() %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Rejection Reason</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['reject_note'] %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">MD5</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            056f32ee5cf49404607e368bd8d3f2af
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Availability</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] || 'Not set' %>  </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Description</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'None' %></div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Tags</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%
+                                                var tags = data['tags'];
+                                            if(tags != ''){
+                                            for(let i = 0; i < tags.length;i++){ %>
+                                            <div class="chip">
+                                                <%= tags[i] %>
+                                            </div>
+                                            <% }
+                                            } %>
+                                            s
+                                        </div>
+
+
+                                    </div>
+                                    <!--<div class="row">-->
+                                    <!--<div class="col s12 right-align">-->
+                                    <!--<a class="waves-effect waves-light btn blue white-text"><i-->
+                                    <!--class="material-icons left">not_interested</i>Dismiss</a>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                </div>
                             </li>
+                            <%
+                            }
+                            } %>
 
                         </ul>
                     </div>

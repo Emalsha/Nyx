@@ -100,8 +100,8 @@
                         <li class="tab"><a class="red-text darken-4" href="#test1">Statistics</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test2">
                                 <% if(downloadRequest.length){ %>
-                                <span class="new badge"><%=downloadRequest.length%></span>
-                                <%}%>
+                                <span class="new badge"><%= downloadRequest.length %></span>
+                                <% } %>
                                 Download Requests</a></li>
                         <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test4">Member Management</a></li>
@@ -180,7 +180,7 @@
                                             if(tags != ''){
                                             for(let i = 0; i < tags.length;i++){ %>
                                             <div class="chip">
-                                                <%=tags[i] %>
+                                                <%= tags[i] %>
                                             </div>
                                             <% }
                                             } %>
@@ -241,8 +241,10 @@
                                                         <div class="collapsible-header green"><i class="material-icons">done</i>Accept
                                                             Request
                                                         </div>
+                                                        <!--Approve form-->
                                                         <div class="collapsible-body">
-                                                            <form action="/download/approve" method="post" id="approveForm">
+                                                            <form action="/download/approve" method="post"
+                                                                  id="approveForm">
                                                                 <div class="row">
                                                                     <div class="col s12 truncate contentbox_detail_field">
                                                                         Tags
@@ -257,8 +259,11 @@
                                                                     <div class="col s12 truncate  contentbox_detail_value">
                                                                         <div class="row">
                                                                             <div class="input-field col s12">
-                                                                                <select class="display" id="s_priority" name="priority">
-                                                                                    <option value="" disabled selected>Choose your option</option>
+                                                                                <select class="display" id="s_priority"
+                                                                                        name="priority">
+                                                                                    <option value="" disabled selected>
+                                                                                        Choose your option
+                                                                                    </option>
                                                                                     <option value="1">Priority 1
                                                                                     </option>
                                                                                     <option value="2">Priority 2
@@ -278,7 +283,8 @@
                                                                         <div class="col s12">
                                                                             <input placeholder="Notes ..."
                                                                                    id="admin_notes"
-                                                                                   type="text" class="validate" name="admin_note">
+                                                                                   type="text" class="validate"
+                                                                                   name="admin_note">
                                                                         </div>
                                                                     </div>
 
@@ -291,7 +297,8 @@
                                                                                 <div class="switch">
                                                                                     <label>
                                                                                         Private
-                                                                                        <input type="checkbox" id="availablity_switch">
+                                                                                        <input type="checkbox"
+                                                                                               id="availablity_switch">
                                                                                         <span class="lever"></span>
                                                                                         Public
                                                                                     </label>
@@ -299,11 +306,16 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <input type="hidden" id="availability" name="availability">
-                                                                    <input type="hidden" id="tag_values" name="new_tags">
-                                                                    <input type="hidden" value="<%=data['_id']%>" name="download_id" >
-                                                                    <button class="waves-effect waves-light btn green" id="app_btn">Approve
-                                                                        Request</button>
+                                                                    <input type="hidden" id="availability"
+                                                                           name="availability">
+                                                                    <input type="hidden" id="tag_values"
+                                                                           name="new_tags">
+                                                                    <input type="hidden" value="<%= data['_id'] %>"
+                                                                           name="download_id">
+                                                                    <button class="waves-effect waves-light btn green"
+                                                                            id="app_btn">Approve
+                                                                        Request
+                                                                    </button>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -312,36 +324,47 @@
                                                         <div class="collapsible-header red"><i class="material-icons">not_interested</i>Reject
                                                             Request
                                                         </div>
+
+                                                        <!--Reject form-->
                                                         <div class="collapsible-body">
-                                                            <div class="row">
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Reason to Reject
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="row">
+                                                            <form action="/download/reject" method="post"
+                                                                  id="rejectForm" onsubmit="return rejectConfirm();">
+                                                                <div class="row">
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Reason to Reject
+                                                                    </div>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
+                                                                        <div class="row">
+                                                                            <div class="col s12">
+                                                                                <select class="display" name="reason" required>
+                                                                                    <option value="">Select reason</option>
+                                                                                    <option value="Not appropriate">Not appropriate
+                                                                                    </option>
+                                                                                    <option value="Already downloaded">Already downloaded
+                                                                                    </option>
+                                                                                    <option value="Incorrect file">Incorrect file
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col s12 truncate contentbox_detail_field">
+                                                                        Administrator Notes
+                                                                    </div>
+                                                                    <div class="col s12 truncate  contentbox_detail_value">
                                                                         <div class="col s12">
-                                                                            <select class="display">
-                                                                                <option value="volvo">Reason 1</option>
-                                                                                <option value="saab">Reason 2</option>
-                                                                                <option value="opel">Reason 3</option>
-                                                                            </select>
+                                                                            <input type="hidden" value="<%= data['_id'] %>"
+                                                                                   name="download_id">
+                                                                            <input placeholder="Notes ..." id="rejectNote"
+                                                                                   type="text" class="validate" name="admin_note">
                                                                         </div>
                                                                     </div>
-
+                                                                    <button class="waves-effect waves-light btn red">Reject
+                                                                        Request</button>
                                                                 </div>
-
-                                                                <div class="col s12 truncate contentbox_detail_field">
-                                                                    Administrator Notes
-                                                                </div>
-                                                                <div class="col s12 truncate  contentbox_detail_value">
-                                                                    <div class="col s12">
-                                                                        <input placeholder="Notes ..." id="sadsad"
-                                                                               type="text" class="validate">
-                                                                    </div>
-                                                                </div>
-                                                                <a class="waves-effect waves-light btn red">Reject
-                                                                    Request</a>
-                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -670,8 +693,6 @@
 
 <script>
 
-    //    $(".button-collapse").sideNav();
-
     $('.button-collapse').sideNav({
             menuWidth: 250, // Default is 300
             edge: 'left', // Choose the horizontal origin
@@ -680,18 +701,17 @@
 
     $(document).ready(function () {
         $('ul.tabs').tabs();
-
         $('#approve_newtags').material_chip()
-
     });
 
     $('.chips').material_chip();
 
-    $('#approveForm').submit(function(){
+//    Approve form
+    $('#approveForm').submit(function () {
 //        Get tag values
-        let ar =  $('#approve_newtags').material_chip('data');
+        let ar = $('#approve_newtags').material_chip('data');
         let new_array = [];
-        for(let i=0; i<ar.length;i++){
+        for (let i = 0; i < ar.length; i++) {
             new_array.push(ar[i].tag);
         }
         $('#tag_values').val(new_array);
@@ -702,6 +722,36 @@
 
     });
 
+//    Reject form
+    let rejectConfirm = function () {
+
+        x0p({
+            title:"Confirm Reject",
+            text:'Reject Download Request.',
+            icon:'warning',
+            type:'warning',
+            animationType:'fadeIn',
+            button:[
+                {
+                    type:'warning',
+                    text:'Reject',
+                    showLoading:true
+                },
+                {
+                    type:'cancel'
+                }
+            ]
+        },function(data){
+            if(data){
+                console.log(data);
+                console.log(data === 'warning');
+                if(data === 'warning'){
+                    document.getElementById('rejectForm').submit();
+                }
+            }
+        });
+        return false;
+    };
 
 </script>
 

@@ -13,6 +13,7 @@ const donwloadSchema = new Schema({
     admin_decision_date:Date,
     admin:String,
     admin_note:String,
+    reject_note:String,
     md5:String,
     availability:String,
     description:String,

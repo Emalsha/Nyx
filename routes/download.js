@@ -26,6 +26,7 @@ router.post('/request',function(req,res){
 
 });
 
+// Approve download request handler
 router.post('/approve',function(req,res){
 
     Download.findById(req.body.download_id,function(err,download){
@@ -65,6 +66,41 @@ router.post('/approve',function(req,res){
             }
 
             res.send('yeh');
+        });
+
+    })
+
+});
+
+// Reject download request handler
+router.post('/reject',function(req,res){
+
+    Download.findById(req.body.download_id,function(err,download){
+        if(err) {
+            debug(err);
+        }
+
+
+        if(req.body.reason){
+            download.reject_note = req.body.reason;
+        }
+
+        if(req.body.admin_note){
+            download.admin_note = req.body.admin_note;
+        }
+
+        download.admin = req.user.username;
+        download.admin_decision = false;
+        download.admin_decision_date = new Date();
+        download.state = 'rejected';
+
+        debug(download);
+        download.save(function (err) {
+            if(err){
+                debug(err);
+            }
+
+            res.send('rejected');
         });
 
     })
