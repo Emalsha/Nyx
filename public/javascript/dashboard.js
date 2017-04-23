@@ -19,6 +19,7 @@ $('#down_link_btn').click(function () {
                         success: function (res) {
                             if (res.data) {
                                 x0p('Success','New download request add.','ok');
+
                             }
 
                         }
