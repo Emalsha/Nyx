@@ -33,21 +33,7 @@ $('#down_link_btn').click(function () {
                     $('#url_hi').val(link);
                     $('#url').val(link);
                     $('#url_info').modal('open');
-                    // $.ajax({
-                    //     url: '/download/request',
-                    //     dataType: 'json',
-                    //     data: {
-                    //         link: link
-                    //     },
-                    //     method: 'POST',
-                    //     success: function (res) {
-                    //         if (res.data) {
-                    //             x0p('Success','New download request add.','ok');
-                    //
-                    //         }
-                    //
-                    //     }
-                    // });
+
                 } else {
                     x0p('Error','URL not exist.','error');
                 }

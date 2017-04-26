@@ -46,23 +46,6 @@ router.post('/request',function(req,res){
     })
 
 });
-// router.post('/request',function(req,res){
-//
-//     let newDownload = new Download({
-//         link:req.body.link,
-//         request_date:new Date(),
-//         request_user:req.user.username,
-//         state:'pending',
-//     });
-//
-//     newDownload.save(function(err){
-//         if(err){ debug(err) };
-//         res.contentType('json');
-//         res.send({data:JSON.stringify(true)});
-//
-//     })
-//
-// });
 
 // Approve download request handler
 router.post('/approve',function(req,res){
