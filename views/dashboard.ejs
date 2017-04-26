@@ -49,9 +49,10 @@
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending
                             Downloads
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">8</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active (
-                            2.72 GB )
+                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text"><%= pending.length || 0 %></div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2"><%= inprogress.length || 0 %>
+                            Active (
+                            0.00 GB )
                         </div>
                     </div>
 
@@ -59,7 +60,7 @@
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">18.72 GB</div>
+                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">00.00 GB</div>
                         <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6
                             Downloads
                         </div>
@@ -69,7 +70,7 @@
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">11.79 GB</div>
+                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">00.00 GB</div>
                         <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of
                             20.0 GB used
                         </div>
@@ -86,9 +87,15 @@
                             Manager
                         </div>
                         <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
+                        <% var due = new Date()
+                        var beg = new Date(94,2,24,18,00,00,00);
+
+                        var rh = beg.getHours() - due.getHours();
+                        var rm = beg.getMinutes() - due.getMinutes();
+                        %>
                         <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online
-                            in 12h
-                            35mins
+                            in <%=rh%>h
+                                <%=rm%>mins
                         </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress deep-orange  lighten-4">
@@ -337,7 +344,7 @@
                             <li>
                                 <div class="collapsible-header"><span class="new badge light-green accent-3 black-text"
                                                                       data-badge-caption="Downloading 32%"></span><i
-                                            class="material-icons">library_books</i>Ubuntu 16.04 ISO Image
+                                            class="material-icons">library_books</i><%= data['link'] %>
                                 </div>
                                 <div class="collapsible-body">
                                     <div class="row">
@@ -369,22 +376,24 @@
                                                 </div>
                                                 <div class="col s12 l2 contentbox_detail_field">Download Link</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                                    <%= data['link'] %>
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    <% let rdata = new Date(data['request_date']); %>
+                                                    <%= rdata.toDateString() %>
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    <% let adata = new Date(data['admin_decision_date']); %>
+                                                    <%= adata.toDateString() %>
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Approved By</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana
-                                                    Kodituwakku
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    <%= data['admin'] %>
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Started Date</div>
@@ -398,26 +407,26 @@
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Availability</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] %></div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Administrator Notes
                                                 </div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['admin_note'] || 'None' %></div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Description</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] %></div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Tags</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">
+                                                    <%
+                                                        let tags = data['tags'];
+                                                    if(tags != ''){
+                                                    for(let i = 0; i < tags.length;i++){ %>
                                                     <div class="chip">
-                                                        ubuntu
+                                                        <%= tags[i] %>
                                                     </div>
-                                                    <div class="chip">
-                                                        linux
-                                                    </div>
-                                                    <div class="chip">
-                                                        foss
-                                                    </div>
+                                                    <% }
+                                                    } %>
                                                 </div>
 
                                             </div>
@@ -704,12 +713,12 @@
         </div>
 
         <div class="modal-footer">
-                <button type="submit" class="waves-effect modal-action waves-green btn-flat" id="url_send_btn">
-                    Send
-                </button>
-                <button type="reset" class="modal-action modal-close waves-effect waves-red btn-flat">
-                    Cancel
-                </button>
+            <button type="submit" class="waves-effect modal-action waves-green btn-flat" id="url_send_btn">
+                Send
+            </button>
+            <button type="reset" class="modal-action modal-close waves-effect waves-red btn-flat">
+                Cancel
+            </button>
         </div>
     </form>
 </div>
