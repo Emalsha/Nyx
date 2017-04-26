@@ -10,21 +10,59 @@ let Download = require('../model/Download');
 
 router.post('/request',function(req,res){
 
+    let tags_array;
+    let availability;
+    let description;
+
+    if(req.body.tags){
+        let st = req.body.tags;
+        tags_array = st.split(',');
+    }
+
+    if(req.body.availability === 'true'){
+        availability = 'public';
+    }else{
+        availability = 'private';
+    }
+
+    if(req.body.description){
+        description = req.body.description;
+    }
+
     let newDownload = new Download({
         link:req.body.link,
         request_date:new Date(),
+        tags:tags_array,
+        availability:availability,
         request_user:req.user.username,
         state:'pending',
+        description:description,
     });
 
     newDownload.save(function(err){
-        if(err){ debug(err) };
-        res.contentType('json');
-        res.send({data:JSON.stringify(true)});
-
+        if(err){ debug(err) }
+        req.flash('success','New download request added.');
+        res.redirect('/users/dashboard');
     })
 
 });
+// router.post('/request',function(req,res){
+//
+//     let newDownload = new Download({
+//         link:req.body.link,
+//         request_date:new Date(),
+//         request_user:req.user.username,
+//         state:'pending',
+//     });
+//
+//     newDownload.save(function(err){
+//         if(err){ debug(err) };
+//         res.contentType('json');
+//         res.send({data:JSON.stringify(true)});
+//
+//     })
+//
+// });
 
 // Approve download request handler
 router.post('/approve',function(req,res){
@@ -48,7 +86,7 @@ router.post('/approve',function(req,res){
             download.admin_note = req.body.admin_note;
         }
 
-        if(req.body.availability == 'true'){
+        if(req.body.availability === 'true'){
             download.availability = 'public';
         }else{
             download.availability = 'private';

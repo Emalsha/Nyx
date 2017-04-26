@@ -659,6 +659,60 @@
     </div>
 </div>
 
+<!-- Download URL info Modal -->
+<div id="url_info" class="modal modal-fixed-footer">
+    <form action="/download/request" method="post" id="url_info_form">
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s10 l10 m10">
+                    <input placeholder="URL" id="url" type="text" class="validate" disabled>
+                    <label for="url">URL</label>
+                </div>
+
+                <div class="input-field col s10 l10 m10">
+                    <div class="chips" id="url_tags"></div>
+                    <label for="url_tags">Tags</label>
+                </div>
+
+                <div class="input-field col s10 l10 m10">
+                    <input placeholder="Description" id="url_desc" type="text" class="validate" name="description">
+                    <label for="url_desc">Description</label>
+                </div>
+
+                <div class="col s10 l10 m10">
+                    <label>Availability</label>
+                </div>
+                <div class="col s10 l12 m10">
+                    <div class="switch">
+                        <label>
+                            Private
+                            <input type="checkbox"
+                                   id="url_availablity_switch">
+                            <span class="lever"></span>
+                            Public
+                        </label>
+                    </div>
+                </div>
+
+                <input type="hidden" id="url_hi" name="link">
+                <input type="hidden" id="availability"
+                       name="availability">
+                <input type="hidden" id="tag_values"
+                       name="tags">
+
+            </div>
+        </div>
+
+        <div class="modal-footer">
+                <button type="submit" class="waves-effect modal-action waves-green btn-flat" id="url_send_btn">
+                    Send
+                </button>
+                <button type="reset" class="modal-action modal-close waves-effect waves-red btn-flat">
+                    Cancel
+                </button>
+        </div>
+    </form>
+</div>
 
 <!--Import footer part-->
 <% include includes/foot.ejs %>

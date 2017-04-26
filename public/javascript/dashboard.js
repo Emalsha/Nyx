@@ -2,28 +2,52 @@
  * Created by emalsha on 4/15/17.
  */
 
+$(document).ready(function(){
+    $('#url_info').modal();
+    $('#url_tags').material_chip()
+});
+
+
+//    URL form
+$('#url_info_form').submit(function () {
+//        Get tag values
+    let ar = $('#url_tags').material_chip('data');
+    let new_array = [];
+    for (let i = 0; i < ar.length; i++) {
+        new_array.push(ar[i].tag);
+    }
+    $('#tag_values').val(new_array);
+
+//        Get switch value
+    let a = $('#url_availablity_switch').prop('checked');
+    $('#availability').val(a);
+
+});
+
 $('#down_link_btn').click(function () {
     let link = $('#down_link').val();
 
     if (validateUrl(link)) {
         checkUrl(link, (state) => {
                 if (state) {
-
-                    $.ajax({
-                        url: '/download/request',
-                        dataType: 'json',
-                        data: {
-                            link: link
-                        },
-                        method: 'POST',
-                        success: function (res) {
-                            if (res.data) {
-                                x0p('Success','New download request add.','ok');
-
-                            }
-
-                        }
-                    });
+                    $('#url_hi').val(link);
+                    $('#url').val(link);
+                    $('#url_info').modal('open');
+                    // $.ajax({
+                    //     url: '/download/request',
+                    //     dataType: 'json',
+                    //     data: {
+                    //         link: link
+                    //     },
+                    //     method: 'POST',
+                    //     success: function (res) {
+                    //         if (res.data) {
+                    //             x0p('Success','New download request add.','ok');
+                    //
+                    //         }
+                    //
+                    //     }
+                    // });
                 } else {
                     x0p('Error','URL not exist.','error');
                 }
