@@ -88,10 +88,9 @@
                         </div>
                         <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
                         <% var due = new Date()
-                        var beg = new Date(94,2,24,18,00,00,00);
 
-                        var rh = beg.getHours() - due.getHours();
-                        var rm = beg.getMinutes() - due.getMinutes();
+                        var rh = 18 - due.getHours() -1;
+                        var rm = 60 - due.getMinutes();
                         %>
                         <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online
                             in <%=rh%>h
@@ -99,7 +98,7 @@
                         </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress deep-orange  lighten-4">
-                                <div class="determinate deep-orange" style="width: 20%"></div>
+                                <div class="determinate deep-orange" style="width: <%=(1- ((rh*60 + rm)/(12*60)))*100%>%"></div>
                             </div>
                         </div>
 
@@ -122,7 +121,7 @@
                 <!--Navigation bar-->
                 <div class="col s12">
                     <ul class="tabs">
-                        <li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>
+                        <!--<li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>-->
                         <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test2">Downloads in progress</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test3">Pendding downloads</a></li>
@@ -132,204 +131,204 @@
                 </div>
 
                 <!--All downloads -->
-                <div id="test1" class="col l12 m12 s12">
-                    <div class="row">
-                        <ul class="collapsible" data-collapsible="accordion">
-                            <li>
-                                <div class="collapsible-header"><span class="new badge light-green accent-3 black-text"
-                                                                      data-badge-caption="Downloading 32%"></span><i
-                                            class="material-icons">library_books</i>Ubuntu 16.04 ISO Image
-                                </div>
-                                <div class="collapsible-body">
-                                    <div class="row">
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main">34%</div>
-                                            <div class="col s12 contentbox_txt_down">Downloaded</div>
-                                        </div>
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">Speed</div>
-                                            <div class="col s12 contentbox_main">974.58 Kbps</div>
-                                            <div class="col s12 contentbox_txt_down">Max 4.2Mbps | Avg 955.75Kbps</div>
-                                        </div>
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">Estimated Time</div>
-                                            <div class="col s12 contentbox_main">3h 52 mins</div>
-                                            <div class="col s12 contentbox_txt_down">Total time 1h 21mins</div>
-                                        </div>
+                <!--<div id="test1" class="col l12 m12 s12">-->
+                    <!--<div class="row">-->
+                        <!--<ul class="collapsible" data-collapsible="accordion">-->
+                            <!--<li>-->
+                                <!--<div class="collapsible-header"><span class="new badge light-green accent-3 black-text"-->
+                                                                      <!--data-badge-caption="Downloading 32%"></span><i-->
+                                            <!--class="material-icons">library_books</i>Ubuntu 16.04 ISO Image-->
+                                <!--</div>-->
+                                <!--<div class="collapsible-body">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">Status</div>-->
+                                            <!--<div class="col s12 contentbox_main">34%</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">Downloaded</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">Speed</div>-->
+                                            <!--<div class="col s12 contentbox_main">974.58 Kbps</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">Max 4.2Mbps | Avg 955.75Kbps</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">Estimated Time</div>-->
+                                            <!--<div class="col s12 contentbox_main">3h 52 mins</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">Total time 1h 21mins</div>-->
+                                        <!--</div>-->
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12 l4">
-                                            <canvas id="myChart"></canvas>
-                                        </div>
-                                        <div class="col s12 l8">
-                                            <div class="row">
-                                                <div class="col s12">
-                                                    <h5>Download Details</h5>
-                                                </div>
-                                                <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
-                                                </div>
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col s12 l4">-->
+                                            <!--<canvas id="myChart"></canvas>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l8">-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col s12">-->
+                                                    <!--<h5>Download Details</h5>-->
+                                                <!--</div>-->
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Download Link</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                                    <!--https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Requested Date</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">Sunday-->
+                                                    <!--2017/03/05 11:26:36 PM-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Approved Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Approved Date</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">Sunday-->
+                                                    <!--2017/03/05 11:26:36 PM-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Approved By</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sulochana
-                                                    Kodituwakku
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Approved By</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">Sulochana-->
+                                                    <!--Kodituwakku-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Started Date</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
-                                                    2017/03/05 11:26:36 PM
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Started Date</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">Sunday-->
+                                                    <!--2017/03/05 11:26:36 PM-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    056f32ee5cf49404607e368bd8d3f2af
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">MD5</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                                    <!--056f32ee5cf49404607e368bd8d3f2af-->
+                                                <!--</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Availability</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Availability</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">Public</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes
-                                                </div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Administrator Notes-->
+                                                <!--</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Description</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Description</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>-->
 
-                                                <div class="col s12 l2 contentbox_detail_field">Tags</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    <div class="chip">
-                                                        ubuntu
-                                                    </div>
-                                                    <div class="chip">
-                                                        linux
-                                                    </div>
-                                                    <div class="chip">
-                                                        foss
-                                                    </div>
-                                                </div>
+                                                <!--<div class="col s12 l2 contentbox_detail_field">Tags</div>-->
+                                                <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                                    <!--<div class="chip">-->
+                                                        <!--ubuntu-->
+                                                    <!--</div>-->
+                                                    <!--<div class="chip">-->
+                                                        <!--linux-->
+                                                    <!--</div>-->
+                                                    <!--<div class="chip">-->
+                                                        <!--foss-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
 
-                                            </div>
-                                            <div class="row">
-                                                <div class="col s12 right-align">
-                                                    <a class="waves-effect waves-light btn green white-text"><i
-                                                                class="material-icons left">play_arrow</i>Resume</a>
-                                                    <a class="waves-effect waves-light btn yellow black-text"><i
-                                                                class="material-icons left ">pause</i>Pause</a>
-                                                    <a class="waves-effect waves-light btn red white-text"><i
-                                                                class="material-icons left">not_interested</i>Cancel</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="collapsible-header"><span class="new badge  yellow accent-3 black-text"
-                                                                      data-badge-caption="Approval Pending"></span><i
-                                            class="material-icons">place</i>Mint ISO Image
-                                </div>
-                                <div class="collapsible-body">
-                                    <div class="row">
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main amber-text accent-4">Approval Pending
-                                            </div>
-                                            <div class="col s12 contentbox_txt_down">3h 53mins</div>
-                                        </div>
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">File Size</div>
-                                            <div class="col s12 contentbox_main">999.99 kB</div>
-                                            <div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>
-                                        </div>
-                                        <div class="col s12 l4 contentbox">
-                                            <div class="col s12 contentbox_txt_up">Estimated Time</div>
-                                            <div class="col s12 contentbox_main">3h 52 mins</div>
-                                            <div class="col s12 contentbox_txt_down">To complete download</div>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <h5>Download Details</h5>
-                                        </div>
-                                        <div class="col s12 l2 contentbox_detail_field">Download Link</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">
-                                            https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
-                                        </div>
-
-                                        <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05
-                                            11:26:36 PM
-                                        </div>
-
-                                        <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">
-                                            056f32ee5cf49404607e368bd8d3f2af
-                                        </div>
-
-                                        <div class="col s12 l2 contentbox_detail_field">Availability</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">Public</div>
-
-                                        <div class="col s12 l2 contentbox_detail_field">Description</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
-
-                                        <div class="col s12 l2 contentbox_detail_field">Tags</div>
-                                        <div class="col s12 l10 truncate  contentbox_detail_value">
-                                            <div class="chip">
-                                                ubuntu
-                                            </div>
-                                            <div class="chip">
-                                                linux
-                                            </div>
-                                            <div class="chip">
-                                                foss
-                                            </div>
-                                        </div>
+                                            <!--</div>-->
+                                            <!--<div class="row">-->
+                                                <!--<div class="col s12 right-align">-->
+                                                    <!--<a class="waves-effect waves-light btn green white-text"><i-->
+                                                                <!--class="material-icons left">play_arrow</i>Resume</a>-->
+                                                    <!--<a class="waves-effect waves-light btn yellow black-text"><i-->
+                                                                <!--class="material-icons left ">pause</i>Pause</a>-->
+                                                    <!--<a class="waves-effect waves-light btn red white-text"><i-->
+                                                                <!--class="material-icons left">not_interested</i>Cancel</a>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
 
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col s12 right-align">
-                                            <a class="waves-effect waves-light btn red white-text"><i
-                                                        class="material-icons left">not_interested</i>Cancel</a>
-                                        </div>
-                                    </div>
+                                    <!--</div>-->
 
-                                </div>
-                            </li>
+                                <!--</div>-->
+                            <!--</li>-->
 
-                            <li>
-                                <div class="collapsible-header"><span class="new badge  red darken-1 white-text"
-                                                                      data-badge-caption="Rejected"></span><i
-                                            class="material-icons">filter_drama</i>Batman vs. Superman
-                                </div>
-                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
+                            <!--<li>-->
+                                <!--<div class="collapsible-header"><span class="new badge  yellow accent-3 black-text"-->
+                                                                      <!--data-badge-caption="Approval Pending"></span><i-->
+                                            <!--class="material-icons">place</i>Mint ISO Image-->
+                                <!--</div>-->
+                                <!--<div class="collapsible-body">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">Status</div>-->
+                                            <!--<div class="col s12 contentbox_main amber-text accent-4">Approval Pending-->
+                                            <!--</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">3h 53mins</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">File Size</div>-->
+                                            <!--<div class="col s12 contentbox_main">999.99 kB</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l4 contentbox">-->
+                                            <!--<div class="col s12 contentbox_txt_up">Estimated Time</div>-->
+                                            <!--<div class="col s12 contentbox_main">3h 52 mins</div>-->
+                                            <!--<div class="col s12 contentbox_txt_down">To complete download</div>-->
+                                        <!--</div>-->
 
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col s12">-->
+                                            <!--<h5>Download Details</h5>-->
+                                        <!--</div>-->
+                                        <!--<div class="col s12 l2 contentbox_detail_field">Download Link</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                            <!--https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*-->
+                                        <!--</div>-->
+
+                                        <!--<div class="col s12 l2 contentbox_detail_field">Requested Date</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">Sunday 2017/03/05-->
+                                            <!--11:26:36 PM-->
+                                        <!--</div>-->
+
+                                        <!--<div class="col s12 l2 contentbox_detail_field">MD5</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                            <!--056f32ee5cf49404607e368bd8d3f2af-->
+                                        <!--</div>-->
+
+                                        <!--<div class="col s12 l2 contentbox_detail_field">Availability</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">Public</div>-->
+
+                                        <!--<div class="col s12 l2 contentbox_detail_field">Description</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>-->
+
+                                        <!--<div class="col s12 l2 contentbox_detail_field">Tags</div>-->
+                                        <!--<div class="col s12 l10 truncate  contentbox_detail_value">-->
+                                            <!--<div class="chip">-->
+                                                <!--ubuntu-->
+                                            <!--</div>-->
+                                            <!--<div class="chip">-->
+                                                <!--linux-->
+                                            <!--</div>-->
+                                            <!--<div class="chip">-->
+                                                <!--foss-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+
+                                    <!--</div>-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col s12 right-align">-->
+                                            <!--<a class="waves-effect waves-light btn red white-text"><i-->
+                                                        <!--class="material-icons left">not_interested</i>Cancel</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                <!--</div>-->
+                            <!--</li>-->
+
+                            <!--<li>-->
+                                <!--<div class="collapsible-header"><span class="new badge  red darken-1 white-text"-->
+                                                                      <!--data-badge-caption="Rejected"></span><i-->
+                                            <!--class="material-icons">filter_drama</i>Batman vs. Superman-->
+                                <!--</div>-->
+                                <!--<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>-->
+                            <!--</li>-->
+
+                            <!--<li>-->
+                                <!--<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>-->
+                                <!--<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
 
                 <!--Download in progress div-->
                 <div id="test2" class="col l12 m12 s12">

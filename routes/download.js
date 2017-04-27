@@ -80,13 +80,12 @@ router.post('/approve',function(req,res){
         download.admin_decision_date = new Date();
         download.state = 'approved';
 
-        debug(download);
         download.save(function (err) {
             if(err){
                 debug(err);
             }
 
-            res.send('yeh');
+            res.redirect('/admin/administration');
         });
 
     })
@@ -115,13 +114,12 @@ router.post('/reject',function(req,res){
         download.admin_decision_date = new Date();
         download.state = 'rejected';
 
-        debug(download);
         download.save(function (err) {
             if(err){
                 debug(err);
             }
 
-            res.send('rejected');
+            res.redirect('/admin/administration');
         });
 
     })
