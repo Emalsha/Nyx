@@ -128,7 +128,7 @@
                             <%= rm %>mins
                         </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                            <div class="progress green  lighten-4">
+                            <div class="progress green lighten-4">
                                 <div class="determinate green"
                                      style="width: <%= (1 - ((rh * 60 + rm) / (12 * 60))) * 100 %>%"></div>
                             </div>
@@ -512,12 +512,18 @@
                                             <div class="col s12 contentbox_txt_up">Status</div>
                                             <div class="col s12 contentbox_main amber-text accent-4">Approval Pending
                                             </div>
-                                            <div class="col s12 contentbox_txt_down">3h 53mins</div>
+                                            <% let now = new Date();
+                                                let rdate = new Date(data['request_date']);
+                                                let gapd = now.getDay() - rdate.getDay();
+                                                let gaph = now.getHours() - rdate.getHours();
+                                                let gapm = now.getMinutes() - rdate.getMinutes();
+                                            %>
+                                            <div class="col s12 contentbox_txt_down"><%=gapd+'d'%>  <%=gaph%>h <%=gapm%>mins</div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">File Size</div>
-                                            <div class="col s12 contentbox_main">999.99 kB</div>
-                                            <div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>
+                                            <div class="col s12 contentbox_main"><%= data['size'] %></div>
+                                            <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Estimated Time</div>
@@ -543,7 +549,7 @@
 
                                         <div class="col s12 l2 contentbox_detail_field">MD5</div>
                                         <div class="col s12 l10 truncate  contentbox_detail_value">
-                                            056f32ee5cf49404607e368bd8d3f2af
+                                            --
                                         </div>
 
                                         <div class="col s12 l2 contentbox_detail_field">Availability</div>
@@ -723,7 +729,7 @@
                 <div class="col s10 l10 m10">
                     <label>Availability</label>
                 </div>
-                <div class="col s10 l12 m10">
+                <div class="col s6 l6 m6">
                     <div class="switch">
                         <label>
                             Private
@@ -735,11 +741,17 @@
                     </div>
                 </div>
 
+                <div class="col s6 l6">
+                    <div class="col s12 contentbox_txt_up">File Size</div>
+                    <div class="col s12 contentbox_main" id="file_size"></div>
+                </div>
+
                 <input type="hidden" id="url_hi" name="link">
                 <input type="hidden" id="availability"
                        name="availability">
                 <input type="hidden" id="tag_values"
                        name="tags">
+                <input type="hidden" id="fsize" name="size">
 
             </div>
         </div>

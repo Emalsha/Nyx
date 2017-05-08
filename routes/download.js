@@ -13,6 +13,7 @@ router.post('/request',function(req,res){
     let tags_array;
     let availability;
     let description;
+    let size;
 
     if(req.body.tags){
         let st = req.body.tags;
@@ -29,6 +30,10 @@ router.post('/request',function(req,res){
         description = req.body.description;
     }
 
+    if(req.body.size){
+        size = req.body.size;
+    }
+
     let newDownload = new Download({
         link:req.body.link,
         request_date:new Date(),
@@ -37,6 +42,7 @@ router.post('/request',function(req,res){
         request_user:req.user.username,
         state:'pending',
         description:description,
+        size:size
     });
 
     newDownload.save(function(err){

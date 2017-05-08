@@ -17,6 +17,7 @@ const donwloadSchema = new Schema({
     md5:String,
     availability:String,
     description:String,
+    size:String,
     priority:Number,
     state:String,
     tags:Array,
