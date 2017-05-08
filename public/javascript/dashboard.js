@@ -48,22 +48,15 @@ $('#down_link_btn').click(function () {
 
 // Check given url is exist
 let checkUrl = (url, cb) => {
-
-    let request;
-    if (window.XMLHttpRequest) {
-        request = new XMLHttpRequest();
-    } else {
-        request = new ActiveXObject('Microsoft.XMLHTTP');
-    }
-
-    request.onreadystatechange = function () {
-        if (request.readyState === 4) {
-            cb(request.status === 200);
+    $.ajax({
+        url:'/url/validate',
+        method:'post',
+        dataType:'json',
+        data:{url:encodeURIComponent(url)},
+        success:function (data) {
+            cb(data);
         }
-    };
-
-    request.open('GET', url, true);
-    request.send();
+    })
 };
 
 

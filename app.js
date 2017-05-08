@@ -17,6 +17,7 @@ const users = require('./routes/users');
 const admin = require('./routes/admin');
 const info = require('./routes/info');
 const download = require('./routes/download');
+const url = require('./routes/url');
 
 const app = express();
 
@@ -65,6 +66,7 @@ app.use('/users', users);
 app.use('/admin',admin);
 app.use('/info',info);
 app.use('/download',download);
+app.use('/url',url);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
