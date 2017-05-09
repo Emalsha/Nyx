@@ -6,6 +6,28 @@
 </head>
 <body>
 
+
+<% if(message != ''){ %>
+<div id="startupnotice" class="modal">
+    <div class="modal-content">
+        <p><%= message %> </p>
+    </div>
+    <div class="modal-footer" style="width: auto">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+    </div>
+</div>
+
+<script>
+    call_on_load.push("readyinfomodal");
+    function readyinfomodal() {
+        $('.modal').modal();
+        $('#startupnotice').modal('open');
+    }
+</script>
+<% } %>
+
+
+
 <div class="row">
 
     <!--side menu-->
@@ -35,12 +57,10 @@
 
         <div class="row main_container">
 
+
+
             <!--Show flash massages-->
-            <% if(message != ''){ %>
-            <div class="alert-success col l12">
-                <p><%= message %> </p>
-            </div>
-            <% } %>
+
             <div class="row">
 
                 <div class="row col l12 m12 s12">

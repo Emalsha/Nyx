@@ -229,7 +229,7 @@ body{
 
 /* Member */
 .main_container{
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
     padding: 10px 20px;
 }
 
