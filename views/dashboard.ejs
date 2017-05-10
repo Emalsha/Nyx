@@ -254,7 +254,7 @@
                         <!--<li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>-->
                         <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test2">Downloads in progress</a></li>
-                        <li class="tab"><a class="red-text darken-4" href="#test3">Pendding downloads</a></li>
+                        <li class="tab"><a class="red-text darken-4" href="#test3">Pending downloads</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test4">Rejected downloads</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test5">Recent public downloads</a></li>
                     </ul>
@@ -266,7 +266,7 @@
                     <div class="row">
 
                         <%
-                           if(inprogress > 0){
+                           if(inprogress.length > 0){
                         %>
                         <ul class="collapsible" data-collapsible="accordion">
                             <%
@@ -403,7 +403,7 @@
 
 
                             <%
-                            if(pending >0){
+                            if(pending.length >0){
 
                             %>
                         <ul class="collapsible" data-collapsible="accordion">
@@ -516,7 +516,7 @@
                 <div id="test4" class="col l12 m12 s12">
                     <div class="row">
                             <%
-                            if(rejected>0){
+                            if(rejected.length >0){
                             %>
                         <ul class="collapsible" data-collapsible="accordion">
                             <%
