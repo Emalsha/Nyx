@@ -353,6 +353,35 @@ body{
     margin-top: 6%;
 }
 
+
+.download_input{
+    width: calc(100% - 200px);
+
+}
+
+.download_requestbtn{
+    float:right;
+    width: 100px;
+    margin:0px;
+}
+
+.download_req_box{
+
+    background-color:#fff7f4;
+    border-radius: 8px;
+    border: 1px solid #ff5722;
+    padding:2px 20px !important;
+    margin-bottom: 20px;
+}
+
+
+.no-content{
+    text-align:center;
+    padding:35px;
+    font-size:24px;
+    color:#9e9e9e;
+}
+
 /*Download Requests*/
 .pg_admin_dlreq_headrer{
     font-weight: bold;
