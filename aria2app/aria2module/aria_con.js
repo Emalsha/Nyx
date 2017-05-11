@@ -5,11 +5,11 @@
 const Aria2 = require('aria2');
 
 let option = {
-    secure:true,
+    secure:false,
     host:'localhost',
     port:6800,
     secret:'ucscaria',
-    path:'jsonrpc'
+    path:'/jsonrpc'
                 };
 
 const aria2 = new Aria2(option);
