@@ -389,6 +389,14 @@ body{
 
 /*public file*/
 
+.custom_btn{
+    background-color: #fff;
+    border: 0 solid #fff;
+    padding: 6px 20px;
+    min-width: 100px;
+}
+
+
 td, th {
     padding: 8px 5px!important;
 }

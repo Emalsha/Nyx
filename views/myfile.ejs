@@ -6,7 +6,6 @@
     <% include includes/head.ejs %>
 
     <!--Import footer part-->
-    <% include includes/foot.ejs %>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 </head>
 <body>
@@ -39,43 +38,110 @@
 
         <!-- table container -->
         <div class="row main_container">
+
+            <div class="row no_bottom_margin">
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">8</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72 GB )</div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">18.72 GB</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Free Space</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">947.58 MB</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 5.0 GB used</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress">
+                            <div class="determinate" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in 12h 35mins</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress deep-orange  lighten-4">
+                            <div class="determinate deep-orange" style="width: 20%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
 	        <div class="col s12">
 	        <h4>My Files</h4>
-	        	<table class="bordered">
-				    <thead>
-				      <tr>
-				          <th>Name</th>
-				          <th>Item Name</th>
-				          <th>Item Price</th>
-				          <th>Item Name</th>
-				          <th>Item Price</th>
-				      </tr>
-				    </thead>
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header">
+							<div class="col s4 truncate">Fedora-Live-Workstation-x86_64-23-10.iso</div>
+							<div class="col s2">987.36MB</div>
+							<div class="col s2">2017/01/21</div>
+							<div class="col s4 right-align">
+								<input type="button" value="Download" class="custom_btn blue white-text">
+								<input type="button" value="Delete" class="custom_btn red white-text">
+							</div>
+						</div>
+						<div class="collapsible-body">
+                            <div class="row">
+                                <div class="col s12">
+                                    <span class="subsection_title_sub no_padding">Download Details</span>
+                                </div>
+                                <div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
 
-				    <tbody>
-				      <tr>
-				        <td>Alvin</td>
-				        <td>Eclair</td>
-				        <td>$0.87</td>
-				        <td>$0.87</td>
-				        <td>$0.87</td>
-				      </tr>
-				      <tr>
-				        <td>Alan</td>
-				        <td>Jellybean</td>
-				        <td>$3.76</td>
-				        <td>$0.87</td>
-				        <td>$0.87</td>
-				      </tr>
-				      <tr>
-				        <td>Jonathan</td>
-				        <td>Lollipop</td>
-				        <td>$7.00</td>
-				        <td>$0.87</td>
-				        <td>$0.87</td>
-				      </tr>
-				    </tbody>
-				</table>
+                                <div class="col s12 l3 truncate contentbox_detail_field">Requested Date</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">Sulochana Kodituwakku</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">MD5</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Availability</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">Public</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Description</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>
+
+                                <div class="col s12 l3 truncate contentbox_detail_field">Tags</div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value">
+                                    <div class="chip">
+                                        ubuntu
+                                    </div>
+                                    <div class="chip">
+                                        linux
+                                    </div>
+                                    <div class="chip">
+                                        foss
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</li>
+
+				</ul>
 	        </div>
         </div>
         <!-- end of body container -->
@@ -93,6 +159,10 @@
             edge: 'left', // Choose the horizontal origin
         }
     );
+
+	$(document).ready(function(){
+		$('.collapsible').collapsible();
+	});
 
 </script>
 </body>

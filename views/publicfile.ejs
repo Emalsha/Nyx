@@ -5,8 +5,6 @@
 
     <% include includes/head.ejs %>
 
-    <!--Import footer part-->
-    <% include includes/foot.ejs %>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 </head>
 <body>
@@ -57,61 +55,66 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col s12">
-                    <table class="bordered">
-                        <thead>
-                          <tr class="row">
-                              <th>Name</th>
-                              <th>File Name</th>
-                              <th>File Size</th>
-                              <th>Download</th>
-                              <th>Tags</th>
-                              <th></th>
-                          </tr>
-                        </thead>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s4 truncate">Fedora-Live-Workstation-x86_64-23-10.iso</div>
+                                <div class="col s2">987.36MB</div>
+                                <div class="col s2">2017/01/21</div>
+                                <div class="col s4 right-align">
+                                    <input type="button" value="Download" class="custom_btn blue white-text">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <span class="subsection_title_sub no_padding">Download Details</span>
+                                    </div>
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*</div>
 
-                        <tbody>
-                          <tr class="row">
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                            <td>$0.87</td>
-                            <td>$0.87</td>
-                            <td>
-                              <a href="ss">
-                                <span class="new badge  red darken-1 white-text" data-badge-caption="Delete"></span>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                            <td>$0.87</td>
-                            <td>
-                              <div>
-                                <div class="chip">Tag </div>
-                                <div class="chip">Tag </div>
-                                <div class="chip">Tag </div>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="ss">
-                                <span class="new badge  red darken-1 white-text" data-badge-caption="Delete"></span>
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                            <td>$0.87</td>
-                            <td>$0.87</td>
-                            <td><a href="ss"><span class="new badge  red darken-1 white-text" data-badge-caption="Delete"></span></a></td>
-                          </tr>
-                        </tbody>
-                    </table>
-                  </div>
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Requested Date</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">Sulochana Kodituwakku</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36 PM</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">MD5</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">056f32ee5cf49404607e368bd8d3f2af</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Availability</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">Public</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Description</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Tags</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">
+                                        <div class="chip">
+                                            ubuntu
+                                        </div>
+                                        <div class="chip">
+                                            linux
+                                        </div>
+                                        <div class="chip">
+                                            foss
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
                 </div>
             </div>
         </div>
