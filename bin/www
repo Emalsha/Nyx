@@ -9,6 +9,7 @@ const cluster =require('cluster');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const app = require('../app');
+const tm = require('../module/task_manager');
 
 const first_user = require('../module/first_user');
 
@@ -29,6 +30,7 @@ db.on('open',function(){
     debugd('Database connected.');
     createServer();
     first_user();
+    taskManager();
 });
 
 
@@ -106,4 +108,8 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+}
+
+function taskManager(){
+    tm.setTimer(1,35);
 }
