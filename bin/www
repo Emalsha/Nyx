@@ -4,12 +4,14 @@
 
 const debug = require('debug')('nyx:server');
 const debugd = require('debug')('nyx:database');
+const debuga = require('debug')('nyx:aria2c');
 const http = require('http');
 const cluster =require('cluster');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const app = require('../app');
 const tm = require('../module/task_manager');
+const spawn = require( 'child_process' ).spawn;
 
 const first_user = require('../module/first_user');
 
@@ -30,6 +32,7 @@ db.on('open',function(){
     debugd('Database connected.');
     createServer();
     first_user();
+    runAriaServer();
     taskManager();
 });
 
@@ -111,5 +114,25 @@ function onListening() {
 }
 
 function taskManager(){
-    tm.setTimer(1,35);
+    tm.setTimer(0,10,0,11);
+}
+
+function runAriaServer(){
+
+    ariac = spawn('aria2c',['--enable-rpc', '--rpc-listen-all=true', '--rpc-allow-origin-all' ,'--rpc-secret=ucscaria','--log='+__dirname+'/../aria2c.log']);
+
+    debuga('aria2c running on port 6800');
+
+    ariac.stdout.on( 'data', data => {
+        // console.log( `stdout: ${data}` );
+    });
+
+    ariac.stderr.on( 'data', data => {
+        console.log( `stderr: ${data}` );
+    });
+
+    ariac.on( 'close', code => {
+        console.log( `child process exited with code ${code}` );
+    });
+
 }
