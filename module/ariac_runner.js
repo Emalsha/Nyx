@@ -25,8 +25,7 @@ aria2.onDownloadComplete = function (msg) {
 };
 
 aria2.onDownloadError = function (msg) {
-    debug('Msg : ' + msg);
-    console.log(msg);
+    debug('Error on : ' + msg.gid);
 };
 
 let start_ariac = function () {
@@ -34,12 +33,15 @@ let start_ariac = function () {
     aria2.open().then(function () {
         debug('Web socket is open');
     }).then(function () {
-        let ar = ['https://www.w3schools.com/css/trolltunga.jd', 'https://www.w3schools.com/css/trolltunga.jpg', 'https://www.w3schools.com/css/trolltunga.jpg', 'https://www.w3schools.com/css/trolltunga.jpg'];
-        for (let i = 0; i < ar.length; i++) {
-            aria2.addUri([ar[i]], function (err, res) {
-                debug(err || res);
-            })
-        }
+
+        getDownloadRequest(function(ar){
+
+            for (let i = 0; i < ar.length ; i++) {
+                aria2.addUri([ar[i]], function (err, res) {
+                    // debug(err || res);
+                })
+            }
+        });
     });
 
 };
@@ -50,13 +52,17 @@ let pause_ariac = function () {
     })
 };
 
-function getDownloadRequest() {
-    Download.find({state: 'approved', admin_decision: true}, function (err, users) {
+function getDownloadRequest(cb) {
+    Download.find({state: 'approved', admin_decision: true}, function (err, downloads) {
         if (err) {
             debug(err);
         }
+        let array = [];
+        for(let i=0;i<downloads.length;i++){
+            array.push(downloads[i]['link']);
+        }
 
-        console.log(users);
+        cb(array);
 
     });
 }

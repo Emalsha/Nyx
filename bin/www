@@ -114,7 +114,7 @@ function onListening() {
 }
 
 function taskManager(){
-    tm.setTimer(0,10,0,11);
+    tm.setTimer(1,48,2,0);
 }
 
 function runAriaServer(){
