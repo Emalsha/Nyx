@@ -7,17 +7,18 @@ const debug = require('debug')('nyx:ariac');
 
 const Download = require('../model/Download');
 
+
 let start_ariac = function () {
 
-    aria2.open().then(function () {
+    aria2.open(function () {
         debug('Web socket is open');
-    }).then(function () {
 
         getDownloadRequest(function(ar){
 
             for (let i = 0; i < ar.length ; i++) {
-                aria2.addUri([ar[i]], function (err, res) {
-                    // debug(err || res);
+                let option = {'dir':__dirname+'/../tempDownload' }; //TODO : This path should take from database according to download file.
+                aria2.addUri([ar[i]],option,function (err, res) {
+                    debug(err || res);
                 })
             }
         });
