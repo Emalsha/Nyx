@@ -24,7 +24,7 @@ module.exports.setTimer = function(sh,sm,eh,em){
         ar.start_ariac();
     });
 
-    ar.start_ariac(); // ***************************** tempory... must remove this...
+    ar.start_ariac(); // ***************************** tempory... must remove this... TODO
     ns.scheduleJob(end_rule,function(){
         ar.pause_ariac();
     });

@@ -7,6 +7,10 @@
 .idea/workspace.xml
 # Dependency directories
 node_modules
-
 bower_components/materialize/test/
+
+#log file
 aria2c.log
+
+#download folder
+tempDownload
