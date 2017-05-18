@@ -2,6 +2,7 @@
  * Created by emalsha on 5/18/17.
  */
 const Aria2 = require('aria2');
+const debug = require('debug')('nyx:aria-config');
 
 let option = {
     secure: false,
