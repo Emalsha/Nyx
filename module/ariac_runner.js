@@ -2,31 +2,10 @@
  * Created by emalsha on 5/13/17.
  */
 
-const Aria2 = require('aria2');
+const aria2 = require('./aria2c_config').aria2obj;
 const debug = require('debug')('nyx:ariac');
 
 const Download = require('../model/Download');
-
-let option = {
-    secure: false,
-    host: 'localhost',
-    port: 6800,
-    secret: 'ucscaria',
-    path: '/jsonrpc'
-};
-const aria2 = new Aria2(option);
-
-aria2.onDownloadStart = function (msg) {
-    debug('Download start > GID : ' + msg.gid);
-};
-
-aria2.onDownloadComplete = function (msg) {
-    debug('Download completed on > GID :' + msg.gid);
-};
-
-aria2.onDownloadError = function (msg) {
-    debug('Error on : ' + msg.gid);
-};
 
 let start_ariac = function () {
 
