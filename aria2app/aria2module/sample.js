@@ -3,7 +3,7 @@
  */
 
 const spawn = require( 'child_process' ).spawn;
-const cmd = 'aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all --rpc-secret=ucscaria';
+// const cmd = 'aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all --rpc-secret=ucscaria';
 var Aria2 = require('aria2');
 let option = {
     secure: false,
