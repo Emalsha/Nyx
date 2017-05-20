@@ -19,9 +19,11 @@ const donwloadSchema = new Schema({
     description:String,
     size:String,
     priority:Number,
-    state:String, //pending,approved,rejected
+    state:String, //pending,approved,rejected,downloaded,downloading
     tags:Array,
-
+    gid:String,
+    download_start_date:Date,
+    download_end_date:Date,
 });
 
 module.exports = mongoose.model('Download',donwloadSchema);
