@@ -16,28 +16,20 @@ let option = {
 const aria2 = new Aria2(option);
 
 aria2.onDownloadStart = function (msg) {
-    debug('Download start > GID : ' + msg.gid);
-};
-
-aria2.onDownloadComplete = function (msg) {
-    debug('Download completed on > GID :' + msg.gid);
 
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloading'},(err,res)=>{
         if(err){
-            debug('Downloading file update faile : '+err);
+            debug('Downloading file update fail : '+err);
         }
     });
-    // debug('Download start > GID : ' + msg.gid);
 };
 
 aria2.onDownloadComplete = function (msg) {
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloaded',download_end_date:new Date()},(err,res)=>{
         if(err){
-            debug('Downloaded file update faile : '+err);
+            debug('Downloaded file update fail : '+err);
         }
     });
-    // debug('Download completed on > GID :' + msg.gid);
-
 };
 
 aria2.onDownloadError = function (msg) {
