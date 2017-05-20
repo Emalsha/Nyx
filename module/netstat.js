@@ -124,6 +124,7 @@ module.exports = function App(io) {
         }
         io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
+        //console.log(io.engine.clientsCount);
 
 
 

@@ -16,7 +16,7 @@
 <script type="text/javascript" src="/bower_components/socket.io-client/dist/socket.io.js"></script>
 <script type="text/javascript" src="/public/javascript/socket.js"></script>
 
-<title><%= title %></title>
+<title><%=title %></title>
 
 <!--Favicon-->
 <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
@@ -27,4 +27,5 @@
 
 <script>
     var call_on_load = [];
+    socket.emit ('authenticate', {"username": "<%=user['uname']%>"});
 </script>
