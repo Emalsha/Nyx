@@ -12,11 +12,19 @@ const app = require('../app');
 
 const first_user = require('../module/first_user');
 
+
 const port = normalizePort(process.env.PORT || '3000');
 let server;
 
+
 // var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
 let dburl = "mongodb://localhost:27017/project_nyx";
+
+
+server = http.createServer(app);
+var io = require('socket.io').listen(server);
+
+
 mongoose.connect(dburl,(err) => {
     if(err){
         debugd('Unable to connect Database.');
@@ -49,11 +57,12 @@ function createServer() {
 
         app.set('port', port);
 
-        server = http.createServer(app);
+
         server.listen(port);
 
         server.on('error', onError);
         server.on('listening', onListening);
+
 
         // debugw(`Worker ${process.pid} start`);
     // }
@@ -107,3 +116,14 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
+//Socket Configurations
+
+var NetStat = require('../module/netstat');
+var netstat = new NetStat(io);
+
+io.on('connection', function(socket){
+    console.log('connection initialized',socket.id);
+});
+

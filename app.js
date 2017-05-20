@@ -11,6 +11,9 @@ const flash = require('connect-flash');
 const MongoStore = require('connect-mongo')(session);
 
 
+
+
+
 // Route configs
 const index = require('./routes/index');
 const users = require('./routes/users');
@@ -20,6 +23,8 @@ const download = require('./routes/download');
 const url = require('./routes/url');
 
 const app = express();
+// const io = require('socket.io').listen(server);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -85,5 +90,12 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+//socket
+// io.on('connection', function(socket) {
+//     console.log("userconnedted");
+//     //socket.emit('announcements', { message: 'A new user has joined!' });
+// });
 
 module.exports = app;

@@ -708,9 +708,12 @@
 
         </div>
     </div>
+    </div>
 
 
     <script>
+
+
 
         $('.button-collapse').sideNav({
                 menuWidth: 250, // Default is 300
@@ -774,7 +777,11 @@
 
     </script>
 
+
     <script>
+        var network_usage;
+
+
 
         $('document').ready(function () {
 
@@ -792,7 +799,7 @@
             }
 
             var network_usage_chart = $('#network_usage')[0].getContext('2d');
-            var network_usage = new Chart(network_usage_chart, {
+            network_usage = new Chart(network_usage_chart, {
                 type: 'line',
                 responsive: true,
 
@@ -821,7 +828,7 @@
                     }
                 },
                 data: {
-                    xLabels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                    xLabels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
                     datasets: [
                         {
                             label: 'Upload',
@@ -842,15 +849,17 @@
             });
 
             setInterval(function () {
-                $.ajax({
-                    url: '/info/network_usage',
-                    dataType: "json",
-                    success: function (data) {
-                        network_usage.data.datasets[1].data = data[0]['array'];
-                        network_usage.data.datasets[0].data = data[1]['array'];
-                        network_usage.update();
-                    }
-                });
+//                $.ajax({
+//                    url: '/info/network_usage',
+//                    dataType: "json",
+//                    success: function (data) {
+//                        network_usage.data.datasets[1].data = data[0]['array'];
+//                        network_usage.data.datasets[0].data = data[1]['array'];
+//                        network_usage.update();
+//
+//                    }
+//                });
+//                socket.emit('message', 'Hi server, how are you?');
             }, 1000 * 1);
         });
 
@@ -934,5 +943,14 @@
 
     </script>
 
+    <!--SOCKECT SCRIPTS-->
+    <script>
+        socket.on('stat_net_network', function(msg){
+            //console.log(msg);
+            network_usage.data.datasets[1].data = msg[0]['array'];
+            network_usage.data.datasets[0].data = msg[1]['array'];
+            network_usage.update();
+        });
+    </script>
 </body>
 </html>

@@ -175,60 +175,50 @@
                     </div>
 
                     <!--Download manager up time status-->
-                    <div class="col s6 m3 l3 contentbox_mainbox">
-                        <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download
-                            Manager
-                        </div>
-
-                        <%
-                        var now = new Date();
-                        if(now.getHours() >= 6 && now.getHours() < 18 ){
-                        %>
-
-                        <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>
-                        <% var due = new Date()
-
-                            var rh = 18 - due.getHours() - 1;
-                            var rm = 60 - due.getMinutes();
-                        %>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online
-                            in <%= rh %>h
-                            <%= rm %>mins
-                        </div>
+                    <div class="col s4 m3 contentbox_mainbox">
+                        <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                        <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">Unknown</div>
+                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">Unknown</div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                            <div class="progress deep-orange  lighten-4">
-                                <div class="determinate deep-orange"
-                                     style="width: <%= (1 - ((rh * 60 + rm) / (12 * 60))) * 100 %>%"></div>
+                            <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
+                                <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
                             </div>
                         </div>
-
-                        <% }else{ %>
-                        <% var due = new Date()
-
-                            var rh;
-                            if (due.getHours() >= 18) {
-                                let plus = 24 - due.getHours();
-                                rh = 6 + plus - 1;
-                            } else {
-                                rh = 6 - due.getHours() - 1;
-                            }
-                            var rm = 60 - due.getMinutes();
-                        %>
-                        <div class="col s12 m12 l12 truncate contentbox_main green-text accent-3">Online</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going
-                            offline
-                            in <%= rh %>h
-                            <%= rm %>mins
-                        </div>
-                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                            <div class="progress green lighten-4">
-                                <div class="determinate green"
-                                     style="width: <%= (1 - ((rh * 60 + rm) / (12 * 60))) * 100 %>%"></div>
-                            </div>
-                        </div>
-                        <% } %>
-
                     </div>
+
+                    <script>
+                        var online_status_code = document.getElementById('online_status_code');
+                        var online_status_eta = document.getElementById('online_status_eta');
+                        var online_status_progress = document.getElementById('online_status_progress');
+                        var online_status_progress_outer = document.getElementById('online_status_progress_outer');
+                        socket.on('online_status_info', function(msg){
+                            var obj = JSON.parse(msg);
+                            online_status_code.innerHTML = obj.status;
+                            online_status_eta.innerHTML = obj.eta;
+                            online_status_progress.style.width = obj.precent+"%";
+
+                            if (obj.status == "Online"){
+                                online_status_code.classList.add('teal-text');
+                                online_status_code.classList.add('lighten-2');
+                                online_status_code.classList.remove('deep-orange-text');
+                                online_status_code.classList.remove('accent-3');
+
+                                online_status_progress.classList.remove('deep-orange');
+                                online_status_progress_outer.classList.remove('deep-orange');
+                                online_status_progress_outer.classList.remove('lighten-4');
+                            }else{
+                                online_status_code.classList.remove('teal-text');
+                                online_status_code.classList.remove('lighten-2');
+                                online_status_code.classList.add('deep-orange-text');
+                                online_status_code.classList.add('accent-3');
+
+                                online_status_progress.classList.add('deep-orange');
+                                online_status_progress_outer.classList.add('deep-orange');
+                                online_status_progress_outer.classList.add('lighten-4');
+                            }
+                        });
+
+                    </script>
                 </div>
 
                 <!--Download link div-->
