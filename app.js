@@ -21,6 +21,7 @@ const admin = require('./routes/admin');
 const info = require('./routes/info');
 const download = require('./routes/download');
 const url = require('./routes/url');
+const view_f = require('./routes/view_f');
 
 const app = express();
 // const io = require('socket.io').listen(server);
@@ -72,7 +73,7 @@ app.use('/admin',admin);
 app.use('/info',info);
 app.use('/download',download);
 app.use('/url',url);
-
+app.use('/view_f', view_f);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   let err = new Error('Not Found');

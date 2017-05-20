@@ -17,3 +17,7 @@ On Windows, use this command:
     set DEBUG=myapp:* & npm start
 
 Then load http://localhost:3000/ in your browser to access the app.
+
+Run aria2c with rpc config.
+
+    aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all --rpc-secret=#####

@@ -1,0 +1,1101 @@
+2017-05-15 08:28:32.035198 [INFO] [Context.cc:177] <<--- --- --- ---
+2017-05-15 08:28:32.035290 [INFO] [Context.cc:178]   --- --- --- ---
+2017-05-15 08:28:32.035299 [INFO] [Context.cc:179]   --- --- --- --->>
+2017-05-15 08:28:32.035308 [INFO] [Context.cc:180] aria2 1.19.0
+2017-05-15 08:28:32.035333 [INFO] [Context.cc:181] gcc 5.3.1 20160216
+  built by   x86_64-pc-linux-gnu
+  on         Feb 17 2016 22:40:25
+2017-05-15 08:28:32.035349 [INFO] [Context.cc:182] Linux 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64
+2017-05-15 08:28:32.035360 [INFO] [Context.cc:183] zlib/1.2.8 libxml2/2.9.3 sqlite3/3.10.2 GnuTLS/3.4.9 nettle GMP/6.1.0 c-ares/1.10.0 libssh2/1.5.0
+2017-05-15 08:28:32.035372 [INFO] [Context.cc:184] Logging started.
+2017-05-15 08:28:32.035382 [DEBUG] [Context.cc:214] Not setting rlimit NO_FILE: 65536 >= 1024
+2017-05-15 08:28:32.035389 [INFO] [SocketCore.cc:1595] Checking configured addresses
+2017-05-15 08:28:32.037543 [INFO] [SocketCore.cc:1645] Not considered: 127.0.0.1
+2017-05-15 08:28:32.037560 [INFO] [SocketCore.cc:1643] Found configured address: 192.168.8.100
+2017-05-15 08:28:32.037566 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.96.1
+2017-05-15 08:28:32.037572 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.36.1
+2017-05-15 08:28:32.037580 [INFO] [SocketCore.cc:1645] Not considered: ::1
+2017-05-15 08:28:32.037588 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:dcd9:1620:eb0e:2
+2017-05-15 08:28:32.037595 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:9c3d:be87:5d5d:d9e7
+2017-05-15 08:28:32.037602 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:88c2:2734:5f01:920d
+2017-05-15 08:28:32.037647 [INFO] [SocketCore.cc:1645] Not considered: fe80::ee3d:f47:cf00:fef2%wlp1s0
+2017-05-15 08:28:32.037661 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:1%vmnet1
+2017-05-15 08:28:32.037673 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:8%vmnet8
+2017-05-15 08:28:32.037679 [INFO] [SocketCore.cc:1650] IPv4 configured=1, IPv6 configured=1
+2017-05-15 08:28:32.038982 [INFO] [HttpListenCommand.cc:109] CUID#6 - Using port 6800 for accepting new connections
+2017-05-15 08:28:32.039029 [NOTICE] [HttpListenCommand.cc:111] IPv4 RPC: listening on TCP port 6800
+2017-05-15 08:28:32.039094 [INFO] [HttpListenCommand.cc:109] CUID#7 - Using port 6800 for accepting new connections
+2017-05-15 08:28:32.039114 [NOTICE] [HttpListenCommand.cc:111] IPv6 RPC: listening on TCP port 6800
+2017-05-15 08:28:32.040387 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.040427 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.041134 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.041148 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.041415 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.041427 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043093 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043111 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043303 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043313 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043933 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.043944 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044427 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044438 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044687 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044697 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044763 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.044773 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.049641 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.049675 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.049982 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.049995 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.050200 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050276 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050354 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050430 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050504 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050569 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050713 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050827 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.050922 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:28:32.051795 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.051824 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:28:32.051996 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052032 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052055 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052075 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052099 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052127 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052150 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052172 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052193 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052215 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052239 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052263 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052290 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052312 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052351 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052374 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052394 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052415 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052443 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052466 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052489 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052510 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052531 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052553 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052576 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052599 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052642 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052664 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052685 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052708 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052736 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052758 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052788 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052810 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052833 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052868 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052891 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052912 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052935 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052957 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052978 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.052999 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053030 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053051 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053072 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053096 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053118 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053139 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053161 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053180 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053199 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053218 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053238 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053257 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053276 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053296 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053317 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053336 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053360 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053380 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053400 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053419 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053440 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053460 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053481 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053502 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053523 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053544 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053568 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053582 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053595 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053608 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053620 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053642 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053654 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053667 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053683 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053696 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053709 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053721 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053733 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053745 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053756 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053795 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053808 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053828 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053846 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053858 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053872 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053883 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053895 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053907 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053919 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053941 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053955 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053971 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.053985 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054003 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054027 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054051 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054073 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054094 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054113 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054132 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054150 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054169 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054190 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054209 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054228 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054247 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054266 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054285 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054305 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054326 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054347 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054397 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054420 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054440 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054463 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054486 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054508 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054525 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054538 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054550 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054563 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054576 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054611 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054625 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054642 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054656 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054671 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054684 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054698 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054710 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054732 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054756 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054770 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054783 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054797 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054809 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054822 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054835 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054847 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054860 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:28:32.054890 [INFO] [LibgnutlsTLSContext.cc:159] 173 certificate(s) were imported.
+2017-05-15 08:30:56.018453 [NOTICE] [DownloadEngine.cc:244] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2017-05-15 08:34:00.031447 [INFO] [Context.cc:177] <<--- --- --- ---
+2017-05-15 08:34:00.031515 [INFO] [Context.cc:178]   --- --- --- ---
+2017-05-15 08:34:00.031533 [INFO] [Context.cc:179]   --- --- --- --->>
+2017-05-15 08:34:00.031545 [INFO] [Context.cc:180] aria2 1.19.0
+2017-05-15 08:34:00.031558 [INFO] [Context.cc:181] gcc 5.3.1 20160216
+  built by   x86_64-pc-linux-gnu
+  on         Feb 17 2016 22:40:25
+2017-05-15 08:34:00.031576 [INFO] [Context.cc:182] Linux 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64
+2017-05-15 08:34:00.031589 [INFO] [Context.cc:183] zlib/1.2.8 libxml2/2.9.3 sqlite3/3.10.2 GnuTLS/3.4.9 nettle GMP/6.1.0 c-ares/1.10.0 libssh2/1.5.0
+2017-05-15 08:34:00.031600 [INFO] [Context.cc:184] Logging started.
+2017-05-15 08:34:00.031612 [DEBUG] [Context.cc:214] Not setting rlimit NO_FILE: 65536 >= 1024
+2017-05-15 08:34:00.031621 [INFO] [SocketCore.cc:1595] Checking configured addresses
+2017-05-15 08:34:00.033600 [INFO] [SocketCore.cc:1645] Not considered: 127.0.0.1
+2017-05-15 08:34:00.033624 [INFO] [SocketCore.cc:1643] Found configured address: 192.168.8.100
+2017-05-15 08:34:00.033633 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.96.1
+2017-05-15 08:34:00.033642 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.36.1
+2017-05-15 08:34:00.033651 [INFO] [SocketCore.cc:1645] Not considered: ::1
+2017-05-15 08:34:00.033661 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:dcd9:1620:eb0e:2
+2017-05-15 08:34:00.033671 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:9c3d:be87:5d5d:d9e7
+2017-05-15 08:34:00.033679 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:88c2:2734:5f01:920d
+2017-05-15 08:34:00.033726 [INFO] [SocketCore.cc:1645] Not considered: fe80::ee3d:f47:cf00:fef2%wlp1s0
+2017-05-15 08:34:00.033743 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:1%vmnet1
+2017-05-15 08:34:00.033757 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:8%vmnet8
+2017-05-15 08:34:00.033765 [INFO] [SocketCore.cc:1650] IPv4 configured=1, IPv6 configured=1
+2017-05-15 08:34:00.033913 [INFO] [HttpListenCommand.cc:109] CUID#6 - Using port 6800 for accepting new connections
+2017-05-15 08:34:00.033945 [NOTICE] [HttpListenCommand.cc:111] IPv4 RPC: listening on TCP port 6800
+2017-05-15 08:34:00.034008 [INFO] [HttpListenCommand.cc:109] CUID#7 - Using port 6800 for accepting new connections
+2017-05-15 08:34:00.034029 [NOTICE] [HttpListenCommand.cc:111] IPv6 RPC: listening on TCP port 6800
+2017-05-15 08:34:00.035391 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.035430 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.036373 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.036402 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.036751 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.036769 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.038983 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.039023 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.039280 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.039296 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.040158 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.040185 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.040848 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.040871 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.041216 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.041236 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.041323 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.041336 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.047612 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.047658 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.048079 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.048101 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.048380 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048481 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048584 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048682 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048779 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048866 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.048967 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.049069 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.049154 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:34:00.049967 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.049994 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:34:00.050134 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050163 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050185 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050207 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050227 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050248 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050268 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050287 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050308 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050328 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050346 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050365 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050386 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050404 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050436 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050453 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050470 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050488 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050509 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050527 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050545 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050565 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.050973 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051004 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051024 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051044 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051076 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051094 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051112 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051131 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051155 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051174 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051199 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051216 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051234 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051253 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051272 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051289 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051310 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051328 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051346 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051363 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051389 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051407 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051425 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051442 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051459 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051476 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051493 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051510 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051526 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051543 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051562 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051578 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051596 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051614 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051632 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051651 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051672 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051691 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051708 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051725 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051743 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051759 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051777 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051796 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051812 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051828 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051846 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051864 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051882 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051900 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051933 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051964 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.051983 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052001 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052026 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052046 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052065 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052083 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052102 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052119 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052137 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052191 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052213 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052231 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052257 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052275 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052294 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052312 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052329 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052347 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052365 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052397 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052418 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052443 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052463 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052483 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052503 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052523 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052542 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052560 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052578 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052596 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052614 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052632 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052651 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052669 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052687 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052705 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052722 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052740 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052759 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052778 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052799 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052844 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052862 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052881 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052899 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052917 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052937 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052955 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.052980 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053000 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053019 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053039 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053059 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053078 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053102 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053123 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053147 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053166 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053181 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053197 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053224 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053246 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053265 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053283 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053302 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053321 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053340 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053359 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053377 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053396 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:34:00.053434 [INFO] [LibgnutlsTLSContext.cc:159] 173 certificate(s) were imported.
+2017-05-15 08:34:00.057836 [INFO] [HttpListenCommand.cc:81] RPC: Accepted the connection from 127.0.0.1:38878.
+2017-05-15 08:34:00.058171 [INFO] [HttpServer.cc:144] HTTP Server received request
+GET /jsonrpc HTTP/1.1
+Connection: Upgrade
+Upgrade: websocket
+Host: localhost:6800
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: MTMtMTQ5NDgxNzQ0MDAzNQ==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+
+2017-05-15 08:34:00.058261 [DEBUG] [HttpServer.cc:269] HTTP Server sends upgrade response:
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: ETiPxTKikk3iay0wrRVTNFKhMD0=
+
+
+2017-05-15 08:34:00.058305 [INFO] [AbstractHttpServerResponseCommand.cc:118] CUID#8 - HttpServer: all response transmitted.
+2017-05-15 08:34:00.058340 [DEBUG] [WebSocketSessionMan.cc:57] WebSocket session added.
+2017-05-15 08:35:21.576134 [INFO] [WebSocketInteractionCommand.cc:99] CUID#8 - WebSocket session terminated (Possibly due to EOF).
+2017-05-15 08:35:21.576219 [DEBUG] [WebSocketSessionMan.cc:64] WebSocket session removed.
+2017-05-15 08:35:21.576292 [NOTICE] [DownloadEngine.cc:244] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2017-05-15 08:35:23.802802 [INFO] [Context.cc:177] <<--- --- --- ---
+2017-05-15 08:35:23.802866 [INFO] [Context.cc:178]   --- --- --- ---
+2017-05-15 08:35:23.802875 [INFO] [Context.cc:179]   --- --- --- --->>
+2017-05-15 08:35:23.802894 [INFO] [Context.cc:180] aria2 1.19.0
+2017-05-15 08:35:23.802907 [INFO] [Context.cc:181] gcc 5.3.1 20160216
+  built by   x86_64-pc-linux-gnu
+  on         Feb 17 2016 22:40:25
+2017-05-15 08:35:23.802924 [INFO] [Context.cc:182] Linux 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64
+2017-05-15 08:35:23.802937 [INFO] [Context.cc:183] zlib/1.2.8 libxml2/2.9.3 sqlite3/3.10.2 GnuTLS/3.4.9 nettle GMP/6.1.0 c-ares/1.10.0 libssh2/1.5.0
+2017-05-15 08:35:23.802947 [INFO] [Context.cc:184] Logging started.
+2017-05-15 08:35:23.802959 [DEBUG] [Context.cc:214] Not setting rlimit NO_FILE: 65536 >= 1024
+2017-05-15 08:35:23.802968 [INFO] [SocketCore.cc:1595] Checking configured addresses
+2017-05-15 08:35:23.805092 [INFO] [SocketCore.cc:1645] Not considered: 127.0.0.1
+2017-05-15 08:35:23.805111 [INFO] [SocketCore.cc:1643] Found configured address: 192.168.8.100
+2017-05-15 08:35:23.805119 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.96.1
+2017-05-15 08:35:23.805126 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.36.1
+2017-05-15 08:35:23.805134 [INFO] [SocketCore.cc:1645] Not considered: ::1
+2017-05-15 08:35:23.805143 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:dcd9:1620:eb0e:2
+2017-05-15 08:35:23.805151 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:9c3d:be87:5d5d:d9e7
+2017-05-15 08:35:23.805160 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:88c2:2734:5f01:920d
+2017-05-15 08:35:23.805207 [INFO] [SocketCore.cc:1645] Not considered: fe80::ee3d:f47:cf00:fef2%wlp1s0
+2017-05-15 08:35:23.805225 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:1%vmnet1
+2017-05-15 08:35:23.805240 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:8%vmnet8
+2017-05-15 08:35:23.805249 [INFO] [SocketCore.cc:1650] IPv4 configured=1, IPv6 configured=1
+2017-05-15 08:35:23.805395 [INFO] [HttpListenCommand.cc:109] CUID#6 - Using port 6800 for accepting new connections
+2017-05-15 08:35:23.805426 [NOTICE] [HttpListenCommand.cc:111] IPv4 RPC: listening on TCP port 6800
+2017-05-15 08:35:23.805483 [INFO] [HttpListenCommand.cc:109] CUID#7 - Using port 6800 for accepting new connections
+2017-05-15 08:35:23.805505 [NOTICE] [HttpListenCommand.cc:111] IPv6 RPC: listening on TCP port 6800
+2017-05-15 08:35:23.806869 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.806909 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.807857 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.807883 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.808217 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.808234 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.810447 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.810483 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.810766 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.810786 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.811743 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.811773 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812431 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812453 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812783 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812803 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812887 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.812899 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.819099 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.819144 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.819575 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.819593 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.819865 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.819965 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820073 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820174 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820270 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820356 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820457 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820577 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.820662 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:35:23.822890 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.822931 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:35:23.823061 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823088 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823106 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823124 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823143 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823163 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823181 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823197 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823213 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823229 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823245 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823261 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823279 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823296 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823325 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823343 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823358 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823375 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823394 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823411 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823429 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823445 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823462 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823481 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823500 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823518 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823549 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823566 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823583 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823599 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823621 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823638 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823663 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823679 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823696 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823713 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823731 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823747 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823766 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823783 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823800 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823817 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823840 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823858 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823873 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823889 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823918 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823936 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823955 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823973 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.823990 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824007 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824026 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824043 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824062 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824080 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824099 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824118 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824140 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824160 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824178 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824195 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824212 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824230 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824249 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824266 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824283 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824301 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824319 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824338 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824355 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824374 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824393 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824422 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824441 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824458 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824509 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824529 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824547 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824565 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824584 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824604 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824622 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824675 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824695 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824714 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824739 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824757 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824777 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824795 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824812 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824830 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824848 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824881 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824902 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824925 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824953 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824974 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.824993 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825014 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825032 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825051 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825068 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825085 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825104 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825122 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825142 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825160 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825178 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825197 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825215 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825234 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825252 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825272 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825290 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825334 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825355 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825374 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825394 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825414 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825433 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825452 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825470 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825488 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825508 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825527 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825547 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825566 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825590 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825609 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825631 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825649 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825668 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825686 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825715 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825736 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825753 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825770 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825787 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825802 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825818 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825835 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825850 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825867 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:35:23.825901 [INFO] [LibgnutlsTLSContext.cc:159] 173 certificate(s) were imported.
+2017-05-15 08:35:23.829113 [INFO] [HttpListenCommand.cc:81] RPC: Accepted the connection from 127.0.0.1:38986.
+2017-05-15 08:35:23.829639 [INFO] [HttpServer.cc:144] HTTP Server received request
+GET /jsonrpc HTTP/1.1
+Connection: Upgrade
+Upgrade: websocket
+Host: localhost:6800
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: MTMtMTQ5NDgxNzUyMzgwNw==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+
+2017-05-15 08:35:23.829667 [DEBUG] [HttpServer.cc:269] HTTP Server sends upgrade response:
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: N5rjoyToUNA0cAe00ftOsOR0688=
+
+
+2017-05-15 08:35:23.829708 [INFO] [AbstractHttpServerResponseCommand.cc:118] CUID#8 - HttpServer: all response transmitted.
+2017-05-15 08:35:23.829745 [DEBUG] [WebSocketSessionMan.cc:57] WebSocket session added.
+2017-05-15 08:38:14.531383 [INFO] [WebSocketInteractionCommand.cc:99] CUID#8 - WebSocket session terminated (Possibly due to EOF).
+2017-05-15 08:38:14.531487 [DEBUG] [WebSocketSessionMan.cc:64] WebSocket session removed.
+2017-05-15 08:38:14.531610 [NOTICE] [DownloadEngine.cc:244] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2017-05-15 08:38:16.219857 [INFO] [Context.cc:177] <<--- --- --- ---
+2017-05-15 08:38:16.219909 [INFO] [Context.cc:178]   --- --- --- ---
+2017-05-15 08:38:16.219918 [INFO] [Context.cc:179]   --- --- --- --->>
+2017-05-15 08:38:16.219929 [INFO] [Context.cc:180] aria2 1.19.0
+2017-05-15 08:38:16.219942 [INFO] [Context.cc:181] gcc 5.3.1 20160216
+  built by   x86_64-pc-linux-gnu
+  on         Feb 17 2016 22:40:25
+2017-05-15 08:38:16.219953 [INFO] [Context.cc:182] Linux 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64
+2017-05-15 08:38:16.219962 [INFO] [Context.cc:183] zlib/1.2.8 libxml2/2.9.3 sqlite3/3.10.2 GnuTLS/3.4.9 nettle GMP/6.1.0 c-ares/1.10.0 libssh2/1.5.0
+2017-05-15 08:38:16.219969 [INFO] [Context.cc:184] Logging started.
+2017-05-15 08:38:16.219976 [DEBUG] [Context.cc:214] Not setting rlimit NO_FILE: 65536 >= 1024
+2017-05-15 08:38:16.219982 [INFO] [SocketCore.cc:1595] Checking configured addresses
+2017-05-15 08:38:16.222060 [INFO] [SocketCore.cc:1645] Not considered: 127.0.0.1
+2017-05-15 08:38:16.222085 [INFO] [SocketCore.cc:1643] Found configured address: 192.168.8.100
+2017-05-15 08:38:16.222095 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.96.1
+2017-05-15 08:38:16.222104 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.36.1
+2017-05-15 08:38:16.222112 [INFO] [SocketCore.cc:1645] Not considered: ::1
+2017-05-15 08:38:16.222123 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:dcd9:1620:eb0e:2
+2017-05-15 08:38:16.222132 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:9c3d:be87:5d5d:d9e7
+2017-05-15 08:38:16.222141 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:88c2:2734:5f01:920d
+2017-05-15 08:38:16.222189 [INFO] [SocketCore.cc:1645] Not considered: fe80::ee3d:f47:cf00:fef2%wlp1s0
+2017-05-15 08:38:16.222205 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:1%vmnet1
+2017-05-15 08:38:16.222222 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:8%vmnet8
+2017-05-15 08:38:16.222231 [INFO] [SocketCore.cc:1650] IPv4 configured=1, IPv6 configured=1
+2017-05-15 08:38:16.222384 [INFO] [HttpListenCommand.cc:109] CUID#6 - Using port 6800 for accepting new connections
+2017-05-15 08:38:16.222415 [NOTICE] [HttpListenCommand.cc:111] IPv4 RPC: listening on TCP port 6800
+2017-05-15 08:38:16.222475 [INFO] [HttpListenCommand.cc:109] CUID#7 - Using port 6800 for accepting new connections
+2017-05-15 08:38:16.222496 [NOTICE] [HttpListenCommand.cc:111] IPv6 RPC: listening on TCP port 6800
+2017-05-15 08:38:16.223853 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.223887 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.224459 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.224473 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.224686 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.224695 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.225967 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.225991 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.226137 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.226145 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.226649 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.226664 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227035 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227045 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227239 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227248 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227297 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.227304 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.230899 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.230927 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.231160 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.231168 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.231324 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231381 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231440 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231497 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231553 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231601 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231656 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231714 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.231761 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 08:38:16.232206 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.232216 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 08:38:16.232295 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232313 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232325 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232336 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232348 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232359 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232371 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232382 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232392 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232403 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232415 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232426 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232438 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232448 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232467 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232478 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232489 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232500 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232512 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232523 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232543 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232554 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232566 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232577 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232589 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232600 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232622 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232633 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232643 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232653 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232667 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232677 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232693 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232703 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232714 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232725 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232736 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232746 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232758 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232768 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232778 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232788 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232803 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232813 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232823 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232834 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232844 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232853 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232864 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232874 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232884 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232894 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232905 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232914 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232924 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232935 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232946 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232957 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232970 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232980 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232990 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.232999 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233009 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233020 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233029 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233039 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233049 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233059 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233069 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233080 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233095 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233106 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233116 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233133 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233143 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233153 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233167 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233177 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233188 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233198 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233208 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233218 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233228 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233259 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233270 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233281 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233295 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233305 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233315 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233325 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233336 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233346 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233356 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233374 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233385 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233398 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233409 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233421 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233432 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233443 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233454 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233464 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233474 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233485 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233494 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233504 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233516 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233526 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233536 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233547 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233557 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233568 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233578 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233588 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233599 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233625 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233636 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233646 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233657 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233667 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233683 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233694 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233705 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233714 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233725 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233737 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233748 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233760 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233772 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233784 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233796 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233807 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233817 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233827 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233846 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233860 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233871 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233882 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233893 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233904 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233915 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233925 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233935 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233945 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 08:38:16.233974 [INFO] [LibgnutlsTLSContext.cc:159] 173 certificate(s) were imported.
+2017-05-15 08:38:16.243816 [INFO] [HttpListenCommand.cc:81] RPC: Accepted the connection from 127.0.0.1:39056.
+2017-05-15 08:38:16.244127 [INFO] [HttpServer.cc:144] HTTP Server received request
+GET /jsonrpc HTTP/1.1
+Connection: Upgrade
+Upgrade: websocket
+Host: localhost:6800
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: MTMtMTQ5NDgxNzY5NjIyMg==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+
+2017-05-15 08:38:16.244155 [DEBUG] [HttpServer.cc:269] HTTP Server sends upgrade response:
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: +WbRs2w/1sxrAr+Z7vY9mxS1x78=
+
+
+2017-05-15 08:38:16.244197 [INFO] [AbstractHttpServerResponseCommand.cc:118] CUID#8 - HttpServer: all response transmitted.
+2017-05-15 08:38:16.244233 [DEBUG] [WebSocketSessionMan.cc:57] WebSocket session added.
+2017-05-15 10:56:52.660849 [INFO] [WebSocketInteractionCommand.cc:99] CUID#8 - WebSocket session terminated (Possibly due to EOF).
+2017-05-15 10:56:52.660960 [DEBUG] [WebSocketSessionMan.cc:64] WebSocket session removed.
+2017-05-15 10:56:52.661078 [NOTICE] [DownloadEngine.cc:244] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2017-05-15 11:25:37.704451 [INFO] [Context.cc:177] <<--- --- --- ---
+2017-05-15 11:25:37.755790 [INFO] [Context.cc:178]   --- --- --- ---
+2017-05-15 11:25:37.755829 [INFO] [Context.cc:179]   --- --- --- --->>
+2017-05-15 11:25:37.755849 [INFO] [Context.cc:180] aria2 1.19.0
+2017-05-15 11:25:37.755887 [INFO] [Context.cc:181] gcc 5.3.1 20160216
+  built by   x86_64-pc-linux-gnu
+  on         Feb 17 2016 22:40:25
+2017-05-15 11:25:37.755910 [INFO] [Context.cc:182] Linux 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64
+2017-05-15 11:25:37.755928 [INFO] [Context.cc:183] zlib/1.2.8 libxml2/2.9.3 sqlite3/3.10.2 GnuTLS/3.4.9 nettle GMP/6.1.0 c-ares/1.10.0 libssh2/1.5.0
+2017-05-15 11:25:37.755945 [INFO] [Context.cc:184] Logging started.
+2017-05-15 11:25:37.755962 [DEBUG] [Context.cc:214] Not setting rlimit NO_FILE: 65536 >= 1024
+2017-05-15 11:25:37.755989 [INFO] [SocketCore.cc:1595] Checking configured addresses
+2017-05-15 11:25:37.758241 [INFO] [SocketCore.cc:1645] Not considered: 127.0.0.1
+2017-05-15 11:25:37.758257 [INFO] [SocketCore.cc:1643] Found configured address: 192.168.8.100
+2017-05-15 11:25:37.758266 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.96.1
+2017-05-15 11:25:37.758275 [INFO] [SocketCore.cc:1643] Found configured address: 172.16.36.1
+2017-05-15 11:25:37.758285 [INFO] [SocketCore.cc:1645] Not considered: ::1
+2017-05-15 11:25:37.758295 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:dcd9:1620:eb0e:2
+2017-05-15 11:25:37.758305 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:1835:23b6:9cfb:b481
+2017-05-15 11:25:37.758314 [INFO] [SocketCore.cc:1643] Found configured address: 2402:4000:bbfd:3529:88c2:2734:5f01:920d
+2017-05-15 11:25:37.758386 [INFO] [SocketCore.cc:1645] Not considered: fe80::ee3d:f47:cf00:fef2%wlp1s0
+2017-05-15 11:25:37.758406 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:1%vmnet1
+2017-05-15 11:25:37.758422 [INFO] [SocketCore.cc:1645] Not considered: fe80::250:56ff:fec0:8%vmnet8
+2017-05-15 11:25:37.758431 [INFO] [SocketCore.cc:1650] IPv4 configured=1, IPv6 configured=1
+2017-05-15 11:25:37.759108 [INFO] [HttpListenCommand.cc:109] CUID#6 - Using port 6800 for accepting new connections
+2017-05-15 11:25:37.759148 [NOTICE] [HttpListenCommand.cc:111] IPv4 RPC: listening on TCP port 6800
+2017-05-15 11:25:37.759231 [INFO] [HttpListenCommand.cc:109] CUID#7 - Using port 6800 for accepting new connections
+2017-05-15 11:25:37.759258 [NOTICE] [HttpListenCommand.cc:111] IPv6 RPC: listening on TCP port 6800
+2017-05-15 11:25:37.894984 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.895055 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.896607 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.896660 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.897204 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.897236 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.900220 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.900244 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.900590 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.900606 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.901732 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.901750 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.902647 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.902665 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.903109 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.903127 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.903244 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.903259 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.911660 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.911702 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.912205 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.912221 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.912560 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.912678 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.912806 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.912925 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.913045 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.913161 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.913280 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.913403 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.913505 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1914
+2017-05-15 11:25:37.914477 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.914493 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: common.c:1110
+2017-05-15 11:25:37.914661 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914693 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914716 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914738 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914760 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914782 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914803 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914824 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914844 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914865 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914887 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914922 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914955 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.914976 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915014 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915034 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915054 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915074 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915098 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915119 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915140 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915161 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915182 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915204 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915226 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915247 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915285 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915305 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915325 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915344 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915399 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915431 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915460 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915479 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915500 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915521 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915542 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915562 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915586 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915606 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915625 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915643 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915671 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915690 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915718 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915739 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915758 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915776 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915796 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915814 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915834 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915853 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915872 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915890 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915910 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915930 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915950 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915969 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.915993 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916013 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916032 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916050 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916069 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916088 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916107 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916125 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916144 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916163 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916183 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916202 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916221 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916240 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916259 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916291 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916311 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916330 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916356 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916375 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916395 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916414 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916432 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916452 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916470 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916529 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916549 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916569 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916596 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916615 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916634 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916653 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916672 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916691 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916710 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916746 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916774 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916802 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916823 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916844 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916864 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916885 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916904 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916923 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916941 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916959 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916978 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.916996 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917017 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917035 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917054 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917072 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917091 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917109 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917128 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917147 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917168 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917212 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917231 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917249 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917269 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917288 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917308 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917327 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917345 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917362 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917383 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917403 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917423 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917442 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917466 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917487 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917509 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917529 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917548 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917566 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917594 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917617 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917637 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917656 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917676 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917694 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917713 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917732 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917751 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917769 [DEBUG] [Platform.cc:85] GnuTLS: <3> ASSERT: mpi.c:246
+2017-05-15 11:25:37.917831 [INFO] [LibgnutlsTLSContext.cc:159] 173 certificate(s) were imported.
+2017-05-15 12:16:30.849134 [NOTICE] [DownloadEngine.cc:244] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.

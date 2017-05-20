@@ -18,6 +18,7 @@ router.get('/management',aclfn,aclf,function(req,res){
     res.render('userManagement',{title:'NYX | User Management',user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname}});
 });
 
+
 router.get('/administration',aclfn,aclf,function(req,res){
     Download.find({state:'pending'},(err,downloads)=>{
         if(err){
@@ -28,7 +29,16 @@ router.get('/administration',aclfn,aclf,function(req,res){
     });
 
 });
+router.get('/viewfiles',aclfn,aclf,function(req,res){
+    Download.find({state:'pending'},(err,downloads)=>{
+        if(err){
+            debug(err);
+        }
+        res.render('viewfiles',{title:'NYX | Administrator',user:{uname:req.user.username,name:req.user.fname +' '+ req.user.lname},downloadRequest:downloads});
 
+    });
+
+});
 //// for indivudual member registration
 let User = require('../model/User');
 

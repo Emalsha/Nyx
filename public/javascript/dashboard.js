@@ -33,8 +33,6 @@ $('#down_link_btn').click(function () {
                     $('#url_hi').val(link);
                     $('#url').val(link);
                     $('#url_info').modal('open');
-                    $('#fsize').val(state['size']);
-                    $('#file_size').html(state['size']);
 
                 } else {
                     x0p('Error','URL not exist.','error');
@@ -50,15 +48,23 @@ $('#down_link_btn').click(function () {
 
 // Check given url is exist
 let checkUrl = (url, cb) => {
-    $.ajax({
-        url:'/url/validate',
-        method:'post',
-        dataType:'json',
-        data:{url:encodeURIComponent(url)},
-        success:function (data) {
-            cb(data);
+
+    let request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+
+    request.onreadystatechange = function () {
+        console.log(request.readyState);
+        if (request.readyState == 4) {
+            cb(request.status === 200);
         }
-    })
+    };
+
+    request.open('GET', url, true);
+    request.send();
 };
 
 

@@ -4,11 +4,14 @@
 
 const debug = require('debug')('nyx:server');
 const debugd = require('debug')('nyx:database');
+const debuga = require('debug')('nyx:aria2c');
 const http = require('http');
 const cluster =require('cluster');
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const app = require('../app');
+const tm = require('../module/task_manager');
+const aria2 = require('../module/aria2c_config').aria2obj;
 
 const first_user = require('../module/first_user');
 
@@ -37,6 +40,8 @@ db.on('open',function(){
     debugd('Database connected.');
     createServer();
     first_user();
+    checkAriaServer();
+    taskManager();
 });
 
 
@@ -55,66 +60,66 @@ function createServer() {
     //     });
     // } else {
 
-        app.set('port', port);
+    app.set('port', port);
 
 
-        server.listen(port);
+    server.listen(port);
 
-        server.on('error', onError);
-        server.on('listening', onListening);
+    server.on('error', onError);
+    server.on('listening', onListening);
 
 
-        // debugw(`Worker ${process.pid} start`);
+    // debugw(`Worker ${process.pid} start`);
     // }
 }
 
 
 function normalizePort(val) {
-  let port = parseInt(val, 10);
+    let port = parseInt(val, 10);
 
-  if (isNaN(port)) {
-    // named pipe
-    return val;
-  }
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
 
-  if (port >= 0) {
-    // port number
-    return port;
-  }
+    if (port >= 0) {
+        // port number
+        return port;
+    }
 
-  return false;
+    return false;
 }
 
 function onError(error) {
-  if (error.syscall !== 'listen') {
-    throw error;
-  }
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
 
-  let bind = typeof port === 'string'
-    ? 'Pipe ' + port
-    : 'Port ' + port;
+    let bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
 
 
-  switch (error.code) {
-    case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
-      process.exit(1);
-      break;
-    case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
-      process.exit(1);
-      break;
-    default:
-      throw error;
-  }
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
 }
 
 function onListening() {
-  let addr = server.address();
-  let bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+    let addr = server.address();
+    let bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
 }
 
 
@@ -127,3 +132,15 @@ io.on('connection', function(socket){
     console.log('connection initialized',socket.id);
 });
 
+function taskManager() {
+    tm.setTimer(0, 11, 0, 12);
+}
+function checkAriaServer() {
+    aria2.getVersion(function (err, res) {
+        if (err) {
+            debuga('Server not running...');
+        } else {
+            debuga('aria2c running on port 6800');
+        }
+    })
+}
