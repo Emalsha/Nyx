@@ -3,10 +3,7 @@
  */
 const Aria2 = require('aria2');
 const debug = require('debug')('nyx:aria-config');
-<<<<<<< HEAD
-=======
 const Download = require('../model/Download');
->>>>>>> origin/master
 
 let option = {
     secure: false,
@@ -19,13 +16,11 @@ let option = {
 const aria2 = new Aria2(option);
 
 aria2.onDownloadStart = function (msg) {
-<<<<<<< HEAD
     debug('Download start > GID : ' + msg.gid);
 };
 
 aria2.onDownloadComplete = function (msg) {
     debug('Download completed on > GID :' + msg.gid);
-=======
 
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloading'},(err,res)=>{
         if(err){
@@ -42,7 +37,7 @@ aria2.onDownloadComplete = function (msg) {
         }
     });
     // debug('Download completed on > GID :' + msg.gid);
->>>>>>> origin/master
+
 };
 
 aria2.onDownloadError = function (msg) {
