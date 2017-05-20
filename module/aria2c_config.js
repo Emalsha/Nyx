@@ -16,6 +16,11 @@ let option = {
 const aria2 = new Aria2(option);
 
 aria2.onDownloadStart = function (msg) {
+    debug('Download start > GID : ' + msg.gid);
+};
+
+aria2.onDownloadComplete = function (msg) {
+    debug('Download completed on > GID :' + msg.gid);
 
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloading'},(err,res)=>{
         if(err){
@@ -32,6 +37,7 @@ aria2.onDownloadComplete = function (msg) {
         }
     });
     // debug('Download completed on > GID :' + msg.gid);
+
 };
 
 aria2.onDownloadError = function (msg) {

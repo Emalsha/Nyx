@@ -2,38 +2,43 @@
  * Created by emalsha on 5/13/17.
  */
 
-const aria2 = require('./aria2c_config').aria2obj;
+const Aria2 = require('aria2');
 const debug = require('debug')('nyx:ariac');
 
 const Download = require('../model/Download');
 
+let option = {
+    secure: false,
+    host: 'localhost',
+    port: 6800,
+    secret: 'ucscaria',
+    path: '/jsonrpc'
+};
+const aria2 = new Aria2(option);
+
+aria2.onDownloadStart = function (msg) {
+    debug('Download start > GID : ' + msg.gid);
+};
+
+aria2.onDownloadComplete = function (msg) {
+    debug('Download completed on > GID :' + msg.gid);
+};
+
+aria2.onDownloadError = function (msg) {
+    debug('Error on : ' + msg.gid);
+};
 
 let start_ariac = function () {
 
-    aria2.open(function () {
+    aria2.open().then(function () {
         debug('Web socket is open');
+    }).then(function () {
 
-        getDownloadRequest(function (ar) {
+        getDownloadRequest(function(ar){
 
-            for (let i = 0; i < ar.length; i++) {
-                let option = {'dir': __dirname + '/../tempDownload'}; //TODO : This path should take from database according to download file.
-                aria2.addUri([ar[i]], option, function (err, res) {
-
-                    if (err) {
-                        debug(err);
-                    } else {
-
-                        Download.findOneAndUpdate({
-                            link: ar[i],
-                            state: 'approved',
-                            admin_decision: true
-                        }, {gid: res, download_start_date: new Date()}, (err, dres) => {
-                            if (err) {
-                                debug('Download update failed. Link :' + ar[i]);
-                            }
-                        })
-                    }
-
+            for (let i = 0; i < ar.length ; i++) {
+                aria2.addUri([ar[i]], function (err, res) {
+                    // debug(err || res);
                 })
             }
         });
@@ -42,7 +47,7 @@ let start_ariac = function () {
 };
 
 let pause_ariac = function () {
-    aria2.pauseAll(function (err, res) {
+    aria2.pauseAll(function(err,res){
         console.log(err || res);
     })
 };
@@ -53,7 +58,7 @@ function getDownloadRequest(cb) {
             debug(err);
         }
         let array = [];
-        for (let i = 0; i < downloads.length; i++) {
+        for(let i=0;i<downloads.length;i++){
             array.push(downloads[i]['link']);
         }
 
