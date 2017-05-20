@@ -19,23 +19,25 @@ aria2.onDownloadStart = function (msg) {
 
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloading'},(err,res)=>{
         if(err){
-            debug('Downloading file update faile : '+err);
+            debug('Download start file update fail : '+err);
         }
     });
-    // debug('Download start > GID : ' + msg.gid);
 };
 
 aria2.onDownloadComplete = function (msg) {
     Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloaded',download_end_date:new Date()},(err,res)=>{
         if(err){
-            debug('Downloaded file update faile : '+err);
+            debug('Downloaded file update fail : '+err);
         }
     });
-    // debug('Download completed on > GID :' + msg.gid);
 };
 
 aria2.onDownloadError = function (msg) {
-    debug('Error on : ' + msg.gid);
+    Download.findOneAndUpdate({gid: msg.gid}, {state: 'downloadError',download_end_date:new Date()},(err,res)=>{
+        if(err){
+            debug('Downloaded error file update fail : '+err);
+        }
+    });
 };
 
 module.exports.aria2obj = aria2;
