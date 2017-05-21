@@ -31,6 +31,8 @@
     <% if(isManage){%>
     <li class="sidemenu_li"><a href="/admin/management" class="white-text"><i class="material-icons left" style="color: #ffffff;">supervisor_account</i>User Management </a></li>
     <%} if(isAdmin){%>
+    <li class="sidemenu_li"><a href="/admin/managepublicfiles" class="white-text"><i class="material-icons left" style="color: #ffffff;">supervisor_account</i>Manage Public files</a></li>
+      <%} if(isAdmin){%>
     <li class="sidemenu_li"><a href="/admin/administration" class="white-text"><i class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a></li>
     <%}%>
     <li class="sidemenu_li"><a href="/users/help" class="white-text"><i class="material-icons left" style="color: #ffffff;">live_help</i>About</a></li>

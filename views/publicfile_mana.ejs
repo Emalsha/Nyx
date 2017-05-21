@@ -1,0 +1,164 @@
+<!-- Created by emalsha on 3/20/17. -->
+
+<!DOCTYPE html>
+<head>
+
+    <% include includes/head.ejs %>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <!--side menu-->
+    <% include includes/main_nav.ejs %>
+
+    <!--page content-->
+    <div class="main_content">
+
+        <!--responsive - mobile size menu-->
+        <div class="toppanel z-depth-1">
+            <div class="col s4">
+                <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                    <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+                </a>
+
+            </div>
+            <div class="col s4">
+                <div class="row" style="text-align: center">
+                    <img src="/public/images/logo_small.png"
+                         style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                </div>
+            </div>
+            <div class="col s4 right-align">
+
+            </div>
+        </div>
+
+        <!-- body container -->
+        <div class="row main_container">
+            <div class="col s12">
+                <div class="col s8">
+                    <h4>Public Files Management</h4>
+                </div>
+                <div class="row">
+                    <div class="col l4 m4 s4">
+                        <form class="col l12 m12 s12">
+                            <div class="row">
+                                <div class="input-field">
+                                    <i class="small material-icons prefix">search</i>
+                                    <input type="text" id="search_file" class="validate">
+                                    <label for="search_file">Search</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" id="result">
+                    <%
+                    if(publicFile.length > 0){
+                    %>
+                    <ul class="collapsible" id="list" data-collapsible="accordion">
+                        <%
+                        for (let i = 0; i < publicFile.length; i++) {
+                            let data = publicFile[i];
+                        %>
+                        <% let arr = data['link'].split("/");
+                        let leng=arr.length -1;
+                        %>
+
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s4 truncate"><%= data['link'] %></div>
+                                <div class="col s2"><%= data['size'] %></div>
+                                <% let rdate = new Date(data['request_date']); %>
+                                <div class="col s2"><%= rdate.toDateString() %></div>
+                                <div class="col s4 right-align">
+                                    <a  class="custom_btn blue white-text" href="/users/download/<%= arr[leng]%>">Download</a>
+                                    <a  class="custom_btn red white-text" href="/admin/delete/<%= arr[leng]%>/<%= data['_id']%>">Delete</a>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <span class="subsection_title_sub no_padding">Download Details</span>
+                                    </div>
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['link'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Requested Date</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= rdate.toDateString() %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>
+                                    <% let approveDate = new Date(data['admin_decision_date']) %>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= approveDate.toDateString() %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['admin'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>
+                                    <% let downDate = new Date(data['download_start_date']) %>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= downDate.toDateString() %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">MD5</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['md5'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Availability</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['availability'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['admin_note'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Description</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['description'] %></div>
+
+                                    <div class="col s12 l3 truncate contentbox_detail_field">Tags</div>
+                                    <div class="col s12 l9 truncate  contentbox_detail_value">
+                                        <%
+                                            var tags = data['tags'];
+                                        if(tags != ''){
+                                        for(let i = 0; i < tags.length;i++){ %>
+                                        <div class="chip">
+                                            <%= tags[i] %>
+                                        </div>
+                                        <% }
+                                        } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% }
+                        %>
+
+                    </ul>
+                    <%
+                    } else{ %>
+
+                    <div class="no-content">
+                        No downloaded files.
+
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <!-- end of body container -->
+
+    </div>
+</div>
+
+<!--Import footer part-->
+<% include includes/foot.ejs %>
+
+<script src="../public/javascript/publicFile.js"></script>
+<script>
+
+    $('.button-collapse').sideNav({
+            menuWidth: 250, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+        }
+    );
+
+</script>
+</body>
+</html>
