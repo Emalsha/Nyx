@@ -23,10 +23,10 @@ router.post('/request',function(req,res){
 
     if(req.body.availability === 'true'){
         availability = 'public';
-        file_path = __dirname+'/../tempDownload/public/';
+        file_path = __dirname+'/../tempDownload/public';
     }else{
         availability = 'private';
-        file_path = __dirname+'/../tempDownload/'+ req.user.username +'/';
+        file_path = __dirname+'/../tempDownload/'+ req.user.username ;
     }
 
     if(req.body.description){
@@ -81,10 +81,10 @@ router.post('/approve',function(req,res){
 
         if(req.body.availability === 'true'){
             download.availability = 'public';
-            download.file_path = __dirname+'/../tempDownload/public/';
+            download.file_path = __dirname+'/../tempDownload/public';
         }else{
             download.availability = 'private';
-            download.file_path = __dirname+'/../tempDownload/'+ req.user.username +'/';
+            download.file_path = __dirname+'/../tempDownload/'+ req.user.username;
         }
 
         download.admin = req.user.username;
