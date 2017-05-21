@@ -14,6 +14,7 @@ router.post('/request',function(req,res){
     let availability;
     let description;
     let size;
+    let file_path;
 
     if(req.body.tags){
         let st = req.body.tags;
@@ -22,8 +23,10 @@ router.post('/request',function(req,res){
 
     if(req.body.availability === 'true'){
         availability = 'public';
+        file_path = __dirname+'/../tempDownload/public';
     }else{
         availability = 'private';
+        file_path = __dirname+'/../tempDownload/'+ req.user.username ;
     }
 
     if(req.body.description){
@@ -42,7 +45,8 @@ router.post('/request',function(req,res){
         request_user:req.user.username,
         state:'pending',
         description:description,
-        size:size
+        size:size,
+        file_path:file_path,
     });
 
     newDownload.save(function(err){
@@ -77,8 +81,10 @@ router.post('/approve',function(req,res){
 
         if(req.body.availability === 'true'){
             download.availability = 'public';
+            download.file_path = __dirname+'/../tempDownload/public';
         }else{
             download.availability = 'private';
+            download.file_path = __dirname+'/../tempDownload/'+ req.user.username;
         }
 
         download.admin = req.user.username;
@@ -131,15 +137,5 @@ router.post('/reject',function(req,res){
     })
 
 });
-
-// router.get('/getall',function (req, res) {
-//     Download.find({},(err,downloads)=>{
-//         if(err){
-//             debug(err);
-//         }
-//         res.contentType('json');
-//         res.send(downloads);
-//     })
-// });
 
 module.exports = router;

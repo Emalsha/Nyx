@@ -16,20 +16,20 @@ let start_ariac = function () {
         getDownloadRequest(function(ar){
 
             for (let i = 0; i < ar.length ; i++) {
-                let option = {'dir': __dirname + '/../tempDownload'}; //TODO : This path should take from database according to download file.
-                aria2.addUri([ar[i]], option, function (err, res) {
+                let option = {'dir': ar[i]['path']}; //TODO : This path should take from database according to download file.
+                aria2.addUri([ar[i]['link']], option, function (err, res) {
 
                     if (err) {
                         debug(err);
                     } else {
 
                         Download.findOneAndUpdate({
-                            link: ar[i],
+                            link: ar[i]['link'],
                             state: 'approved',
                             admin_decision: true
                         }, {gid: res, download_start_date: new Date()}, (err, dres) => {
                             if (err) {
-                                debug('Download update failed. Link :' + ar[i]);
+                                debug('Download update failed. Link :' + ar[i]['link']);
                             }
                         })
                     }
@@ -54,7 +54,7 @@ function getDownloadRequest(cb) {
         }
         let array = [];
         for(let i=0;i<downloads.length;i++){
-            array.push(downloads[i]['link']);
+            array.push({link:downloads[i]['link'],path:downloads[i]['file_path']});
         }
 
         cb(array);

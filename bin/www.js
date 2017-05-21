@@ -139,7 +139,7 @@ io.on('connection', function(socket){
 
 
 function taskManager() {
-    tm.setTimer(0, 11, 0, 12);
+    tm.setTimer();
 }
 function checkAriaServer() {
     aria2.getVersion(function (err, res) {

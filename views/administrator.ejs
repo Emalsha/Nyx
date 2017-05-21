@@ -47,10 +47,12 @@
                 <div class="col s4 m3 contentbox_mainbox">
                     <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Network Activity</div>
                     <div class="col s12 truncate contentbox_main blue-grey-text" id="system_rx">Unknown</div>
-                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="system_tx">Unknown</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="system_tx">Unknown
+                    </div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress  blue-grey lighten-5">
-                            <div class="determinate"  id="progress_rx" style="width: 20%;background-color: #33D933;"></div>
+                            <div class="determinate" id="progress_rx"
+                                 style="width: 20%;background-color: #33D933;"></div>
                             <div class="determinate red accent-3" id="progress_tx" style="width: 10%"></div>
                         </div>
                     </div>
@@ -61,13 +63,13 @@
                     var system_tx = document.getElementById('system_tx');
                     var progress_rx = document.getElementById('progress_rx');
                     var progress_tx = document.getElementById('progress_tx');
-                    socket.on('system_rxtx', function(msg){
+                    socket.on('system_rxtx', function (msg) {
                         var obj = JSON.parse(msg);
                         //console.log(msg);
                         system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
                         system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
-                        progress_rx.style.width = obj.rxprecent+"%";
-                        progress_tx.style.width = obj.txprecent+"%";
+                        progress_rx.style.width = obj.rxprecent + "%";
+                        progress_tx.style.width = obj.txprecent + "%";
                     });
 
                 </script>
@@ -87,9 +89,12 @@
 
                 <!--User available disk space status-->
                 <div class="col s6 m3 l3 contentbox_mainbox">
-                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Available Disk Space
+                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Available Disk
+                        Space
                     </div>
-                    <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3" id="system_storage_used">Unknown</div>
+                    <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3"
+                         id="system_storage_used">Unknown
+                    </div>
                     <div class="col s12 m12 l12 truncate contentbox_txt_down" id="system_storage_total">Unknown</div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress deep-orange  lighten-4" id="system_storage_progress_outer">
@@ -103,14 +108,14 @@
                     var storage_total = document.getElementById('system_storage_total');
                     var storage_progress = document.getElementById('system_storage_progress');
                     var system_storage_progress_outer = document.getElementById('system_storage_progress_outer');
-                    socket.on('system_storage_usage', function(msg){
+                    socket.on('system_storage_usage', function (msg) {
                         var obj = JSON.parse(msg);
                         console.log(msg);
                         storage_used.innerHTML = obj.available + " " + obj.availableUnit;
                         storage_total.innerHTML = obj.used + " " + obj.usedUnit + " used out of " + obj.total + " " + obj.totalUnit;
-                        storage_progress.style.width = obj.progress+"%";
+                        storage_progress.style.width = obj.progress + "%";
 
-                        if (obj.progress > 85 ){
+                        if (obj.progress > 85) {
                             storage_used.classList.remove('teal-text');
                             storage_used.classList.remove('lighten-2');
                             storage_used.classList.add('deep-orange-text');
@@ -119,7 +124,7 @@
                             storage_progress.classList.add('deep-orange');
                             system_storage_progress_outer.classList.add('deep-orange');
                             system_storage_progress_outer.classList.add('lighten-4');
-                        }else{
+                        } else {
                             storage_used.classList.add('teal-text');
                             storage_used.classList.add('lighten-2');
                             storage_used.classList.remove('deep-orange-text');
@@ -136,8 +141,12 @@
                 <!--Download manager up time status-->
                 <div class="col s4 m3 contentbox_mainbox">
                     <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
-                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">Unknown</div>
-                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">Unknown</div>
+                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">
+                        Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">
+                        Unknown
+                    </div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
                             <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
@@ -150,13 +159,13 @@
                     var online_status_eta = document.getElementById('online_status_eta');
                     var online_status_progress = document.getElementById('online_status_progress');
                     var online_status_progress_outer = document.getElementById('online_status_progress_outer');
-                    socket.on('online_status_info', function(msg){
+                    socket.on('online_status_info', function (msg) {
                         var obj = JSON.parse(msg);
                         online_status_code.innerHTML = obj.status;
                         online_status_eta.innerHTML = obj.eta;
-                        online_status_progress.style.width = obj.precent+"%";
+                        online_status_progress.style.width = obj.precent + "%";
 
-                        if (obj.status == "Online"){
+                        if (obj.status == "Online") {
                             online_status_code.classList.add('teal-text');
                             online_status_code.classList.add('lighten-2');
                             online_status_code.classList.remove('deep-orange-text');
@@ -165,7 +174,7 @@
                             online_status_progress.classList.remove('deep-orange');
                             online_status_progress_outer.classList.remove('deep-orange');
                             online_status_progress_outer.classList.remove('lighten-4');
-                        }else{
+                        } else {
                             online_status_code.classList.remove('teal-text');
                             online_status_code.classList.remove('lighten-2');
                             online_status_code.classList.add('deep-orange-text');
@@ -486,146 +495,148 @@
 
                 <div id="test5" class="col s12">
                     <div class="row">
-                        <div class="input-field col s6">
-                            <select>
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="0">12:00 AM</option>
-                                <option value="1">1:00 AM</option>
-                                <option value="2">2:00 AM</option>
-                                <option value="3">3:00 AM</option>
-                                <option value="4">4:00 AM</option>
-                                <option value="5">5:00 AM</option>
-                                <option value="6">6:00 AM</option>
-                                <option value="7">7:00 AM</option>
-                                <option value="8">8:00 AM</option>
-                                <option value="9">9:00 AM</option>
-                                <option value="10">10:00 AM</option>
-                                <option value="11">11:00 AM</option>
-                                <option value="12">12:00 PM</option>
-                                <option value="13">1:00 PM</option>
-                                <option value="14">2:00 PM</option>
-                                <option value="15">3:00 PM</option>
-                                <option value="16">4:00 PM</option>
-                                <option value="17">5:00 PM</option>
-                                <option value="18">6:00 PM</option>
-                                <option value="19">7:00 PM</option>
-                                <option value="20">8:00 PM</option>
-                                <option value="21">9:00 PM</option>
-                                <option value="22">10:00 PM</option>
-                                <option value="23">11:00 PM</option>
-                            </select>
-                            <label>Start of Peak Hour</label>
-                        </div>
+                            <div class="input-field col s6">
+                                <select id="start_time" required>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="0">12:00 AM</option>
+                                    <option value="1">1:00 AM</option>
+                                    <option value="2">2:00 AM</option>
+                                    <option value="3">3:00 AM</option>
+                                    <option value="4">4:00 AM</option>
+                                    <option value="5">5:00 AM</option>
+                                    <option value="6">6:00 AM</option>
+                                    <option value="7">7:00 AM</option>
+                                    <option value="8">8:00 AM</option>
+                                    <option value="9">9:00 AM</option>
+                                    <option value="10">10:00 AM</option>
+                                    <option value="11">11:00 AM</option>
+                                    <option value="12">12:00 PM</option>
+                                    <option value="13">1:00 PM</option>
+                                    <option value="14">2:00 PM</option>
+                                    <option value="15">3:00 PM</option>
+                                    <option value="16">4:00 PM</option>
+                                    <option value="17">5:00 PM</option>
+                                    <option value="18">6:00 PM</option>
+                                    <option value="19">7:00 PM</option>
+                                    <option value="20">8:00 PM</option>
+                                    <option value="21">9:00 PM</option>
+                                    <option value="22">10:00 PM</option>
+                                    <option value="23">11:00 PM</option>
+                                </select>
+                                <label>Start of Peak Hour</label>
+                            </div>
 
-                        <div class="input-field col s6">
-                            <select>
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="0">12:00 AM</option>
-                                <option value="1">1:00 AM</option>
-                                <option value="2">2:00 AM</option>
-                                <option value="3">3:00 AM</option>
-                                <option value="4">4:00 AM</option>
-                                <option value="5">5:00 AM</option>
-                                <option value="6">6:00 AM</option>
-                                <option value="7">7:00 AM</option>
-                                <option value="8">8:00 AM</option>
-                                <option value="9">9:00 AM</option>
-                                <option value="10">10:00 AM</option>
-                                <option value="11">11:00 AM</option>
-                                <option value="12">12:00 PM</option>
-                                <option value="13">1:00 PM</option>
-                                <option value="14">2:00 PM</option>
-                                <option value="15">3:00 PM</option>
-                                <option value="16">4:00 PM</option>
-                                <option value="17">5:00 PM</option>
-                                <option value="18">6:00 PM</option>
-                                <option value="19">7:00 PM</option>
-                                <option value="20">8:00 PM</option>
-                                <option value="21">9:00 PM</option>
-                                <option value="22">10:00 PM</option>
-                                <option value="23">11:00 PM</option>
-                            </select>
-                            <label>End of Peak Hour</label>
-                        </div>
+                            <div class="input-field col s6">
+                                <select id="end_time" required>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="0">12:00 AM</option>
+                                    <option value="1">1:00 AM</option>
+                                    <option value="2">2:00 AM</option>
+                                    <option value="3">3:00 AM</option>
+                                    <option value="4">4:00 AM</option>
+                                    <option value="5">5:00 AM</option>
+                                    <option value="6">6:00 AM</option>
+                                    <option value="7">7:00 AM</option>
+                                    <option value="8">8:00 AM</option>
+                                    <option value="9">9:00 AM</option>
+                                    <option value="10">10:00 AM</option>
+                                    <option value="11">11:00 AM</option>
+                                    <option value="12">12:00 PM</option>
+                                    <option value="13">1:00 PM</option>
+                                    <option value="14">2:00 PM</option>
+                                    <option value="15">3:00 PM</option>
+                                    <option value="16">4:00 PM</option>
+                                    <option value="17">5:00 PM</option>
+                                    <option value="18">6:00 PM</option>
+                                    <option value="19">7:00 PM</option>
+                                    <option value="20">8:00 PM</option>
+                                    <option value="21">9:00 PM</option>
+                                    <option value="22">10:00 PM</option>
+                                    <option value="23">11:00 PM</option>
+                                </select>
+                                <label>End of Peak Hour</label>
+                            </div>
+                            <div>
+                                <button class="waves-effect waves-light btn" id="set_time">Set</button>
+                            </div>
                     </div>
                 </div>
                 <div id="test4" class="col s12">Test 5</div>
                 <div id="test6" class="col s12">Test 6</div>
 
 
-
             </div>
 
         </div>
     </div>
-    </div>
+</div>
 
 
-    <script>
+<script>
 
 
+    $('.button-collapse').sideNav({
+            menuWidth: 250, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+        }
+    );
 
-        $('.button-collapse').sideNav({
-                menuWidth: 250, // Default is 300
-                edge: 'left', // Choose the horizontal origin
-            }
-        );
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+        $('#approve_newtags').material_chip()
+    });
 
-        $(document).ready(function () {
-            $('ul.tabs').tabs();
-            $('#approve_newtags').material_chip()
-        });
+    $('.chips').material_chip();
 
-        $('.chips').material_chip();
-
-        //    Approve form
-        $('#approveForm').submit(function () {
+    //    Approve form
+    $('#approveForm').submit(function () {
 //        Get tag values
-            let ar = $('#approve_newtags').material_chip('data');
-            let new_array = [];
-            for (let i = 0; i < ar.length; i++) {
-                new_array.push(ar[i].tag);
-            }
-            $('#tag_values').val(new_array);
+        let ar = $('#approve_newtags').material_chip('data');
+        let new_array = [];
+        for (let i = 0; i < ar.length; i++) {
+            new_array.push(ar[i].tag);
+        }
+        $('#tag_values').val(new_array);
 
 //        Get switch value
-            let a = $('#availablity_switch').prop('checked');
-            $('#availability').val(a);
+        let a = $('#availablity_switch').prop('checked');
+        console.log(a);
+        $('#availability').val(a);
 
-        });
+    });
 
-        //    Reject form
-        let rejectConfirm = function () {
+    //    Reject form
+    let rejectConfirm = function () {
 
-            x0p({
-                title: "Confirm Reject",
-                text: 'Reject Download Request.',
-                icon: 'warning',
-                type: 'warning',
-                animationType: 'fadeIn',
-                button: [
-                    {
-                        type: 'warning',
-                        text: 'Reject',
-                        showLoading: true
-                    },
-                    {
-                        type: 'cancel'
-                    }
-                ]
-            }, function (data) {
-                if (data) {
-                    console.log(data);
-                    console.log(data === 'warning');
-                    if (data === 'warning') {
-                        document.getElementById('rejectForm').submit();
-                    }
+        x0p({
+            title: "Confirm Reject",
+            text: 'Reject Download Request.',
+            icon: 'warning',
+            type: 'warning',
+            animationType: 'fadeIn',
+            button: [
+                {
+                    type: 'warning',
+                    text: 'Reject',
+                    showLoading: true
+                },
+                {
+                    type: 'cancel'
                 }
-            });
-            return false;
-        };
+            ]
+        }, function (data) {
+            if (data) {
+                console.log(data);
+                console.log(data === 'warning');
+                if (data === 'warning') {
+                    document.getElementById('rejectForm').submit();
+                }
+            }
+        });
+        return false;
+    };
 
-    </script>
+</script>
 
 
     <script>
@@ -634,20 +645,20 @@
 
 
 
-        $('document').ready(function () {
+    $('document').ready(function () {
 
-            var optionsNoAnimation = {
-                animation: false,
-                //Boolean - If we want to override with a hard coded scale
-                scaleOverride: true,
-                //** Required if scaleOverride is true **
-                //Number - The number of steps in a hard coded scale
-                scaleSteps: 20,
-                //Number - The value jump in the hard coded scale
-                scaleStepWidth: 10,
-                //Number - The scale starting value
-                scaleStartValue: 0
-            }
+        var optionsNoAnimation = {
+            animation: false,
+            //Boolean - If we want to override with a hard coded scale
+            scaleOverride: true,
+            //** Required if scaleOverride is true **
+            //Number - The number of steps in a hard coded scale
+            scaleSteps: 20,
+            //Number - The value jump in the hard coded scale
+            scaleStepWidth: 10,
+            //Number - The scale starting value
+            scaleStartValue: 0
+        }
 
             var network_usage_chart = $('#network_usage')[0].getContext('2d');
             network_usage = new Chart(network_usage_chart, {
@@ -675,28 +686,28 @@
                                 labelString: 'MBps'
                             }
                         }]
-                    }
-                },
-                data: {
-                    xLabels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
-                    datasets: [
-                        {
-                            label: 'Upload',
-                            borderColor: "rgba(0, 12, 240,0)",
-                            borderWidth:1,
-                            backgroundColor: "rgba(255, 69, 0,1)",
-                            radius: 0, // radius is 0 for only this dataset
-                            fill:true
-                        },
-                        {
-                            label: 'Download',
-                            borderWidth:1,
-                            borderColor: "rgba(0, 0, 0,0)",
-                            backgroundColor: "rgba(0, 207, 0,0.8)",
-                            radius: 0 // radius is 0 for only this dataset
-                        }]
                 }
-            });
+            },
+            data: {
+                xLabels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                datasets: [
+                    {
+                        label: 'Upload',
+                        borderColor: "rgba(0, 12, 240,0)",
+                        borderWidth: 1,
+                        backgroundColor: "rgba(255, 69, 0,1)",
+                        radius: 0, // radius is 0 for only this dataset
+                        fill: true
+                    },
+                    {
+                        label: 'Download',
+                        borderWidth: 1,
+                        borderColor: "rgba(0, 0, 0,0)",
+                        backgroundColor: "rgba(0, 207, 0,0.8)",
+                        radius: 0 // radius is 0 for only this dataset
+                    }]
+            }
+        });
 
 
 
