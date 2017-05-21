@@ -8,6 +8,7 @@ const acl = require('../module/acl_fn');
 const debug = require('debug')('nyx:adminRouter');
 const Download = require('../model/Download');
 const Time = require('../model/Time');
+const tm = require('../module/task_manager');
 let passport = require('passport');
 
 
@@ -70,6 +71,7 @@ router.post('/server', aclfn, aclf, function (req, res) {
             if (err) {
                 res.send(false);
             } else {
+                tm.setTimer();
                 res.send(true);
             }
         })
