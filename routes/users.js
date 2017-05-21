@@ -116,6 +116,43 @@ router.get('/download/:id', function(req, res, next) {
   //res.render('index', { title: 'Express' });
 
 });
+// delete a file
+
+ router.get('/delete/:id/:id2', function(req, res, next) {
+
+   var s=req.params.id;
+   var x=req.params.id2;
+
+   console.log(x);
+   const fs = require('fs');
+   //res.redirect('/');
+   var filePath = "../test/"+s; // Or format the path using the `id` rest param
+   var fileName = s; // The default name the browser will us
+
+   fs.unlink(filePath);
+   Download.findById(x,function(err,download){
+     if(err) {
+         debug(err);
+     }
+     download.state = 'deleted';
+
+     download.save(function (err) {
+         if(err){
+             debug(err);
+         }
+         console.log("deleted");
+         res.redirect('/users/myfile');
+     });
+
+
+   })
+   req.flash('success','File deleted.');
+  //  res.download(filePath, fileName);
+   //res.render('index', { title: 'Express' });
+
+ });
+
+
 
 
 module.exports = router;

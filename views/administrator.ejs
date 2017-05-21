@@ -65,7 +65,7 @@
                     var progress_tx = document.getElementById('progress_tx');
                     socket.on('system_rxtx', function (msg) {
                         var obj = JSON.parse(msg);
-                        console.log(msg);
+                        //console.log(msg);
                         system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
                         system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
                         progress_rx.style.width = obj.rxprecent + "%";
@@ -73,6 +73,7 @@
                     });
 
                 </script>
+
 
 
                 <div class="col s4 m3 contentbox_mainbox">
@@ -638,8 +639,10 @@
 </script>
 
 
-<script>
-    var network_usage;
+    <script>
+        var network_usage;
+        var ram_usage;
+
 
 
     $('document').ready(function () {
@@ -657,28 +660,27 @@
             scaleStartValue: 0
         }
 
-        var network_usage_chart = $('#network_usage')[0].getContext('2d');
-        network_usage = new Chart(network_usage_chart, {
-            type: 'line',
-            responsive: true,
-
-            maintainAspectRatio: false,
-            options: {
-                title: {
-                    display: true,
-                    text: 'Last Thirty Minute Network Usage',
-                    fontSize: 14,
-                    position: 'bottom'
-                },
-                animation: false,
-                scaleOverride: true,
-                scaleSteps: 20,
-                scaleStepWidth: 10,
-                scaleStartValue: 10,
-                pointRadius: 0,
-                scales: {
-                    yAxes: [
-                        {
+            var network_usage_chart = $('#network_usage')[0].getContext('2d');
+            network_usage = new Chart(network_usage_chart, {
+                type: 'line',
+                responsive: true,
+                maintainAspectRatio: false,
+                options: {
+                    title: {
+                        display: true,
+                        text: 'Last Thirty Minute Network Usage',
+                        fontSize: 14,
+                        position: 'bottom'
+                    },
+                    animation: false,
+                    scaleOverride: true,
+                    scaleSteps: 20,
+                    scaleStepWidth: 10,
+                    scaleStartValue: 10,
+                    pointRadius:0,
+                    scales: {
+                        yAxes: [
+                            {
                             scaleLabel: {
                                 display: true,
                                 labelString: 'MBps'
@@ -707,111 +709,71 @@
             }
         });
 
-        setInterval(function () {
-//                $.ajax({
-//                    url: '/info/network_usage',
-//                    dataType: "json",
-//                    success: function (data) {
-//                        network_usage.data.datasets[1].data = data[0]['array'];
-//                        network_usage.data.datasets[0].data = data[1]['array'];
-//                        network_usage.update();
-//
-//                    }
-//                });
-//                socket.emit('message', 'Hi server, how are you?');
-        }, 1000 * 1);
-    });
 
 
-    var system_load_chart = $('#system_load')[0].getContext('2d');
-    var system_load = new Chart(system_load_chart, {
-        type: 'line',
-        responsive: true,
-        maintainAspectRatio: false,
-        options: {
-            title: {
-                display: true,
-                text: 'System Load',
-                fontSize: 14,
-                position: 'bottom',
-            }
-        },
-        data: {
-            labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90'],
-            datasets: [
-                {
-                    label: 'Upload',
-                    data: [100, 85, 115, 227, 21, 105, 120],
-                    backgroundColor: "rgba(251, 188, 5,0.5)"
+
+            //SYSTEM LOAD GRAPH
+            var system_load_chart = $('#system_load')[0].getContext('2d');
+            ram_usage = new Chart(system_load_chart, {
+                type: 'line',
+                responsive: true,
+                maintainAspectRatio: false,
+                options: {
+                    title: {
+                        display: true,
+                        text: 'System Memory Usage',
+                        fontSize: 14,
+                        position: 'bottom',
+                        max:100
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                max: 100,
+                                min: 0,
+                                stepSize: 5
+                            }
+                        }]
+                    }
                 },
-                {
-                    label: 'Download',
-                    data: [900, 1024, 500, 247, 304, 125, 420],
-                    backgroundColor: "rgba(5, 176, 36,0.8)"
-                }]
-        }
-    });
-
-    var system_memory_chart = $('#system_memory')[0].getContext('2d');
-    var system_memory = new Chart(system_memory_chart, {
-        type: 'line',
-        responsive: false,
-        maintainAspectRatio: false,
-        data: {
-            labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90'],
-            datasets: [{
-                label: 'Download Speed',
-                data: [356, 55, 33, 247, 304, 125, 420],
-                backgroundColor: "rgba(5, 176, 36,0.8)"
-            }]
-        }
-    });
-
-    var ctx = document.getElementById('myChart2').getContext('2d');
-    var myChart2 = new Chart(ctx, {
-        type: 'line',
-        responsive: true,
-        maintainAspectRatio: false,
-        data: {
-            labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90'],
-            datasets: [{
-                label: 'Download Speed',
-                data: [59, 55, 215, 247, 22, 125, 420],
-                backgroundColor: "rgba(5, 176, 36,0.8)"
-            }]
-        }
-    });
-
-    var ctx = document.getElementById('monthview').getContext('2d');
-    var myChart2 = new Chart(ctx, {
-        type: 'bar',
-        responsive: true,
-        maintainAspectRatio: false,
-        data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
-            datasets: [
-                {
-                    backgroundColor: 'rgba(75, 192, 192, 0.8)',
-                    borderWidth: 1,
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                data: {
+                    labels: ['', '', '', '', '', '', '', '', '', '', '', ''],
+                    datasets: [
+                        {
+                            label: 'Memory Usage',
+                            data: [],
+                            borderColor: "rgba(255, 87, 34,1)",
+                            backgroundColor: "rgba(255, 87, 34,0.4)",
+                            radius: 3,
+                            fill:true
+                        }]
                 }
-            ]
-        }
-    });
+            });
+
+        });
 
 
-</script>
 
-<!--SOCKECT SCRIPTS-->
-<script>
-    socket.on('stat_net_network', function (msg) {
-        //console.log(msg);
-        network_usage.data.datasets[1].data = msg[0]['array'];
-        network_usage.data.datasets[0].data = msg[1]['array'];
-        network_usage.update();
-    });
-</script>
 
-<script src="../public/javascript/administrator.js"></script>
+
+
+
+    </script>
+
+    <!--SOCKECT SCRIPTS-->
+    <script>
+        socket.on('stat_net_network', function(msg){
+            //console.log(msg);
+            network_usage.data.datasets[1].data = msg[0]['array'];
+            network_usage.data.datasets[0].data = msg[1]['array'];
+            network_usage.update();
+        });
+
+        socket.on('system_memory_usage', function(msg){
+            //console.log(msg);
+            ram_usage.data.datasets[0].data = msg[0]['array'];
+            ram_usage.update();
+        });
+    </script>
 </body>
 </html>

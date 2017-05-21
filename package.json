@@ -26,6 +26,7 @@
     "morgan": "^1.7.0",
     "net-stat": "^2.0.1",
     "node-schedule": "^1.2.1",
+    "os-toolbox": "^0.2.6",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",

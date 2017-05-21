@@ -26,6 +26,10 @@ var converter = require('convert-units');
 var disk = require('diskusage');
 var RX = 0,TX = 0;
 
+//SYSINFP
+let ram_usage = fixed_array(12);
+var ostb = require( 'os-toolbox' );
+
 
 
 module.exports = function App(io) {
@@ -143,6 +147,16 @@ module.exports = function App(io) {
         io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
         io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'","rxprecent":"'+rx_prec+'","txprecent":"'+tx_prec+'"}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
+
+
+        //system memory
+        ostb.memoryUsage().then(function(memusage){
+            ram_usage.push(memusage); //ex: 93 (percent)
+            io.emit('system_memory_usage',[ram_usage] );
+
+        }, function(error){
+            console.log("Error while retireving memory usage");
+        });
         //console.log(RX,TX);
 
 
@@ -175,6 +189,8 @@ module.exports = function App(io) {
             //{"used": "35","usedUnit": "MB","available": "100","availableUnit": "MB","total": "100","totalUnit": "GB"}
             io.emit('system_storage_usage','{"used": "'+ used.val.toFixed(2) +'","usedUnit": "'+ used.unit +'","available": "'+ available.val.toFixed(2) +'","availableUnit": "'+ available.unit +'","total": "'+ total.val.toFixed(2) +'","totalUnit": "'+total.unit +'","progress":"'+  Math.round((info.total-info.available)*100/info.total) +'"}' );
         });
+
+
 
     },5000);
 };
