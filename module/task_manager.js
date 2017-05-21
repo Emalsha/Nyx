@@ -14,7 +14,7 @@ module.exports.setTimer = function () {
         .sort({'edit_date': -1})
         .select({'_id': 0, 'start': 1, 'end': 1,})
         .then(function (time) {
-            let sm = 28, em = 29;
+            let sm = 0, em = 0;
 
             sh = time['start'];
             eh = time['end'];
