@@ -15,7 +15,7 @@ const donwloadSchema = new Schema({
     admin_note:String,
     reject_note:String,
     md5:String,
-    availability:String,
+    availability:String,//public,private
     description:String,
     size:String,
     priority:Number,
@@ -24,6 +24,7 @@ const donwloadSchema = new Schema({
     gid:String,
     download_start_date:Date,
     download_end_date:Date,
+    file_path:String,
 });
 
 module.exports = mongoose.model('Download',donwloadSchema);

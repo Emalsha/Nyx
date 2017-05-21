@@ -51,7 +51,7 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
 });
 
 router.get('/myfile', aclfn, aclf, function (req, res) {
-    Download.find({request_user: req.user.username, state: 'downloaded'})
+    Download.find({request_user: req.user.username, state: 'downloaded'}).sort({download_end_date: -1})
         .then((downloadedFile) => {
             res.render('myfile', {
                 title: 'NYX | My File',
@@ -63,10 +63,15 @@ router.get('/myfile', aclfn, aclf, function (req, res) {
 });
 
 router.get('/publicfile', aclfn, aclf, function (req, res) {
-    res.render('publicfile', {
-        title: 'NYX | Public File',
-        user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname}
-    });
+    Download.find({availability: 'public', state: 'downloaded'}).sort({download_end_date: -1})
+        .then((publicFiles) => {
+            res.render('publicfile', {
+                title: 'NYX | Public File',
+                user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                publicFile: publicFiles
+            });
+        });
+
 });
 
 router.get('/help', aclfn, aclf, function (req, res) {
@@ -74,6 +79,29 @@ router.get('/help', aclfn, aclf, function (req, res) {
         title: 'NYX | Help',
         user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname}
     });
+});
+
+router.get('/search', aclfn, aclf, function (req, res) {
+    let search = decodeURIComponent(req.query.s);
+    debug(search);
+    Download.find({link: new RegExp(search, 'i'), state: 'downloaded', availability: 'public'})
+        .select({
+            'link': 1,
+            '_id': 0,
+            'request_date': 1,
+            'admin_decision_date': 1,
+            'admin': 1,
+            'download_start_date': 1,
+            'md5': 1,
+            'availability':1,
+            'admin_note':1,
+            'description':1,
+            'tags':1,
+            'size':1
+        })
+        .then((searchResult) => {
+            res.send(searchResult);
+        })
 });
 
 module.exports = router;
