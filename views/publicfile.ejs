@@ -63,6 +63,10 @@
                         for (let i = 0; i < publicFile.length; i++) {
                             let data = publicFile[i];
                         %>
+                        <% let arr = data['link'].split("/");
+                        let leng=arr.length -1;
+                        %>
+
                         <li>
                             <div class="collapsible-header">
                                 <div class="col s4 truncate"><%= data['link'] %></div>
@@ -70,8 +74,7 @@
                                 <% let rdate = new Date(data['request_date']); %>
                                 <div class="col s2"><%= rdate.toDateString() %></div>
                                 <div class="col s4 right-align">
-                                    <input type="button" id="download" value="Download" name="<%= data['link'] %>"
-                                           class="custom_btn blue white-text">
+                                    <a  class="custom_btn blue white-text" href="/users/download/<%= arr[leng]%>">Download</a>
                                 </div>
                             </div>
                             <div class="collapsible-body">
@@ -158,4 +161,3 @@
 </script>
 </body>
 </html>
-
