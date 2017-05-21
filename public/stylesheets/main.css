@@ -402,4 +402,19 @@ td, th {
 }
 
 
+.connection-bg{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    z-index:2001;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+
+}
+
 

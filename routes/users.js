@@ -5,6 +5,7 @@ const Download = require('../model/Download');
 const debug = require('debug')('nyx:userRoute');
 
 
+
 let aclf = acl.aclfnc();
 let aclfn = acl.aclobj.middleware(1, (req, res) => {
     return req.user.username

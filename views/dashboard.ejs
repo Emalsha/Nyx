@@ -143,6 +143,11 @@
                             Active (
                             0.00 GB )
                         </div>
+                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                            <div class="progress">
+                                <div class="determinate" style="width: 0%"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <!--Monthly usage status-->
@@ -153,22 +158,39 @@
                         <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6
                             Downloads
                         </div>
+                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                            <div class="progress">
+                                <div class="determinate" style="width: 0%"></div>
+                            </div>
+                        </div>
                     </div>
 
                     <!--User available disk space status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">00.00 GB</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of
-                            20.0 GB used
-                        </div>
+                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text" id="storage_used">Unknown</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="storage_total">Unknown</div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress">
-                                <div class="determinate" style="width: 30%"></div>
+                                <div class="determinate" style="width: 0%" id="storage_progress"></div>
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        var storage_used = document.getElementById('storage_used');
+                        var storage_total = document.getElementById('storage_total');
+                        var storage_progress = document.getElementById('storage_progress');
+                        socket.on('user_storage_usage', function(msg){
+                            var obj = JSON.parse(msg);
+                            console.log(msg);
+                            storage_used.innerHTML = obj.used + " " + obj.usedUnit;
+                            storage_total.innerHTML = obj.used + " " + obj.usedUnit + " of " + obj.allocated + " " + obj.allocatedUnit;
+                            storage_progress.style.width = obj.progress+"%";
+                        });
+
+                    </script>
 
                     <!--Download manager up time status-->
                     <div class="col s4 m3 contentbox_mainbox">
@@ -320,8 +342,7 @@
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    056f32ee5cf49404607e368bd8d3f2af
+                                                <div class="col s12 l10 truncate  contentbox_detail_value">n/a
                                                 </div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Availability</div>

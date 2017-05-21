@@ -14,8 +14,18 @@ const reqIface = Object.keys(ifaces)[len-1];
 debug(`Get data from : ${reqIface}`);
 let rxArray = fixed_array(60);
 let txArray = fixed_array(60);
+
+
 var peak_upper_limit = 19;
 var peak_lower_limit = 6;
+
+
+//foldersize
+var getFolderSize = require('get-folder-size');
+var converter = require('convert-units');
+var disk = require('diskusage');
+
+
 
 module.exports = function App(io) {
     setInterval(function () {
@@ -68,7 +78,7 @@ module.exports = function App(io) {
                 status = "Online";
                 var limit_ul = new Date();
                 limit_ul.setHours(peak_lower_limit);
-                limit_ul.setDate(limit_ul.getDate()+1);
+                limit_ul.setDate(limit_ul.getDate());
                 limit_ul.setMinutes(0);
                 limit_ul.setSeconds(0);
                 var dif = Math.abs(limit_ul - now);
@@ -124,9 +134,40 @@ module.exports = function App(io) {
         }
         io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
+        //console.log(io.engine.clientsCount);
+
+
+
+
 
 
 
 
     },1000);
+
+    setInterval(function () {
+        var myFolder = ".";
+        var storageAllocation = 100000000; //Bytes
+        getFolderSize(myFolder, function(err, size) {
+            if (err) { throw err; }
+            var used = converter(size).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            var total = converter(storageAllocation).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            //console.log(used);
+            io.emit('user_storage_usage','{"used": "'+ used.val.toFixed(2) +'","usedUnit": "'+ used.unit +'","allocated": "'+ total.val.toFixed(2) +'","allocatedUnit": "'+ total.unit +'","progress":"'+ Math.round(size*100/storageAllocation)+'"}' );
+
+
+        });
+
+        disk.check('/', function(err, info) {
+
+            var total = converter(info.total).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            var available = converter(info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            var used = converter(info.total - info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            //{"used": "35","usedUnit": "MB","available": "100","availableUnit": "MB","total": "100","totalUnit": "GB"}
+            io.emit('system_storage_usage','{"used": "'+ used.val.toFixed(2) +'","usedUnit": "'+ used.unit +'","available": "'+ available.val.toFixed(2) +'","availableUnit": "'+ available.unit +'","total": "'+ total.val.toFixed(2) +'","totalUnit": "'+total.unit +'","progress":"'+  Math.round((info.total-info.available)*100/info.total) +'"}' );
+        });
+
+    },5000);
 };
+
+

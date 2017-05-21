@@ -27,7 +27,6 @@ let dburl = "mongodb://localhost:27017/project_nyx";
 server = http.createServer(app);
 var io = require('socket.io').listen(server);
 
-
 mongoose.connect(dburl,(err) => {
     if(err){
         debugd('Unable to connect Database.');
@@ -130,7 +129,14 @@ var netstat = new NetStat(io);
 
 io.on('connection', function(socket){
     console.log('connection initialized',socket.id);
+    socket.on('disconnect', function () {
+        console.log(socket.id,"disconnected");
+    });
+
 });
+
+
+
 
 function taskManager() {
     tm.setTimer(0, 11, 0, 12);
