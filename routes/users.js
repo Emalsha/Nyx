@@ -103,5 +103,19 @@ router.get('/search', aclfn, aclf, function (req, res) {
             res.send(searchResult);
         })
 });
+// download a file
+router.get('/download/:id', function(req, res, next) {
+// download a file
+  var s=req.params.id;
+
+  //res.redirect('/');
+  var filePath = "../test/"+s; // Or format the path using the `id` rest param
+  var fileName = s; // The default name the browser will us
+
+  res.download(filePath, fileName);
+  //res.render('index', { title: 'Express' });
+
+});
+
 
 module.exports = router;
