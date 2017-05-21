@@ -97,14 +97,28 @@
                 <!--Network Activity-->
                 <div class="col s4 m3 contentbox_mainbox">
                     <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Network Activity</div>
-                    <div class="col s12 truncate contentbox_main blue-grey-text">8</div>
-                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72 GB )</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text" id="system_rx">Unknown</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="system_tx">Unknown</div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress">
                             <div class="determinate" style="width: 0%"></div>
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    var system_rx = document.getElementById('system_rx');
+                    var system_tx = document.getElementById('system_tx');
+                    socket.on('system_rxtx', function(msg){
+                        var obj = JSON.parse(msg);
+                        console.log(msg);
+                        system_rx.innerHTML = obj.rx + " " + obj.rxUnit + " RX";
+                        system_tx.innerHTML = obj.tx + " " + obj.txUnit + " TX";
+                    });
+
+                </script>
+
+
 
                 <div class="col s4 m3 contentbox_mainbox">
                     <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>

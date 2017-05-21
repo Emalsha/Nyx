@@ -24,18 +24,21 @@ var peak_lower_limit = 6;
 var getFolderSize = require('get-folder-size');
 var converter = require('convert-units');
 var disk = require('diskusage');
+var RX = 0,TX = 0;
 
 
 
 module.exports = function App(io) {
     setInterval(function () {
 
-        let rxfn = netstat.usageRx({iface:reqIface,units:'MiB',sampleMs:'1000'},rx =>{
-            rxArray.push(rx);
+        let rxfn = netstat.usageRx({iface:reqIface,units:'bytes',sampleMs:'1000'},rx =>{
+            rxArray.push(rx/(1024*1024));
+            RX = rx;
         });
 
-        let txfn = netstat.usageTx({iface:reqIface,units:'MiB',sampleMs:'1000'},tx =>{
-            txArray.push(tx);
+        let txfn = netstat.usageTx({iface:reqIface,units:'bytes',sampleMs:'1000'},tx =>{
+            txArray.push(tx/(1024*1024));
+            TX = tx;
         });
 
         //Net Stat
@@ -132,9 +135,13 @@ module.exports = function App(io) {
                 // console.log(timeleft,status);
             }
         }
+        RX =converter(RX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+        TX =converter(TX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+
         io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
+        io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'"}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
-        //console.log(io.engine.clientsCount);
+        //console.log(RX,TX);
 
 
 
