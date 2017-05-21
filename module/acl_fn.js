@@ -8,7 +8,7 @@ let debug =require('debug')('nyx:acl');
 acl = new acl(new acl.memoryBackend());
 
 // create roles and give permission
-acl.allow('admin',['/admin/administration','/admin/viewfiles','/view_f/viewfiles','/view_f/view_publicfiles','/admin/management','/users'],['get','post','view']);
+acl.allow('admin',['/admin/administration','/admin/viewfiles','/view_f/viewfiles','/view_f/view_publicfiles','/admin/management','/users','/admin/server','/admin/server_time'],['get','post','view']);
 acl.allow('user','/users',['get','post']);
 
 // acl.allow('user',['/users/user','/users/myfile','/users/publicfile','/users/help'],['get','post']);
