@@ -7,3 +7,7 @@ $(document).ready(function(){
         window[call_on_load[i]]();
     }
 });
+
+$(document).ready(function() {
+    $('select').material_select();
+});

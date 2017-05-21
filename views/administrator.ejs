@@ -41,57 +41,6 @@
 
         <div>
 
-            <!--Header-->
-            <!--<div class="row col l12 m12 s12">-->
-            <!--&lt;!&ndash;Pending download status&ndash;&gt;-->
-            <!--<div class="col s6 m3 l3 contentbox_mainbox">-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Pending Downloads-->
-            <!--</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">8</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">2 Active ( 2.72-->
-            <!--GB )-->
-            <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash;Monthly usage status&ndash;&gt;-->
-            <!--<div class="col s6 m3 l3 contentbox_mainbox">-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">18.72 GB</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads-->
-            <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash;User available disk space status&ndash;&gt;-->
-            <!--<div class="col s6 m3 l3 contentbox_mainbox">-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_main blue-grey-text">11.79 GB</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">4.1 GB of 20.0-->
-            <!--GB used-->
-            <!--</div>-->
-            <!--<div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">-->
-            <!--<div class="progress">-->
-            <!--<div class="determinate" style="width: 30%"></div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash;Download manager up time status&ndash;&gt;-->
-            <!--<div class="col s6 m3 l3 contentbox_mainbox">-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager-->
-            <!--</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3">Offline</div>-->
-            <!--<div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">Going online in-->
-            <!--12h-->
-            <!--35mins-->
-            <!--</div>-->
-            <!--<div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">-->
-            <!--<div class="progress deep-orange  lighten-4">-->
-            <!--<div class="determinate deep-orange" style="width: 20%"></div>-->
-            <!--</div>-->
-            <!--</div>-->
-
-            <!--</div>-->
-            <!--</div>-->
 
             <div class="row col l12 m12 s12">
                 <!--Network Activity-->
@@ -100,8 +49,9 @@
                     <div class="col s12 truncate contentbox_main blue-grey-text" id="system_rx">Unknown</div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="system_tx">Unknown</div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                        <div class="progress">
-                            <div class="determinate" style="width: 0%"></div>
+                        <div class="progress  blue-grey lighten-5">
+                            <div class="determinate"  id="progress_rx" style="width: 20%;background-color: #33D933;"></div>
+                            <div class="determinate red accent-3" id="progress_tx" style="width: 10%"></div>
                         </div>
                     </div>
                 </div>
@@ -109,11 +59,15 @@
                 <script>
                     var system_rx = document.getElementById('system_rx');
                     var system_tx = document.getElementById('system_tx');
+                    var progress_rx = document.getElementById('progress_rx');
+                    var progress_tx = document.getElementById('progress_tx');
                     socket.on('system_rxtx', function(msg){
                         var obj = JSON.parse(msg);
                         console.log(msg);
-                        system_rx.innerHTML = obj.rx + " " + obj.rxUnit + " RX";
-                        system_tx.innerHTML = obj.tx + " " + obj.txUnit + " TX";
+                        system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
+                        system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
+                        progress_rx.style.width = obj.rxprecent+"%";
+                        progress_tx.style.width = obj.txprecent+"%";
                     });
 
                 </script>
@@ -126,7 +80,7 @@
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
                     <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                         <div class="progress">
-                            <div class="determinate" style="width: 0%"></div>
+                            <div class="determinate" style="width: 20%"></div>
                         </div>
                     </div>
                 </div>
@@ -530,311 +484,76 @@
                     </div>
                 </div>
 
+                <div id="test5" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="0">12:00 AM</option>
+                                <option value="1">1:00 AM</option>
+                                <option value="2">2:00 AM</option>
+                                <option value="3">3:00 AM</option>
+                                <option value="4">4:00 AM</option>
+                                <option value="5">5:00 AM</option>
+                                <option value="6">6:00 AM</option>
+                                <option value="7">7:00 AM</option>
+                                <option value="8">8:00 AM</option>
+                                <option value="9">9:00 AM</option>
+                                <option value="10">10:00 AM</option>
+                                <option value="11">11:00 AM</option>
+                                <option value="12">12:00 PM</option>
+                                <option value="13">1:00 PM</option>
+                                <option value="14">2:00 PM</option>
+                                <option value="15">3:00 PM</option>
+                                <option value="16">4:00 PM</option>
+                                <option value="17">5:00 PM</option>
+                                <option value="18">6:00 PM</option>
+                                <option value="19">7:00 PM</option>
+                                <option value="20">8:00 PM</option>
+                                <option value="21">9:00 PM</option>
+                                <option value="22">10:00 PM</option>
+                                <option value="23">11:00 PM</option>
+                            </select>
+                            <label>Start of Peak Hour</label>
+                        </div>
 
-                <!--Sheduled Downloads-->
-                <!--<div id="test3" class="col s12">-->
-                <!--<div class="subsection_title">Pending Downloads</div>-->
-                <!--<ul class="collapsible" data-collapsible="accordion">-->
-                <!--<li>-->
-                <!--<div class="collapsible-header">-->
-                <!--<span class="new badge light-green accent-3 black-text"-->
-                <!--data-badge-caption="Downloading 32%"></span>-->
-                <!--<span class="new badge red black-text" data-badge-caption="Priority 1"></span>-->
-                <!--<i class="material-icons">library_books</i>-->
-                <!--Ubuntu 16.04 ISO Image-->
-                <!--</div>-->
-                <!--<div class="collapsible-body">-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Status</div>-->
-                <!--<div class="col s12 contentbox_main green-text">34% Downloaded</div>-->
-                <!--<div class="col s12 contentbox_txt_down">Downloaded</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Speed</div>-->
-                <!--<div class="col s12 contentbox_main">974.58 Kbps</div>-->
-                <!--<div class="col s12 contentbox_txt_down">Max 4.2Mbps | Avg 955.75Kbps</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Estimated Time</div>-->
-                <!--<div class="col s12 contentbox_main">3h 52 mins</div>-->
-                <!--<div class="col s12 contentbox_txt_down">Total time 1h 21mins</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 l4">-->
-                <!--<canvas id="myChartx"></canvas>-->
-                <!--</div>-->
-                <!--<div class="col s12 l8">-->
-                <!--<div class="row">-->
-                <!--<div class="col s12">-->
-                <!--<span class="subsection_title_sub no_padding">Download Details</span>-->
-                <!--</div>-->
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Requested Date-->
-                <!--</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05-->
-                <!--11:26:36 PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05-->
-                <!--11:26:36 PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sulochana-->
-                <!--Kodituwakku-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05-->
-                <!--11:26:36 PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">MD5</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--056f32ee5cf49404607e368bd8d3f2af-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Availability</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Public</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Administrator-->
-                <!--Notes-->
-                <!--</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Description</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Tags</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--<div class="chip">-->
-                <!--ubuntu-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--linux-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--foss-->
-                <!--</div>-->
-                <!--</div>-->
-
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 right-align">-->
-                <!--<a class="waves-effect waves-light btn control_button green white-text"><i-->
-                <!--class="material-icons left">play_arrow</i>Resume</a>-->
-                <!--<a class="waves-effect waves-light btn control_button yellow black-text"><i-->
-                <!--class="material-icons left ">pause</i>Pause</a>-->
-                <!--<a class="waves-effect waves-light btn control_button red white-text"><i-->
-                <!--class="material-icons left">not_interested</i>Cancel</a>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="0">12:00 AM</option>
+                                <option value="1">1:00 AM</option>
+                                <option value="2">2:00 AM</option>
+                                <option value="3">3:00 AM</option>
+                                <option value="4">4:00 AM</option>
+                                <option value="5">5:00 AM</option>
+                                <option value="6">6:00 AM</option>
+                                <option value="7">7:00 AM</option>
+                                <option value="8">8:00 AM</option>
+                                <option value="9">9:00 AM</option>
+                                <option value="10">10:00 AM</option>
+                                <option value="11">11:00 AM</option>
+                                <option value="12">12:00 PM</option>
+                                <option value="13">1:00 PM</option>
+                                <option value="14">2:00 PM</option>
+                                <option value="15">3:00 PM</option>
+                                <option value="16">4:00 PM</option>
+                                <option value="17">5:00 PM</option>
+                                <option value="18">6:00 PM</option>
+                                <option value="19">7:00 PM</option>
+                                <option value="20">8:00 PM</option>
+                                <option value="21">9:00 PM</option>
+                                <option value="22">10:00 PM</option>
+                                <option value="23">11:00 PM</option>
+                            </select>
+                            <label>End of Peak Hour</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="test4" class="col s12">Test 5</div>
+                <div id="test6" class="col s12">Test 6</div>
 
 
-                <!--</div>-->
 
-                <!--</div>-->
-                <!--</li>-->
-
-                <!--<li>-->
-                <!--<div class="collapsible-header">-->
-                <!--<span class="new badge light-blue darken-3 white-text"-->
-                <!--data-badge-caption="Scheduled"></span>-->
-                <!--<i class="material-icons">filter_drama</i>-->
-                <!--<span class="new badge yellow black-text" data-badge-caption="Priority 2"></span>-->
-                <!--Enreal Engine-->
-                <!--</div>-->
-                <!--<div class="collapsible-body">-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Status</div>-->
-                <!--<div class="col s12 contentbox_main light-blue-text accent-4">Scheduled</div>-->
-                <!--<div class="col s12 contentbox_txt_down">3h 53mins</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">File Size</div>-->
-                <!--<div class="col s12 contentbox_main">999.99 kB</div>-->
-                <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Estimated Time</div>-->
-                <!--<div class="col s12 contentbox_main">3h 52 mins</div>-->
-                <!--<div class="col s12 contentbox_txt_down">To complete download</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12">-->
-                <!--<span class="subsection_title_sub no_padding">Download Details</span>-->
-                <!--</div>-->
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Requested Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sulochana Kodituwakku-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">MD5</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--056f32ee5cf49404607e368bd8d3f2af-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Availability</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Public</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Description</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Tags</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--<div class="chip">-->
-                <!--ubuntu-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--linux-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--foss-->
-                <!--</div>-->
-                <!--</div>-->
-
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 right-align">-->
-                <!--<a class="waves-effect waves-light btn red white-text"><i-->
-                <!--class="material-icons left">not_interested</i>Cancel</a>-->
-                <!--</div>-->
-                <!--</div>-->
-
-
-                <!--</div>-->
-                <!--</li>-->
-
-                <!--<li>-->
-                <!--<div class="collapsible-header">-->
-                <!--<span class="new badge light-blue darken-3 white-text"-->
-                <!--data-badge-caption="Scheduled"></span>-->
-                <!--<i class="material-icons">filter_drama</i>-->
-                <!--<span class="new badge green black-text" data-badge-caption="Priority 3"></span>-->
-                <!--Enreal Engine-->
-                <!--</div>-->
-                <!--<div class="collapsible-body">-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Status</div>-->
-                <!--<div class="col s12 contentbox_main light-blue-text accent-4">Scheduled</div>-->
-                <!--<div class="col s12 contentbox_txt_down">3h 53mins</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">File Size</div>-->
-                <!--<div class="col s12 contentbox_main">999.99 kB</div>-->
-                <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
-                <!--</div>-->
-                <!--<div class="col s12 l4 contentbox">-->
-                <!--<div class="col s12 contentbox_txt_up">Estimated Time</div>-->
-                <!--<div class="col s12 contentbox_main">3h 52 mins</div>-->
-                <!--<div class="col s12 contentbox_txt_down">To complete download</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12">-->
-                <!--<span class="subsection_title_sub no_padding">Download Details</span>-->
-                <!--</div>-->
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Download Link</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Requested Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Approved By</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sulochana Kodituwakku-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Started Date</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Sunday 2017/03/05 11:26:36-->
-                <!--PM-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">MD5</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--056f32ee5cf49404607e368bd8d3f2af-->
-                <!--</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Availability</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">Public</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Description</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">GG WP</div>-->
-
-                <!--<div class="col s12 l3 truncate contentbox_detail_field">Tags</div>-->
-                <!--<div class="col s12 l9 truncate  contentbox_detail_value">-->
-                <!--<div class="chip">-->
-                <!--ubuntu-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--linux-->
-                <!--</div>-->
-                <!--<div class="chip">-->
-                <!--foss-->
-                <!--</div>-->
-                <!--</div>-->
-
-                <!--</div>-->
-                <!--<div class="row">-->
-                <!--<div class="col s12 right-align">-->
-                <!--<a class="waves-effect waves-light btn red white-text"><i-->
-                <!--class="material-icons left">not_interested</i>Cancel</a>-->
-                <!--</div>-->
-                <!--</div>-->
-
-
-                <!--</div>-->
-                <!--</li>-->
-                <!--</ul>-->
-                <!--</div>-->
-                <!--<div id="test4" class="col s12">Test 4</div>-->
-                <!--<div id="test5" class="col s12">Test 4</div>-->
-                <!--<div id="test6" class="col s12">Test 4</div>-->
-                <!--</div>-->
             </div>
 
         </div>

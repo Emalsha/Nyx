@@ -81,7 +81,7 @@ module.exports = function App(io) {
                 status = "Online";
                 var limit_ul = new Date();
                 limit_ul.setHours(peak_lower_limit);
-                limit_ul.setDate(limit_ul.getDate());
+                limit_ul.setDate(limit_ul.getDate()+1);
                 limit_ul.setMinutes(0);
                 limit_ul.setSeconds(0);
                 var dif = Math.abs(limit_ul - now);
@@ -135,11 +135,13 @@ module.exports = function App(io) {
                 // console.log(timeleft,status);
             }
         }
+        var rx_prec = Math.round(RX*100/12000000);
+        var tx_prec = Math.round(TX*100/6000000);
         RX =converter(RX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
         TX =converter(TX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
 
         io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
-        io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'"}' );
+        io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'","rxprecent":"'+rx_prec+'","txprecent":"'+tx_prec+'"}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
         //console.log(RX,TX);
 
