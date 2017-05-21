@@ -23,6 +23,7 @@ var peak_lower_limit = 6;
 //foldersize
 var getFolderSize = require('get-folder-size');
 var converter = require('convert-units');
+var disk = require('diskusage');
 
 
 
@@ -137,6 +138,14 @@ module.exports = function App(io) {
 
 
 
+
+
+
+
+
+    },1000);
+
+    setInterval(function () {
         var myFolder = ".";
         var storageAllocation = 100000000; //Bytes
         getFolderSize(myFolder, function(err, size) {
@@ -149,8 +158,16 @@ module.exports = function App(io) {
 
         });
 
+        disk.check('/', function(err, info) {
 
+            var total = converter(info.total).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            var available = converter(info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            var used = converter(info.total - info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+            //{"used": "35","usedUnit": "MB","available": "100","availableUnit": "MB","total": "100","totalUnit": "GB"}
+            io.emit('system_storage_usage','{"used": "'+ used.val.toFixed(2) +'","usedUnit": "'+ used.unit +'","available": "'+ available.val.toFixed(2) +'","availableUnit": "'+ available.unit +'","total": "'+ total.val.toFixed(2) +'","totalUnit": "'+total.unit +'","progress":"'+  Math.round((info.total-info.available)*100/info.total) +'"}' );
+        });
 
-
-    },1000);
+    },5000);
 };
+
+
