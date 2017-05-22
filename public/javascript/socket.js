@@ -6,7 +6,7 @@ console.log('Connected to Server Socket : ', socket.connected);
 
 socket.on('connect',function(){
     // Send ehlo event right after connect:
-    socket.emit('AuthId', JSON.stringify(globaluser));
+    //socket.emit('AuthId', JSON.stringify(globaluser));
 });
 
 
