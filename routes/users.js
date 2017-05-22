@@ -4,9 +4,6 @@ const acl = require('../module/acl_fn');
 const Download = require('../model/Download');
 const debug = require('debug')('nyx:userRoute');
 
-var cg = require('../module/custom_globals')
-
-
 
 let aclf = acl.aclfnc();
 let aclfn = acl.aclobj.middleware(1, (req, res) => {

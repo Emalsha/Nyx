@@ -16,7 +16,7 @@
 <script type="text/javascript" src="/bower_components/socket.io-client/dist/socket.io.js"></script>
 <script type="text/javascript" src="/public/javascript/socket.js"></script>
 
-<title><%= title %></title>
+<title><%=title %></title>
 
 <!--Favicon-->
 <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
@@ -26,6 +26,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 <script>
-    var globaluser = JSON.parse('{"name": "<%=user['name']%>","uname": "<%=user['uname']%>"}');
     var call_on_load = [];
 </script>

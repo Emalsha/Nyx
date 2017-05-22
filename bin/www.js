@@ -26,7 +26,6 @@ let dburl = "mongodb://localhost:27017/project_nyx";
 
 server = http.createServer(app);
 var io = require('socket.io').listen(server);
-var cglobals = require("../module/custom_globals");
 
 mongoose.connect(dburl,(err) => {
     if(err){
