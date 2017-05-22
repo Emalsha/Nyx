@@ -27,7 +27,8 @@ var disk = require('diskusage');
 var RX = 0,TX = 0;
 
 //SYSINFP
-let ram_usage = fixed_array(12);
+let ram_usage = fixed_array(60);
+let cpu_load = fixed_array(60);
 var ostb = require( 'os-toolbox' );
 
 
@@ -152,7 +153,10 @@ module.exports = function App(io) {
         //system memory
         ostb.memoryUsage().then(function(memusage){
             ram_usage.push(memusage); //ex: 93 (percent)
-            io.emit('system_memory_usage',[ram_usage] );
+            ostb.cpuLoad().then(function(cpuusage){
+                cpu_load.push(cpuusage);
+            });
+            io.emit('system_memory_usage',[ram_usage,cpu_load] );
 
         }, function(error){
             console.log("Error while retireving memory usage");

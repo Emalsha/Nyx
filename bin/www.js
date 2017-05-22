@@ -26,6 +26,7 @@ let dburl = "mongodb://localhost:27017/project_nyx";
 
 server = http.createServer(app);
 var io = require('socket.io').listen(server);
+var cglobals = require("../module/custom_globals");
 
 mongoose.connect(dburl,(err) => {
     if(err){
@@ -128,10 +129,23 @@ var NetStat = require('../module/netstat');
 var netstat = new NetStat(io);
 
 io.on('connection', function(socket){
-    console.log('connection initialized',socket.id);
+    console.log('connection initialized',socket.id,socket.request.connection.remoteAddress.replace(/^.*:/, ''));
     socket.on('disconnect', function () {
         console.log(socket.id,"disconnected");
     });
+
+    socket.on('AuthId', function(data) {
+        try {
+            var newuser = JSON.parse(data);
+            console.log(data);
+            cglobals.onlineUsers.push(newuser);
+            io.emit('user_connect',data);
+        }catch (e){
+            //
+        }
+
+    });
+    // io.emit('user_connect','{"name": "'+ +'","uname": "heysulo"}');
 
 });
 

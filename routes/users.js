@@ -4,6 +4,8 @@ const acl = require('../module/acl_fn');
 const Download = require('../model/Download');
 const debug = require('debug')('nyx:userRoute');
 
+var cg = require('../module/custom_globals')
+
 
 
 let aclf = acl.aclfnc();
@@ -44,7 +46,7 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
                 user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
                 pending: pendingDonwload,
                 inprogress: approvedList,
-                rejected: rejectedList
+                rejected: rejectedList,
             });
         });
 
@@ -77,7 +79,8 @@ router.get('/publicfile', aclfn, aclf, function (req, res) {
 router.get('/help', aclfn, aclf, function (req, res) {
     res.render('help', {
         title: 'NYX | Help',
-        user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname}
+        user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+
     });
 });
 
