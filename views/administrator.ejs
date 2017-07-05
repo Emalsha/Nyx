@@ -40,8 +40,6 @@
 
 
         <div>
-
-
             <div class="row col l12 m12 s12">
                 <!--Network Activity-->
                 <div class="col s4 m3 contentbox_mainbox">
@@ -58,6 +56,7 @@
                     </div>
                 </div>
 
+                <!--Network activity status-->
                 <script>
                     var system_rx = document.getElementById('system_rx');
                     var system_tx = document.getElementById('system_tx');
@@ -74,8 +73,7 @@
 
                 </script>
 
-
-
+                <!--Monthly usage status-->
                 <div class="col s4 m3 contentbox_mainbox">
                     <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
                     <div class="col s12 truncate contentbox_main blue-grey-text">18.72 GB</div>
@@ -103,6 +101,23 @@
                     </div>
                 </div>
 
+                <!--Download manager up time status-->
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">
+                        Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">
+                        Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
+                            <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Storage usage -->
                 <script>
                     var storage_used = document.getElementById('system_storage_used');
                     var storage_total = document.getElementById('system_storage_total');
@@ -138,22 +153,7 @@
 
                 </script>
 
-                <!--Download manager up time status-->
-                <div class="col s4 m3 contentbox_mainbox">
-                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
-                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">
-                        Unknown
-                    </div>
-                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">
-                        Unknown
-                    </div>
-                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                        <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
-                            <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
-                        </div>
-                    </div>
-                </div>
-
+                <!--Socket connetion-->
                 <script>
                     var online_status_code = document.getElementById('online_status_code');
                     var online_status_eta = document.getElementById('online_status_eta');
@@ -189,8 +189,9 @@
                 </script>
             </div>
 
-            <div class="row"></div>
             <div class="row col l12 m12 ">
+
+                <!--Navigation panel-->
                 <div class="col s12">
                     <ul class="tabs">
                         <li class="tab"><a class="red-text darken-4" href="#test1">Statistics</a></li>
@@ -200,14 +201,13 @@
                                 <% } %>
                                 Download Requests</a></li>
                         <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
-                        <li class="tab"><a class="red-text darken-4" href="#test4">Member Management</a></li>
+                        <!--<li class="tab"><a class="red-text darken-4" href="#test4">Member Management</a></li>-->
                         <li class="tab"><a class="red-text darken-4" href="#test5">System Settings</a></li>
-                        <li class="tab"><a class="red-text darken-4" href="#test6">Additionals</a></li>
+                        <!--<li class="tab"><a class="red-text darken-4" href="#test6">Additionals</a></li>-->
                     </ul>
                 </div>
-                <!--System Stats and Status Tab-->
 
-                <!--Administration Tab Page 2-->
+                <!--System Stats and Status Tab-->
                 <div id="test1" class="col l12 m12 s12">
                     <div class="row">
                         <!--System Stat Graphs-->
@@ -239,7 +239,7 @@
 
                 </div>
 
-                <!--Administration Tab Page 2-->
+                <!--Download request tab-->
                 <div id="test2" class="col s12">
                     <div class="subsection_title_sub">Download Requests</div>
                     <div class="row">
@@ -454,6 +454,9 @@
                                                                                     <option value="Incorrect file">
                                                                                         Incorrect file
                                                                                     </option>
+                                                                                    <option value="Other">
+                                                                                        Other
+                                                                                    </option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
@@ -495,76 +498,75 @@
                     </div>
                 </div>
 
+                <!--System setting Tab -->
                 <div id="test5" class="col s12">
                     <div class="row">
-                            <div class="input-field col s6">
-                                <select id="start_time" required>
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="0">12:00 AM</option>
-                                    <option value="1">1:00 AM</option>
-                                    <option value="2">2:00 AM</option>
-                                    <option value="3">3:00 AM</option>
-                                    <option value="4">4:00 AM</option>
-                                    <option value="5">5:00 AM</option>
-                                    <option value="6">6:00 AM</option>
-                                    <option value="7">7:00 AM</option>
-                                    <option value="8">8:00 AM</option>
-                                    <option value="9">9:00 AM</option>
-                                    <option value="10">10:00 AM</option>
-                                    <option value="11">11:00 AM</option>
-                                    <option value="12">12:00 PM</option>
-                                    <option value="13">1:00 PM</option>
-                                    <option value="14">2:00 PM</option>
-                                    <option value="15">3:00 PM</option>
-                                    <option value="16">4:00 PM</option>
-                                    <option value="17">5:00 PM</option>
-                                    <option value="18">6:00 PM</option>
-                                    <option value="19">7:00 PM</option>
-                                    <option value="20">8:00 PM</option>
-                                    <option value="21">9:00 PM</option>
-                                    <option value="22">10:00 PM</option>
-                                    <option value="23">11:00 PM</option>
-                                </select>
-                                <label>Start of Peak Hour</label>
-                            </div>
+                        <div class="input-field col s6">
+                            <select id="start_time" required>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="0">12:00 AM</option>
+                                <option value="1">1:00 AM</option>
+                                <option value="2">2:00 AM</option>
+                                <option value="3">3:00 AM</option>
+                                <option value="4">4:00 AM</option>
+                                <option value="5">5:00 AM</option>
+                                <option value="6">6:00 AM</option>
+                                <option value="7">7:00 AM</option>
+                                <option value="8">8:00 AM</option>
+                                <option value="9">9:00 AM</option>
+                                <option value="10">10:00 AM</option>
+                                <option value="11">11:00 AM</option>
+                                <option value="12">12:00 PM</option>
+                                <option value="13">1:00 PM</option>
+                                <option value="14">2:00 PM</option>
+                                <option value="15">3:00 PM</option>
+                                <option value="16">4:00 PM</option>
+                                <option value="17">5:00 PM</option>
+                                <option value="18">6:00 PM</option>
+                                <option value="19">7:00 PM</option>
+                                <option value="20">8:00 PM</option>
+                                <option value="21">9:00 PM</option>
+                                <option value="22">10:00 PM</option>
+                                <option value="23">11:00 PM</option>
+                            </select>
+                            <label>Start of Peak Hour</label>
+                        </div>
 
-                            <div class="input-field col s6">
-                                <select id="end_time" required>
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="0">12:00 AM</option>
-                                    <option value="1">1:00 AM</option>
-                                    <option value="2">2:00 AM</option>
-                                    <option value="3">3:00 AM</option>
-                                    <option value="4">4:00 AM</option>
-                                    <option value="5">5:00 AM</option>
-                                    <option value="6">6:00 AM</option>
-                                    <option value="7">7:00 AM</option>
-                                    <option value="8">8:00 AM</option>
-                                    <option value="9">9:00 AM</option>
-                                    <option value="10">10:00 AM</option>
-                                    <option value="11">11:00 AM</option>
-                                    <option value="12">12:00 PM</option>
-                                    <option value="13">1:00 PM</option>
-                                    <option value="14">2:00 PM</option>
-                                    <option value="15">3:00 PM</option>
-                                    <option value="16">4:00 PM</option>
-                                    <option value="17">5:00 PM</option>
-                                    <option value="18">6:00 PM</option>
-                                    <option value="19">7:00 PM</option>
-                                    <option value="20">8:00 PM</option>
-                                    <option value="21">9:00 PM</option>
-                                    <option value="22">10:00 PM</option>
-                                    <option value="23">11:00 PM</option>
-                                </select>
-                                <label>End of Peak Hour</label>
-                            </div>
-                            <div>
-                                <button class="waves-effect waves-light btn" id="set_time">Set</button>
-                            </div>
+                        <div class="input-field col s6">
+                            <select id="end_time" required>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="0">12:00 AM</option>
+                                <option value="1">1:00 AM</option>
+                                <option value="2">2:00 AM</option>
+                                <option value="3">3:00 AM</option>
+                                <option value="4">4:00 AM</option>
+                                <option value="5">5:00 AM</option>
+                                <option value="6">6:00 AM</option>
+                                <option value="7">7:00 AM</option>
+                                <option value="8">8:00 AM</option>
+                                <option value="9">9:00 AM</option>
+                                <option value="10">10:00 AM</option>
+                                <option value="11">11:00 AM</option>
+                                <option value="12">12:00 PM</option>
+                                <option value="13">1:00 PM</option>
+                                <option value="14">2:00 PM</option>
+                                <option value="15">3:00 PM</option>
+                                <option value="16">4:00 PM</option>
+                                <option value="17">5:00 PM</option>
+                                <option value="18">6:00 PM</option>
+                                <option value="19">7:00 PM</option>
+                                <option value="20">8:00 PM</option>
+                                <option value="21">9:00 PM</option>
+                                <option value="22">10:00 PM</option>
+                                <option value="23">11:00 PM</option>
+                            </select>
+                            <label>End of Peak Hour</label>
+                        </div>
+                        <div>
+                            <button class="waves-effect waves-light btn" id="set_time">Set</button>
+                        </div>
                     </div>
                 </div>
-                <div id="test4" class="col s12">Test 5</div>
-                <div id="test6" class="col s12">Test 6</div>
 
 
             </div>
@@ -641,11 +643,9 @@
 </script>
 
 
-    <script>
-        var network_usage;
-        var ram_usage;
-
-
+<script>
+    var network_usage;
+    var ram_usage;
 
     $('document').ready(function () {
 
@@ -662,27 +662,27 @@
             scaleStartValue: 0
         }
 
-            var network_usage_chart = $('#network_usage')[0].getContext('2d');
-            network_usage = new Chart(network_usage_chart, {
-                type: 'line',
-                responsive: true,
-                maintainAspectRatio: false,
-                options: {
-                    title: {
-                        display: true,
-                        text: 'Last Thirty Minute Network Usage',
-                        fontSize: 14,
-                        position: 'bottom'
-                    },
-                    animation: false,
-                    scaleOverride: true,
-                    scaleSteps: 20,
-                    scaleStepWidth: 10,
-                    scaleStartValue: 10,
-                    pointRadius:0,
-                    scales: {
-                        yAxes: [
-                            {
+        var network_usage_chart = $('#network_usage')[0].getContext('2d');
+        network_usage = new Chart(network_usage_chart, {
+            type: 'line',
+            responsive: true,
+            maintainAspectRatio: false,
+            options: {
+                title: {
+                    display: true,
+                    text: 'Last Thirty Minute Network Usage',
+                    fontSize: 14,
+                    position: 'bottom'
+                },
+                animation: false,
+                scaleOverride: true,
+                scaleSteps: 20,
+                scaleStepWidth: 10,
+                scaleStartValue: 10,
+                pointRadius: 0,
+                scales: {
+                    yAxes: [
+                        {
                             scaleLabel: {
                                 display: true,
                                 labelString: 'MBps'
@@ -712,92 +712,87 @@
         });
 
 
-
-
-            //SYSTEM LOAD GRAPH
-            var system_load_chart = $('#system_load')[0].getContext('2d');
-            ram_usage = new Chart(system_load_chart, {
-                type: 'line',
-                responsive: true,
-                maintainAspectRatio: false,
-                options: {
-                    title: {
-                        display: true,
-                        text: 'System Memory and CPU Usage',
-                        fontSize: 14,
-                        position: 'bottom',
-                        max:100
-                    },
-                    animation: false,
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                max: 100,
-                                min: 0,
-                                stepSize: 10
-                            }
-                        }]
-                    }
+        //SYSTEM LOAD GRAPH
+        var system_load_chart = $('#system_load')[0].getContext('2d');
+        ram_usage = new Chart(system_load_chart, {
+            type: 'line',
+            responsive: true,
+            maintainAspectRatio: false,
+            options: {
+                title: {
+                    display: true,
+                    text: 'System Memory and CPU Usage',
+                    fontSize: 14,
+                    position: 'bottom',
+                    max: 100
                 },
-                data: {
-                    labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
-                    datasets: [
-                        {
-                            label: 'Memory Usage',
-                            data: [],
-                            borderColor: "rgba(255, 87, 34,1)",
-                            backgroundColor: "rgba(255, 87, 34,0.4)",
-                            radius: 1,
-                            hoverRadius:5,
-                            fill:false
-                        },
-                        {
-                            label: 'CPU Load',
-                            data: [],
-                            borderColor: "rgba(0, 127, 255,1)",
-                            backgroundColor: "rgba(85, 170, 255,0.8)",
-                            radius: 1,
-                            hoverRadius:5,
-                            borderWidth: 1,
-                            fill:true
-                        }]
+                animation: false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            max: 100,
+                            min: 0,
+                            stepSize: 10
+                        }
+                    }]
                 }
-            });
-
+            },
+            data: {
+                labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                datasets: [
+                    {
+                        label: 'Memory Usage',
+                        data: [],
+                        borderColor: "rgba(255, 87, 34,1)",
+                        backgroundColor: "rgba(255, 87, 34,0.4)",
+                        radius: 1,
+                        hoverRadius: 5,
+                        fill: false
+                    },
+                    {
+                        label: 'CPU Load',
+                        data: [],
+                        borderColor: "rgba(0, 127, 255,1)",
+                        backgroundColor: "rgba(85, 170, 255,0.8)",
+                        radius: 1,
+                        hoverRadius: 5,
+                        borderWidth: 1,
+                        fill: true
+                    }]
+            }
         });
 
+    });
 
 
+</script>
+
+<!--SOCKECT SCRIPTS-->
+<script>
+    socket.on('stat_net_network', function (msg) {
+        //console.log(msg);
+        network_usage.data.datasets[1].data = msg[0]['array'];
+        network_usage.data.datasets[0].data = msg[1]['array'];
+        network_usage.update();
+    });
+
+    socket.on('system_memory_usage', function (msg) {
+        //console.log(msg);
+        ram_usage.data.datasets[0].data = msg[0]['array'];
+        ram_usage.data.datasets[1].data = msg[1]['array'];
+        ram_usage.update();
+    });
+
+    //user_connect
+    socket.on('user_connect', function (msg) {
+        //console.log(msg);
+        var person = JSON.parse(msg);
+        console.log("GG");
+        document.getElementById("onlineusers").innerHTML += '<div class="chip" id="' + person.name + '">' + person.uname + '</div>'
+
+    });
+</script>
 
 
-
-
-    </script>
-
-    <!--SOCKECT SCRIPTS-->
-    <script>
-        socket.on('stat_net_network', function(msg){
-            //console.log(msg);
-            network_usage.data.datasets[1].data = msg[0]['array'];
-            network_usage.data.datasets[0].data = msg[1]['array'];
-            network_usage.update();
-        });
-
-        socket.on('system_memory_usage', function(msg){
-            //console.log(msg);
-            ram_usage.data.datasets[0].data = msg[0]['array'];
-            ram_usage.data.datasets[1].data = msg[1]['array'];
-            ram_usage.update();
-        });
-
-        //user_connect
-        socket.on('user_connect', function(msg){
-            //console.log(msg);
-            var person = JSON.parse(msg);
-            console.log("GG");
-            document.getElementById("onlineusers").innerHTML += '<div class="chip" id="'+person.name+'">'+person.uname+'</div>'
-
-        });
-    </script>
 </body>
 </html>

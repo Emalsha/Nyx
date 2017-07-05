@@ -22,6 +22,7 @@ const info = require('./routes/info');
 const download = require('./routes/download');
 const url = require('./routes/url');
 const view_f = require('./routes/view_f');
+const batch = require('./routes/batch-admin');
 
 const app = express();
 // const io = require('socket.io').listen(server);
@@ -74,6 +75,7 @@ app.use('/info',info);
 app.use('/download',download);
 app.use('/url',url);
 app.use('/view_f', view_f);
+app.use('/batch',batch);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

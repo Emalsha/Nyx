@@ -97,7 +97,7 @@ router.post('/approve',function(req,res){
                 debug(err);
             }
 
-            res.redirect('/admin/administration');
+            res.redirect(req.header('Referer'));
         });
 
     })
@@ -131,7 +131,7 @@ router.post('/reject',function(req,res){
                 debug(err);
             }
 
-            res.redirect('/admin/administration');
+            res.redirect(req.header('Referer'));
         });
 
     })
