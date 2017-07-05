@@ -1,0 +1,368 @@
+<!-- Created by emalsha on 7/5/17. -->
+<!DOCTYPE html>
+<head>
+
+    <!--import heder part-->
+    <% include includes/head.ejs %>
+
+</head>
+<body>
+
+<div class="row">
+    <!--side menu-->
+    <% include includes/main_nav.ejs %>
+
+    <!--responsive - mobile size menu-->
+    <div class="toppanel z-depth-1">
+        <div class="col s4">
+            <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+            </a>
+
+        </div>
+        <div class="col s4">
+            <div class="row" style="text-align: center">
+                <img src="/public/images/logo_small.png"
+                     style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+            </div>
+        </div>
+        <div class="col s4 right-align">
+
+        </div>
+    </div>
+
+    <!--page content-->
+    <div class="main_content">
+
+
+        <div id="test2" class="col s12">
+            <div class="subsection_title_sub">Download Requests</div>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collapsible" data-collapsible="accordion" id="downloadRequestCollapse">
+
+                        <% if(downloadRequest != ""){ %>
+
+                        <li class="collapsible-header  grey darken-4">
+                            <div class="collapsible-header  grey darken-4">
+                                <div class="col s4 white-text pg_admin_dlreq_headrer">Title</div>
+                                <div class="col s2 white-text pg_admin_dlreq_headrer">Requestor</div>
+                                <div class="col s2 white-text pg_admin_dlreq_headrer">Date</div>
+                                <div class="col s4 white-text pg_admin_dlreq_headrer">Tags</div>
+                            </div>
+                        </li>
+
+                        <% }else{ %>
+
+                        <li class="collapsible-header"> No request</li>
+
+                        <% } %>
+                        <!--collapse body-->
+                        <% for(let item in downloadRequest) {
+                            let data = downloadRequest[item];
+                            let requestedDate = new Date(data['request_date']);
+                        %>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s4 truncate"><%= data['link'] %> </div>
+                                <div class="col s2 truncate"><%= data['request_user'] %></div>
+                                <div class="col s2 truncate"><%= requestedDate.toDateString() %></div>
+                                <div class="col s4 truncate">
+                                    <%
+                                        var tags = data['tags'];
+                                    if(tags != ''){
+                                    for(let i = 0; i < tags.length;i++){ %>
+                                    <div class="chip">
+                                        <%= tags[i] %>
+                                    </div>
+                                    <% }
+                                    } %>
+
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <div class="row">
+                                    <div class="col s8">
+                                        <div class="col s12">
+                                            <span class="subsection_title_sub no_padding">Download Details</span>
+                                        </div>
+                                        <div class="col s12 l2 truncate contentbox_detail_field">Download Link
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['link'] %>
+                                        </div>
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">Reference
+                                            Link
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            https://www.google.lk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=materialize+css+input+color&*
+                                        </div>
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">File Size</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">2.35 GB</div>
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">ETA</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">2h 33mins
+                                        </div>
+
+                                        <div class="col s12 l2 truncate  contentbox_detail_field">Requested
+                                            Date
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= requestedDate.toUTCString() %>
+                                        </div>
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">Description
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'none' %></div>
+
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">Description
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+
+                                        <div class="col s12 l2 truncate contentbox_detail_field">Description
+                                        </div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">GG WP</div>
+
+                                    </div>
+                                    <div class="col s4">
+                                        <span class="subsection_title_sub no_padding">Respond to Request</span>
+                                        <ul class="collapsible" data-collapsible="accordion">
+                                            <li>
+                                                <div class="collapsible-header green"><i class="material-icons">done</i>Accept
+                                                    Request
+                                                </div>
+                                                <!--Approve form-->
+                                                <div class="collapsible-body">
+                                                    <form action="/download/approve" method="post"
+                                                          id="approveForm">
+                                                        <div class="row">
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                New Tags
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="chips" id="approve_newtags"></div>
+                                                            </div>
+
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                Priority
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="row">
+                                                                    <div class="input-field col s12">
+                                                                        <select class="display" id="s_priority"
+                                                                                name="priority">
+                                                                            <option value="" disabled selected>
+                                                                                Choose your option
+                                                                            </option>
+                                                                            <option value="1">Priority 1
+                                                                            </option>
+                                                                            <option value="2">Priority 2
+                                                                            </option>
+                                                                            <option value="3">Priority 3
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                Administrator Notes
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="col s12">
+                                                                    <input placeholder="Notes ..."
+                                                                           id="admin_notes"
+                                                                           type="text" class="validate"
+                                                                           name="admin_note">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                Availability
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="row" style="padding: 5px">
+                                                                    <div class="col s12">
+                                                                        <div class="switch">
+                                                                            <label>
+                                                                                Private
+                                                                                <%
+                                                                                    let avai;
+                                                                                    if (data['availability'] === 'public') {
+                                                                                        avai = 'checked';
+                                                                                    }
+                                                                                %>
+                                                                                <input type="checkbox"
+                                                                                       id="availablity_switch"
+                                                                                        <%= avai %>>
+                                                                                <span class="lever"></span>
+                                                                                Public
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <input type="hidden" id="availability"
+                                                                   name="availability">
+                                                            <input type="hidden" id="tag_values"
+                                                                   name="new_tags">
+                                                            <input type="hidden" value="<%= data['_id'] %>"
+                                                                   name="download_id">
+                                                            <button class="waves-effect waves-light btn green"
+                                                                    id="app_btn">Approve
+                                                                Request
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header red"><i class="material-icons">not_interested</i>Reject
+                                                    Request
+                                                </div>
+
+                                                <!--Reject form-->
+                                                <div class="collapsible-body">
+                                                    <form action="/download/reject" method="post"
+                                                          id="rejectForm" onsubmit="return rejectConfirm();">
+                                                        <div class="row">
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                Reason to Reject
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="row">
+                                                                    <div class="col s12">
+                                                                        <select class="display" name="reason"
+                                                                                required>
+                                                                            <option value="">Select reason
+                                                                            </option>
+                                                                            <option value="Not appropriate">Not
+                                                                                appropriate
+                                                                            </option>
+                                                                            <option value="Already downloaded">
+                                                                                Already downloaded
+                                                                            </option>
+                                                                            <option value="Incorrect file">
+                                                                                Incorrect file
+                                                                            </option>
+                                                                            <option value="Other">
+                                                                                Other
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col s12 truncate contentbox_detail_field">
+                                                                Administrator Notes
+                                                            </div>
+                                                            <div class="col s12 truncate  contentbox_detail_value">
+                                                                <div class="col s12">
+                                                                    <input type="hidden"
+                                                                           value="<%= data['_id'] %>"
+                                                                           name="download_id">
+                                                                    <input placeholder="Notes ..."
+                                                                           id="rejectNote"
+                                                                           type="text" class="validate"
+                                                                           name="admin_note">
+                                                                </div>
+                                                            </div>
+                                                            <button class="waves-effect waves-light btn red">
+                                                                Reject
+                                                                Request
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <% } %>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--Import footer part-->
+<% include includes/foot.ejs %>
+
+<script>
+
+    $('.button-collapse').sideNav({
+            menuWidth: 250, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+        }
+    );
+
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+        $('#approve_newtags').material_chip()
+//        $('#request_count').removeClass('hide').addClass('show').text(4);
+    });
+
+    $('.chips').material_chip();
+
+    //    Approve form
+    $('#approveForm').submit(function () {
+//        Get tag values
+        let ar = $('#approve_newtags').material_chip('data');
+        let new_array = [];
+        for (let i = 0; i < ar.length; i++) {
+            new_array.push(ar[i].tag);
+        }
+        $('#tag_values').val(new_array);
+
+//        Get switch value
+        let a = $('#availablity_switch').prop('checked');
+        console.log(a);
+        $('#availability').val(a);
+
+    });
+
+    //    Reject form
+    let rejectConfirm = function () {
+
+        x0p({
+            title: "Confirm Reject",
+            text: 'Reject Download Request.',
+            icon: 'warning',
+            type: 'warning',
+            animationType: 'fadeIn',
+            button: [
+                {
+                    type: 'warning',
+                    text: 'Reject',
+                    showLoading: true
+                },
+                {
+                    type: 'cancel'
+                }
+            ]
+        }, function (data) {
+            if (data) {
+                console.log(data);
+                console.log(data === 'warning');
+                if (data === 'warning') {
+                    document.getElementById('rejectForm').submit();
+                }
+            }
+        });
+        return false;
+    };
+
+</script>
+
+</body>
+</html>
