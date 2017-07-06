@@ -99,18 +99,10 @@
                             <div class="col s2"><%= data['size'] %></div>
                             <% let rdate = new Date(data['request_date']);%>
                             <div class="col s2"><%= rdate.toDateString() %></div>
-                            <% let arr = data['link'].split("/");
-                            console.log(arr);
 
-                            let leng=arr.length -1;
-                            console.log(leng);
-                            console.log(arr[leng]);
-                            %>
-
-                             <!-- <p><%= arr['length-1'] %></p> -->
                             <div class="col s4 right-align">
-                                <a  class="custom_btn blue white-text" href="/users/download/<%= arr[leng]%>">Download</a>
-                                <a  class="custom_btn red white-text" href="/users/delete/<%= arr[leng]%>/<%= data['_id']%>">Delete</a>
+                                <a  class="custom_btn blue white-text" href="/users/download/<%= data['_id']%>">Download</a>
+                                <a  class="custom_btn red white-text" href="/users/delete/<%= data['_id']%>">Delete</a>
 
                             </div>
                         </div>

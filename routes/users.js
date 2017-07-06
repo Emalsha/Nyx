@@ -3,6 +3,7 @@ const router = express.Router();
 const acl = require('../module/acl_fn');
 const Download = require('../model/Download');
 const debug = require('debug')('nyx:userRoute');
+const fs = require('fs');
 
 
 let aclf = acl.aclfnc();
@@ -106,49 +107,81 @@ router.get('/search', aclfn, aclf, function (req, res) {
 // download a file
 router.get('/download/:id', function(req, res, next) {
 // download a file
-  var s=req.params.id;
+  let id=req.params.id;
+  Download.findById(id,function(err,download){
+      if(err){
+          debug(err);
+      }
 
-  //res.redirect('/');
-  var filePath = "../test/"+s; // Or format the path using the `id` rest param
-  var fileName = s; // The default name the browser will us
+      let fileNameArr = download.link.split('/');
+      let fileName=fileNameArr[fileNameArr.length -1];
+      let filePath=download.file_path+'/'+fileName;
+      debug('fPath: '+filePath);
 
-  res.download(filePath, fileName);
-  //res.render('index', { title: 'Express' });
+      res.download(filePath,fileName);
+
+  });
+
+  // let filePath = "../test/"+s; // Or format the path using the `id` rest param
+  // let fileName = s; // The default name the browser will us
+
+    // res.download(filePath, fileName);
 
 });
 // delete a file
 
- router.get('/delete/:id/:id2', function(req, res, next) {
+ router.get('/delete/:id', function(req, res, next) {
 
-   var s=req.params.id;
-   var x=req.params.id2;
-
-   console.log(x);
-   const fs = require('fs');
-   //res.redirect('/');
-   var filePath = "../test/"+s; // Or format the path using the `id` rest param
-   var fileName = s; // The default name the browser will us
-
-   fs.unlink(filePath);
-   Download.findById(x,function(err,download){
-     if(err) {
-         debug(err);
-     }
-     download.state = 'deleted';
-
-     download.save(function (err) {
+     let id=req.params.id;
+     Download.findById(id,function(err,download){
          if(err){
              debug(err);
          }
-         console.log("deleted");
-         res.redirect('/users/myfile');
+
+         let fileNameArr = download.link.split('/');
+         let fileName=fileNameArr[fileNameArr.length -1];
+         let filePath=download.file_path+'/'+fileName;
+         debug('fPath: '+filePath);
+
+         fs.unlink(filePath);
+
+         download.state = 'deleted';
+
+         download.save(function (err) {
+             if(err){
+                 debug(err);
+             }
+
+             req.flash('success','File deleted.');
+             res.redirect('/users/myfile');
+         });
+
      });
 
-
-   })
-   req.flash('success','File deleted.');
-  //  res.download(filePath, fileName);
-   //res.render('index', { title: 'Express' });
+   // let s=req.params.id;
+   // let x=req.params.id2;
+   //
+   // let filePath = "../test/"+s; // Or format the path using the `id` rest param
+   // let fileName = s; // The default name the browser will us
+   //
+   // fs.unlink(filePath);
+   // Download.findById(x,function(err,download){
+   //   if(err) {
+   //       debug(err);
+   //   }
+   //   download.state = 'deleted';
+   //
+   //   download.save(function (err) {
+   //       if(err){
+   //           debug(err);
+   //       }
+   //       console.log("deleted");
+   //       res.redirect('/users/myfile');
+   //   });
+   //
+   //
+   // });
+   // req.flash('success','File deleted.');
 
  });
 
