@@ -71,6 +71,7 @@ router.post('/server', aclfn, aclf, function (req, res) {
             if (err) {
                 res.send(false);
             } else {
+                debug('save la;a');
                 tm.setTimer();
                 res.send(true);
             }
