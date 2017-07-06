@@ -6,7 +6,9 @@ const express = require('express');
 const router = express.Router();
 const debug = require('debug')('nyx:router');
 
+const ar = require('../module/ariac_runner');
 let Download = require('../model/Download');
+let Time = require('../model/Time');
 
 router.post('/request',function(req,res){
 
@@ -97,7 +99,21 @@ router.post('/approve',function(req,res){
                 debug(err);
             }
 
-            res.redirect(req.header('Referer'));
+            Time.findOne({})
+                .sort({'edit_date': -1})
+                .select({'_id': 0, 'start': 1, 'end': 1,})
+                .then(function (time) {
+                    let sm = 0, em = 0;
+                    console.log(time);
+                    let t = new Date();
+                    let nowTime = t.getHours();
+                    if(nowTime){ //TODO : time select proooo
+                        ar.start_ariac();
+                    }
+
+                    res.redirect(req.header('Referer'));
+                });
+
         });
 
     })
