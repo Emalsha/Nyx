@@ -65,11 +65,19 @@
                     var progress_tx = document.getElementById('progress_tx');
                     socket.on('system_rxtx', function (msg) {
                         var obj = JSON.parse(msg);
-                        //console.log(msg);
-                        system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
-                        system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
-                        progress_rx.style.width = obj.rxprecent + "%";
-                        progress_tx.style.width = obj.txprecent + "%";
+//                        console.log(msg);
+                        if (obj.swap == "1"){
+                            system_tx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
+                            system_rx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
+                            progress_tx.style.width = obj.rxprecent + "%";
+                            progress_rx.style.width = obj.txprecent + "%";
+                        }else{
+                            system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
+                            system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
+                            progress_rx.style.width = obj.rxprecent + "%";
+                            progress_tx.style.width = obj.txprecent + "%";
+                        }
+
                     });
 
                 </script>

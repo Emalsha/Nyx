@@ -32,18 +32,7 @@ var ostb = require( 'os-toolbox' );
 module.exports = function App(io) {
     setInterval(function () {
 
-        let rxfn = netstat.usageRx({iface:reqIface,units:'bytes',sampleMs:'1000'},rx =>{
-            rxArray.push(rx/(1024*1024));
-            RX = rx;
-        });
-
-        let txfn = netstat.usageTx({iface:reqIface,units:'bytes',sampleMs:'1000'},tx =>{
-            txArray.push(tx/(1024*1024));
-            TX = tx;
-        });
-
-
-        //Online Offline Status
+//Online Offline Status
 
         //get these vals from the database
         var p_s = 7;
@@ -89,19 +78,35 @@ module.exports = function App(io) {
             precent = Math.floor(((now - peak_stop)/(peak_stop - peak_start))*100)
         }
 
-        //Net Stat
+        io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
+
+
+//Net Stat
+        let rxfn = netstat.usageRx({iface:reqIface,units:'bytes',sampleMs:'1000'},rx =>{
+            rxArray.push(rx/(1024*1024));
+            RX = rx;
+        });
+
+        let txfn = netstat.usageTx({iface:reqIface,units:'bytes',sampleMs:'1000'},tx =>{
+            txArray.push(tx/(1024*1024));
+            TX = tx;
+        });
+        var swap_rxtx = 0;
+        if (TX > RX){
+            swap_rxtx = 1;
+        }
         io.emit('stat_net_network',[rxArray,txArray] );
         var rx_prec = Math.round(RX*100/12000000);
         var tx_prec = Math.round(TX*100/6000000);
         RX =converter(RX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
-        TX =converter(TX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
 
-        io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
-        io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'","rxprecent":"'+rx_prec+'","txprecent":"'+tx_prec+'"}' );
+
+        TX =converter(TX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
+        io.emit('system_rxtx','{"rx": "'+ RX.val.toFixed(2) +'","rxUnit": "'+ RX.unit +'","tx": "'+ TX.val.toFixed(2) +'","txUnit": "'+ TX.unit +'","rxprecent":"'+rx_prec+'","txprecent":"'+tx_prec+'","swap":"' + swap_rxtx + '"}' );
         // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}');
 
 
-        //system memory
+//system memory and load
         ostb.memoryUsage().then(function(memusage){
             ram_usage.push(memusage); //ex: 93 (percent)
             ostb.cpuLoad().then(function(cpuusage){
@@ -130,7 +135,6 @@ module.exports = function App(io) {
         });
 
         disk.check('/', function(err, info) {
-
             var total = converter(info.total).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
             var available = converter(info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
             var used = converter(info.total - info.available).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
