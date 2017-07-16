@@ -35,8 +35,8 @@ module.exports = function App(io) {
 //Online Offline Status
 
         //get these vals from the database
-        var p_s = 7;
-        var p_e = 18;
+        var p_s = 17;
+        var p_e = 8;
 
         var status = "Offline";
         var timeleft = "N\\A";
@@ -51,11 +51,17 @@ module.exports = function App(io) {
         var timepassed = new Date();
         if (p_e < p_s){
             uncommon = true;
-            next_peak_start.setDate(next_peak_start.getDate()-1);
             if (peak_start.getHours() <= now.getHours()){
                 peak_stop.setDate(now.getDate()+1);
             }else {
+                next_peak_start.setDate(next_peak_start.getDate()-1);
                 peak_start.setDate(now.getDate()-1);
+            }
+        }else{
+            if (peak_stop.getHours() <= now.getHours()){
+                peak_start.setDate(now.getDate()+1);
+            }else {
+                next_peak_start.setDate(next_peak_start.getDate()-1);
             }
         } //i assume my logic is correct
 
