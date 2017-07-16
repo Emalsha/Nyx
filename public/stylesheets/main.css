@@ -367,9 +367,7 @@ body{
 
 .download_req_box{
 
-    background-color:#fff7f4;
     border-radius: 8px;
-    border: 1px solid #ff5722;
     padding:2px 20px !important;
     margin-bottom: 20px;
 }
@@ -431,4 +429,10 @@ td, th {
 .ajaxbox_desc{
     padding: 10px;
     color: #6c6c6c;
+}
+
+.infotext{
+    color: #777;
+    font-size: 11px;
+    line-height: 15px;
 }

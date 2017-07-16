@@ -50,9 +50,7 @@
 <div id="url_info" class="modal">
     <form action="/download/request" method="post" id="url_info_form" style="margin: 0;">
         <div class="modal-content">
-            <h4>New Download Request</h4>
             <div class="row">
-
                 <div class="input-field col s12">
                     <input placeholder="URL" id="url" type="text" class="validate deep-orange-text accent-3" disabled>
                     <label for="url">URL</label>
@@ -61,6 +59,7 @@
                 <div class="input-field col s12">
                     <div class="chips black-text" id="url_tags"></div>
                     <label for="url_tags">Tags</label>
+                    <div class="infotext">Provide <b>tags</b> to help the administrators and other memebers (if public) to identify the downloading file. for an example if you are downloading a Ubuntu ISO image you can include tags like linux, ubuntu16, 64bit, os. Separate the tags using the <b>ENTER</b> key</div>
                 </div>
 
                 <div class="input-field col s12">
@@ -89,13 +88,13 @@
                 </div>
 
                 <div class="col s3">
-                    <div class="col s12 contentbox_txt_up">Download Duration</div>
-                    <div class="col s12 contentbox_main" id="file_size">unknown</div>
+                    <div class="col s12 contentbox_txt_up">Automatic Confirmation</div>
+                    <div class="col s12 contentbox_main" id="file_size">Unavailable</div>
                 </div>
 
                 <div class="col s3">
-                    <div class="col s12 contentbox_txt_up">Priority</div>
-                    <div class="col s12 contentbox_main" id="file_size">unknown</div>
+                    <div class="col s12 contentbox_txt_up">Default Priority</div>
+                    <div class="col s12 contentbox_main" id="file_size">Normal</div>
                 </div>
 
                 <input type="hidden" id="url_hi" name="link">
@@ -106,11 +105,13 @@
                 <input type="hidden" id="fsize" name="size">
 
             </div>
+            <div class="infotext"><b>IMPORTANT NOTE :</b><br> By clicking Confirm Request, you confirm that you have read and agree our Terms and Usage Policy. Breaking the system's Terms or Usage policies will lead up to account termination without prior warning.</div>
         </div>
 
         <div class="modal-footer" style="width: auto;margin-right: 10px;">
             <button type="submit" class="waves-effect modal-action waves-green btn" id="url_send_btn">
-                Send
+                Confirm Request
+                <i class="material-icons right">send</i>
             </button>
             <button type="reset" class="modal-action modal-close waves-effect waves-red btn-flat">
                 Cancel
@@ -261,19 +262,25 @@
                 </div>
 
                 <!--Download link div-->
-                <div class="col s12 download_req_box">
-                    <h5>New Download Request</h5>
-                    <div class="row">
-                        <div class="input-field">
-                            <input type="text" id="down_link" class="validate">
-                            <label for="down_link">Download link</label>
-                        </div>
-                        <div class="right-align">
-                            <button class="waves-effect waves-light btn" id="down_link_btn">Request Download</button>
-                        </div>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <div class="col s12">
+                            <h5>New Download Request</h5>
+                            <div class="infotext">This system is only capable of downloading files using DDLs (Direct Download Links) and if you provide a link other than a direct download link or a link with temporary link availability/validity the system may not be able to complete your download request.</div>
+                            <div class="row">
+                                <div class="input-field">
+                                    <input type="text" id="down_link" class="validate" value="http://ipv4.download.thinkbroadband.com/10MB.zip">
+                                    <label for="down_link">Direct Download link</label>
+                                </div>
+                                <div class="right-align">
+                                    <button class="waves-effect waves-light btn" id="down_link_btn">Request</button>
+                                </div>
 
-                    </div>
-                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
 
 
 
