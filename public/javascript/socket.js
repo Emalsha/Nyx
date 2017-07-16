@@ -7,12 +7,15 @@ console.log('Connected to Server Socket : ', socket.connected);
 socket.on('connect',function(){
     // Send ehlo event right after connect:
     //socket.emit('AuthId', JSON.stringify(globaluser));
+    io_connnection = true;
 });
 
 
 socket.on('disconnect', function () {
-    document.getElementById('dc_panel').style.display="block";
-    console.log('you have been disconnected');
+    if (io_connnection == true){
+        document.getElementById('dc_panel').style.display="block";
+        console.log('you have been disconnected');
+    }
 });
 
 socket.on('reconnect', function () {

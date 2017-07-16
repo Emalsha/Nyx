@@ -50,13 +50,14 @@ $('#down_link_btn').click(function () {
 
 // Check given url is exist
 let checkUrl = (url, cb) => {
-
+    openloader("Checking the download URL you provided...")
     $.ajax({
         url:'/url/validate',
         method:'post',
         dataType:'json',
         data:{url:encodeURIComponent(url)},
         success:function (data) {
+            closeloader();
             cb(data);
         }
     })

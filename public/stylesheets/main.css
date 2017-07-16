@@ -418,3 +418,17 @@ td, th {
 }
 
 
+.ajaxbox{
+    width: 450px;
+}
+
+.ajaxbox_title{
+    padding-top: 30px;
+    font-size: 24px;
+    color: #323232;
+}
+
+.ajaxbox_desc{
+    padding: 10px;
+    color: #6c6c6c;
+}

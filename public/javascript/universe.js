@@ -9,5 +9,29 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
+    $('.modal').modal();
     $('select').material_select();
+
 });
+
+
+
+function openloader(msg,head) {
+    var title = document.getElementById("ajaxbox_title");
+    var desc = document.getElementById("ajaxbox_desc");
+    if (typeof head !== "undefined"){
+        title.innerHTML = head;
+    }else{
+        title.innerHTML = "Waiting for Server";
+    }
+    if (typeof msg !== "undefined"){
+        desc.innerHTML = msg;
+    }else{
+        desc.innerHTML = "";
+    }
+    $('#ajaxloader').modal('open');
+}
+
+function closeloader() {
+    $('#ajaxloader').modal('close');
+}

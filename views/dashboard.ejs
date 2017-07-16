@@ -5,6 +5,27 @@
 
 </head>
 <body>
+<!--AJAX Loader HTML Content-->
+<!-- Modal Structure -->
+<div id="ajaxloader" class="modal ajaxbox">
+    <div style="text-align: center;">
+        <div class="ajaxbox_title" id="ajaxbox_title">
+            Waiting for Server
+        </div>
+        <div class="ajaxbox_desc" id="ajaxbox_desc" ></div>
+
+    </div>
+    <div class="progress blue lighten-3">
+        <div class="indeterminate  blue darken-2"></div>
+    </div>
+    <div class="modal-content" style="padding-top: 0px;">
+
+        <div style="text-align: center;">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat  blue darken-2 white-text">Send to Background</a>
+        </div>
+
+    </div>
+</div>
 <% if(message != ''){ %>
 <div id="startupnotice" class="modal" style="width: 500px">
     <div class="modal-content">
