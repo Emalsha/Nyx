@@ -16,10 +16,6 @@ let rxArray = fixed_array(60);
 let txArray = fixed_array(60);
 
 
-var peak_upper_limit = 19;
-var peak_lower_limit = 6;
-
-
 //foldersize
 var getFolderSize = require('get-folder-size');
 var converter = require('convert-units');
@@ -46,100 +42,55 @@ module.exports = function App(io) {
             TX = tx;
         });
 
-        //Net Stat
-        io.emit('stat_net_network',[rxArray,txArray] );
 
         //Online Offline Status
-        var now = new Date();
-        // var now = date.getTime();
-        var hh = now.getHours();
 
+        //get these vals from the database
+        var p_s = 7;
+        var p_e = 18;
 
         var status = "Offline";
         var timeleft = "N\\A";
+        var uncommon = false;
         var precent = 0;
-        if (peak_upper_limit > peak_lower_limit){
-            //case 01
-            if (hh >= peak_lower_limit && hh <peak_upper_limit){
-                //offline
-                status = "Offline";
 
-                var limit_ul = new Date();
-                limit_ul.setHours(peak_upper_limit);
-                limit_ul.setMinutes(0);
-                limit_ul.setSeconds(0);
-                var dif = Math.abs(limit_ul - now);
-                timeleft = "Going online in " + (Math.floor(dif/(1000*60*60))) + " hours " + Math.floor(dif/(1000*60))%60 + "mins and "+ (Math.floor(dif/(1000))%60)%60 + " secs." ;
-
-                var tl_x = new Date();
-                tl_x.setHours(peak_lower_limit);
-                tl_x.setMinutes(0);
-                tl_x.setSeconds(0);
-                precent = 100-Math.round(Math.abs(dif/Math.abs(tl_x-limit_ul)*100));
-
-                // console.log(timeleft,status);
-
-
-
-            }else{
-                //online
-                status = "Online";
-                var limit_ul = new Date();
-                limit_ul.setHours(peak_lower_limit);
-                limit_ul.setDate(limit_ul.getDate()+1);
-                limit_ul.setMinutes(0);
-                limit_ul.setSeconds(0);
-                var dif = Math.abs(limit_ul - now);
-                timeleft = "Going offline in " + (Math.floor(dif/(1000*60*60))) + " hours " + Math.floor(dif/(1000*60))%60 + "mins and "+ (Math.floor(dif/(1000))%60)%60 + " secs." ;
-
-
-                var tl_x = new Date();
-                tl_x.setHours(peak_upper_limit);
-                tl_x.setMinutes(0);
-                tl_x.setSeconds(0);
-                precent = 100-Math.round(Math.abs(dif/Math.abs(tl_x-limit_ul)*100));
-                // console.log(timeleft,status);
-
+        var now = new Date();
+        var peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_s,0,0);
+        var peak_stop = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_e,0,0);
+        var next_peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate()+1,p_s,0,0);
+        var timetogo = new Date();
+        var timepassed = new Date();
+        if (p_e < p_s){
+            uncommon = true;
+            next_peak_start.setDate(next_peak_start.getDate()-1);
+            if (peak_start.getHours() <= now.getHours()){
+                peak_stop.setDate(now.getDate()+1);
+            }else {
+                peak_start.setDate(now.getDate()-1);
             }
-        }else{
-            //case 02
-            if (hh > peak_upper_limit && hh <=peak_lower_limit){
-                //online
-                status = "Online";
-                var limit_ul = new Date();
-                limit_ul.setHours(peak_lower_limit);
-                limit_ul.setMinutes(0);
-                limit_ul.setSeconds(0);
-                var dif = Math.abs(now-limit_ul);
-                timeleft = "Going offline in " + (Math.floor(dif/(1000*60*60))) + " hours " + Math.floor(dif/(1000*60))%60 + "mins and "+ (Math.floor(dif/(1000))%60)%60 + " secs." ;
+        } //i assume my logic is correct
 
+        //online status
+        if (peak_start.getTime() < now.getTime() && now.getTime() < peak_stop.getTime()){
+            //peak
+            status = "Offline";
+            timetogo = peak_stop.getTime()-now.getTime();
+            timepassed = now - peak_start.getTime();
 
-                var tl_x = new Date();
-                tl_x.setHours(peak_upper_limit);
-                tl_x.setMinutes(0);
-                tl_x.setSeconds(0);
-                precent = 100-Math.round(Math.abs(dif/Math.abs(tl_x-limit_ul)*100));
-                // console.log(timeleft,status);
+            timeleft = "Going online in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
+            precent = Math.floor(((now - peak_start)/(peak_stop - peak_start))*100)
+        }else {
+            //off peak
+            status = "Online";
+            timetogo = next_peak_start.getTime()-now.getTime();
+            timepassed = now - peak_stop;
 
-            }else{
-                //offline
-                status = "Offline";
-                var limit_ul = new Date();
-                limit_ul.setHours(peak_upper_limit);
-                limit_ul.setDate(limit_ul.getDate()+1);
-                limit_ul.setMinutes(0);
-                limit_ul.setSeconds(0);
-                var dif = Math.abs(now-limit_ul);
-                timeleft = "Going online in " + (Math.floor(dif/(1000*60*60))) + " hours " + Math.floor(dif/(1000*60))%60 + "mins and "+ (Math.floor(dif/(1000))%60)%60 + " secs." ;
-
-                var tl_x = new Date();
-                tl_x.setHours(peak_lower_limit);
-                tl_x.setMinutes(0);
-                tl_x.setSeconds(0);
-                precent = 100-Math.round(Math.abs(dif/Math.abs(tl_x-limit_ul)*100));
-                // console.log(timeleft,status);
-            }
+            timeleft = "Going offline in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
+            precent = Math.floor(((now - peak_stop)/(peak_stop - peak_start))*100)
         }
+
+        //Net Stat
+        io.emit('stat_net_network',[rxArray,txArray] );
         var rx_prec = Math.round(RX*100/12000000);
         var tx_prec = Math.round(TX*100/6000000);
         RX =converter(RX).from('B').toBest({exclude: ['Kb','Mb','Gb','Tb']});
@@ -161,14 +112,7 @@ module.exports = function App(io) {
         }, function(error){
             console.log("Error while retireving memory usage");
         });
-        //console.log(RX,TX);
-
-
-
-
-
-
-
+        //console.log(RX,TX)
 
     },1000);
 
