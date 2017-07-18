@@ -15,9 +15,19 @@ const aria2 = require('../module/aria2c_config').aria2obj;
 
 const first_user = require('../module/first_user');
 
+const cast = require('../module/globalutils');
+
 
 const port = normalizePort(process.env.PORT || '3000');
 let server;
+
+//Globals
+global.loggedinusers = [];
+global.activesessions = [];
+global.onlineadmins = [];
+global.onlineusers = [];
+global.connectedsockets = [];
+
 
 
 // var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
@@ -128,23 +138,48 @@ var NetStat = require('../module/netstat');
 var netstat = new NetStat(io);
 
 io.on('connection', function(socket){
-    console.log('connection initialized',socket.id,socket.request.connection.remoteAddress.replace(/^.*:/, ''));
-    socket.on('disconnect', function () {
-        console.log(socket.id,"disconnected");
-    });
+    var user_xname = global.connectedsockets[socket.id];
+    cast.log('Socket initialized from ' + user_xname + "("+ socket.request.connection.remoteAddress.replace(/^.*:/, '') + ") ID:" + socket.id);
 
-    socket.on('AuthId', function(data) {
-        try {
-            var newuser = JSON.parse(data);
-            console.log(data);
-            cglobals.onlineUsers.push(newuser);
-            io.emit('user_connect',data);
-        }catch (e){
-            //
+    socket.on('disconnect', function () {
+        var username = global.connectedsockets[socket.id];
+        if (username !== undefined){
+            if (global.loggedinusers[username] !== undefined && global.loggedinusers[username][3].indexOf(socket.id) !== -1){
+                delete global.loggedinusers[username][3].splice(global.loggedinusers[username][3].indexOf(socket.id),1);
+            }
+            if (global.connectedsockets[socket.id] !== undefined){
+                delete global.connectedsockets[socket.id];
+            }
+            cast.log("Socket from " + username + " disconnected. ID:"+socket.id);
         }
 
     });
-    // io.emit('user_connect','{"name": "'+ +'","uname": "heysulo"}');
+
+    socket.on('usr-auth', function (data) {
+        var username = global.activesessions[data.token];
+        if (username === undefined){
+            io.to(socket.id).emit("refresh","refresh_token");
+            cast.log("Issuing page refresh command to socket ID:" + socket.id + " REASON : User not found in active sessions",1);
+        }else{
+            if (global.loggedinusers[username][1] === "admin"){
+                if (global.onlineadmins.indexOf(username) === -1){
+                    cast.log("Administrator " + username + " connected from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
+                    global.onlineadmins.push(username);
+                }
+            }
+            if (global.onlineusers.indexOf(username) === -1){
+                cast.log("User " + username + " Authenticated from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
+                global.onlineusers.push(username);
+            }
+            if (global.loggedinusers.indexOf(username) === -1){
+                if (global.loggedinusers[username][3].indexOf(socket.id) === -1){
+                    global.loggedinusers[username][3].push(socket.id);
+                }
+            }
+            global.connectedsockets[socket.id] = username;
+            cast.log("Socket from user " + username + " Authenticated from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
+        }
+    })
 
 });
 

@@ -45,6 +45,7 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
                 pending: pendingDonwload,
                 inprogress: approvedList,
                 rejected: rejectedList,
+                token:req.flash('token')
             });
         });
 

@@ -40,8 +40,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(session({secret:'project-nyx',saveUninitialized: true,resave:true}));
 // Due to cluster store sesion data on mongo db
+
+var crypto = require("crypto");
+var session_secret = crypto.randomBytes(16).toString('hex');
 app.use(session({
-    secret:'project-nyx',
+    secret:session_secret,
     saveUninitialized: true,
     resave:true,
     store:new MongoStore({url:"mongodb://localhost:27017/project_nyx"}),
@@ -76,6 +79,7 @@ app.use('/download',download);
 app.use('/url',url);
 app.use('/view_f', view_f);
 app.use('/batch',batch);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
