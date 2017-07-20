@@ -163,17 +163,26 @@ io.on('connection', function(socket){
     socket.on('disconnect', function () {
         var username = global.connectedsockets[socket.id];
         if (username !== undefined){
+            //delete socket from socket list of user
             if (global.loggedinusers[username] !== undefined && global.loggedinusers[username][3].indexOf(socket.id) !== -1){
                 delete global.loggedinusers[username][3].splice(global.loggedinusers[username][3].indexOf(socket.id),1);
             }
+            //remove socket
             if (global.connectedsockets[socket.id] !== undefined){
                 delete global.connectedsockets[socket.id];
             }
-            if (global.loggedinusers.indexOf([username]) !== -1 && global.loggedinusers[username][1] === "admin"){
-                if (global.onlineadmins.indexOf(username) !== -1){
-                    global.onlineadmins.splice(global.onlineadmins.indexOf(username),1);
+            if (global.loggedinusers[username] !== undefined && global.loggedinusers[username][1] === "admin"){
+                if (global.loggedinusers[username][3].length === 0){
+                    cast.log(username + " is now offline.");
+                    if (global.onlineadmins.indexOf(username) !== -1){
+                        global.onlineadmins.splice(global.onlineadmins.indexOf(username),1);
+                    }
                 }
             }
+            if (global.loggedinusers[username][0].length < 1 && global.loggedinusers[username][3].length === 0){
+                delete global.loggedinusers[username];
+            }
+
             if (global.onlineusers.indexOf(username) !== -1){
                 global.onlineusers.splice(global.onlineusers.indexOf(username),1);
             }

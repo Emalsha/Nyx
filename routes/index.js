@@ -89,7 +89,7 @@ router.get('/logout',function (req, res) {
         if (global.loggedinusers[req.user.username][0].indexOf(req.cookies['id_token']) !== -1){
             global.loggedinusers[req.user.username][0].splice(global.loggedinusers[req.user.username][0].indexOf(req.cookies['id_token']),1);
         }
-        if (global.loggedinusers[req.user.username][0].length < 1){
+        if (global.loggedinusers[req.user.username][0].length < 1 && global.loggedinusers[req.user.username][3].length === 0){
             delete global.loggedinusers[req.user.username];
         }
     }

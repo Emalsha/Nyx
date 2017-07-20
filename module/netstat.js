@@ -158,6 +158,7 @@ module.exports = function App(io) {
         io.emit('online-users',{admins:global.onlineadmins,users:global.onlineusers});
 
         // console.log(global.loggedinusers);
+        // console.log(global.onlineadmins);
 
     },5000);
 };
