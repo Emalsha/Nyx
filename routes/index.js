@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
     if(req.isAuthenticated()){
         res.redirect('/users/dashboard');
     }else{
+        res.clearCookie("id_token");
         res.render('login', { title: 'NYX',message:req.flash('error') });
     }
 });
@@ -35,6 +36,8 @@ router.post('/register', function(req, res,done) {
             res.redirect('/');
         }
 
+
+
         debug('New user registering.');
         passport.authenticate('local-signin')(req,res,function(){
             acl.addUserRoles(req.user.username,req.user.role);
@@ -48,15 +51,54 @@ router.post('/register', function(req, res,done) {
 
 
 // Send login request throug passport midleware and redirect policy
-router.post('/login',passport.authenticate('local-signin',{
-    successRedirect:'/users/dashboard',
-    failureRedirect:'/'
-})
-);
+router.post('/login',passport.authenticate('local-signin', { failureRedirect: '/' }),
+    function(req, res) {
+        var crypto = require("crypto");
+        var id = crypto.randomBytes(8).toString('hex');
+        req.flash('token',id);
+        res.cookie('id_token' ,id);
+        global.activesessions[id]= req.user.username;
+
+
+        if (global.loggedinusers[req.user.username] === undefined){
+            // SYNTAX : username : [[activesessions],role,lastlogin,[connectedsocketes]]
+            global.loggedinusers[req.user.username] = [[],req.user.role,"",[]];
+        }
+        global.loggedinusers[req.user.username][0].push(id);
+        global.loggedinusers[req.user.username][1] = req.user.role;
+        global.loggedinusers[req.user.username][2] = new Date().getTime();
+
+
+        res.redirect(302, '/users/dashboard');
+    });
+
+
+
+// router.post('/login',passport.authenticate('local-signin',{
+//     successRedirect:'/users/dashboard',
+//     failureRedirect:'/'
+// })
+// );
+//
+//
 
 
 router.get('/logout',function (req, res) {
     debug('Logout '+req.user.username);
+    if (global.loggedinusers[req.user.username] !== undefined){
+        if (global.loggedinusers[req.user.username][0].indexOf(req.cookies['id_token']) !== -1){
+            global.loggedinusers[req.user.username][0].splice(global.loggedinusers[req.user.username][0].indexOf(req.cookies['id_token']),1);
+        }
+        if (global.loggedinusers[req.user.username][0].length < 1){
+            delete global.loggedinusers[req.user.username];
+        }
+    }
+
+    if (global.activesessions[req.cookies['id_token']] !== undefined){
+        delete global.activesessions[req.cookies['id_token']];
+    }
+    // console.log(req.cookies['id_token']);
+    res.clearCookie("id_token");
     req.logout();
     req.flash('error',"You have been logged out.");
     res.redirect('/');

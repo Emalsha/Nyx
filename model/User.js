@@ -15,7 +15,8 @@ const userSchema = new Schema({
     email:String,
     role:String,
     created_at:Date,
-    updated_at:Date
+    updated_at:Date,
+    token:String
 });
 
 userSchema.plugin(passportlocalmongoose,{hashField:'password'});

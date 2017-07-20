@@ -235,15 +235,32 @@
                     </div>
                     <!--Stats-->
                     <div class="row">
-                        <div class="col s4" id="onlineusers">
+                        <div class="col s4">
                             <div class="subsection_title_sub">Currently Active Users</div>
-                            <div class="chip">Jane Doe</div>
+                            <div id="onlineusers">
+
+                            </div>
 
                         </div>
                         <div class="col s8">
                             <div class="subsection_title_sub">sdsdsd</div>
                         </div>
                     </div>
+                    <script>
+                        socket.on('online-users', function (data) {
+                            var usercontainer = document.getElementById("onlineusers");
+                            usercontainer.innerHTML = "";
+                            for (var i = 0; i < data.users.length; i++) {
+                                usercontainer.innerHTML+='<div class="chip" id="'+ data.users[i] +'">'+data.users[i]+'</div>'
+                            }
+
+                            for (var i = 0; i < data.admins.length; i++) {
+                                document.getElementById(data.admins[i]).classList.add("amber");
+                            }
+                            console.log(data);
+
+                        });
+                    </script>
 
 
                 </div>
