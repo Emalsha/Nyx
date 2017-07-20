@@ -163,15 +163,14 @@ router.post('/register', function (req, res, done) {
         if (err) {
             req.flash('error', "Error on registration. " + err);
             res.redirect('/');
+            res.send('false');
         }
 
         debug('New user registering.');
-        passport.authenticate('local-signin')(req, res, function () {
-            acl.addUserRoles(req.user.username, req.user.role);
-            req.flash('successMessage', "New account is successfully registered");
+            acl.aclobj.addUserRoles(user.username,user.role);
+            req.flash('success', "New account is successfully registered");
             res.redirect('/users/dashboard');
 
-        })
 
     })
 });
