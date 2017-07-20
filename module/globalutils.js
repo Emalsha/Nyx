@@ -33,6 +33,10 @@ exports.log = function (msg,code) {
             //authenticate
             code = "AUTH";
             break;
+        case 6:
+            //authenticate
+            code = "PING";
+            break;
         default:
             //unk
             code = "UNKN";

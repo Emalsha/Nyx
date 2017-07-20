@@ -151,7 +151,13 @@ module.exports = function App(io) {
             io.emit('system_storage_usage','{"used": "'+ used.val.toFixed(2) +'","usedUnit": "'+ used.unit +'","available": "'+ available.val.toFixed(2) +'","availableUnit": "'+ available.unit +'","total": "'+ total.val.toFixed(2) +'","totalUnit": "'+total.unit +'","progress":"'+  Math.round((info.total-info.available)*100/info.total) +'"}' );
         });
 
-        //arraya adjustmenst
+        //send online admins status
+        io.emit('admin_count',{count:global.onlineadmins.length});
+
+        //send online users
+        io.emit('online-users',{admins:global.onlineadmins,users:global.onlineusers});
+
+        // console.log(global.loggedinusers);
 
     },5000);
 };

@@ -16,12 +16,14 @@ const aria2 = require('../module/aria2c_config').aria2obj;
 const first_user = require('../module/first_user');
 
 const cast = require('../module/globalutils');
+cast.log("Starting system.")
 
 
 const port = normalizePort(process.env.PORT || '3000');
 let server;
 
 //Globals
+cast.log("Initializing system components.")
 global.loggedinusers = [];
 global.activesessions = [];
 global.onlineadmins = [];
@@ -40,7 +42,10 @@ var io = require('socket.io').listen(server);
 mongoose.connect(dburl,(err) => {
     if(err){
         debugd('Unable to connect Database.');
+        cast.log("Database Connection Failure.");
         process.exit(1);
+    }else {
+        cast.log("Database connection success.");
     }
 });
 
@@ -138,8 +143,22 @@ var NetStat = require('../module/netstat');
 var netstat = new NetStat(io);
 
 io.on('connection', function(socket){
-    var user_xname = global.connectedsockets[socket.id];
-    cast.log('Socket initialized from ' + user_xname + "("+ socket.request.connection.remoteAddress.replace(/^.*:/, '') + ") ID:" + socket.id);
+    // var user_xname = global.connectedsockets[socket.id];
+    // cast.log('Socket initialized from ' + user_xname + "("+ socket.request.connection.remoteAddress.replace(/^.*:/, '') + ") ID:" + socket.id);
+
+    socket.on('ping',function (data) {
+
+        var username = global.activesessions[data.token];
+        if (username === undefined){
+            io.to(socket.id).emit("refresh","refresh_token");
+            cast.log("Issuing page refresh command to socket ID:" + socket.id + " REASON : User not found in active sessions",1);
+        }else{
+            
+            global.connectedsockets[socket.id] = username;
+            cast.log("Socket of " + username + " Authenticated from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
+        }
+
+    });
 
     socket.on('disconnect', function () {
         var username = global.connectedsockets[socket.id];
@@ -150,7 +169,15 @@ io.on('connection', function(socket){
             if (global.connectedsockets[socket.id] !== undefined){
                 delete global.connectedsockets[socket.id];
             }
-            cast.log("Socket from " + username + " disconnected. ID:"+socket.id);
+            if (global.loggedinusers.indexOf([username]) !== -1 && global.loggedinusers[username][1] === "admin"){
+                if (global.onlineadmins.indexOf(username) !== -1){
+                    global.onlineadmins.splice(global.onlineadmins.indexOf(username),1);
+                }
+            }
+            if (global.onlineusers.indexOf(username) !== -1){
+                global.onlineusers.splice(global.onlineusers.indexOf(username),1);
+            }
+            cast.log("Socket of " + username + " disconnected. ID:"+socket.id);
         }
 
     });
@@ -177,9 +204,20 @@ io.on('connection', function(socket){
                 }
             }
             global.connectedsockets[socket.id] = username;
-            cast.log("Socket from user " + username + " Authenticated from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
+            io.to(socket.id).emit("usr-auth-success","success");
+            cast.log("Socket of " + username + " Authenticated from " + socket.request.connection.remoteAddress.replace(/^.*:/, ''),5);
         }
-    })
+    });
+
+    socket.on('sysping',function (data) {
+        var username = global.activesessions[data.token];
+        if (username === undefined){
+            io.to(socket.id).emit("loginconfirm-error-uid","loginconfirm_token");
+            cast.log("Issuing page loginconfirm-error-uid command to socket ID:" + socket.id + " REASON : User not found in active sessions",2);
+        }else {
+            // cast.log("Ping recieced",6);
+        }
+    });
 
 });
 

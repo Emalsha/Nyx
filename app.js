@@ -57,6 +57,18 @@ app.use('/public',express.static(path.join(__dirname, 'public')));
 
 // Routers
 app.use('/', index);
+
+
+
+app.use('/loginstatus',function (req,res) {
+    if(req.isAuthenticated()){
+        res.send('{"status": "success"}');
+    }else{
+        res.send('{"status": "fail"}');
+    }
+
+});
+
 // Authentication middleware
 app.use(function (req, res, next) {
     if(req.isAuthenticated()){return next();}
@@ -79,6 +91,9 @@ app.use('/download',download);
 app.use('/url',url);
 app.use('/view_f', view_f);
 app.use('/batch',batch);
+
+
+
 
 
 // catch 404 and forward to error handler

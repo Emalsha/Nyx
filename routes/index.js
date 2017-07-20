@@ -36,6 +36,8 @@ router.post('/register', function(req, res,done) {
             res.redirect('/');
         }
 
+
+
         debug('New user registering.');
         passport.authenticate('local-signin')(req,res,function(){
             acl.addUserRoles(req.user.username,req.user.role);
@@ -95,7 +97,7 @@ router.get('/logout',function (req, res) {
     if (global.activesessions[req.cookies['id_token']] !== undefined){
         delete global.activesessions[req.cookies['id_token']];
     }
-    console.log(req.cookies['id_token']);
+    // console.log(req.cookies['id_token']);
     res.clearCookie("id_token");
     req.logout();
     req.flash('error',"You have been logged out.");

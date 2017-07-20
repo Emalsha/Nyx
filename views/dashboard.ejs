@@ -176,12 +176,36 @@
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Administrators
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main teal-text lighten-2">Available</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2">
-                            12 Administrator are online
-                        </div>
+                        <div class="col s12 m12 l12 truncate contentbox_main teal-text lighten-2" id="admin_available_status">Unknown</div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="admin_available_count">Unknown</div>
 
                     </div>
+
+                    <script>
+                        var admin_available_status = document.getElementById('admin_available_status');
+                        var admin_available_count = document.getElementById('admin_available_count');
+                        socket.on('admin_count', function(msg){
+                            if (msg.count > 0){
+                                admin_available_status.innerHTML = "Available";
+                                admin_available_count.innerHTML = msg.count + " Administrator(s) online";
+
+                                admin_available_status.classList.add('teal-text');
+                                admin_available_status.classList.add('lighten-2');
+                                admin_available_status.classList.remove('deep-orange-text');
+                                admin_available_status.classList.remove('accent-3');
+                            }else{
+                                admin_available_status.innerHTML = "Unavailable";
+                                admin_available_count.innerHTML = "0 Administrators online";
+
+                                admin_available_status.classList.remove('teal-text');
+                                admin_available_status.classList.remove('lighten-2');
+                                admin_available_status.classList.add('deep-orange-text');
+                                admin_available_status.classList.add('accent-3');
+
+                            }
+                        });
+
+                    </script>
 
                     <!--User available disk space status-->
                     <div class="col s6 m3 l3 contentbox_mainbox">
@@ -202,7 +226,6 @@
                         var storage_progress = document.getElementById('storage_progress');
                         socket.on('user_storage_usage', function(msg){
                             var obj = JSON.parse(msg);
-                            console.log(msg);
                             storage_used.innerHTML = obj.used + " " + obj.usedUnit;
                             storage_total.innerHTML = obj.used + " " + obj.usedUnit + " of " + obj.allocated + " " + obj.allocatedUnit;
                             storage_progress.style.width = obj.progress+"%";
