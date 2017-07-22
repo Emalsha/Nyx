@@ -186,7 +186,7 @@ io.on('connection', function(socket){
             if (global.onlineusers.indexOf(username) !== -1){
                 global.onlineusers.splice(global.onlineusers.indexOf(username),1);
             }
-            cast.log("Socket of " + username + " disconnected. ID:"+socket.id);
+            // cast.log("Socket of " + username + " disconnected. ID:"+socket.id);
         }
 
     });
