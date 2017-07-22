@@ -362,7 +362,7 @@
                                                 <span class="subsection_title_sub no_padding">Respond to Request</span>
                                                 <ul class="collapsible" data-collapsible="accordion">
                                                     <li>
-                                                        <div class="collapsible-header green"><i class="material-icons">done</i>Accept
+                                                        <div class="collapsible-header green white-text"><i class="material-icons white-text">done</i>Accept
                                                             Request
                                                         </div>
                                                         <!--Approve form-->
@@ -380,22 +380,14 @@
                                                                     <div class="col s12 truncate contentbox_detail_field">
                                                                         Priority
                                                                     </div>
-                                                                    <div class="col s12 truncate  contentbox_detail_value">
-                                                                        <div class="row">
-                                                                            <div class="input-field col s12">
-                                                                                <select class="display" id="s_priority"
-                                                                                        name="priority">
-                                                                                    <option value="" disabled selected>
-                                                                                        Choose your option
-                                                                                    </option>
-                                                                                    <option value="1">Priority 1
-                                                                                    </option>
-                                                                                    <option value="2">Priority 2
-                                                                                    </option>
-                                                                                    <option value="3">Priority 3
-                                                                                    </option>
-                                                                                </select>
-                                                                            </div>
+                                                                    <div class="col s12  contentbox_detail_value" >
+                                                                        <div class="row" style="all:unset;">
+                                                                            <select id="s_priority" name="priority">
+                                                                                <option value="" disabled selected>Choose your option</option>
+                                                                                <option value="3">Priority 3</option>
+                                                                                <option value="2">Priority 2</option>
+                                                                                <option value="1">Priority 1</option>
+                                                                            </select>
                                                                         </div>
 
                                                                     </div>
@@ -452,7 +444,7 @@
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <div class="collapsible-header red"><i class="material-icons">not_interested</i>Reject
+                                                        <div class="collapsible-header red white-text"><i class="material-icons white-text">not_interested</i>Reject
                                                             Request
                                                         </div>
 
@@ -464,25 +456,15 @@
                                                                     <div class="col s12 truncate contentbox_detail_field">
                                                                         Reason to Reject
                                                                     </div>
-                                                                    <div class="col s12 truncate  contentbox_detail_value">
+                                                                    <div class="col s12 contentbox_detail_value">
                                                                         <div class="row">
                                                                             <div class="col s12">
-                                                                                <select class="display" name="reason"
-                                                                                        required>
-                                                                                    <option value="">Select reason
-                                                                                    </option>
-                                                                                    <option value="Not appropriate">Not
-                                                                                        appropriate
-                                                                                    </option>
-                                                                                    <option value="Already downloaded">
-                                                                                        Already downloaded
-                                                                                    </option>
-                                                                                    <option value="Incorrect file">
-                                                                                        Incorrect file
-                                                                                    </option>
-                                                                                    <option value="Other">
-                                                                                        Other
-                                                                                    </option>
+                                                                                <select name="reason" required>
+                                                                                    <option value="">Select reason</option>
+                                                                                    <option value="Not appropriate">Not appropriate</option>
+                                                                                    <option value="Already downloaded">Already downloaded</option>
+                                                                                    <option value="Incorrect file">Incorrect file</option>
+                                                                                    <option value="Other">Other</option>
                                                                                 </select>
                                                                             </div>
                                                                         </div>
