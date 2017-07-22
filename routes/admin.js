@@ -104,6 +104,17 @@ router.get('/managepublicfiles', aclfn, aclf, function (req, res) {
 
 });
 
+
+router.get('/diskmanagement', aclfn, aclf, function (req, res) {
+    res.render('diskmanagement', {
+        title: 'NYX | Dashboard',
+        message: req.flash('success'),
+        user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+        token:req.flash('token')
+    });
+
+});
+
 //delete public files
 // delete a file
 

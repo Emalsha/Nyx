@@ -35,25 +35,16 @@
                 </div>
             </div>
             <ul>
-                <li class="sidemenu_li"><a href="/users/dashboard" class="white-text"><i class="material-icons left"
-                                                                                         style="color: #ffffff;">dashboard</i>Dashboard</a>
+                <li class="sidemenu_li"><a href="/users/dashboard" class="white-text"><i class="material-icons left" style="color: #ffffff;">dashboard</i>Dashboard</a>
                 </li>
-                <li class="sidemenu_li"><a href="/users/myfile" class="white-text"><i class="material-icons left"
-                                                                                      style="color: #ffffff;">description</i>My
-                        Files</a></li>
-                <li class="sidemenu_li"><a href="/users/publicfile" class="white-text"><i class="material-icons left"
-                                                                                          style="color: #ffffff;">work</i>Public
-                        Files</a></li>
+                <li class="sidemenu_li"><a href="/users/myfile" class="white-text"><i class="material-icons left" style="color: #ffffff;">description</i>My Files</a></li>
+                <li class="sidemenu_li"><a href="/users/publicfile" class="white-text"><i class="material-icons left" style="color: #ffffff;">work</i>Public Files</a></li>
                 <% if(isManage){ %>
-                <li class="sidemenu_li"><a href="/admin/management" class="white-text"><i class="material-icons left"
-                                                                                          style="color: #ffffff;">supervisor_account</i>User
-                        Management </a></li>
+                <li class="sidemenu_li"><a href="/admin/management" class="white-text"><i class="material-icons left" style="color: #ffffff;">supervisor_account</i>User Management </a></li>
                 <% } if(isAdmin){ %>
-                <li class="sidemenu_li"><a href="/admin/managepublicfiles" class="white-text"><i
-                                class="material-icons left" style="color: #ffffff;">dns</i>Disk Management</a></li>
-                <li class="sidemenu_li"><a href="/admin/administration" class="white-text"><i
-                                class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a>
-                </li>
+                <li class="sidemenu_li"><a href="/admin/managepublicfiles" class="white-text"><i class="material-icons left" style="color: #ffffff;">folder_special</i>File Management</a></li>
+                <li class="sidemenu_li"><a href="/admin/diskmanagement" class="white-text"><i class="material-icons left" style="color: #ffffff;">dns</i>Disk Management</a></li>
+                <li class="sidemenu_li"><a href="/admin/administration" class="white-text"><i class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a></li>
                 <% } %>
                 <% if(isBatchAdmin){ %>
                 <li class="sidemenu_li">

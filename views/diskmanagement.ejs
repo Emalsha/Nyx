@@ -1,0 +1,255 @@
+<!--Created by emalsha on 3/16/17-->
+
+<!DOCTYPE html>
+<head>
+
+    <!--import heder part-->
+    <% include includes/head.ejs %>
+
+    <!--Import footer part-->
+    <% include includes/foot.ejs %>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+    <script type="text/javascript" src="../public/javascript/administrator.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <!--side menu-->
+    <% include includes/main_nav.ejs %>
+
+    <!--page content-->
+    <div class="main_content">
+
+        <!--responsive - mobile size menu-->
+        <div class="toppanel z-depth-1">
+            <div class="col s4">
+                <a href="#" id="sidemenu_toggle" data-activates="slide-out" class="button-collapse">
+                    <i class="medium material-icons" style="cursor: pointer;color: #212121;">reorder</i>
+                </a>
+
+            </div>
+            <div class="col s4">
+                <div class="row" style="text-align: center">
+                    <img src="/public/images/logo_small.png"
+                         style="width: auto;height: 50px;max-width: 160px;max-height: 93px;margin: 5px;" class="s12">
+                </div>
+            </div>
+            <div class="col s4 right-align">
+
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row col l12 m12 s12">
+                <!--Network Activity-->
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Network Activity</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text" id="system_rx">Unknown</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="system_tx">Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress  blue-grey lighten-5">
+                            <div class="determinate" id="progress_rx"
+                                 style="width: 20%;background-color: #33D933;"></div>
+                            <div class="determinate red accent-3" id="progress_tx" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Network activity status-->
+                <script>
+                    var system_rx = document.getElementById('system_rx');
+                    var system_tx = document.getElementById('system_tx');
+                    var progress_rx = document.getElementById('progress_rx');
+                    var progress_tx = document.getElementById('progress_tx');
+                    socket.on('system_rxtx', function (msg) {
+                        var obj = JSON.parse(msg);
+//                        console.log(msg);
+                        if (obj.swap == "1"){
+                            system_tx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
+                            system_rx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
+                            progress_tx.style.width = obj.rxprecent + "%";
+                            progress_rx.style.width = obj.txprecent + "%";
+                        }else{
+                            system_rx.innerHTML = "RX " + obj.rx + " " + obj.rxUnit + "ps";
+                            system_tx.innerHTML = "TX " + obj.tx + " " + obj.txUnit + "ps";
+                            progress_rx.style.width = obj.rxprecent + "%";
+                            progress_tx.style.width = obj.txprecent + "%";
+                        }
+
+                    });
+
+                </script>
+
+                <!--Monthly usage status-->
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Monthly Usage</div>
+                    <div class="col s12 truncate contentbox_main blue-grey-text">18.72 GB</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">6 Downloads</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress">
+                            <div class="determinate" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User available disk space status-->
+                <div class="col s6 m3 l3 contentbox_mainbox">
+                    <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Available Disk
+                        Space
+                    </div>
+                    <div class="col s12 m12 l12 truncate contentbox_main deep-orange-text accent-3"
+                         id="system_storage_used">Unknown
+                    </div>
+                    <div class="col s12 m12 l12 truncate contentbox_txt_down" id="system_storage_total">Unknown</div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress deep-orange  lighten-4" id="system_storage_progress_outer">
+                            <div class="determinate deep-orange" style="width: 0%" id="system_storage_progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Download manager up time status-->
+                <div class="col s4 m3 contentbox_mainbox">
+                    <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
+                    <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">
+                        Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">
+                        Unknown
+                    </div>
+                    <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
+                        <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
+                            <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Storage usage -->
+                <script>
+                    var storage_used = document.getElementById('system_storage_used');
+                    var storage_total = document.getElementById('system_storage_total');
+                    var storage_progress = document.getElementById('system_storage_progress');
+                    var system_storage_progress_outer = document.getElementById('system_storage_progress_outer');
+                    socket.on('system_storage_usage', function (msg) {
+                        var obj = JSON.parse(msg);
+                        //console.log(msg);
+                        storage_used.innerHTML = obj.available + " " + obj.availableUnit;
+                        storage_total.innerHTML = obj.used + " " + obj.usedUnit + " used out of " + obj.total + " " + obj.totalUnit;
+                        storage_progress.style.width = obj.progress + "%";
+
+                        if (obj.progress > 85) {
+                            storage_used.classList.remove('teal-text');
+                            storage_used.classList.remove('lighten-2');
+                            storage_used.classList.add('deep-orange-text');
+                            storage_used.classList.add('accent-3');
+
+                            storage_progress.classList.add('deep-orange');
+                            system_storage_progress_outer.classList.add('deep-orange');
+                            system_storage_progress_outer.classList.add('lighten-4');
+                        } else {
+                            storage_used.classList.add('teal-text');
+                            storage_used.classList.add('lighten-2');
+                            storage_used.classList.remove('deep-orange-text');
+                            storage_used.classList.remove('accent-3');
+
+                            storage_progress.classList.remove('deep-orange');
+                            system_storage_progress_outer.classList.remove('deep-orange');
+                            system_storage_progress_outer.classList.remove('lighten-4');
+                        }
+                    });
+
+                </script>
+
+                <!--Socket connetion-->
+                <script>
+                    var online_status_code = document.getElementById('online_status_code');
+                    var online_status_eta = document.getElementById('online_status_eta');
+                    var online_status_progress = document.getElementById('online_status_progress');
+                    var online_status_progress_outer = document.getElementById('online_status_progress_outer');
+                    socket.on('online_status_info', function (msg) {
+                        var obj = JSON.parse(msg);
+                        online_status_code.innerHTML = obj.status;
+                        online_status_eta.innerHTML = obj.eta;
+                        online_status_progress.style.width = obj.precent + "%";
+
+                        if (obj.status == "Online") {
+                            online_status_code.classList.add('teal-text');
+                            online_status_code.classList.add('lighten-2');
+                            online_status_code.classList.remove('deep-orange-text');
+                            online_status_code.classList.remove('accent-3');
+
+                            online_status_progress.classList.remove('deep-orange');
+                            online_status_progress_outer.classList.remove('deep-orange');
+                            online_status_progress_outer.classList.remove('lighten-4');
+                        } else {
+                            online_status_code.classList.remove('teal-text');
+                            online_status_code.classList.remove('lighten-2');
+                            online_status_code.classList.add('deep-orange-text');
+                            online_status_code.classList.add('accent-3');
+
+                            online_status_progress.classList.add('deep-orange');
+                            online_status_progress_outer.classList.add('deep-orange');
+                            online_status_progress_outer.classList.add('lighten-4');
+                        }
+                    });
+
+                </script>
+            </div>
+
+            <div class="row col l12 m12 " style="padding: 0px 30px;">
+                <h4>Disk Management</h4>
+
+                <!--dummy setting-->
+                    <div class="row mountpoint">
+                        <div class="col s4 m3 l2 setting-title">Default System Storage</div>
+                        <div class="col s8 m9 l8">
+                            <div class="col s2">Block Identifier</div><div class="col s10 boldtext">sda3</div>
+                            <div class="col s2">Mount Point</div><div class="col s10 boldtext">/home/nyx/downloads/mp_01/</div>
+                            <div class="col s2">Capacity</div><div class="col s10 boldtext">10 GB (</div>
+                            <div class="col s2">Usage</div><div class="col s10 boldtext">8GB ( 80% )</div>
+                            <div class="col s2">Reserved</div><div class="col s10 boldtext">1GB</div>
+
+                            <div class="col s6">
+                                <div class="progress">
+                                    <div class="determinate" style="width: 70%"></div>
+                                </div>
+                            </div><div class="col s6"></div>
+
+
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+    $('.button-collapse').sideNav({
+            menuWidth: 250, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+        }
+    );
+
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+        $('#approve_newtags').material_chip()
+    });
+
+
+
+</script>
+
+
+
+</body>
+</html>

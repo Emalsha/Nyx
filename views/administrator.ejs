@@ -507,71 +507,128 @@
                 </div>
 
                 <!--System setting Tab -->
-                <div id="test5" class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <select id="start_time" required>
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="0">12:00 AM</option>
-                                <option value="1">1:00 AM</option>
-                                <option value="2">2:00 AM</option>
-                                <option value="3">3:00 AM</option>
-                                <option value="4">4:00 AM</option>
-                                <option value="5">5:00 AM</option>
-                                <option value="6">6:00 AM</option>
-                                <option value="7">7:00 AM</option>
-                                <option value="8">8:00 AM</option>
-                                <option value="9">9:00 AM</option>
-                                <option value="10">10:00 AM</option>
-                                <option value="11">11:00 AM</option>
-                                <option value="12">12:00 PM</option>
-                                <option value="13">1:00 PM</option>
-                                <option value="14">2:00 PM</option>
-                                <option value="15">3:00 PM</option>
-                                <option value="16">4:00 PM</option>
-                                <option value="17">5:00 PM</option>
-                                <option value="18">6:00 PM</option>
-                                <option value="19">7:00 PM</option>
-                                <option value="20">8:00 PM</option>
-                                <option value="21">9:00 PM</option>
-                                <option value="22">10:00 PM</option>
-                                <option value="23">11:00 PM</option>
-                            </select>
-                            <label>Start of Peak Hour</label>
-                        </div>
+                <div id="test5" class="col s12" style="padding-top: 15px;">
 
-                        <div class="input-field col s6">
-                            <select id="end_time" required>
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="0">12:00 AM</option>
-                                <option value="1">1:00 AM</option>
-                                <option value="2">2:00 AM</option>
-                                <option value="3">3:00 AM</option>
-                                <option value="4">4:00 AM</option>
-                                <option value="5">5:00 AM</option>
-                                <option value="6">6:00 AM</option>
-                                <option value="7">7:00 AM</option>
-                                <option value="8">8:00 AM</option>
-                                <option value="9">9:00 AM</option>
-                                <option value="10">10:00 AM</option>
-                                <option value="11">11:00 AM</option>
-                                <option value="12">12:00 PM</option>
-                                <option value="13">1:00 PM</option>
-                                <option value="14">2:00 PM</option>
-                                <option value="15">3:00 PM</option>
-                                <option value="16">4:00 PM</option>
-                                <option value="17">5:00 PM</option>
-                                <option value="18">6:00 PM</option>
-                                <option value="19">7:00 PM</option>
-                                <option value="20">8:00 PM</option>
-                                <option value="21">9:00 PM</option>
-                                <option value="22">10:00 PM</option>
-                                <option value="23">11:00 PM</option>
-                            </select>
-                            <label>End of Peak Hour</label>
+                    <!--dummy setting-->
+                    <!--<div class="row settingrow">-->
+                        <!--<div class="col s4 m3 l2 setting-title">Name</div>-->
+                        <!--<div class="col s8 m9 l8">-->
+                            <!--Functionality-->
+                            <!--<div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--System Peak Hours-->
+                    <div class="row settingrow">
+                        <div class="col s4 m3 l2 setting-title">System Peak Hours</div>
+                        <div class="col s8 m9 l8">
+                                <div class="input-field" style="max-width: 300px;display: inline-block;">
+                                    <select id="start_time" required>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="0">12:00 AM</option>
+                                        <option value="1">1:00 AM</option>
+                                        <option value="2">2:00 AM</option>
+                                        <option value="3">3:00 AM</option>
+                                        <option value="4">4:00 AM</option>
+                                        <option value="5">5:00 AM</option>
+                                        <option value="6">6:00 AM</option>
+                                        <option value="7">7:00 AM</option>
+                                        <option value="8">8:00 AM</option>
+                                        <option value="9">9:00 AM</option>
+                                        <option value="10">10:00 AM</option>
+                                        <option value="11">11:00 AM</option>
+                                        <option value="12">12:00 PM</option>
+                                        <option value="13">1:00 PM</option>
+                                        <option value="14">2:00 PM</option>
+                                        <option value="15">3:00 PM</option>
+                                        <option value="16">4:00 PM</option>
+                                        <option value="17">5:00 PM</option>
+                                        <option value="18">6:00 PM</option>
+                                        <option value="19">7:00 PM</option>
+                                        <option value="20">8:00 PM</option>
+                                        <option value="21">9:00 PM</option>
+                                        <option value="22">10:00 PM</option>
+                                        <option value="23">11:00 PM</option>
+                                    </select>
+                                    <label>Start of Peak Hour</label>
+                                </div>
+
+                                <div style="margin: 15px;display: inline-block" ></div>
+
+                                <div class="input-field" style="max-width: 300px;display: inline-block;">
+                                    <select id="end_time" required>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="0">12:00 AM</option>
+                                        <option value="1">1:00 AM</option>
+                                        <option value="2">2:00 AM</option>
+                                        <option value="3">3:00 AM</option>
+                                        <option value="4">4:00 AM</option>
+                                        <option value="5">5:00 AM</option>
+                                        <option value="6">6:00 AM</option>
+                                        <option value="7">7:00 AM</option>
+                                        <option value="8">8:00 AM</option>
+                                        <option value="9">9:00 AM</option>
+                                        <option value="10">10:00 AM</option>
+                                        <option value="11">11:00 AM</option>
+                                        <option value="12">12:00 PM</option>
+                                        <option value="13">1:00 PM</option>
+                                        <option value="14">2:00 PM</option>
+                                        <option value="15">3:00 PM</option>
+                                        <option value="16">4:00 PM</option>
+                                        <option value="17">5:00 PM</option>
+                                        <option value="18">6:00 PM</option>
+                                        <option value="19">7:00 PM</option>
+                                        <option value="20">8:00 PM</option>
+                                        <option value="21">9:00 PM</option>
+                                        <option value="22">10:00 PM</option>
+                                        <option value="23">11:00 PM</option>
+                                    </select>
+                                    <label>End of Peak Hour</label>
+                                </div>
+
+                                <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                         </div>
+                    </div>
+
+
+                    <!--Job Scheduler-->
+                    <div class="row settingrow">
+                        <div class="col s4 m3 l2 setting-title">Job Scheduler</div>
+                        <div class="col s8 m9 l8">
+                            <select class="max450">
+                                <option value="volvo">Default Scheduler</option>
+                                <option value="saab">Round Robbin</option>
+                                <option value="mercedes">Short Job First</option>
+                                <option value="audi">Custom Scheduler</option>
+                            </select>
+
+                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        </div>
+                    </div>
+
+                    <!--whitelist-->
+                    <div class="row settingrow">
+                        <div class="col s4 m3 l2 setting-title">Whitelisted Domains</div>
+                        <div class="col s8 m9 l8">
+                            <textarea class="max450"></textarea>
+                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        </div>
+                    </div>
+
+                    <!--blacklist-->
+                    <div class="row settingrow">
+                        <div class="col s4 m3 l2 setting-title">Blacklisted Domains</div>
+                        <div class="col s8 m9 l8">
+                            <textarea class="max450"></textarea>
+                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        </div>
+                    </div>
+
+
+                    <div class="row left-align">
+
                         <div>
-                            <button class="waves-effect waves-light btn" id="set_time">Set</button>
+                            <button class="waves-effect waves-light btn" id="set_time">Save All</button>
                         </div>
                     </div>
                 </div>

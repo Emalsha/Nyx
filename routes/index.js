@@ -42,6 +42,21 @@ router.post('/register', function(req, res,done) {
         debug('New user registering.');
         passport.authenticate('local-signin')(req,res,function(){
             acl.addUserRoles(req.user.username,req.user.role);
+
+            var crypto = require("crypto");
+            var id = crypto.randomBytes(8).toString('hex');
+            req.flash('token',id);
+            res.cookie('id_token' ,id);
+            global.activesessions[id]= [req.user.username,req.connection.remoteAddress];
+
+            cast.log(req.user.username + " registered in the system from " +  req.connection.remoteAddress);
+            if (global.loggedinusers[req.user.username] === undefined){
+                global.loggedinusers[req.user.username] = [[],req.user.role,0,[]];
+            }
+            global.loggedinusers[req.user.username][0].push(id);
+            global.loggedinusers[req.user.username][1] = req.user.role;
+            global.loggedinusers[req.user.username][2] = new Date().getTime();
+
             req.flash('success',"You are successfully registered") ;
             res.redirect('/users/dashboard');
 

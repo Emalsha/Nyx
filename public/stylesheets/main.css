@@ -436,3 +436,31 @@ td, th {
     font-size: 11px;
     line-height: 15px;
 }
+
+.settingrow{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.setting-title{
+    font-weight: bold;
+    color: #333;
+}
+
+.max450{
+    max-width: 450px !important;
+}
+
+.mountpoint{
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    padding: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.boldtext{
+    font-weight: bold !important;
+}

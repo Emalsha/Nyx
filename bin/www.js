@@ -250,9 +250,6 @@ io.on('connection', function(socket){
 
 });
 
-setInterval(function () {
-    io.sockets.emit("kok","sdsd");
-},1000);
 
 
 
