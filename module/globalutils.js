@@ -1,6 +1,7 @@
 /**
  * Created by sulochana on 7/18/17.
  */
+var fs = require('fs');
 exports.log = function (msg,code) {
     if (code === undefined){
         code = 0;
@@ -43,4 +44,12 @@ exports.log = function (msg,code) {
             break;
     }
     console.log(date,"|",time,"|",code,"|",msg);
+
+
+    fs.appendFile('nyx_log.txt', date+" | "+time+" | "+code+" | "+msg+"\n", function (err) {
+        if (err) {
+            // append failed
+            console.log(date,"|",time,"|","CRIT","|","Unable to append new entry to the log file.");
+        }
+    })
 };

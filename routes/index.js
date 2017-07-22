@@ -3,6 +3,7 @@ let router = express.Router();
 let passport = require('passport');
 let debug = require('debug')('nyx:route');
 const acl = require('../module/acl_fn').aclobj;
+const cast = require('../module/globalutils');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -57,12 +58,12 @@ router.post('/login',passport.authenticate('local-signin', { failureRedirect: '/
         var id = crypto.randomBytes(8).toString('hex');
         req.flash('token',id);
         res.cookie('id_token' ,id);
-        global.activesessions[id]= req.user.username;
+        global.activesessions[id]= [req.user.username,req.connection.remoteAddress];
 
-
+        cast.log(req.user.username + " logged in to the system from " +  req.connection.remoteAddress);
         if (global.loggedinusers[req.user.username] === undefined){
             // SYNTAX : username : [[activesessions],role,lastlogin,[connectedsocketes]]
-            global.loggedinusers[req.user.username] = [[],req.user.role,"",[]];
+            global.loggedinusers[req.user.username] = [[],req.user.role,0,[]];
         }
         global.loggedinusers[req.user.username][0].push(id);
         global.loggedinusers[req.user.username][1] = req.user.role;
@@ -98,6 +99,7 @@ router.get('/logout',function (req, res) {
         delete global.activesessions[req.cookies['id_token']];
     }
     // console.log(req.cookies['id_token']);
+    cast.log(req.user.username + " logged out from the system : " +  req.connection.remoteAddress);
     res.clearCookie("id_token");
     req.logout();
     req.flash('error',"You have been logged out.");

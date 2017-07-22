@@ -68,6 +68,9 @@ socket.on('loginconfirm-error-uid',function (data) {
     xhttp.send();
 });
 
+socket.on('kok',function () {
+   console.log("sdsdsd");
+});
 
 
 socket.on('disconnect', function () {
