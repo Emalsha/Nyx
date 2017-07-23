@@ -19,8 +19,7 @@ const cast = require('../module/globalutils');
 cast.log("Starting system.")
 
 
-const port = normalizePort(process.env.PORT || '3000');
-let server;
+
 
 //Globals
 cast.log("Initializing system components.")
@@ -29,7 +28,11 @@ global.activesessions = [];
 global.onlineadmins = [];
 global.onlineusers = [];
 global.connectedsockets = [];
+global.ipaddress = "localhost";
 
+
+const port = normalizePort(process.env.PORT || '3000');
+let server;
 
 
 // var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
@@ -235,7 +238,7 @@ io.on('connection', function(socket){
         }
         if (username === undefined){
             io.to(socket.id).emit("loginconfirm-error-uid","loginconfirm_token");
-            cast.log("Issuing page loginconfirm-error-uid command to socket ID:" + socket.id + " REASON : User not found in active sessions",1);
+            // cast.log("Issuing page loginconfirm-error-uid command to socket ID:" + socket.id + " REASON : User not found in active sessions",1);
         }else {
             // cast.log("Ping recieced",6);
             if (global.loggedinusers[username] !== undefined){
@@ -251,8 +254,23 @@ io.on('connection', function(socket){
 });
 
 
+// const request = require('request');
+// request({url: "http://ipv4.download.thinkbroadband.com/10MB.zip", method: 'HEAD'}, (err, status) => {
+//     if (err) {
+//         console.log("404");
+//     }else{
+//         if (status){
+//             console.log(status.headers['content-length']);
+//         }
+//     }
+// })
 
-
+// const am = require('../module/aria2center');
+// am.open();
+//
+// am.download(["https://www.google.lk/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png",1,565656,"10K",2], function(result) {
+//     console.log("SDSDS",result);
+// });
 
 function taskManager() {
     tm.setTimer();

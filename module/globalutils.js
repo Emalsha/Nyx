@@ -38,6 +38,10 @@ exports.log = function (msg,code) {
             //authenticate
             code = "PING";
             break;
+        case 7:
+            //authenticate
+            code = "ARIA";
+            break;
         default:
             //unk
             code = "UNKN";

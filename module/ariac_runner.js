@@ -2,6 +2,23 @@
  * Created by emalsha on 5/13/17.
  */
 
+/*
+* Request = {
+*   url : string
+*   filesizehash : string
+*   owner : string
+*   tags : string
+*   description : string
+*   approval : int
+*   handler : string
+*   availability : int
+*   priority : int
+*   notes : string
+*   storage : int
+*   aria_guid : string
+* }
+* */
+
 const aria2 = require('./aria2c_config').aria2obj;
 const debug = require('debug')('nyx:ariac');
 
