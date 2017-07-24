@@ -9,6 +9,7 @@ const debug = require('debug')('nyx:router');
 const ar = require('../module/ariac_runner');
 let Download = require('../model/Download');
 let Time = require('../model/Time');
+let Bw_list = require('../model/Bw_list');
 
 router.post('/request',function(req,res){
 
@@ -17,6 +18,10 @@ router.post('/request',function(req,res){
     let description;
     let size;
     let file_path;
+    let state='pending';
+    let admin_decision;
+    let admin_decision_date;
+    let reject_note;
 
     if(req.body.tags){
         let st = req.body.tags;
@@ -32,30 +37,60 @@ router.post('/request',function(req,res){
     }
 
     if(req.body.description){
-        description = req.body.description;
     }
+    description = req.body.description;
 
     if(req.body.size){
         size = req.body.size;
     }
 
-    let newDownload = new Download({
-        link:req.body.link,
-        request_date:new Date(),
-        tags:tags_array,
-        availability:availability,
-        request_user:req.user.username,
-        state:'pending',
-        description:description,
-        size:size,
-        file_path:file_path,
-    });
+    //split and get the domain
+    let dom = req.body.link;
+    dom_array = dom.split('/');
+    console.log(dom_array);
+    console.log(dom_array['2']);
+  Bw_list.findOne({domain: dom_array[2]})
+      .then((doc) => {
 
-    newDownload.save(function(err){
-        if(err){ debug(err) }
-        req.flash('success','New download request added.');
-        res.redirect('/users/dashboard');
-    })
+        console.log(doc);
+        if (doc=== null){
+          console.log("no result");
+        }else if(doc['list_type']==='white'){
+            state = 'approved';
+        }else if(doc['list_type']==='black'){
+            state = 'rejected';
+            admin_decision = false;
+            admin_decision_date = new Date();
+            reject_note='this is a black list domain';
+        }
+
+        let newDownload = new Download({
+            link:req.body.link,
+            request_date:new Date(),
+            tags:tags_array,
+            availability:availability,
+            request_user:req.user.username,
+            state:state,
+            description:description,
+            size:size,
+            file_path:file_path,
+            admin_decision:admin_decision,
+            admin_decision_date:admin_decision_date,
+            reject_note:reject_note,
+
+        });
+
+        newDownload.save(function(err){
+            if(err){ debug(err) }
+            req.flash('success','New download request added.');
+            res.redirect('/users/dashboard');
+        })
+
+
+        // console.log(newDownload);
+        // console.log(state);
+
+      });
 
 });
 
@@ -93,6 +128,46 @@ router.post('/approve',function(req,res){
         download.admin_decision = true;
         download.admin_decision_date = new Date();
         download.state = 'approved';
+
+        let dom=download.link;
+        dom_array =dom.split('/');
+        console.log(dom_array);
+        console.log(dom_array['2']);
+
+        Bw_list.findOne({domain: dom_array[2]})
+            .then((doc) => {
+
+              console.log(doc);
+              if (doc=== null){
+                  console.log("no result");
+                  let newBw_list = new Bw_list({
+                    domain:dom_array[2],
+                    hits:1,
+                  });
+
+                  newBw_list.save(function(err){
+                      if(err){ debug(err) }
+                      console.log("newbw list added");
+                  })
+              }else if(doc.hits==4){
+                doc.hits = doc.hits+1;
+                doc.list_type='white';
+                doc.save(function (err) {
+                    if(err){
+                        debug(err);
+                    }
+                });
+
+              }else {
+                doc.hits = doc.hits+1;
+                doc.save(function (err) {
+                    if(err){
+                        debug(err);
+                    }
+                });
+              }
+            });
+
 
         download.save(function (err) {
             if(err){
@@ -142,6 +217,46 @@ router.post('/reject',function(req,res){
         download.admin_decision_date = new Date();
         download.state = 'rejected';
 
+        let dom=download.link;
+        dom_array =dom.split('/');
+        console.log(dom_array);
+        console.log(dom_array['2']);
+
+        Bw_list.findOne({domain: dom_array[2]})
+            .then((doc) => {
+
+              console.log(doc);
+              if (doc=== null){
+                  console.log("no result");
+                  let newBw_list = new Bw_list({
+                    domain:dom_array[2],
+                    hits:-1,
+                  });
+
+                  newBw_list.save(function(err){
+                      if(err){ debug(err) }
+                      console.log("newbw list added");
+                  })
+              }else if(doc.hits==-4){
+                doc.hits = doc.hits-1;
+                doc.list_type='black';
+                doc.save(function (err) {
+                    if(err){
+                        debug(err);
+                    }
+                });
+
+              }else {
+                doc.hits = doc.hits-1;
+                doc.save(function (err) {
+                    if(err){
+                        debug(err);
+                    }
+                });
+              }
+            });
+
+        console.log(download);
         download.save(function (err) {
             if(err){
                 debug(err);

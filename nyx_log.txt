@@ -1,0 +1,1030 @@
+2017/06/23 | 10:41:04 | INFO | Starting system.
+2017/06/23 | 10:41:04 | INFO | Initializing system components.
+2017/06/23 | 10:41:04 | INFO | Attempting to connect to the database.
+2017/06/23 | 10:41:05 | INFO | System initialization completed.
+2017/06/23 | 10:41:05 | INFO | Database connection success.
+2017/06/23 | 10:41:24 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/23 | 10:41:24 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:41:24 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:41:24 | INFO | nyxsys is now online.
+2017/06/23 | 10:41:46 | INFO | nyxsys is now offline.
+2017/06/23 | 10:41:47 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:41:47 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:41:47 | INFO | nyxsys is now online.
+2017/06/23 | 10:41:49 | INFO | nyxsys is now offline.
+2017/06/23 | 10:41:49 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:41:49 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:41:49 | INFO | nyxsys is now online.
+2017/06/23 | 10:41:51 | INFO | nyxsys is now offline.
+2017/06/23 | 10:41:51 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:41:51 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:41:51 | INFO | nyxsys is now online.
+2017/06/23 | 10:41:52 | INFO | nyxsys is now offline.
+2017/06/23 | 10:41:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:41:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:41:52 | INFO | nyxsys is now online.
+2017/06/23 | 10:42:00 | INFO | nyxsys is now offline.
+2017/06/23 | 10:42:00 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:42:00 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:42:00 | INFO | nyxsys is now online.
+2017/06/23 | 10:42:24 | INFO | nyxsys is now offline.
+2017/06/23 | 10:42:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/23 | 10:42:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/23 | 10:42:25 | INFO | nyxsys is now online.
+2017/06/24 | 08:04:56 | INFO | Starting system.
+2017/06/24 | 08:04:56 | INFO | Initializing system components.
+2017/06/24 | 08:04:57 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:04:59 | INFO | System initialization completed.
+2017/06/24 | 08:04:59 | INFO | Database connection success.
+2017/06/24 | 08:07:21 | INFO | Starting system.
+2017/06/24 | 08:07:21 | INFO | Initializing system components.
+2017/06/24 | 08:07:21 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:07:22 | INFO | System initialization completed.
+2017/06/24 | 08:07:22 | INFO | Database connection success.
+2017/06/24 | 08:18:49 | INFO | Starting system.
+2017/06/24 | 08:18:49 | INFO | Initializing system components.
+2017/06/24 | 08:18:49 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:18:49 | INFO | System initialization completed.
+2017/06/24 | 08:18:49 | INFO | Database connection success.
+2017/06/24 | 08:29:44 | INFO | Starting system.
+2017/06/24 | 08:29:44 | INFO | Initializing system components.
+2017/06/24 | 08:29:44 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:29:44 | INFO | System initialization completed.
+2017/06/24 | 08:29:44 | INFO | Database connection success.
+2017/06/24 | 08:30:22 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 08:30:23 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:30:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:30:23 | INFO | nyxsys is now online.
+2017/06/24 | 08:30:30 | INFO | nyxsys is now offline.
+2017/06/24 | 08:30:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:30:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:30:30 | INFO | nyxsys is now online.
+2017/06/24 | 08:34:46 | INFO | Starting system.
+2017/06/24 | 08:34:46 | INFO | Initializing system components.
+2017/06/24 | 08:34:46 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:34:46 | INFO | System initialization completed.
+2017/06/24 | 08:34:46 | INFO | Database connection success.
+2017/06/24 | 08:34:47 | WARN | Issuing page refresh command to socket ID:cbEy8bwac0dv9pRwAAAA REASON : User not found in active sessions
+2017/06/24 | 08:34:53 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 08:34:53 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:34:53 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:34:53 | INFO | nyxsys is now online.
+2017/06/24 | 08:35:08 | INFO | nyxsys is now offline.
+2017/06/24 | 08:35:08 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:35:08 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:35:08 | INFO | nyxsys is now online.
+2017/06/24 | 08:40:22 | INFO | Starting system.
+2017/06/24 | 08:40:22 | INFO | Initializing system components.
+2017/06/24 | 08:40:22 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:40:22 | INFO | System initialization completed.
+2017/06/24 | 08:40:22 | INFO | Database connection success.
+2017/06/24 | 08:40:26 | WARN | Issuing page refresh command to socket ID:PxzZTxQZ0D1cd0lJAAAA REASON : User not found in active sessions
+2017/06/24 | 08:40:32 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 08:40:32 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:40:32 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:40:32 | INFO | nyxsys is now online.
+2017/06/24 | 08:40:47 | INFO | nyxsys is now offline.
+2017/06/24 | 08:40:47 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:40:47 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:40:47 | INFO | nyxsys is now online.
+2017/06/24 | 08:42:12 | INFO | Starting system.
+2017/06/24 | 08:42:12 | INFO | Initializing system components.
+2017/06/24 | 08:42:12 | INFO | Attempting to connect to the database.
+2017/06/24 | 08:42:12 | INFO | System initialization completed.
+2017/06/24 | 08:42:12 | INFO | Database connection success.
+2017/06/24 | 08:42:14 | WARN | Issuing page refresh command to socket ID:kZnVgRvuED_t5nmnAAAA REASON : User not found in active sessions
+2017/06/24 | 08:42:20 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 08:42:20 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:42:20 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:42:20 | INFO | nyxsys is now online.
+2017/06/24 | 08:42:28 | INFO | nyxsys is now offline.
+2017/06/24 | 08:42:28 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 08:42:28 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 08:42:28 | INFO | nyxsys is now online.
+2017/06/24 | 10:02:17 | INFO | Starting system.
+2017/06/24 | 10:02:17 | INFO | Initializing system components.
+2017/06/24 | 10:02:17 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:02:17 | INFO | System initialization completed.
+2017/06/24 | 10:02:17 | INFO | Database connection success.
+2017/06/24 | 10:02:21 | WARN | Issuing page refresh command to socket ID:MIxvLOAehOZKzxHPAAAA REASON : User not found in active sessions
+2017/06/24 | 10:02:25 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:02:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:02:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:02:25 | INFO | nyxsys is now online.
+2017/06/24 | 10:02:39 | INFO | nyxsys is now offline.
+2017/06/24 | 10:02:40 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:02:40 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:02:40 | INFO | nyxsys is now online.
+2017/06/24 | 10:08:31 | INFO | nyxsys logged out from the system : ::ffff:127.0.0.1
+2017/06/24 | 10:08:31 | INFO | nyxsys is now offline.
+2017/06/24 | 10:09:31 | INFO | Starting system.
+2017/06/24 | 10:09:31 | INFO | Initializing system components.
+2017/06/24 | 10:09:31 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:09:31 | INFO | System initialization completed.
+2017/06/24 | 10:09:31 | INFO | Database connection success.
+2017/06/24 | 10:09:52 | INFO | namall registered in the system from ::ffff:127.0.0.1
+2017/06/24 | 10:09:52 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:09:52 | INFO | namall is now online.
+2017/06/24 | 10:10:07 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:10:07 | INFO | namall is now online.
+2017/06/24 | 10:10:18 | INFO | namall logged out from the system : ::ffff:127.0.0.1
+2017/06/24 | 10:10:25 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:10:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:10:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:10:25 | INFO | nyxsys is now online.
+2017/06/24 | 10:10:44 | INFO | nyxsys is now offline.
+2017/06/24 | 10:10:44 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:10:44 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:10:44 | INFO | nyxsys is now online.
+2017/06/24 | 10:11:06 | INFO | nyxsys is now offline.
+2017/06/24 | 10:11:07 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:11:07 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:11:07 | INFO | nyxsys is now online.
+2017/06/24 | 10:12:57 | INFO | nyxsys logged out from the system : ::ffff:127.0.0.1
+2017/06/24 | 10:12:57 | INFO | nyxsys is now offline.
+2017/06/24 | 10:14:01 | INFO | namall logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:14:01 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:14:01 | INFO | namall is now online.
+2017/06/24 | 10:14:23 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:14:23 | INFO | namall is now online.
+2017/06/24 | 10:16:49 | INFO | Starting system.
+2017/06/24 | 10:16:49 | INFO | Initializing system components.
+2017/06/24 | 10:16:49 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:16:49 | INFO | System initialization completed.
+2017/06/24 | 10:16:49 | INFO | Database connection success.
+2017/06/24 | 10:16:53 | WARN | Issuing page refresh command to socket ID:s_bdidXSlX_aFEXFAAAA REASON : User not found in active sessions
+2017/06/24 | 10:16:57 | INFO | namall logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:16:59 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:16:59 | INFO | namall is now online.
+2017/06/24 | 10:17:16 | INFO | namall logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:17:19 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 10:17:19 | INFO | namall is now online.
+2017/06/24 | 10:17:27 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:17:27 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:17:27 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:17:27 | INFO | nyxsys is now online.
+2017/06/24 | 10:17:49 | INFO | nyxsys is now offline.
+2017/06/24 | 10:17:49 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:17:49 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:17:49 | INFO | nyxsys is now online.
+2017/06/24 | 10:17:52 | INFO | nyxsys is now offline.
+2017/06/24 | 10:17:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:17:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:17:52 | INFO | nyxsys is now online.
+2017/06/24 | 10:19:45 | INFO | Starting system.
+2017/06/24 | 10:19:45 | INFO | Initializing system components.
+2017/06/24 | 10:19:45 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:19:45 | INFO | System initialization completed.
+2017/06/24 | 10:19:45 | INFO | Database connection success.
+2017/06/24 | 10:19:49 | WARN | Issuing page refresh command to socket ID:8-FE45MHQx3KCyO7AAAA REASON : User not found in active sessions
+2017/06/24 | 10:19:52 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:19:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:19:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:19:52 | INFO | nyxsys is now online.
+2017/06/24 | 10:20:01 | INFO | nyxsys is now offline.
+2017/06/24 | 10:20:01 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:20:01 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:20:01 | INFO | nyxsys is now online.
+2017/06/24 | 10:22:52 | INFO | Starting system.
+2017/06/24 | 10:22:52 | INFO | Initializing system components.
+2017/06/24 | 10:22:52 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:22:52 | INFO | System initialization completed.
+2017/06/24 | 10:22:52 | INFO | Database connection success.
+2017/06/24 | 10:22:54 | WARN | Issuing page refresh command to socket ID:z5aRLvgDjwAPNetIAAAA REASON : User not found in active sessions
+2017/06/24 | 10:22:58 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:22:58 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:22:58 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:22:58 | INFO | nyxsys is now online.
+2017/06/24 | 10:23:09 | INFO | nyxsys is now offline.
+2017/06/24 | 10:23:10 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:23:10 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:23:10 | INFO | nyxsys is now online.
+2017/06/24 | 10:24:35 | INFO | Starting system.
+2017/06/24 | 10:24:35 | INFO | Initializing system components.
+2017/06/24 | 10:24:35 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:24:35 | INFO | System initialization completed.
+2017/06/24 | 10:24:35 | INFO | Database connection success.
+2017/06/24 | 10:24:40 | WARN | Issuing page refresh command to socket ID:tf3VKMA6Sqmzus8tAAAA REASON : User not found in active sessions
+2017/06/24 | 10:24:42 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:24:43 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:24:43 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:24:43 | INFO | nyxsys is now online.
+2017/06/24 | 10:24:55 | INFO | nyxsys is now offline.
+2017/06/24 | 10:24:55 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:24:55 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:24:55 | INFO | nyxsys is now online.
+2017/06/24 | 10:27:00 | INFO | Starting system.
+2017/06/24 | 10:27:00 | INFO | Initializing system components.
+2017/06/24 | 10:27:00 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:27:00 | INFO | System initialization completed.
+2017/06/24 | 10:27:00 | INFO | Database connection success.
+2017/06/24 | 10:27:01 | WARN | Issuing page refresh command to socket ID:LdPXYvR3yVvHalwDAAAA REASON : User not found in active sessions
+2017/06/24 | 10:27:15 | INFO | namall logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:27:23 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:27:23 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:27:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:27:23 | INFO | nyxsys is now online.
+2017/06/24 | 10:27:36 | INFO | nyxsys is now offline.
+2017/06/24 | 10:27:36 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:27:36 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:27:36 | INFO | nyxsys is now online.
+2017/06/24 | 10:28:15 | INFO | Starting system.
+2017/06/24 | 10:28:15 | INFO | Initializing system components.
+2017/06/24 | 10:28:15 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:28:15 | INFO | System initialization completed.
+2017/06/24 | 10:28:15 | INFO | Database connection success.
+2017/06/24 | 10:28:16 | WARN | Issuing page refresh command to socket ID:IO9OmJjC8I8NdwA4AAAA REASON : User not found in active sessions
+2017/06/24 | 10:28:19 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:28:20 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:28:20 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:28:20 | INFO | nyxsys is now online.
+2017/06/24 | 10:28:30 | INFO | nyxsys is now offline.
+2017/06/24 | 10:28:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:28:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:28:30 | INFO | nyxsys is now online.
+2017/06/24 | 10:29:52 | INFO | Starting system.
+2017/06/24 | 10:29:52 | INFO | Initializing system components.
+2017/06/24 | 10:29:52 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:29:52 | INFO | System initialization completed.
+2017/06/24 | 10:29:52 | INFO | Database connection success.
+2017/06/24 | 10:29:52 | WARN | Issuing page refresh command to socket ID:w8GCl565gOaKZeorAAAA REASON : User not found in active sessions
+2017/06/24 | 10:29:57 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:29:57 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:29:57 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:29:57 | INFO | nyxsys is now online.
+2017/06/24 | 10:30:06 | INFO | nyxsys is now offline.
+2017/06/24 | 10:30:06 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:30:06 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:30:06 | INFO | nyxsys is now online.
+2017/06/24 | 10:33:40 | INFO | Starting system.
+2017/06/24 | 10:33:40 | INFO | Initializing system components.
+2017/06/24 | 10:33:40 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:33:40 | INFO | System initialization completed.
+2017/06/24 | 10:33:40 | INFO | Database connection success.
+2017/06/24 | 10:33:45 | WARN | Issuing page refresh command to socket ID:OU73bQFzeF0RtaYRAAAA REASON : User not found in active sessions
+2017/06/24 | 10:33:48 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:33:48 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:33:48 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:33:48 | INFO | nyxsys is now online.
+2017/06/24 | 10:33:57 | INFO | nyxsys is now offline.
+2017/06/24 | 10:33:57 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:33:57 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:33:57 | INFO | nyxsys is now online.
+2017/06/24 | 10:43:39 | INFO | Starting system.
+2017/06/24 | 10:43:39 | INFO | Initializing system components.
+2017/06/24 | 10:43:39 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:43:39 | INFO | System initialization completed.
+2017/06/24 | 10:43:39 | INFO | Database connection success.
+2017/06/24 | 10:43:42 | WARN | Issuing page refresh command to socket ID:L1yHv1NPctlEf5MKAAAA REASON : User not found in active sessions
+2017/06/24 | 10:43:45 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:43:45 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:43:45 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:43:45 | INFO | nyxsys is now online.
+2017/06/24 | 10:43:55 | INFO | nyxsys is now offline.
+2017/06/24 | 10:43:55 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:43:55 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:43:55 | INFO | nyxsys is now online.
+2017/06/24 | 10:46:58 | INFO | Starting system.
+2017/06/24 | 10:46:58 | INFO | Initializing system components.
+2017/06/24 | 10:46:58 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:46:58 | INFO | System initialization completed.
+2017/06/24 | 10:46:58 | INFO | Database connection success.
+2017/06/24 | 10:47:00 | WARN | Issuing page refresh command to socket ID:jWZziGlwNLg_JBFpAAAA REASON : User not found in active sessions
+2017/06/24 | 10:47:02 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:47:03 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:47:03 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:47:03 | INFO | nyxsys is now online.
+2017/06/24 | 10:47:20 | INFO | nyxsys is now offline.
+2017/06/24 | 10:47:20 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:47:20 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:47:20 | INFO | nyxsys is now online.
+2017/06/24 | 10:48:41 | INFO | Starting system.
+2017/06/24 | 10:48:41 | INFO | Initializing system components.
+2017/06/24 | 10:48:41 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:48:41 | INFO | System initialization completed.
+2017/06/24 | 10:48:41 | INFO | Database connection success.
+2017/06/24 | 10:48:42 | WARN | Issuing page refresh command to socket ID:VJjR1hs7rMpTDGaJAAAA REASON : User not found in active sessions
+2017/06/24 | 10:48:46 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:48:46 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:48:46 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:48:46 | INFO | nyxsys is now online.
+2017/06/24 | 10:48:54 | INFO | nyxsys is now offline.
+2017/06/24 | 10:48:55 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:48:55 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:48:55 | INFO | nyxsys is now online.
+2017/06/24 | 10:49:34 | INFO | Starting system.
+2017/06/24 | 10:49:34 | INFO | Initializing system components.
+2017/06/24 | 10:49:34 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:49:34 | INFO | System initialization completed.
+2017/06/24 | 10:49:34 | INFO | Database connection success.
+2017/06/24 | 10:49:35 | WARN | Issuing page refresh command to socket ID:VQ6ZURMguKkCxo2-AAAA REASON : User not found in active sessions
+2017/06/24 | 10:49:39 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:49:39 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:49:39 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:49:39 | INFO | nyxsys is now online.
+2017/06/24 | 10:49:44 | INFO | nyxsys is now offline.
+2017/06/24 | 10:49:44 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:49:44 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:49:44 | INFO | nyxsys is now online.
+2017/06/24 | 10:54:36 | INFO | Starting system.
+2017/06/24 | 10:54:36 | INFO | Initializing system components.
+2017/06/24 | 10:54:36 | INFO | Attempting to connect to the database.
+2017/06/24 | 10:54:36 | INFO | System initialization completed.
+2017/06/24 | 10:54:36 | INFO | Database connection success.
+2017/06/24 | 10:54:40 | WARN | Issuing page refresh command to socket ID:lX15GHS-W8qXyOOKAAAA REASON : User not found in active sessions
+2017/06/24 | 10:54:43 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 10:54:43 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:54:43 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:54:43 | INFO | nyxsys is now online.
+2017/06/24 | 10:54:52 | INFO | nyxsys is now offline.
+2017/06/24 | 10:54:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:54:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:54:52 | INFO | nyxsys is now online.
+2017/06/24 | 10:55:52 | INFO | nyxsys is now offline.
+2017/06/24 | 10:55:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:55:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:55:52 | INFO | nyxsys is now online.
+2017/06/24 | 10:56:30 | INFO | nyxsys is now offline.
+2017/06/24 | 10:56:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:56:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:56:30 | INFO | nyxsys is now online.
+2017/06/24 | 10:56:48 | INFO | nyxsys is now offline.
+2017/06/24 | 10:56:48 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:56:48 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:56:48 | INFO | nyxsys is now online.
+2017/06/24 | 10:59:35 | INFO | nyxsys is now offline.
+2017/06/24 | 10:59:35 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:59:35 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:59:35 | INFO | nyxsys is now online.
+2017/06/24 | 10:59:52 | INFO | nyxsys is now offline.
+2017/06/24 | 10:59:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:59:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:59:52 | INFO | nyxsys is now online.
+2017/06/24 | 10:59:56 | INFO | nyxsys is now offline.
+2017/06/24 | 10:59:56 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 10:59:56 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 10:59:56 | INFO | nyxsys is now online.
+2017/06/24 | 11:01:52 | INFO | Starting system.
+2017/06/24 | 11:01:52 | INFO | Initializing system components.
+2017/06/24 | 11:01:52 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:01:52 | INFO | System initialization completed.
+2017/06/24 | 11:01:52 | INFO | Database connection success.
+2017/06/24 | 11:01:53 | WARN | Issuing page refresh command to socket ID:aZC-BfQPfGSv5XqfAAAA REASON : User not found in active sessions
+2017/06/24 | 11:01:57 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:01:58 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:01:58 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:01:58 | INFO | nyxsys is now online.
+2017/06/24 | 11:05:16 | INFO | Starting system.
+2017/06/24 | 11:05:16 | INFO | Initializing system components.
+2017/06/24 | 11:05:16 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:05:16 | INFO | System initialization completed.
+2017/06/24 | 11:05:16 | INFO | Database connection success.
+2017/06/24 | 11:05:19 | WARN | Issuing page refresh command to socket ID:YjpsqSQbwLd7nidSAAAA REASON : User not found in active sessions
+2017/06/24 | 11:05:23 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:05:23 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:05:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:05:23 | INFO | nyxsys is now online.
+2017/06/24 | 11:08:16 | INFO | Starting system.
+2017/06/24 | 11:08:16 | INFO | Initializing system components.
+2017/06/24 | 11:08:16 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:08:16 | INFO | System initialization completed.
+2017/06/24 | 11:08:16 | INFO | Database connection success.
+2017/06/24 | 11:08:27 | WARN | Issuing page refresh command to socket ID:Pj5saxIe3p8LJGEhAAAA REASON : User not found in active sessions
+2017/06/24 | 11:08:30 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:08:31 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:08:31 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:08:31 | INFO | nyxsys is now online.
+2017/06/24 | 11:09:22 | INFO | Starting system.
+2017/06/24 | 11:09:22 | INFO | Initializing system components.
+2017/06/24 | 11:09:22 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:09:22 | INFO | System initialization completed.
+2017/06/24 | 11:09:22 | INFO | Database connection success.
+2017/06/24 | 11:09:22 | WARN | Issuing page refresh command to socket ID:M8_sXZFYtS15saXyAAAA REASON : User not found in active sessions
+2017/06/24 | 11:09:26 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:09:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:09:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:09:26 | INFO | nyxsys is now online.
+2017/06/24 | 11:11:07 | INFO | Starting system.
+2017/06/24 | 11:11:07 | INFO | Initializing system components.
+2017/06/24 | 11:11:07 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:11:07 | INFO | System initialization completed.
+2017/06/24 | 11:11:08 | INFO | Database connection success.
+2017/06/24 | 11:11:08 | WARN | Issuing page refresh command to socket ID:BeXFGX9mnlP5IcABAAAA REASON : User not found in active sessions
+2017/06/24 | 11:11:10 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:11:11 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:11:11 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:11:11 | INFO | nyxsys is now online.
+2017/06/24 | 11:15:30 | INFO | nyxsys is now offline.
+2017/06/24 | 11:17:28 | INFO | Starting system.
+2017/06/24 | 11:17:28 | INFO | Initializing system components.
+2017/06/24 | 11:17:28 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:17:28 | INFO | System initialization completed.
+2017/06/24 | 11:17:28 | INFO | Database connection success.
+2017/06/24 | 11:17:32 | WARN | Issuing page refresh command to socket ID:d-HwCQnHE61fdf5cAAAA REASON : User not found in active sessions
+2017/06/24 | 11:17:34 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:17:34 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:17:34 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:17:34 | INFO | nyxsys is now online.
+2017/06/24 | 11:18:46 | INFO | Starting system.
+2017/06/24 | 11:18:46 | INFO | Initializing system components.
+2017/06/24 | 11:18:46 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:18:46 | INFO | System initialization completed.
+2017/06/24 | 11:18:46 | INFO | Database connection success.
+2017/06/24 | 11:18:47 | WARN | Issuing page refresh command to socket ID:o2gZdaIG0AQ3TjPbAAAA REASON : User not found in active sessions
+2017/06/24 | 11:18:51 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:18:51 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:18:51 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:18:51 | INFO | nyxsys is now online.
+2017/06/24 | 11:20:19 | INFO | Starting system.
+2017/06/24 | 11:20:19 | INFO | Initializing system components.
+2017/06/24 | 11:20:19 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:20:19 | INFO | System initialization completed.
+2017/06/24 | 11:20:19 | INFO | Database connection success.
+2017/06/24 | 11:20:22 | WARN | Issuing page refresh command to socket ID:IwlDxsTh60c-6fYSAAAA REASON : User not found in active sessions
+2017/06/24 | 11:20:25 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:20:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:20:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:20:25 | INFO | nyxsys is now online.
+2017/06/24 | 11:21:35 | INFO | nyxsys is now offline.
+2017/06/24 | 11:21:35 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:21:35 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:21:35 | INFO | nyxsys is now online.
+2017/06/24 | 11:21:39 | INFO | Starting system.
+2017/06/24 | 11:21:39 | INFO | Initializing system components.
+2017/06/24 | 11:21:39 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:21:39 | INFO | System initialization completed.
+2017/06/24 | 11:21:39 | INFO | Database connection success.
+2017/06/24 | 11:21:43 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:21:44 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:21:44 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:21:44 | INFO | nyxsys is now online.
+2017/06/24 | 11:21:53 | INFO | nyxsys is now offline.
+2017/06/24 | 11:21:54 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:21:54 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:21:54 | INFO | nyxsys is now online.
+2017/06/24 | 11:22:12 | INFO | nyxsys is now offline.
+2017/06/24 | 11:22:12 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:22:12 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:22:12 | INFO | nyxsys is now online.
+2017/06/24 | 11:22:25 | INFO | nyxsys is now offline.
+2017/06/24 | 11:22:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:22:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:22:25 | INFO | nyxsys is now online.
+2017/06/24 | 11:22:58 | INFO | nyxsys is now offline.
+2017/06/24 | 11:22:58 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:22:58 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:22:58 | INFO | nyxsys is now online.
+2017/06/24 | 11:27:47 | INFO | Starting system.
+2017/06/24 | 11:27:47 | INFO | Initializing system components.
+2017/06/24 | 11:27:47 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:27:47 | INFO | System initialization completed.
+2017/06/24 | 11:27:47 | INFO | Database connection success.
+2017/06/24 | 11:27:50 | WARN | Issuing page refresh command to socket ID:5mUlDLMTniYgkd2UAAAA REASON : User not found in active sessions
+2017/06/24 | 11:27:53 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:27:53 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:27:53 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:27:53 | INFO | nyxsys is now online.
+2017/06/24 | 11:28:16 | INFO | nyxsys is now offline.
+2017/06/24 | 11:28:16 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:28:16 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:28:16 | INFO | nyxsys is now online.
+2017/06/24 | 11:28:39 | INFO | nyxsys is now offline.
+2017/06/24 | 11:28:39 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:28:39 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:28:39 | INFO | nyxsys is now online.
+2017/06/24 | 11:29:09 | INFO | nyxsys is now offline.
+2017/06/24 | 11:29:09 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:29:09 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:29:09 | INFO | nyxsys is now online.
+2017/06/24 | 11:37:41 | INFO | Starting system.
+2017/06/24 | 11:37:41 | INFO | Initializing system components.
+2017/06/24 | 11:37:41 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:37:42 | INFO | System initialization completed.
+2017/06/24 | 11:37:42 | INFO | Database connection success.
+2017/06/24 | 11:37:44 | WARN | Issuing page refresh command to socket ID:tszQG2aofOxWbNR8AAAA REASON : User not found in active sessions
+2017/06/24 | 11:37:47 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:37:47 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:37:47 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:37:47 | INFO | nyxsys is now online.
+2017/06/24 | 11:37:59 | INFO | nyxsys is now offline.
+2017/06/24 | 11:38:44 | INFO | Starting system.
+2017/06/24 | 11:38:44 | INFO | Initializing system components.
+2017/06/24 | 11:38:44 | INFO | Attempting to connect to the database.
+2017/06/24 | 11:38:44 | INFO | System initialization completed.
+2017/06/24 | 11:38:44 | INFO | Database connection success.
+2017/06/24 | 11:39:09 | WARN | Issuing page refresh command to socket ID:hMagxJPKxw2Zr2BfAAAA REASON : User not found in active sessions
+2017/06/24 | 11:39:12 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 11:39:31 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:39:31 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:39:31 | INFO | nyxsys is now online.
+2017/06/24 | 11:39:42 | INFO | nyxsys is now offline.
+2017/06/24 | 11:39:42 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:39:42 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:39:42 | INFO | nyxsys is now online.
+2017/06/24 | 11:39:56 | INFO | nyxsys is now offline.
+2017/06/24 | 11:39:56 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 11:39:56 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 11:39:56 | INFO | nyxsys is now online.
+2017/06/24 | 12:12:06 | INFO | Starting system.
+2017/06/24 | 12:12:06 | INFO | Initializing system components.
+2017/06/24 | 12:12:06 | INFO | Attempting to connect to the database.
+2017/06/24 | 12:12:06 | INFO | System initialization completed.
+2017/06/24 | 12:12:06 | INFO | Database connection success.
+2017/06/24 | 12:12:07 | WARN | Issuing page refresh command to socket ID:bW2S3HSsG2EU0Q3-AAAA REASON : User not found in active sessions
+2017/06/24 | 12:12:12 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 12:12:12 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:12:12 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:12:12 | INFO | nyxsys is now online.
+2017/06/24 | 12:12:30 | INFO | nyxsys is now offline.
+2017/06/24 | 12:12:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:12:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:12:30 | INFO | nyxsys is now online.
+2017/06/24 | 12:12:50 | INFO | nyxsys is now offline.
+2017/06/24 | 12:12:51 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:12:51 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:12:51 | INFO | nyxsys is now online.
+2017/06/24 | 12:13:25 | INFO | nyxsys is now offline.
+2017/06/24 | 12:13:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:13:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:13:26 | INFO | nyxsys is now online.
+2017/06/24 | 12:19:06 | INFO | Starting system.
+2017/06/24 | 12:19:06 | INFO | Initializing system components.
+2017/06/24 | 12:19:06 | INFO | Attempting to connect to the database.
+2017/06/24 | 12:19:06 | INFO | System initialization completed.
+2017/06/24 | 12:19:06 | INFO | Database connection success.
+2017/06/24 | 12:19:07 | WARN | Issuing page refresh command to socket ID:BzfTYBfo5rnaHPsMAAAA REASON : User not found in active sessions
+2017/06/24 | 12:19:09 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 12:19:10 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:19:10 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:19:10 | INFO | nyxsys is now online.
+2017/06/24 | 12:19:21 | INFO | nyxsys is now offline.
+2017/06/24 | 12:19:21 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:19:21 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:19:21 | INFO | nyxsys is now online.
+2017/06/24 | 12:19:56 | INFO | nyxsys is now offline.
+2017/06/24 | 12:19:56 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:19:56 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:19:56 | INFO | nyxsys is now online.
+2017/06/24 | 12:20:52 | INFO | nyxsys is now offline.
+2017/06/24 | 12:20:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:20:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:20:52 | INFO | nyxsys is now online.
+2017/06/24 | 12:21:18 | INFO | nyxsys is now offline.
+2017/06/24 | 12:21:18 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:21:18 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:21:18 | INFO | nyxsys is now online.
+2017/06/24 | 12:21:25 | INFO | nyxsys is now offline.
+2017/06/24 | 12:21:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 12:21:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 12:21:25 | INFO | nyxsys is now online.
+2017/06/24 | 13:05:45 | INFO | Starting system.
+2017/06/24 | 13:05:45 | INFO | Initializing system components.
+2017/06/24 | 13:05:45 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:05:45 | INFO | System initialization completed.
+2017/06/24 | 13:05:45 | INFO | Database connection success.
+2017/06/24 | 13:05:46 | WARN | Issuing page refresh command to socket ID:d5t3sFzQyj3Z999IAAAA REASON : User not found in active sessions
+2017/06/24 | 13:05:51 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:05:51 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:05:51 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:05:51 | INFO | nyxsys is now online.
+2017/06/24 | 13:06:00 | INFO | nyxsys is now offline.
+2017/06/24 | 13:06:00 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:06:00 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:06:00 | INFO | nyxsys is now online.
+2017/06/24 | 13:06:20 | INFO | nyxsys is now offline.
+2017/06/24 | 13:06:21 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:06:21 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:06:21 | INFO | nyxsys is now online.
+2017/06/24 | 13:07:07 | INFO | nyxsys is now offline.
+2017/06/24 | 13:07:07 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:07:07 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:07:07 | INFO | nyxsys is now online.
+2017/06/24 | 13:11:02 | INFO | Starting system.
+2017/06/24 | 13:11:02 | INFO | Initializing system components.
+2017/06/24 | 13:11:02 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:11:02 | INFO | System initialization completed.
+2017/06/24 | 13:11:02 | INFO | Database connection success.
+2017/06/24 | 13:11:03 | WARN | Issuing page refresh command to socket ID:yrcLBlLmvLZC4l6bAAAA REASON : User not found in active sessions
+2017/06/24 | 13:11:07 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:11:08 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:11:08 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:11:08 | INFO | nyxsys is now online.
+2017/06/24 | 13:11:35 | INFO | nyxsys is now offline.
+2017/06/24 | 13:11:35 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:11:35 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:11:35 | INFO | nyxsys is now online.
+2017/06/24 | 13:11:50 | INFO | nyxsys is now offline.
+2017/06/24 | 13:11:50 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:11:50 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:11:50 | INFO | nyxsys is now online.
+2017/06/24 | 13:11:59 | INFO | nyxsys is now offline.
+2017/06/24 | 13:11:59 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:11:59 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:11:59 | INFO | nyxsys is now online.
+2017/06/24 | 13:12:09 | INFO | nyxsys is now offline.
+2017/06/24 | 13:12:09 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:12:09 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:12:09 | INFO | nyxsys is now online.
+2017/06/24 | 13:12:12 | INFO | nyxsys is now offline.
+2017/06/24 | 13:12:12 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:12:12 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:12:12 | INFO | nyxsys is now online.
+2017/06/24 | 13:14:58 | INFO | Starting system.
+2017/06/24 | 13:14:58 | INFO | Initializing system components.
+2017/06/24 | 13:14:58 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:14:58 | INFO | System initialization completed.
+2017/06/24 | 13:14:58 | INFO | Database connection success.
+2017/06/24 | 13:14:59 | WARN | Issuing page refresh command to socket ID:vWZJKUzjD7jZqDA7AAAA REASON : User not found in active sessions
+2017/06/24 | 13:15:02 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:15:03 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:03 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:03 | INFO | nyxsys is now online.
+2017/06/24 | 13:15:19 | INFO | nyxsys is now offline.
+2017/06/24 | 13:15:19 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:19 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:19 | INFO | nyxsys is now online.
+2017/06/24 | 13:15:29 | INFO | nyxsys is now offline.
+2017/06/24 | 13:15:29 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:29 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:29 | INFO | nyxsys is now online.
+2017/06/24 | 13:15:38 | INFO | nyxsys is now offline.
+2017/06/24 | 13:15:38 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:38 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:38 | INFO | nyxsys is now online.
+2017/06/24 | 13:15:45 | INFO | nyxsys is now offline.
+2017/06/24 | 13:15:45 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:45 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:45 | INFO | nyxsys is now online.
+2017/06/24 | 13:15:52 | INFO | nyxsys is now offline.
+2017/06/24 | 13:15:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:15:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:15:52 | INFO | nyxsys is now online.
+2017/06/24 | 13:16:24 | INFO | nyxsys is now offline.
+2017/06/24 | 13:16:24 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:16:24 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:16:24 | INFO | nyxsys is now online.
+2017/06/24 | 13:16:56 | INFO | nyxsys is now offline.
+2017/06/24 | 13:16:56 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:16:56 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:16:56 | INFO | nyxsys is now online.
+2017/06/24 | 13:21:01 | INFO | Starting system.
+2017/06/24 | 13:21:01 | INFO | Initializing system components.
+2017/06/24 | 13:21:01 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:21:01 | INFO | System initialization completed.
+2017/06/24 | 13:21:01 | INFO | Database connection success.
+2017/06/24 | 13:21:03 | WARN | Issuing page refresh command to socket ID:Oc6EGMHr10qmF-xhAAAA REASON : User not found in active sessions
+2017/06/24 | 13:21:05 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:21:05 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:21:05 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:21:05 | INFO | nyxsys is now online.
+2017/06/24 | 13:21:23 | INFO | nyxsys is now offline.
+2017/06/24 | 13:21:23 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:21:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:21:23 | INFO | nyxsys is now online.
+2017/06/24 | 13:21:28 | INFO | nyxsys is now offline.
+2017/06/24 | 13:21:28 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:21:28 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:21:28 | INFO | nyxsys is now online.
+2017/06/24 | 13:21:46 | INFO | nyxsys is now offline.
+2017/06/24 | 13:21:46 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:21:46 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:21:46 | INFO | nyxsys is now online.
+2017/06/24 | 13:21:49 | INFO | nyxsys is now offline.
+2017/06/24 | 13:21:50 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:21:50 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:21:50 | INFO | nyxsys is now online.
+2017/06/24 | 13:22:50 | INFO | nyxsys is now offline.
+2017/06/24 | 13:22:50 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:22:50 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:22:50 | INFO | nyxsys is now online.
+2017/06/24 | 13:23:05 | INFO | nyxsys is now offline.
+2017/06/24 | 13:23:05 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:23:05 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:23:05 | INFO | nyxsys is now online.
+2017/06/24 | 13:23:08 | INFO | nyxsys is now offline.
+2017/06/24 | 13:23:08 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:23:08 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:23:08 | INFO | nyxsys is now online.
+2017/06/24 | 13:23:38 | INFO | nyxsys is now offline.
+2017/06/24 | 13:23:38 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:23:38 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:23:38 | INFO | nyxsys is now online.
+2017/06/24 | 13:24:16 | INFO | nyxsys is now offline.
+2017/06/24 | 13:24:16 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:24:16 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:24:16 | INFO | nyxsys is now online.
+2017/06/24 | 13:24:24 | INFO | nyxsys is now offline.
+2017/06/24 | 13:24:24 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:24:24 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:24:24 | INFO | nyxsys is now online.
+2017/06/24 | 13:25:50 | INFO | Starting system.
+2017/06/24 | 13:25:50 | INFO | Initializing system components.
+2017/06/24 | 13:25:50 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:25:50 | INFO | System initialization completed.
+2017/06/24 | 13:25:50 | INFO | Database connection success.
+2017/06/24 | 13:25:51 | WARN | Issuing page refresh command to socket ID:1DYn9MBPvJOeXlrFAAAA REASON : User not found in active sessions
+2017/06/24 | 13:25:55 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:25:55 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:25:55 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:25:55 | INFO | nyxsys is now online.
+2017/06/24 | 13:26:26 | INFO | nyxsys is now offline.
+2017/06/24 | 13:26:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:26:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:26:26 | INFO | nyxsys is now online.
+2017/06/24 | 13:26:30 | INFO | nyxsys is now offline.
+2017/06/24 | 13:26:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:26:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:26:30 | INFO | nyxsys is now online.
+2017/06/24 | 13:27:03 | INFO | nyxsys is now offline.
+2017/06/24 | 13:27:03 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:27:03 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:27:03 | INFO | nyxsys is now online.
+2017/06/24 | 13:28:22 | INFO | namall logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:28:26 | AUTH | namall Authenticated from 127.0.0.1
+2017/06/24 | 13:28:26 | INFO | namall is now online.
+2017/06/24 | 13:28:43 | INFO | kanis registered in the system from ::ffff:127.0.0.1
+2017/06/24 | 13:28:43 | AUTH | kanis Authenticated from 127.0.0.1
+2017/06/24 | 13:28:43 | INFO | kanis is now online.
+2017/06/24 | 13:29:00 | AUTH | kanis Authenticated from 127.0.0.1
+2017/06/24 | 13:29:00 | INFO | kanis is now online.
+2017/06/24 | 13:29:09 | INFO | nyxsys is now offline.
+2017/06/24 | 13:29:10 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:29:10 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:29:10 | INFO | nyxsys is now online.
+2017/06/24 | 13:29:26 | INFO | nyxsys is now offline.
+2017/06/24 | 13:29:27 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:29:27 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:29:27 | INFO | nyxsys is now online.
+2017/06/24 | 13:29:29 | AUTH | kanis Authenticated from 127.0.0.1
+2017/06/24 | 13:29:29 | INFO | kanis is now online.
+2017/06/24 | 13:31:41 | INFO | Starting system.
+2017/06/24 | 13:31:41 | INFO | Initializing system components.
+2017/06/24 | 13:31:41 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:31:41 | INFO | System initialization completed.
+2017/06/24 | 13:31:41 | INFO | Database connection success.
+2017/06/24 | 13:31:41 | WARN | Issuing page refresh command to socket ID:YttEo0gJuqSMzYMFAAAA REASON : User not found in active sessions
+2017/06/24 | 13:31:42 | WARN | Issuing page refresh command to socket ID:lPkyVXheQAMvmtmXAAAC REASON : User not found in active sessions
+2017/06/24 | 13:31:46 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:31:46 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:31:46 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:31:46 | INFO | nyxsys is now online.
+2017/06/24 | 13:32:27 | INFO | nyxsys is now offline.
+2017/06/24 | 13:32:27 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:32:27 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:32:27 | INFO | nyxsys is now online.
+2017/06/24 | 13:32:32 | INFO | nyxsys is now offline.
+2017/06/24 | 13:32:32 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:32:32 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:32:32 | INFO | nyxsys is now online.
+2017/06/24 | 13:32:46 | INFO | nyxsys is now offline.
+2017/06/24 | 13:32:46 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:32:46 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:32:46 | INFO | nyxsys is now online.
+2017/06/24 | 13:32:52 | INFO | nyxsys is now offline.
+2017/06/24 | 13:32:52 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:32:52 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:32:52 | INFO | nyxsys is now online.
+2017/06/24 | 13:34:39 | INFO | Starting system.
+2017/06/24 | 13:34:39 | INFO | Initializing system components.
+2017/06/24 | 13:34:39 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:34:39 | INFO | System initialization completed.
+2017/06/24 | 13:34:39 | INFO | Database connection success.
+2017/06/24 | 13:34:39 | WARN | Issuing page refresh command to socket ID:zWl8jeaCWURn6sPNAAAA REASON : User not found in active sessions
+2017/06/24 | 13:34:42 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:34:42 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:34:42 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:34:42 | INFO | nyxsys is now online.
+2017/06/24 | 13:34:45 | INFO | nyxsys is now offline.
+2017/06/24 | 13:34:45 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:34:45 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:34:45 | INFO | nyxsys is now online.
+2017/06/24 | 13:35:06 | INFO | nyxsys is now offline.
+2017/06/24 | 13:35:06 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:35:06 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:35:06 | INFO | nyxsys is now online.
+2017/06/24 | 13:35:13 | INFO | nyxsys is now offline.
+2017/06/24 | 13:35:13 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:35:13 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:35:13 | INFO | nyxsys is now online.
+2017/06/24 | 13:36:22 | INFO | nyxsys is now offline.
+2017/06/24 | 13:36:23 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:36:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:36:23 | INFO | nyxsys is now online.
+2017/06/24 | 13:36:29 | INFO | nyxsys is now offline.
+2017/06/24 | 13:36:29 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:36:29 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:36:29 | INFO | nyxsys is now online.
+2017/06/24 | 13:36:43 | INFO | nyxsys is now offline.
+2017/06/24 | 13:36:43 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:36:43 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:36:43 | INFO | nyxsys is now online.
+2017/06/24 | 13:36:45 | INFO | nyxsys is now offline.
+2017/06/24 | 13:36:45 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:36:45 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:36:45 | INFO | nyxsys is now online.
+2017/06/24 | 13:37:02 | INFO | nyxsys is now offline.
+2017/06/24 | 13:37:02 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:37:02 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:37:02 | INFO | nyxsys is now online.
+2017/06/24 | 13:37:58 | INFO | Starting system.
+2017/06/24 | 13:37:58 | INFO | Initializing system components.
+2017/06/24 | 13:37:58 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:37:58 | INFO | System initialization completed.
+2017/06/24 | 13:37:58 | INFO | Database connection success.
+2017/06/24 | 13:37:58 | WARN | Issuing page refresh command to socket ID:elPmnq05ZceOaJNCAAAA REASON : User not found in active sessions
+2017/06/24 | 13:38:02 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:38:03 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:38:03 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:38:03 | INFO | nyxsys is now online.
+2017/06/24 | 13:38:46 | INFO | Starting system.
+2017/06/24 | 13:38:46 | INFO | Initializing system components.
+2017/06/24 | 13:38:46 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:38:46 | INFO | System initialization completed.
+2017/06/24 | 13:38:46 | INFO | Database connection success.
+2017/06/24 | 13:38:47 | WARN | Issuing page refresh command to socket ID:BGkMFGFvuwzbFXrZAAAA REASON : User not found in active sessions
+2017/06/24 | 13:39:16 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:39:16 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:39:16 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:39:16 | INFO | nyxsys is now online.
+2017/06/24 | 13:39:20 | INFO | Starting system.
+2017/06/24 | 13:39:20 | INFO | Initializing system components.
+2017/06/24 | 13:39:20 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:39:21 | INFO | System initialization completed.
+2017/06/24 | 13:39:21 | INFO | Database connection success.
+2017/06/24 | 13:39:22 | WARN | Issuing page refresh command to socket ID:-iZ35Jw3l4gddAYyAAAA REASON : User not found in active sessions
+2017/06/24 | 13:39:25 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:39:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:39:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:39:25 | INFO | nyxsys is now online.
+2017/06/24 | 13:39:44 | INFO | nyxsys is now offline.
+2017/06/24 | 13:39:44 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:39:44 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:39:44 | INFO | nyxsys is now online.
+2017/06/24 | 13:40:02 | INFO | nyxsys is now offline.
+2017/06/24 | 13:40:03 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:40:03 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:40:03 | INFO | nyxsys is now online.
+2017/06/24 | 13:40:25 | INFO | nyxsys is now offline.
+2017/06/24 | 13:40:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:40:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:40:26 | INFO | nyxsys is now online.
+2017/06/24 | 13:40:32 | INFO | nyxsys is now offline.
+2017/06/24 | 13:40:32 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:40:32 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:40:32 | INFO | nyxsys is now online.
+2017/06/24 | 13:42:27 | INFO | nyxsys is now offline.
+2017/06/24 | 13:42:27 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:42:27 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:42:27 | INFO | nyxsys is now online.
+2017/06/24 | 13:42:39 | INFO | nyxsys is now offline.
+2017/06/24 | 13:42:39 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:42:39 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:42:39 | INFO | nyxsys is now online.
+2017/06/24 | 13:43:08 | INFO | nyxsys is now offline.
+2017/06/24 | 13:43:08 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:43:08 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:43:08 | INFO | nyxsys is now online.
+2017/06/24 | 13:43:38 | INFO | nyxsys is now offline.
+2017/06/24 | 13:43:38 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:43:38 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:43:38 | INFO | nyxsys is now online.
+2017/06/24 | 13:43:46 | INFO | nyxsys is now offline.
+2017/06/24 | 13:43:46 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:43:46 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:43:46 | INFO | nyxsys is now online.
+2017/06/24 | 13:44:01 | INFO | nyxsys is now offline.
+2017/06/24 | 13:44:01 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:44:01 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:44:01 | INFO | nyxsys is now online.
+2017/06/24 | 13:44:09 | INFO | nyxsys is now offline.
+2017/06/24 | 13:44:10 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:44:10 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:44:10 | INFO | nyxsys is now online.
+2017/06/24 | 13:55:47 | INFO | Starting system.
+2017/06/24 | 13:55:47 | INFO | Initializing system components.
+2017/06/24 | 13:55:47 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:55:47 | INFO | System initialization completed.
+2017/06/24 | 13:55:47 | INFO | Database connection success.
+2017/06/24 | 13:55:50 | WARN | Issuing page refresh command to socket ID:9H_moQBOTtmvyP1NAAAA REASON : User not found in active sessions
+2017/06/24 | 13:55:53 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:55:54 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:55:54 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:55:54 | INFO | nyxsys is now online.
+2017/06/24 | 13:57:29 | INFO | Starting system.
+2017/06/24 | 13:57:29 | INFO | Initializing system components.
+2017/06/24 | 13:57:29 | INFO | Attempting to connect to the database.
+2017/06/24 | 13:57:29 | INFO | System initialization completed.
+2017/06/24 | 13:57:30 | INFO | Database connection success.
+2017/06/24 | 13:57:30 | WARN | Issuing page refresh command to socket ID:YON8GDQNW3tTbGhQAAAA REASON : User not found in active sessions
+2017/06/24 | 13:57:33 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 13:57:33 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:57:33 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:57:33 | INFO | nyxsys is now online.
+2017/06/24 | 13:57:49 | INFO | nyxsys is now offline.
+2017/06/24 | 13:57:49 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:57:49 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:57:49 | INFO | nyxsys is now online.
+2017/06/24 | 13:57:55 | INFO | nyxsys is now offline.
+2017/06/24 | 13:57:55 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 13:57:55 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 13:57:55 | INFO | nyxsys is now online.
+2017/06/24 | 13:58:23 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:15 | INFO | nyxsys is now offline.
+2017/06/24 | 14:00:15 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:00:15 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:15 | INFO | nyxsys is now online.
+2017/06/24 | 14:00:22 | INFO | nyxsys is now offline.
+2017/06/24 | 14:00:22 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:00:22 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:22 | INFO | nyxsys is now online.
+2017/06/24 | 14:00:23 | INFO | nyxsys is now offline.
+2017/06/24 | 14:00:24 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:00:24 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:24 | INFO | nyxsys is now online.
+2017/06/24 | 14:00:29 | INFO | nyxsys is now offline.
+2017/06/24 | 14:00:29 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:00:29 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:29 | INFO | nyxsys is now online.
+2017/06/24 | 14:00:40 | INFO | nyxsys is now offline.
+2017/06/24 | 14:00:40 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:00:40 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:00:40 | INFO | nyxsys is now online.
+2017/06/24 | 14:01:25 | INFO | nyxsys is now offline.
+2017/06/24 | 14:01:25 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:01:25 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:01:25 | INFO | nyxsys is now online.
+2017/06/24 | 14:01:29 | INFO | nyxsys is now offline.
+2017/06/24 | 14:01:29 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:01:29 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:01:29 | INFO | nyxsys is now online.
+2017/06/24 | 14:01:47 | INFO | nyxsys is now offline.
+2017/06/24 | 14:01:47 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:01:47 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:01:47 | INFO | nyxsys is now online.
+2017/06/24 | 14:02:25 | INFO | nyxsys is now offline.
+2017/06/24 | 14:02:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:02:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:02:26 | INFO | nyxsys is now online.
+2017/06/24 | 14:02:36 | INFO | nyxsys is now offline.
+2017/06/24 | 14:02:36 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:02:36 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:02:36 | INFO | nyxsys is now online.
+2017/06/24 | 14:06:36 | INFO | Starting system.
+2017/06/24 | 14:06:36 | INFO | Initializing system components.
+2017/06/24 | 14:06:36 | INFO | Attempting to connect to the database.
+2017/06/24 | 14:06:36 | INFO | System initialization completed.
+2017/06/24 | 14:06:36 | INFO | Database connection success.
+2017/06/24 | 14:06:40 | WARN | Issuing page refresh command to socket ID:Og4wySSslwflEhLbAAAA REASON : User not found in active sessions
+2017/06/24 | 14:08:53 | INFO | Starting system.
+2017/06/24 | 14:08:53 | INFO | Initializing system components.
+2017/06/24 | 14:08:53 | INFO | Attempting to connect to the database.
+2017/06/24 | 14:08:54 | INFO | System initialization completed.
+2017/06/24 | 14:08:54 | INFO | Database connection success.
+2017/06/24 | 14:09:01 | INFO | nyxsys logged in to the system from ::ffff:127.0.0.1
+2017/06/24 | 14:09:01 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:09:01 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:09:01 | INFO | nyxsys is now online.
+2017/06/24 | 14:09:25 | INFO | nyxsys is now offline.
+2017/06/24 | 14:09:26 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:09:26 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:09:26 | INFO | nyxsys is now online.
+2017/06/24 | 14:09:29 | INFO | nyxsys is now offline.
+2017/06/24 | 14:09:30 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:09:30 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:09:30 | INFO | nyxsys is now online.
+2017/06/24 | 14:09:42 | INFO | nyxsys is now offline.
+2017/06/24 | 14:09:42 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:09:42 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:09:42 | INFO | nyxsys is now online.
+2017/06/24 | 14:09:48 | INFO | nyxsys is now offline.
+2017/06/24 | 14:09:48 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:09:48 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:09:48 | INFO | nyxsys is now online.
+2017/06/24 | 14:10:38 | INFO | nyxsys is now offline.
+2017/06/24 | 14:10:39 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:10:39 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:10:39 | INFO | nyxsys is now online.
+2017/06/24 | 14:10:50 | INFO | nyxsys is now offline.
+2017/06/24 | 14:10:50 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:10:50 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:10:50 | INFO | nyxsys is now online.
+2017/06/24 | 14:10:54 | INFO | nyxsys is now offline.
+2017/06/24 | 14:10:54 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:10:54 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:10:54 | INFO | nyxsys is now online.
+2017/06/24 | 14:11:21 | INFO | nyxsys is now offline.
+2017/06/24 | 14:11:21 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:11:21 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:11:21 | INFO | nyxsys is now online.
+2017/06/24 | 14:11:39 | INFO | nyxsys is now offline.
+2017/06/24 | 14:11:39 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:11:39 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:11:39 | INFO | nyxsys is now online.
+2017/06/24 | 14:11:43 | INFO | nyxsys is now offline.
+2017/06/24 | 14:11:43 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:11:43 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:11:43 | INFO | nyxsys is now online.
+2017/06/24 | 14:12:34 | INFO | nyxsys is now offline.
+2017/06/24 | 14:12:34 | AUTH | Administrator nyxsys connected from 127.0.0.1
+2017/06/24 | 14:12:34 | AUTH | nyxsys Authenticated from 127.0.0.1
+2017/06/24 | 14:12:34 | INFO | nyxsys is now online.
