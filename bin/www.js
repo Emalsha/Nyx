@@ -16,13 +16,13 @@ const aria2 = require('../module/aria2c_config').aria2obj;
 const first_user = require('../module/first_user');
 
 const cast = require('../module/globalutils');
-cast.log("Starting system.")
+cast.log("Starting system.");
 
 
 
 
 //Globals
-cast.log("Initializing system components.")
+cast.log("Initializing system components.");
 global.loggedinusers = [];
 global.activesessions = [];
 global.onlineadmins = [];
@@ -36,7 +36,7 @@ let server;
 
 
 // var dburl = "mongodb://emalsha:ucsc_sample_db@ds131890.mlab.com:31890/ucsc_sample";
-let dburl = "mongodb://localhost:27017/project_nyx";
+let dburl = "mongodb://localhost:27017/project_nyx"; //Another db instance created in acl_fn
 
 
 server = http.createServer(app);

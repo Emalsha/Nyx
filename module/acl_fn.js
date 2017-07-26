@@ -3,14 +3,17 @@
  */
 
 let acl = require('acl');
+let mongoose = require('mongoose');
+let User = require('../model/User');
 let debug = require('debug')('nyx:acl');
 
 acl = new acl(new acl.memoryBackend());
 
 // create roles and give permission
-acl.allow('admin', ['/admin/administration','/admin/diskmanagement', '/admin/viewfiles', '/view_f/viewfiles', '/view_f/view_publicfiles', '/admin/management', '/users', '/admin/server', '/admin/server_time', '/admin/delete', '/admin/managepublicfiles'], ['get', 'post', 'view']);
+acl.allow('admin', ['/admin/administration', '/admin/diskmanagement', '/admin/viewfiles', '/view_f/viewfiles', '/view_f/view_publicfiles', '/admin/management', '/users', '/admin/server', '/admin/server_time', '/admin/delete', '/admin/managepublicfiles'], ['get', 'post', 'view']);
 acl.allow('batch-admin', ['/batch/administration', '/view_f/viewfiles', '/view_f/view_publicfiles', '/users'], ['get', 'post', 'view']);
 acl.allow('user', '/users', ['get', 'post']);
+
 
 // acl.allow('user',['/users/user','/users/myfile','/users/publicfile','/users/help'],['get','post']);
 
@@ -18,6 +21,19 @@ acl.allow('user', '/users', ['get', 'post']);
 acl.addUserRoles('Emalsha', 'user');
 acl.addUserRoles('Sulochana', 'batch-admin');
 acl.addUserRoles('nyxsys', 'admin');
+
+User.find({},function (err, users) {
+    if(err){
+        debug('Unable to add user roles.');
+    }
+
+    for(let i=0;i<users.length;i++){
+        acl.addUserRoles(users[i]['username'],users[i]['role']);
+    }
+
+});
+
+
 
 module.exports.aclobj = acl;
 
