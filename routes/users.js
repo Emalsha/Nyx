@@ -75,13 +75,15 @@ router.get('/publicfile', aclfn, aclf, function (req, res) {
 
 });
 
-router.get('/help', aclfn, aclf, function (req, res) {
-    res.render('help', {
-        title: 'NYX | Help',
-        user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
 
-    });
-});
+
+// router.get('/similarDownloads', aclfn, aclf, function (req, res) {
+//     res.render('similar_downloads', {
+//         title: 'NYX | Download Suggestions',
+//         user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+//
+//     });
+// });
 
 router.get('/search', aclfn, aclf, function (req, res) {
     let search = decodeURIComponent(req.query.s);
@@ -105,6 +107,7 @@ router.get('/search', aclfn, aclf, function (req, res) {
             res.send(searchResult);
         })
 });
+
 // download a file
 router.get('/download/:id', function(req, res, next) {
 // download a file
@@ -129,8 +132,9 @@ router.get('/download/:id', function(req, res, next) {
     // res.download(filePath, fileName);
 
 });
-// delete a file
 
+
+// delete a file
  router.get('/delete/:id', function(req, res, next) {
 
      let id=req.params.id;

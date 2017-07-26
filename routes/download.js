@@ -13,108 +13,141 @@ let Bw_list = require('../model/Bw_list');
 
 router.post('/request', function (req, res) {
 
-    let tags_array;
-    let availability;
-    let description;
-    let size;
-    let file_path;
-    let state = 'pending';
-    let admin_decision;
-    let admin_decision_date;
-    let reject_note;
-    let admin = '';
-    let admin_note = '';
-    let size_in_byte;
+    Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}]}, function (err, downloads) {
+        if (err) {
+            debug(err);
+        }
 
-    if (req.body.tags) {
-        let st = req.body.tags;
-        tags_array = st.split(',');
-    }
+        if (downloads.length > 0) {
+            let dlinks = [];
+            for (let i = 0; i < downloads.length; i++) {
+                let ob = {
+                    link: downloads[i].link,
+                    availability: downloads[i].availability,
+                    owner: downloads[i].request_user,
+                    state: downloads[i].state,
+                    tags: downloads[i].tags,
+                    description: downloads[i].description,
 
-    if (req.body.availability === 'true') {
-        availability = 'public';
-        file_path = __dirname + '/../tempDownload/public';
-    } else {
-        availability = 'private';
-        file_path = __dirname + '/../tempDownload/' + req.user.username;
-    }
-
-    if (req.body.description) {
-    }
-    description = req.body.description;
-
-    if (req.body.size) {
-        size = req.body.size;
-        size_in_byte = req.body.size_bytes;
-    }
-
-    //split and get the domain
-    let dom = req.body.link;
-    let dom_array = dom.split('/');
-    let req_domain = dom_array[2];
-    Bw_list.findOne({domain: req_domain})
-        .then((doc) => {
-
-            // console.log(doc);
-            if (doc === null) {
-                console.log("no result");
-
-            } else if (doc['list_type'] === 'white') {
-                state = 'approved';
-                admin_decision = true;
-                admin_decision_date = new Date();
-                admin = 'auto-approve';
-                admin_note = 'White listed domain';
-                Bw_list.findOneAndUpdate({domain:req_domain},{$inc:{hits:1}},function (err, bw) {
-                    if(err){
-                        debug('Error on update BW list');
-                    }
-                });
-            } else if (doc['list_type'] === 'black') {
-                state = 'rejected';
-                admin_decision = false;
-                admin_decision_date = new Date();
-                admin = 'auto-reject';
-                admin_note = 'Black listed domain';
-                reject_note = 'This is a black list domain';
-                Bw_list.findOneAndUpdate({domain:req_domain},{$inc:{hits:1}},function (err, bw) {
-                    if(err){
-                        debug('Error on update BW list');
-                    }
-                });
+                };
+                dlinks.push(ob);
             }
-
-            let newDownload = new Download({
-                link: req.body.link,
-                request_date: new Date(),
-                tags: tags_array,
-                availability: availability,
-                request_user: req.user.username,
-                state: state,
-                description: description,
-                size: size,
-                file_path: file_path,
-                admin_decision: admin_decision,
-                admin_decision_date: admin_decision_date,
-                reject_note: reject_note,
-                admin:admin,
-                admin_note:admin_note,
-                size_in_byte:size_in_byte,
+            res.render('similar_downloads', {
+                title: 'NYX | Download Suggestions',
+                user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                downloads: dlinks
             });
+        } else {
+            saveRequest();
+        }
+    });
 
-            newDownload.save(function (err) {
-                if (err) {
-                    debug(err)
+    function saveRequest() {
+        let tags_array;
+        let availability;
+        let description;
+        let size;
+        let file_path;
+        let state = 'pending';
+        let admin_decision;
+        let admin_decision_date;
+        let reject_note;
+        let admin = '';
+        let admin_note = '';
+        let size_in_byte;
+
+        if (req.body.tags) {
+            let st = req.body.tags;
+            tags_array = st.split(',');
+        }
+
+        if (req.body.availability === 'true') {
+            availability = 'public';
+        } else {
+            availability = 'private';
+        }
+
+        file_path = __dirname + '/../tempDownload';
+
+        if (req.body.description) {
+        }
+        description = req.body.description;
+
+        if (req.body.size) {
+            size = req.body.size;
+            size_in_byte = req.body.size_bytes;
+        }
+
+
+        //split and get the domain
+        let dom = req.body.link;
+        let dom_array = dom.split('/');
+        let req_domain = dom_array[2];
+        Bw_list.findOne({domain: req_domain})
+            .then((doc) => {
+
+                // console.log(doc);
+                if (doc === null) {
+                    console.log("no result");
+
+                } else if (doc['list_type'] === 'white') {
+                    state = 'approved';
+                    admin_decision = true;
+                    admin_decision_date = new Date();
+                    admin = 'auto-approve';
+                    admin_note = 'White listed domain';
+                    Bw_list.findOneAndUpdate({domain: req_domain}, {$inc: {hits: 1}}, function (err, bw) {
+                        if (err) {
+                            debug('Error on update BW list');
+                        }
+                    });
+                } else if (doc['list_type'] === 'black') {
+                    state = 'rejected';
+                    admin_decision = false;
+                    admin_decision_date = new Date();
+                    admin = 'auto-reject';
+                    admin_note = 'Black listed domain';
+                    reject_note = 'This is a black list domain';
+                    Bw_list.findOneAndUpdate({domain: req_domain}, {$inc: {hits: 1}}, function (err, bw) {
+                        if (err) {
+                            debug('Error on update BW list');
+                        }
+                    });
                 }
-                req.flash('success', 'New download request added.');
-                res.redirect('/users/dashboard');
-            })
+
+                let newDownload = new Download({
+                    link: req.body.link,
+                    request_date: new Date(),
+                    tags: tags_array,
+                    availability: availability,
+                    request_user: req.user.username,
+                    state: state,
+                    description: description,
+                    size: size,
+                    file_path: file_path,
+                    admin_decision: admin_decision,
+                    admin_decision_date: admin_decision_date,
+                    reject_note: reject_note,
+                    admin: admin,
+                    admin_note: admin_note,
+                    size_in_byte: size_in_byte,
+                });
+
+                newDownload.save(function (err) {
+                    if (err) {
+                        debug(err)
+                    }
+                    req.flash('success', 'New download request added.');
+                    res.redirect('/users/dashboard');
+                })
 
 
-            // console.log(newDownload);
-            // console.log(state);
+                // console.log(newDownload);
+                // console.log(state);
 
-        });
+            });
+    }
+
 
 });
 
@@ -138,14 +171,6 @@ router.post('/approve', function (req, res) {
 
         if (req.body.admin_note) {
             download.admin_note = req.body.admin_note;
-        }
-
-        if (req.body.availability === 'true') {
-            download.availability = 'public';
-            download.file_path = __dirname + '/../tempDownload/public';
-        } else {
-            download.availability = 'private';
-            download.file_path = __dirname + '/../tempDownload/' + req.user.username;
         }
 
         download.admin = req.user.username;
@@ -184,8 +209,8 @@ router.post('/approve', function (req, res) {
                     });
 
                 } else {
-                    Bw_list.findOneAndUpdate({domain:req_domain},{$inc:{hits:1}},function (err, bw) {
-                        if(err){
+                    Bw_list.findOneAndUpdate({domain: req_domain}, {$inc: {hits: 1}}, function (err, bw) {
+                        if (err) {
                             debug('Error on update BW list');
                         }
                     });
