@@ -137,7 +137,7 @@ router.post('/request', function (req, res) {
                     if (err) {
                         debug(err)
                     }
-                    req.flash('success', 'New download request added.');
+                    req.flash('success', 'Your new download request has being sent for approval by an administrator or a batch representative..');
                     res.redirect('/users/dashboard');
                 })
 
