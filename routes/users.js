@@ -13,12 +13,12 @@ let aclfn = acl.aclobj.middleware(1, (req, res) => {
 
 /* GET users listing. */
 router.get('/dashboard', aclfn, aclf, function (req, res) {
-    Download.find({request_user: req.user.username, state: 'pending'})
-        .then((pendingDonwload) => {
-            return [pendingDonwload];
+    Download.find({request_user: req.user.username, state: 'downloading'})
+        .then((pendingDownload) => {
+            return [pendingDownload];
         })
         .then((result) => {
-            return Download.find({request_user: req.user.username, state: 'approved'})
+            return Download.find({request_user: req.user.username, state: 'pending'})
                 .then((approvedList) => {
                     result[1] = approvedList;
                     return result;
@@ -35,15 +35,15 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
                 })
         })
         .then((result) => {
-            let pendingDonwload = result[0];
+            let pendingDownload = result[0];
             let approvedList = result[1];
             let rejectedList = result[2];
             res.render('dashboard', {
                 title: 'NYX | Dashboard',
                 message: req.flash('success'),
                 user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-                pending: pendingDonwload,
-                inprogress: approvedList,
+                inprogress: pendingDownload,
+                pending: approvedList,
                 rejected: rejectedList,
                 token:req.flash('token')
             });
