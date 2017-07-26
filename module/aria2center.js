@@ -11,6 +11,10 @@ const aria2secret = "ucscaria";
 const DOWNLOAD_ROOT = "/home/sulochana/Desktop/downloads/";
 const Time = require('../model/Time');
 const Download = require('../model/Download');
+const debug = require('debug')('nyx:aria2center');
+const Owner = require('../model/Owner');
+const fs = require('fs');
+const crypto = require('crypto');
 
 var MAX_CONCIRRENT_DOWNLOADS = 2;
 
@@ -122,6 +126,52 @@ aria2.onsend = function(m) {
 
 aria2.onDownloadComplete = function (gid) {
     cast.log("Download of GID:"+gid.gid + " Completed.",7);
+
+    Download.find({gid: gid.gid}, function (err, downloads) {
+        let download = downloads[0];
+        // console.log(download);
+        let fileNameArr = download.link.split('/');
+        let fileName = fileNameArr[fileNameArr.length - 1];
+        fileName = decodeURIComponent(fileName);
+        let dirPath = download.file_path;
+        let filePath = dirPath + '/' + fileName;
+        debug('fPath: ' + filePath);
+        // Generate hash value
+        fs.createReadStream(filePath).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
+            let hashVal = this.read(); //the hash
+            debug('fhash: ' + hashVal);
+            let newPath = dirPath + '/' + hashVal;
+            // Rename file to hash value
+            cast.log("Attemting to rename " + fileName + " to " + hashVal);
+            fs.rename(filePath, newPath, function (err) {
+                if (err) {
+                    cast.log("Error occured while renamed " + fileName + " to " + hashVal + ". " +err,3);
+                    // console.log('ERROR: ' + err);
+                }else{
+                    cast.log("Successfully renamed " + fileName + " to " + hashVal);
+
+                    // Update database
+                    Download.findOneAndUpdate({gid: gid.gid}, {
+                        state: 'downloaded',
+                        download_end_date: new Date(),
+                        file_path:newPath,
+                    }, (err, res) => {
+                        if (err) {
+                            cast.log("Error occured while updating the database after renaming " + fileName + " to " + hashVal + ". " +err,3);
+                        }else{
+                            cast.log("Database successfully updated after renaming " + fileName + " to " + hashVal,3);
+                            //TODO : Create ownership records according to file
+
+                        }
+                    });
+
+                }
+
+
+
+            });
+        });
+    });
 };
 
 aria2.onDownloadStart = function(gid) {
@@ -191,7 +241,7 @@ function online_main() {
 
                             if (pendingDonwload[selection] !== undefined){
 
-                                console.log(pendingDonwload[selection].link,selection,pendingDonwload.length);
+                                // console.log(pendingDonwload[selection].link,selection,pendingDonwload.length);
 
                                 url = pendingDonwload[selection].link;
                                 mount = 1;
@@ -216,6 +266,9 @@ function online_main() {
                                             }
 
                                             download.state = 'downloading';
+                                            download.file_path = DOWNLOAD_ROOT + mount;
+                                            download.gid = gid;
+
 
                                             download.save(function (err) {
                                                 if(err){
@@ -240,7 +293,7 @@ function online_main() {
                         //nothing to download.
                         if (!nothingtodownload){
                             nothingtodownload = true;
-                            cast.log("Nothing to download.");
+                            cast.log("No new approved download requests detected.");
                         }
                     }
 
