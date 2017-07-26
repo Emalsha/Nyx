@@ -12,6 +12,7 @@ bower_components/materialize/test/
 #log file
 aria2c.log
 npm-debug.log
+nyx_log.txt
 
 #download folder
 tempDownload

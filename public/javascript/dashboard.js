@@ -35,6 +35,7 @@ $('#down_link_btn').click(function () {
                     $('#url_info').modal('open');
                     $('#fsize').val(state['size']);
                     $('#file_size').html(state['size']);
+                    $('#size_bytes').val(state['size_bytes']);
 
                 } else {
                     x0p('Error','URL not exist.','error');
