@@ -71,7 +71,7 @@ socket.on('loginconfirm-error-uid',function (data) {
 
 
 socket.on('disconnect', function () {
-    if (io_connnection == true){
+    if (io_connnection === true && document.readyState === 'complete'){
         document.getElementById('dc_panel').style.display="block";
         console.log('you have been disconnected');
     }
