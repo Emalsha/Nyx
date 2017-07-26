@@ -258,6 +258,9 @@ const am = require('../module/aria2center');
 am.open();
 am.init(io);
 am.updatetime();
+// am.download(["http://localhost/Facebook/test.iso",1,565656,"1M",2], function(result) {
+//     console.log("SDSDS",result);
+// });
 
 function taskManager() {
     tm.setTimer();

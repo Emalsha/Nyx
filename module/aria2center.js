@@ -5,10 +5,18 @@
 let Aria2 = require('aria2');
 let connected = false;
 let systemonline = false;
+let nothingtodownload = false;
 const cast = require('../module/globalutils');
 const aria2secret = "ucscaria";
 const DOWNLOAD_ROOT = "/home/sulochana/Desktop/downloads/";
 const Time = require('../model/Time');
+const Download = require('../model/Download');
+const debug = require('debug')('nyx:aria2center');
+const Owner = require('../model/Owner');
+const fs = require('fs');
+const crypto = require('crypto');
+
+var MAX_CONCIRRENT_DOWNLOADS = 2;
 
 //main variables
 
@@ -18,7 +26,7 @@ var p_e = 8;
 
 let option = {
     secure: false,
-    host: global.ipaddress,
+    host: 'localhost',
     port: 6800,
     secret: aria2secret,
     path: '/jsonrpc'
@@ -55,13 +63,14 @@ exports.download = function newDownloadRequest(data, callback) {
 };
 
 exports.init = function (inc_io) {
+    cast.log("Socket data passed to Aria2 Center");
     io = inc_io;
 };
 
 exports.updatetime = function updatetime(inc_io) {
     Time.find({}).sort({edit_date: -1})
         .then((timex) => {
-            console.log(timex);
+            // console.log(timex);
             p_s = parseInt(timex[0].start);
             p_e = parseInt(timex[0].end);
         });
@@ -112,12 +121,206 @@ aria2.onclose = function() {
 };
 
 aria2.onsend = function(m) {
-    console.log('aria2 OUT', m);
+    // console.log('aria2 OUT', m);
 };
+
+aria2.onDownloadComplete = function (gid) {
+    cast.log("Download of GID:"+gid.gid + " Completed.",7);
+
+    Download.find({gid: gid.gid}, function (err, downloads) {
+        let download = downloads[0];
+        // console.log(download);
+        let fileNameArr = download.link.split('/');
+        let fileName = fileNameArr[fileNameArr.length - 1];
+        fileName = decodeURIComponent(fileName);
+        let dirPath = download.file_path;
+        let filePath = dirPath + '/' + fileName;
+        debug('fPath: ' + filePath);
+        // Generate hash value
+        fs.createReadStream(filePath).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
+            let hashVal = this.read(); //the hash
+            debug('fhash: ' + hashVal);
+            let newPath = dirPath + '/' + hashVal;
+            // Rename file to hash value
+            cast.log("Attemting to rename " + fileName + " to " + hashVal);
+            fs.rename(filePath, newPath, function (err) {
+                if (err) {
+                    cast.log("Error occured while renamed " + fileName + " to " + hashVal + ". " +err,3);
+                    // console.log('ERROR: ' + err);
+                }else{
+                    cast.log("Successfully renamed " + fileName + " to " + hashVal);
+
+                    // Update database
+                    Download.findOneAndUpdate({gid: gid.gid}, {
+                        state: 'downloaded',
+                        download_end_date: new Date(),
+                        file_path:newPath,
+                    }, (err, res) => {
+                        if (err) {
+                            cast.log("Error occured while updating the database after renaming " + fileName + " to " + hashVal + ". " +err,3);
+                        }else{
+                            cast.log("Database successfully updated after renaming " + fileName + " to " + hashVal,3);
+                            //TODO : Create ownership records according to file
+
+                        }
+                    });
+
+                }
+
+
+
+            });
+        });
+    });
+};
+
+aria2.onDownloadStart = function(gid) {
+    // console.log(gid);
+    cast.log("Download of GID:"+gid.gid + " Initiated.",7);
+};
+
+aria2.onDownloadPause = function(gid) {
+    // console.log(gid);
+    cast.log("Download of GID:"+gid.gid + " Paused.",7);
+};
+
+aria2.onDownloadStop = function(gid) {
+    // console.log(gid);
+    cast.log("Download of GID:"+gid.gid + " Stopped.",7);
+};
+
+aria2.onDownloadError = function(gid) {
+    // console.log(gid);
+    cast.log("Download of GID:"+gid.gid + " Error.",7);
+};
+
+function online_main() {
+    var ongoing_downloads;
+    systemonline = true;
+    if (systemonline){
+
+        var request_a_a = new Promise(function(resolve, reject) {
+            aria2.tellActive( function (err,data) {
+                if (err !== null){
+                    reject(err);
+                    cast.log("Error occurred while retrieving the active downloads from Aria2c",2);
+                }else {
+                    resolve(data);
+                }
+            })
+        });
+
+        request_a_b = request_a_a.then(function successHandler(result) {
+            /*
+            * { bitfield: 'e0',
+             completedLength: '4014080',
+             connections: '1',
+             dir: '/home/sulochana/Desktop/downloads/1',
+             downloadSpeed: '734982',
+             files: [ [Object] ],
+             gid: 'f8071f7549eb5ccf',
+             numPieces: '5',
+             pieceLength: '1048576',
+             status: 'active',
+             totalLength: '5242880',
+             uploadLength: '0',
+             uploadSpeed: '0' }*/
+
+            // add downloads until limit
+            Download.find({state: 'approved'})
+                .then((pendingDonwload) => {
+                    var i;
+
+                    if (pendingDonwload.length > 0){
+                        if (nothingtodownload){
+                            nothingtodownload = false;
+                            cast.log("New downloads found.");
+                        }
+                        for (i=0;i<(MAX_CONCIRRENT_DOWNLOADS - result.length);i++){
+                            const selection = i;
+
+                            if (pendingDonwload[selection] !== undefined){
+
+                                // console.log(pendingDonwload[selection].link,selection,pendingDonwload.length);
+
+                                url = pendingDonwload[selection].link;
+                                mount = 1;
+                                file_id = new Date().getTime();
+                                speedlimit = "0";
+                                connections = 1;
+
+                                let options = {
+                                    'dir': DOWNLOAD_ROOT + mount,
+                                    'out': file_id,
+                                    'max-download-limit': speedlimit,
+                                    'max-connection-per-server': connections
+                                };
+                                cast.log("Adding " + file_id + " to download queue...",7);
+                                aria2.addUri([url],options,function (err, gid) {
+                                    if ( err === null){
+                                        cast.log("Adding " + file_id + " to download success...",7);
+
+                                        Download.findById(pendingDonwload[selection].id,function(err,download){
+                                            if(err){
+                                                debug(err);
+                                            }
+
+                                            download.state = 'downloading';
+                                            download.file_path = DOWNLOAD_ROOT + mount;
+                                            download.gid = gid;
+
+
+                                            download.save(function (err) {
+                                                if(err){
+                                                    debug(err);
+                                                }
+                                            });
+
+                                        });
+                                    }else {
+                                        cast.log("Adding " + file_id + " to download failed...",7);
+                                    }
+                                });
+
+                            }else {
+                                cast.log("Maxing out the download queue.");
+                                i = MAX_CONCIRRENT_DOWNLOADS;
+                            }
+
+
+                        }
+                    }else {
+                        //nothing to download.
+                        if (!nothingtodownload){
+                            nothingtodownload = true;
+                            cast.log("No new approved download requests detected.");
+                        }
+                    }
+
+                });
+
+            // console.log(result,"red");
+        }, function failureHandler(error) {
+            cast.log("New downloads were not queued as the ongoing download list was not recieved.",3);
+            //handle
+        });
+
+
+    }
+
+}
+
+
+function offline_main() {
+    if (systemonline){
+        systemonline = false;
+        aria2.pauseAll();
+    }
+}
+
 
 var mainloop = setInterval(function () {
     if (io === undefined){return}
-
 
     var status = "Offline";
     var timeleft = "N\\A";
@@ -155,6 +358,8 @@ var mainloop = setInterval(function () {
 
         timeleft = "Going online in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
         precent = Math.floor(((now - peak_start)/(peak_stop - peak_start))*100)
+
+        offline_main();
     }else {
         //off peak
         status = "Online";
@@ -162,7 +367,9 @@ var mainloop = setInterval(function () {
         timepassed = now - peak_stop;
 
         timeleft = "Going offline in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
-        precent = Math.floor(((now - peak_stop)/(peak_stop - peak_start))*100)
+        precent = Math.floor(((now - peak_stop)/(next_peak_start - peak_stop))*100);
+
+        online_main();
     }
 
     io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
