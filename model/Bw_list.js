@@ -8,7 +8,7 @@ const Schema = mongoose.Schema;
 const bw_listSchema = new Schema({
     domain:String,
     hits:Number,
-    list_type:String,
+    list_type:String, // white,black
 
 });
 

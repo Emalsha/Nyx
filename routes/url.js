@@ -33,8 +33,9 @@ router.post('/validate', function (req, res) {
                     }
 
                     let size = formatBytes(status.headers['content-length']);
+                    let size_bytes = status.headers['content-length'];
 
-                    res.send({val: true, size: size});
+                    res.send({val: true, size: size, size_bytes:size_bytes });
 
                 } else {
                     res.send(false);
