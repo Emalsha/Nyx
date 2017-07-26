@@ -19,7 +19,7 @@ const donwloadSchema = new Schema({
     description:String,
     size:String,
     priority:Number,
-    state:String, //pending,approved,rejected,downloaded,downloading,downloadError
+    state:String, //pending,approved,rejected,downloaded,downloading,downloadError,deleted
     tags:Array,
     gid:String,
     download_start_date:Date,

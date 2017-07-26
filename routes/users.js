@@ -119,17 +119,13 @@ router.get('/download/:id', function(req, res, next) {
 
       let fileNameArr = download.link.split('/');
       let fileName=fileNameArr[fileNameArr.length -1];
-      let filePath=download.file_path+'/'+fileName;
+
+      let filePath=download.file_path;
       debug('fPath: '+filePath);
 
       res.download(filePath,fileName);
 
   });
-
-  // let filePath = "../test/"+s; // Or format the path using the `id` rest param
-  // let fileName = s; // The default name the browser will us
-
-    // res.download(filePath, fileName);
 
 });
 
@@ -143,11 +139,10 @@ router.get('/download/:id', function(req, res, next) {
              debug(err);
          }
 
-         let fileNameArr = download.link.split('/');
-         let fileName=fileNameArr[fileNameArr.length -1];
-         let filePath=download.file_path+'/'+fileName;
+         // let fileNameArr = download.link.split('/');
+         // let fileName=fileNameArr[fileNameArr.length -1];
+         let filePath=download.file_path;
          debug('fPath: '+filePath);
-
          fs.unlink(filePath);
 
          download.state = 'deleted';

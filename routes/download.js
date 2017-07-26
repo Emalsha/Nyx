@@ -13,7 +13,7 @@ let Bw_list = require('../model/Bw_list');
 
 router.post('/request', function (req, res) {
 
-    Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}]}, function (err, downloads) {
+    Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}, {state:{$ne:'deleted'}}]}, function (err, downloads) {
         if (err) {
             debug(err);
         }

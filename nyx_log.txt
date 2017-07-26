@@ -1028,3 +1028,854 @@
 2017/06/24 | 14:12:34 | AUTH | Administrator nyxsys connected from 127.0.0.1
 2017/06/24 | 14:12:34 | AUTH | nyxsys Authenticated from 127.0.0.1
 2017/06/24 | 14:12:34 | INFO | nyxsys is now online.
+2017/06/26 | 18:41:37 | INFO | Starting system.
+2017/06/26 | 18:41:37 | INFO | Initializing system components.
+2017/06/26 | 18:41:37 | INFO | Attempting to connect to the database.
+2017/06/26 | 18:41:37 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 18:41:37 | INFO | System initialization completed.
+2017/06/26 | 18:41:37 | ARIA | Closing aria2c socket success.
+2017/06/26 | 18:41:37 | INFO | Database connection success.
+2017/06/26 | 18:42:04 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 18:42:05 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 18:42:05 | INFO | Emalsha is now online.
+2017/06/26 | 18:42:23 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 18:42:28 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 18:42:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:42:28 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:42:28 | INFO | nyxsys is now online.
+2017/06/26 | 18:42:34 | INFO | nyxsys is now offline.
+2017/06/26 | 18:42:34 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:42:34 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:42:34 | INFO | nyxsys is now online.
+2017/06/26 | 18:42:41 | INFO | nyxsys is now offline.
+2017/06/26 | 18:42:41 | INFO | nyxsys logged out from the system : ::1
+2017/06/26 | 18:42:45 | INFO | Sulochana logged in to the system from ::1
+2017/06/26 | 18:42:46 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:42:46 | INFO | Sulochana is now online.
+2017/06/26 | 18:42:48 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:42:48 | INFO | Sulochana is now online.
+2017/06/26 | 18:42:50 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:42:50 | INFO | Sulochana is now online.
+2017/06/26 | 18:43:38 | INFO | Sulochana logged out from the system : ::1
+2017/06/26 | 18:43:43 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 18:43:44 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:43:44 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:43:44 | INFO | nyxsys is now online.
+2017/06/26 | 18:43:45 | INFO | nyxsys is now offline.
+2017/06/26 | 18:43:46 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:43:46 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:43:46 | INFO | nyxsys is now online.
+2017/06/26 | 18:44:19 | INFO | nyxsys is now offline.
+2017/06/26 | 18:44:20 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:44:20 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:44:20 | INFO | nyxsys is now online.
+2017/06/26 | 18:44:24 | INFO | nyxsys is now offline.
+2017/06/26 | 18:44:25 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:44:25 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:44:25 | INFO | nyxsys is now online.
+2017/06/26 | 18:45:07 | INFO | nyxsys is now offline.
+2017/06/26 | 18:45:08 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:45:08 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:45:08 | INFO | nyxsys is now online.
+2017/06/26 | 18:45:57 | INFO | nyxsys is now offline.
+2017/06/26 | 18:45:57 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:45:57 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:45:57 | INFO | nyxsys is now online.
+2017/06/26 | 18:46:49 | INFO | nyxsys is now offline.
+2017/06/26 | 18:46:49 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:46:49 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:46:49 | INFO | nyxsys is now online.
+2017/06/26 | 18:47:03 | INFO | nyxsys is now offline.
+2017/06/26 | 18:47:04 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 18:47:04 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 18:47:04 | INFO | nyxsys is now online.
+2017/06/26 | 18:47:15 | INFO | nyxsys is now offline.
+2017/06/26 | 18:47:15 | INFO | nyxsys logged out from the system : ::1
+2017/06/26 | 18:47:19 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 18:47:19 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 18:47:19 | INFO | Emalsha is now online.
+2017/06/26 | 18:47:32 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 18:47:32 | INFO | Emalsha is now online.
+2017/06/26 | 18:47:38 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 18:47:43 | INFO | Sulochana logged in to the system from ::1
+2017/06/26 | 18:47:44 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:47:44 | INFO | Sulochana is now online.
+2017/06/26 | 18:47:49 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:47:49 | INFO | Sulochana is now online.
+2017/06/26 | 18:47:51 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:47:51 | INFO | Sulochana is now online.
+2017/06/26 | 18:47:56 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:47:56 | INFO | Sulochana is now online.
+2017/06/26 | 18:48:20 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:48:20 | INFO | Sulochana is now online.
+2017/06/26 | 18:48:33 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:48:33 | INFO | Sulochana is now online.
+2017/06/26 | 18:48:35 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:48:35 | INFO | Sulochana is now online.
+2017/06/26 | 18:48:55 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:48:55 | INFO | Sulochana is now online.
+2017/06/26 | 18:48:58 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:48:58 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:07 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:07 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:18 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:18 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:32 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:32 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:38 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:38 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:44 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:44 | INFO | Sulochana is now online.
+2017/06/26 | 18:49:47 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:49:47 | INFO | Sulochana is now online.
+2017/06/26 | 18:50:15 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:50:15 | INFO | Sulochana is now online.
+2017/06/26 | 18:50:24 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:50:24 | INFO | Sulochana is now online.
+2017/06/26 | 18:50:29 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 18:50:29 | INFO | Sulochana is now online.
+2017/06/26 | 18:50:36 | INFO | Sulochana logged out from the system : ::1
+2017/06/26 | 18:50:40 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 18:50:40 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 18:50:40 | INFO | Emalsha is now online.
+2017/06/26 | 18:50:48 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 18:50:48 | INFO | Emalsha is now online.
+2017/06/26 | 20:53:23 | INFO | Starting system.
+2017/06/26 | 20:53:23 | INFO | Initializing system components.
+2017/06/26 | 20:53:24 | INFO | System initialization completed.
+2017/06/26 | 20:53:23 | INFO | Attempting to connect to the database.
+2017/06/26 | 20:53:24 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 20:53:24 | ARIA | Closing aria2c socket success.
+2017/06/26 | 20:53:24 | INFO | Database connection success.
+2017/06/26 | 20:53:27 | WARN | Issuing page refresh command to socket ID:qatLhGgqEjnDqXDAAAAA REASON : User not found in active sessions
+2017/06/26 | 20:54:38 | INFO | Starting system.
+2017/06/26 | 20:54:38 | INFO | Initializing system components.
+2017/06/26 | 20:54:38 | INFO | Attempting to connect to the database.
+2017/06/26 | 20:54:38 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 20:54:38 | INFO | System initialization completed.
+2017/06/26 | 20:54:38 | ARIA | Closing aria2c socket success.
+2017/06/26 | 20:54:38 | INFO | Database connection success.
+2017/06/26 | 20:55:10 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 20:55:10 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 20:55:10 | INFO | Emalsha is now online.
+2017/06/26 | 20:55:22 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 20:55:22 | INFO | Emalsha is now online.
+2017/06/26 | 20:59:22 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 20:59:22 | INFO | Emalsha is now online.
+2017/06/26 | 21:08:14 | INFO | Starting system.
+2017/06/26 | 21:08:14 | INFO | Initializing system components.
+2017/06/26 | 21:08:14 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:08:14 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:08:14 | INFO | System initialization completed.
+2017/06/26 | 21:08:14 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:08:14 | INFO | Database connection success.
+2017/06/26 | 21:08:14 | WARN | Issuing page refresh command to socket ID:gYhS3-1dGQW3z9p3AAAA REASON : User not found in active sessions
+2017/06/26 | 21:08:18 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:08:19 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:08:19 | INFO | Emalsha is now online.
+2017/06/26 | 21:08:25 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:08:25 | INFO | Emalsha is now online.
+2017/06/26 | 21:10:23 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:10:23 | INFO | Emalsha is now online.
+2017/06/26 | 21:12:07 | INFO | Starting system.
+2017/06/26 | 21:12:07 | INFO | Initializing system components.
+2017/06/26 | 21:12:08 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:12:08 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:12:08 | INFO | System initialization completed.
+2017/06/26 | 21:12:08 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:12:08 | INFO | Database connection success.
+2017/06/26 | 21:12:08 | WARN | Issuing page refresh command to socket ID:283GjKCCkdMjMovBAAAA REASON : User not found in active sessions
+2017/06/26 | 21:12:12 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:12:13 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:12:13 | INFO | Emalsha is now online.
+2017/06/26 | 21:12:18 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:12:18 | INFO | Emalsha is now online.
+2017/06/26 | 21:13:15 | INFO | Starting system.
+2017/06/26 | 21:13:15 | INFO | Initializing system components.
+2017/06/26 | 21:13:15 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:13:15 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:13:15 | INFO | System initialization completed.
+2017/06/26 | 21:13:15 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:13:15 | INFO | Database connection success.
+2017/06/26 | 21:13:16 | WARN | Issuing page refresh command to socket ID:9aSxpfqLIOvGVxSuAAAA REASON : User not found in active sessions
+2017/06/26 | 21:16:23 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:16:23 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:16:23 | INFO | Emalsha is now online.
+2017/06/26 | 21:16:28 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:16:28 | INFO | Emalsha is now online.
+2017/06/26 | 21:16:37 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:16:37 | INFO | Emalsha is now online.
+2017/06/26 | 21:19:14 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:19:14 | INFO | Emalsha is now online.
+2017/06/26 | 21:19:26 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:19:26 | INFO | Emalsha is now online.
+2017/06/26 | 21:25:34 | INFO | Starting system.
+2017/06/26 | 21:25:34 | INFO | Initializing system components.
+2017/06/26 | 21:25:35 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:25:35 | INFO | System initialization completed.
+2017/06/26 | 21:25:35 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:25:35 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:25:35 | INFO | Database connection success.
+2017/06/26 | 21:25:36 | WARN | Issuing page refresh command to socket ID:FVN6lA9E1yCSFhFRAAAA REASON : User not found in active sessions
+2017/06/26 | 21:25:52 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:25:53 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:25:53 | INFO | Emalsha is now online.
+2017/06/26 | 21:29:55 | INFO | Starting system.
+2017/06/26 | 21:29:55 | INFO | Initializing system components.
+2017/06/26 | 21:29:55 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:29:55 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:29:55 | INFO | System initialization completed.
+2017/06/26 | 21:29:55 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:29:55 | INFO | Database connection success.
+2017/06/26 | 21:29:56 | WARN | Issuing page refresh command to socket ID:gQfUAlAsLzb-Sw31AAAA REASON : User not found in active sessions
+2017/06/26 | 21:30:00 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:30:00 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:30:00 | INFO | Emalsha is now online.
+2017/06/26 | 21:32:38 | INFO | Starting system.
+2017/06/26 | 21:32:38 | INFO | Initializing system components.
+2017/06/26 | 21:32:38 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:32:38 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:32:38 | INFO | System initialization completed.
+2017/06/26 | 21:32:38 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:32:38 | INFO | Database connection success.
+2017/06/26 | 21:37:13 | WARN | Issuing page refresh command to socket ID:Nb8E6mcTRtxVd4oiAAAA REASON : User not found in active sessions
+2017/06/26 | 21:37:17 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:37:17 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:37:17 | INFO | Emalsha is now online.
+2017/06/26 | 21:38:36 | INFO | Starting system.
+2017/06/26 | 21:38:36 | INFO | Initializing system components.
+2017/06/26 | 21:38:36 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:38:36 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:38:36 | INFO | System initialization completed.
+2017/06/26 | 21:38:36 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:38:36 | INFO | Database connection success.
+2017/06/26 | 21:39:19 | INFO | Starting system.
+2017/06/26 | 21:39:19 | INFO | Initializing system components.
+2017/06/26 | 21:39:19 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:39:19 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:39:19 | INFO | System initialization completed.
+2017/06/26 | 21:39:19 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:39:19 | INFO | Database connection success.
+2017/06/26 | 21:39:22 | WARN | Issuing page refresh command to socket ID:poQ99yqFGNfRQgRmAAAA REASON : User not found in active sessions
+2017/06/26 | 21:39:26 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:39:26 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:39:26 | INFO | Emalsha is now online.
+2017/06/26 | 21:39:30 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:39:30 | INFO | Emalsha is now online.
+2017/06/26 | 21:40:41 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:40:41 | INFO | Emalsha is now online.
+2017/06/26 | 21:40:49 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:40:49 | INFO | Emalsha is now online.
+2017/06/26 | 21:41:56 | INFO | Starting system.
+2017/06/26 | 21:41:56 | INFO | Initializing system components.
+2017/06/26 | 21:41:56 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:41:56 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:41:56 | INFO | System initialization completed.
+2017/06/26 | 21:41:56 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:41:56 | INFO | Database connection success.
+2017/06/26 | 21:41:59 | WARN | Issuing page refresh command to socket ID:2_B--nwEPj2sw2FjAAAA REASON : User not found in active sessions
+2017/06/26 | 21:42:11 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:42:11 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:42:11 | INFO | Emalsha is now online.
+2017/06/26 | 21:42:15 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:42:15 | INFO | Emalsha is now online.
+2017/06/26 | 21:42:19 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 21:42:25 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 21:42:25 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 21:42:25 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 21:42:25 | INFO | nyxsys is now online.
+2017/06/26 | 21:42:40 | INFO | nyxsys is now offline.
+2017/06/26 | 21:42:41 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 21:42:41 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 21:42:41 | INFO | nyxsys is now online.
+2017/06/26 | 21:44:05 | INFO | Starting system.
+2017/06/26 | 21:44:05 | INFO | Initializing system components.
+2017/06/26 | 21:44:05 | INFO | Attempting to connect to the database.
+2017/06/26 | 21:44:05 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 21:44:05 | INFO | System initialization completed.
+2017/06/26 | 21:44:05 | ARIA | Closing aria2c socket success.
+2017/06/26 | 21:44:05 | INFO | Database connection success.
+2017/06/26 | 21:44:08 | WARN | Issuing page refresh command to socket ID:EHIAsYzqINS1yOozAAAA REASON : User not found in active sessions
+2017/06/26 | 21:44:15 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 21:44:16 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 21:44:16 | INFO | Emalsha is now online.
+2017/06/26 | 21:44:17 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 21:44:22 | INFO | Sulochana logged in to the system from ::1
+2017/06/26 | 21:44:22 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 21:44:22 | INFO | Sulochana is now online.
+2017/06/26 | 21:44:28 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 21:44:28 | INFO | Sulochana is now online.
+2017/06/26 | 21:44:37 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 21:44:37 | INFO | Sulochana is now online.
+2017/06/26 | 21:44:42 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 21:44:42 | INFO | Sulochana is now online.
+2017/06/26 | 22:01:22 | INFO | Starting system.
+2017/06/26 | 22:01:22 | INFO | Initializing system components.
+2017/06/26 | 22:01:22 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:01:22 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:01:22 | INFO | System initialization completed.
+2017/06/26 | 22:01:22 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:01:22 | INFO | Database connection success.
+2017/06/26 | 22:01:24 | WARN | Issuing page refresh command to socket ID:687-sOMzkchPul87AAAA REASON : User not found in active sessions
+2017/06/26 | 22:01:33 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 22:01:33 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:01:33 | INFO | Emalsha is now online.
+2017/06/26 | 22:01:36 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 22:01:39 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 22:01:40 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:01:40 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:01:40 | INFO | nyxsys is now online.
+2017/06/26 | 22:01:42 | INFO | nyxsys is now offline.
+2017/06/26 | 22:01:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:01:43 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:01:43 | INFO | nyxsys is now online.
+2017/06/26 | 22:01:51 | INFO | nyxsys is now offline.
+2017/06/26 | 22:01:52 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:01:52 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:01:52 | INFO | nyxsys is now online.
+2017/06/26 | 22:02:07 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 22:02:08 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:02:08 | INFO | Emalsha is now online.
+2017/06/26 | 22:02:16 | INFO | nyxsys is now offline.
+2017/06/26 | 22:02:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:02:27 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:02:27 | INFO | nyxsys is now online.
+2017/06/26 | 22:04:58 | INFO | nyxsys is now offline.
+2017/06/26 | 22:04:58 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:04:58 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:04:58 | INFO | nyxsys is now online.
+2017/06/26 | 22:17:12 | INFO | Starting system.
+2017/06/26 | 22:17:12 | INFO | Initializing system components.
+2017/06/26 | 22:17:12 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:17:13 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:17:13 | INFO | System initialization completed.
+2017/06/26 | 22:17:13 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:17:13 | INFO | Database connection success.
+2017/06/26 | 22:17:14 | WARN | Issuing page refresh command to socket ID:Uv80vfji0QBVL53NAAAA REASON : User not found in active sessions
+2017/06/26 | 22:17:17 | WARN | Issuing page refresh command to socket ID:aO5JROMvmsNhDPm2AAAC REASON : User not found in active sessions
+2017/06/26 | 22:17:26 | INFO | Starting system.
+2017/06/26 | 22:17:26 | INFO | Initializing system components.
+2017/06/26 | 22:17:26 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:17:26 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:17:26 | INFO | System initialization completed.
+2017/06/26 | 22:17:26 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:17:26 | INFO | Database connection success.
+2017/06/26 | 22:17:36 | INFO | Starting system.
+2017/06/26 | 22:17:36 | INFO | Initializing system components.
+2017/06/26 | 22:17:36 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:17:36 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:17:36 | INFO | System initialization completed.
+2017/06/26 | 22:17:36 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:17:36 | INFO | Database connection success.
+2017/06/26 | 22:17:42 | INFO | Starting system.
+2017/06/26 | 22:17:42 | INFO | Initializing system components.
+2017/06/26 | 22:17:42 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:17:42 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:17:42 | INFO | System initialization completed.
+2017/06/26 | 22:17:42 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:17:42 | INFO | Database connection success.
+2017/06/26 | 22:17:54 | INFO | Starting system.
+2017/06/26 | 22:17:54 | INFO | Initializing system components.
+2017/06/26 | 22:17:54 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:17:54 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:17:54 | INFO | System initialization completed.
+2017/06/26 | 22:17:54 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:17:54 | INFO | Database connection success.
+2017/06/26 | 22:23:38 | INFO | Starting system.
+2017/06/26 | 22:23:38 | INFO | Initializing system components.
+2017/06/26 | 22:23:38 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:23:39 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:23:39 | INFO | System initialization completed.
+2017/06/26 | 22:23:39 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:23:39 | INFO | Database connection success.
+2017/06/26 | 22:24:01 | INFO | Starting system.
+2017/06/26 | 22:24:01 | INFO | Initializing system components.
+2017/06/26 | 22:24:01 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:24:01 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:24:01 | INFO | System initialization completed.
+2017/06/26 | 22:24:01 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:24:01 | INFO | Database connection success.
+2017/06/26 | 22:25:59 | INFO | Starting system.
+2017/06/26 | 22:25:59 | INFO | Initializing system components.
+2017/06/26 | 22:25:59 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:25:59 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:25:59 | INFO | System initialization completed.
+2017/06/26 | 22:25:59 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:25:59 | INFO | Database connection success.
+2017/06/26 | 22:30:31 | INFO | Starting system.
+2017/06/26 | 22:30:31 | INFO | Initializing system components.
+2017/06/26 | 22:30:31 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:30:31 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:30:31 | INFO | System initialization completed.
+2017/06/26 | 22:30:31 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:30:31 | INFO | Database connection success.
+2017/06/26 | 22:32:58 | INFO | Starting system.
+2017/06/26 | 22:32:58 | INFO | Initializing system components.
+2017/06/26 | 22:32:58 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:32:58 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:32:58 | INFO | System initialization completed.
+2017/06/26 | 22:32:58 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:32:58 | INFO | Database connection success.
+2017/06/26 | 22:37:31 | INFO | Starting system.
+2017/06/26 | 22:37:31 | INFO | Initializing system components.
+2017/06/26 | 22:37:31 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:37:31 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:37:31 | INFO | System initialization completed.
+2017/06/26 | 22:37:31 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:37:31 | INFO | Database connection success.
+2017/06/26 | 22:37:35 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 22:37:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:37:37 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:37:37 | INFO | nyxsys is now online.
+2017/06/26 | 22:37:40 | INFO | nyxsys is now offline.
+2017/06/26 | 22:37:41 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:37:41 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:37:41 | INFO | nyxsys is now online.
+2017/06/26 | 22:37:43 | INFO | nyxsys is now offline.
+2017/06/26 | 22:37:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:37:45 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:37:45 | INFO | nyxsys is now online.
+2017/06/26 | 22:37:48 | INFO | nyxsys is now offline.
+2017/06/26 | 22:37:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:37:50 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:37:50 | INFO | nyxsys is now online.
+2017/06/26 | 22:38:58 | INFO | nyxsys is now offline.
+2017/06/26 | 22:38:59 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:38:59 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:38:59 | INFO | nyxsys is now online.
+2017/06/26 | 22:42:09 | INFO | Starting system.
+2017/06/26 | 22:42:09 | INFO | Initializing system components.
+2017/06/26 | 22:42:09 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:42:09 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:42:09 | INFO | System initialization completed.
+2017/06/26 | 22:42:09 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:42:09 | INFO | Database connection success.
+2017/06/26 | 22:43:04 | INFO | Starting system.
+2017/06/26 | 22:43:04 | INFO | Initializing system components.
+2017/06/26 | 22:43:04 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:43:04 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:43:04 | INFO | System initialization completed.
+2017/06/26 | 22:43:04 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:43:04 | INFO | Database connection success.
+2017/06/26 | 22:43:27 | INFO | Starting system.
+2017/06/26 | 22:43:27 | INFO | Initializing system components.
+2017/06/26 | 22:43:27 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:43:27 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:43:27 | INFO | System initialization completed.
+2017/06/26 | 22:43:27 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:43:27 | INFO | Database connection success.
+2017/06/26 | 22:43:35 | INFO | Starting system.
+2017/06/26 | 22:43:35 | INFO | Initializing system components.
+2017/06/26 | 22:43:35 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:43:35 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:43:35 | INFO | System initialization completed.
+2017/06/26 | 22:43:35 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:43:35 | INFO | Database connection success.
+2017/06/26 | 22:43:51 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 22:43:52 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:43:52 | INFO | Emalsha is now online.
+2017/06/26 | 22:43:59 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:43:59 | INFO | Emalsha is now online.
+2017/06/26 | 22:44:35 | INFO | Starting system.
+2017/06/26 | 22:44:35 | INFO | Initializing system components.
+2017/06/26 | 22:44:35 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:44:35 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:44:35 | INFO | System initialization completed.
+2017/06/26 | 22:44:35 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:44:35 | INFO | Database connection success.
+2017/06/26 | 22:44:46 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 22:44:47 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:44:47 | INFO | Emalsha is now online.
+2017/06/26 | 22:44:53 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:44:53 | INFO | Emalsha is now online.
+2017/06/26 | 22:45:01 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:45:01 | INFO | Emalsha is now online.
+2017/06/26 | 22:45:04 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 22:45:04 | INFO | Emalsha is now online.
+2017/06/26 | 22:46:00 | INFO | Emalsha logged out from the system : ::1
+2017/06/26 | 22:46:05 | INFO | Sulochana logged in to the system from ::1
+2017/06/26 | 22:46:05 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 22:46:05 | INFO | Sulochana is now online.
+2017/06/26 | 22:46:08 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 22:46:08 | INFO | Sulochana is now online.
+2017/06/26 | 22:48:15 | AUTH | Sulochana Authenticated from 1
+2017/06/26 | 22:48:15 | INFO | Sulochana is now online.
+2017/06/26 | 22:49:22 | INFO | Sulochana logged out from the system : ::1
+2017/06/26 | 22:49:26 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 22:49:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:49:27 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:49:27 | INFO | nyxsys is now online.
+2017/06/26 | 22:49:29 | INFO | nyxsys is now offline.
+2017/06/26 | 22:49:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:49:30 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:49:30 | INFO | nyxsys is now online.
+2017/06/26 | 22:49:47 | INFO | nyxsys is now offline.
+2017/06/26 | 22:49:48 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 22:49:48 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 22:49:48 | INFO | nyxsys is now online.
+2017/06/26 | 22:51:13 | INFO | nyxsys is now offline.
+2017/06/26 | 22:51:14 | INFO | Starting system.
+2017/06/26 | 22:51:14 | INFO | Initializing system components.
+2017/06/26 | 22:51:14 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:51:14 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:51:14 | INFO | System initialization completed.
+2017/06/26 | 22:51:14 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:51:14 | INFO | Database connection success.
+2017/06/26 | 22:51:17 | WARN | Issuing page refresh command to socket ID:yemkQTtUDscMLwvuAAAA REASON : User not found in active sessions
+2017/06/26 | 22:52:38 | INFO | Starting system.
+2017/06/26 | 22:52:38 | INFO | Initializing system components.
+2017/06/26 | 22:52:38 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:52:38 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:52:38 | INFO | System initialization completed.
+2017/06/26 | 22:52:38 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:52:38 | INFO | Database connection success.
+2017/06/26 | 22:53:06 | INFO | Starting system.
+2017/06/26 | 22:53:06 | INFO | Initializing system components.
+2017/06/26 | 22:53:06 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:53:06 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:53:06 | INFO | System initialization completed.
+2017/06/26 | 22:53:06 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:53:06 | INFO | Database connection success.
+2017/06/26 | 22:53:15 | INFO | Starting system.
+2017/06/26 | 22:53:15 | INFO | Initializing system components.
+2017/06/26 | 22:53:15 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:53:15 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:53:15 | INFO | System initialization completed.
+2017/06/26 | 22:53:15 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:53:15 | INFO | Database connection success.
+2017/06/26 | 22:54:32 | INFO | Starting system.
+2017/06/26 | 22:54:32 | INFO | Initializing system components.
+2017/06/26 | 22:54:32 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:54:32 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:54:32 | INFO | System initialization completed.
+2017/06/26 | 22:54:32 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:54:32 | INFO | Database connection success.
+2017/06/26 | 22:58:41 | INFO | Starting system.
+2017/06/26 | 22:58:41 | INFO | Initializing system components.
+2017/06/26 | 22:58:41 | INFO | Attempting to connect to the database.
+2017/06/26 | 22:58:41 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 22:58:41 | INFO | System initialization completed.
+2017/06/26 | 22:58:41 | ARIA | Closing aria2c socket success.
+2017/06/26 | 22:58:41 | INFO | Database connection success.
+2017/06/26 | 23:01:49 | INFO | Starting system.
+2017/06/26 | 23:01:49 | INFO | Initializing system components.
+2017/06/26 | 23:01:49 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:01:49 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:01:49 | INFO | System initialization completed.
+2017/06/26 | 23:01:49 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:01:49 | INFO | Database connection success.
+2017/06/26 | 23:03:44 | INFO | Starting system.
+2017/06/26 | 23:03:44 | INFO | Initializing system components.
+2017/06/26 | 23:03:44 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:03:44 | INFO | System initialization completed.
+2017/06/26 | 23:03:44 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:03:44 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:03:44 | INFO | Database connection success.
+2017/06/26 | 23:04:58 | INFO | Starting system.
+2017/06/26 | 23:04:58 | INFO | Initializing system components.
+2017/06/26 | 23:04:58 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:04:58 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:04:58 | INFO | System initialization completed.
+2017/06/26 | 23:04:58 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:04:58 | INFO | Database connection success.
+2017/06/26 | 23:05:04 | INFO | Starting system.
+2017/06/26 | 23:05:04 | INFO | Initializing system components.
+2017/06/26 | 23:05:04 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:05:04 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:05:04 | INFO | System initialization completed.
+2017/06/26 | 23:05:04 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:05:04 | INFO | Database connection success.
+2017/06/26 | 23:06:13 | INFO | Starting system.
+2017/06/26 | 23:06:13 | INFO | Initializing system components.
+2017/06/26 | 23:06:13 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:06:13 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:06:13 | INFO | System initialization completed.
+2017/06/26 | 23:06:13 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:06:13 | INFO | Database connection success.
+2017/06/26 | 23:06:39 | INFO | Emalsha logged in to the system from ::1
+2017/06/26 | 23:06:40 | AUTH | Emalsha Authenticated from 1
+2017/06/26 | 23:06:40 | INFO | Emalsha is now online.
+2017/06/26 | 23:08:57 | INFO | Starting system.
+2017/06/26 | 23:08:57 | INFO | Initializing system components.
+2017/06/26 | 23:08:57 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:08:57 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:08:57 | INFO | System initialization completed.
+2017/06/26 | 23:08:57 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:08:57 | INFO | Database connection success.
+2017/06/26 | 23:08:58 | WARN | Issuing page refresh command to socket ID:AgEA0tQVaEXz0owFAAAA REASON : User not found in active sessions
+2017/06/26 | 23:09:46 | INFO | Starting system.
+2017/06/26 | 23:09:46 | INFO | Initializing system components.
+2017/06/26 | 23:09:46 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:09:46 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:09:46 | INFO | System initialization completed.
+2017/06/26 | 23:09:46 | ARIA | Closing aria2c socket success.
+2017/06/26 | 23:09:46 | INFO | Database connection success.
+2017/06/26 | 23:11:00 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 23:11:00 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:11:00 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:11:00 | INFO | nyxsys is now online.
+2017/06/26 | 23:22:58 | INFO | nyxsys is now offline.
+2017/06/26 | 23:22:59 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:22:59 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:22:59 | INFO | nyxsys is now online.
+2017/06/26 | 23:23:08 | INFO | nyxsys is now offline.
+2017/06/26 | 23:23:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:23:09 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:23:09 | INFO | nyxsys is now online.
+2017/06/26 | 23:26:24 | INFO | nyxsys is now offline.
+2017/06/26 | 23:26:24 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:26:24 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:26:24 | INFO | nyxsys is now online.
+2017/06/26 | 23:26:31 | INFO | nyxsys is now offline.
+2017/06/26 | 23:26:32 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:26:32 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:26:32 | INFO | nyxsys is now online.
+2017/06/26 | 23:26:39 | INFO | nyxsys is now offline.
+2017/06/26 | 23:26:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:26:39 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:26:39 | INFO | nyxsys is now online.
+2017/06/26 | 23:26:46 | INFO | nyxsys is now offline.
+2017/06/26 | 23:26:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:26:47 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:26:47 | INFO | nyxsys is now online.
+2017/06/26 | 23:38:06 | INFO | Starting system.
+2017/06/26 | 23:38:06 | INFO | Initializing system components.
+2017/06/26 | 23:38:06 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:38:06 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:38:06 | INFO | System initialization completed.
+2017/06/26 | 23:38:06 | INFO | Database connection success.
+2017/06/26 | 23:38:06 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:38:06 | ARIA | Manually opened aria2c socket.
+2017/06/26 | 23:38:14 | WARN | Issuing page refresh command to socket ID:MSbunbHleCW9XmZXAAAA REASON : User not found in active sessions
+2017/06/26 | 23:38:25 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 23:38:26 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:38:26 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:38:26 | INFO | nyxsys is now online.
+2017/06/26 | 23:38:49 | INFO | nyxsys is now offline.
+2017/06/26 | 23:38:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:38:50 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:38:50 | INFO | nyxsys is now online.
+2017/06/26 | 23:38:53 | INFO | nyxsys is now offline.
+2017/06/26 | 23:38:54 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:38:54 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:38:54 | INFO | nyxsys is now online.
+2017/06/26 | 23:39:10 | INFO | nyxsys is now offline.
+2017/06/26 | 23:39:11 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:39:11 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:39:11 | INFO | nyxsys is now online.
+2017/06/26 | 23:39:17 | INFO | nyxsys is now offline.
+2017/06/26 | 23:39:18 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:39:18 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:39:18 | INFO | nyxsys is now online.
+2017/06/26 | 23:39:19 | INFO | nyxsys is now offline.
+2017/06/26 | 23:39:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:39:21 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:39:21 | INFO | nyxsys is now online.
+2017/06/26 | 23:39:24 | INFO | nyxsys is now offline.
+2017/06/26 | 23:41:42 | INFO | Starting system.
+2017/06/26 | 23:41:42 | INFO | Initializing system components.
+2017/06/26 | 23:41:42 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:41:42 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:41:42 | INFO | System initialization completed.
+2017/06/26 | 23:41:42 | INFO | Database connection success.
+2017/06/26 | 23:41:42 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:41:42 | ARIA | Manually opened aria2c socket.
+2017/06/26 | 23:42:03 | INFO | nyxsys logged in to the system from ::1
+2017/06/26 | 23:42:03 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:03 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:03 | INFO | nyxsys is now online.
+2017/06/26 | 23:42:09 | INFO | nyxsys is now offline.
+2017/06/26 | 23:42:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:10 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:10 | INFO | nyxsys is now online.
+2017/06/26 | 23:42:12 | INFO | nyxsys is now offline.
+2017/06/26 | 23:42:13 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:13 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:13 | INFO | nyxsys is now online.
+2017/06/26 | 23:42:29 | INFO | nyxsys is now offline.
+2017/06/26 | 23:42:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:30 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:30 | INFO | nyxsys is now online.
+2017/06/26 | 23:42:34 | INFO | nyxsys is now offline.
+2017/06/26 | 23:42:35 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:35 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:35 | INFO | nyxsys is now online.
+2017/06/26 | 23:42:40 | INFO | nyxsys is now offline.
+2017/06/26 | 23:42:41 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:42:41 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:42:41 | INFO | nyxsys is now online.
+2017/06/26 | 23:44:06 | INFO | nyxsys is now offline.
+2017/06/26 | 23:44:08 | AUTH | Administrator nyxsys connected from 1
+2017/06/26 | 23:44:08 | AUTH | nyxsys Authenticated from 1
+2017/06/26 | 23:44:08 | INFO | nyxsys is now online.
+2017/06/26 | 23:50:59 | INFO | Starting system.
+2017/06/26 | 23:50:59 | INFO | Initializing system components.
+2017/06/26 | 23:50:59 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:50:59 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:50:59 | INFO | System initialization completed.
+2017/06/26 | 23:50:59 | INFO | Database connection success.
+2017/06/26 | 23:50:59 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:50:59 | ARIA | Manually opened aria2c socket.
+2017/06/26 | 23:51:01 | WARN | Issuing page refresh command to socket ID:_lhEGTEu0jXnKgjPAAAA REASON : User not found in active sessions
+2017/06/26 | 23:54:40 | INFO | Starting system.
+2017/06/26 | 23:54:40 | INFO | Initializing system components.
+2017/06/26 | 23:54:40 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:54:40 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:54:40 | INFO | System initialization completed.
+2017/06/26 | 23:54:40 | INFO | Database connection success.
+2017/06/26 | 23:54:40 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:54:40 | ARIA | Manually opened aria2c socket.
+2017/06/26 | 23:56:29 | INFO | Starting system.
+2017/06/26 | 23:56:29 | INFO | Initializing system components.
+2017/06/26 | 23:56:29 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:56:29 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:56:29 | INFO | System initialization completed.
+2017/06/26 | 23:56:29 | INFO | Database connection success.
+2017/06/26 | 23:56:29 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:56:29 | ARIA | Manually opened aria2c socket.
+2017/06/26 | 23:58:09 | INFO | Starting system.
+2017/06/26 | 23:58:09 | INFO | Initializing system components.
+2017/06/26 | 23:58:09 | INFO | Attempting to connect to the database.
+2017/06/26 | 23:58:09 | ARIA | Manually opening aria2c socket ...
+2017/06/26 | 23:58:09 | INFO | System initialization completed.
+2017/06/26 | 23:58:09 | INFO | Database connection success.
+2017/06/26 | 23:58:09 | ARIA | Opening aria2c socket success.
+2017/06/26 | 23:58:09 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 00:35:36 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 00:35:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:35:37 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:35:37 | INFO | nyxsys is now online.
+2017/06/27 | 00:35:50 | INFO | nyxsys is now offline.
+2017/06/27 | 00:35:51 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:35:51 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:35:51 | INFO | nyxsys is now online.
+2017/06/27 | 00:35:54 | INFO | nyxsys is now offline.
+2017/06/27 | 00:35:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:35:55 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:35:55 | INFO | nyxsys is now online.
+2017/06/27 | 00:36:19 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:36:21 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:46:21 | INFO | nyxsys is now offline.
+2017/06/27 | 00:54:33 | INFO | Starting system.
+2017/06/27 | 00:54:33 | INFO | Initializing system components.
+2017/06/27 | 00:54:33 | INFO | Attempting to connect to the database.
+2017/06/27 | 00:54:33 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 00:54:33 | INFO | System initialization completed.
+2017/06/27 | 00:54:33 | ARIA | Opening aria2c socket success.
+2017/06/27 | 00:54:33 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 00:54:33 | INFO | Database connection success.
+2017/06/27 | 00:54:59 | INFO | Starting system.
+2017/06/27 | 00:54:59 | INFO | Initializing system components.
+2017/06/27 | 00:54:59 | INFO | Attempting to connect to the database.
+2017/06/27 | 00:54:59 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 00:54:59 | INFO | System initialization completed.
+2017/06/27 | 00:54:59 | INFO | Database connection success.
+2017/06/27 | 00:54:59 | ARIA | Opening aria2c socket success.
+2017/06/27 | 00:54:59 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 00:55:11 | WARN | Issuing page refresh command to socket ID:cWLVlmDKqTGoxwm4AAAA REASON : User not found in active sessions
+2017/06/27 | 00:55:16 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 00:55:17 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:55:17 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:55:17 | INFO | nyxsys is now online.
+2017/06/27 | 00:55:23 | INFO | nyxsys is now offline.
+2017/06/27 | 00:55:24 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:55:24 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:55:24 | INFO | nyxsys is now online.
+2017/06/27 | 00:55:26 | INFO | nyxsys is now offline.
+2017/06/27 | 00:55:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:55:28 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:55:28 | INFO | nyxsys is now online.
+2017/06/27 | 00:56:10 | INFO | nyxsys is now offline.
+2017/06/27 | 00:56:11 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 00:56:11 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 00:56:11 | INFO | nyxsys is now online.
+2017/06/27 | 00:56:15 | INFO | nyxsys is now offline.
+2017/06/27 | 00:57:09 | INFO | Starting system.
+2017/06/27 | 00:57:09 | INFO | Initializing system components.
+2017/06/27 | 00:57:09 | INFO | Attempting to connect to the database.
+2017/06/27 | 00:57:09 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 00:57:09 | INFO | System initialization completed.
+2017/06/27 | 00:57:09 | INFO | Database connection success.
+2017/06/27 | 00:57:09 | ARIA | Opening aria2c socket success.
+2017/06/27 | 00:57:09 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 00:59:21 | INFO | Starting system.
+2017/06/27 | 00:59:21 | INFO | Initializing system components.
+2017/06/27 | 00:59:21 | INFO | Attempting to connect to the database.
+2017/06/27 | 00:59:21 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 00:59:21 | INFO | System initialization completed.
+2017/06/27 | 00:59:21 | INFO | Database connection success.
+2017/06/27 | 00:59:21 | ARIA | Opening aria2c socket success.
+2017/06/27 | 00:59:21 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:04:07 | INFO | Starting system.
+2017/06/27 | 01:04:07 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:04:07 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:04:07 | INFO | Initializing system components.
+2017/06/27 | 01:04:07 | INFO | System initialization completed.
+2017/06/27 | 01:04:07 | INFO | Database connection success.
+2017/06/27 | 01:04:07 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:04:07 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:04:38 | INFO | Starting system.
+2017/06/27 | 01:04:38 | INFO | Initializing system components.
+2017/06/27 | 01:04:38 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:04:38 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:04:38 | INFO | System initialization completed.
+2017/06/27 | 01:04:39 | INFO | Database connection success.
+2017/06/27 | 01:04:39 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:04:39 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:05:05 | INFO | Starting system.
+2017/06/27 | 01:05:05 | INFO | Initializing system components.
+2017/06/27 | 01:05:05 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:05:05 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:05:05 | INFO | System initialization completed.
+2017/06/27 | 01:05:05 | INFO | Database connection success.
+2017/06/27 | 01:05:05 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:05:05 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:05:10 | INFO | Starting system.
+2017/06/27 | 01:05:10 | INFO | Initializing system components.
+2017/06/27 | 01:05:10 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:05:10 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:05:10 | INFO | System initialization completed.
+2017/06/27 | 01:05:10 | INFO | Database connection success.
+2017/06/27 | 01:05:10 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:05:10 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:06:17 | INFO | Starting system.
+2017/06/27 | 01:06:17 | INFO | Initializing system components.
+2017/06/27 | 01:06:17 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:06:17 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:06:17 | INFO | System initialization completed.
+2017/06/27 | 01:06:17 | INFO | Database connection success.
+2017/06/27 | 01:06:17 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:06:17 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:07:13 | WARN | Issuing page refresh command to socket ID:7rWStYOWPTpg12gDAAAA REASON : User not found in active sessions
+2017/06/27 | 01:07:18 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 01:07:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:07:19 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:07:19 | INFO | nyxsys is now online.
+2017/06/27 | 01:07:20 | INFO | nyxsys is now offline.
+2017/06/27 | 01:07:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:07:21 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:07:21 | INFO | nyxsys is now online.
+2017/06/27 | 01:07:27 | INFO | nyxsys is now offline.
+2017/06/27 | 01:07:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:07:28 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:07:28 | INFO | nyxsys is now online.
+2017/06/27 | 01:07:28 | INFO | nyxsys is now offline.
+2017/06/27 | 01:07:29 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:07:29 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:07:29 | INFO | nyxsys is now online.
+2017/06/27 | 01:07:30 | INFO | nyxsys is now offline.
+2017/06/27 | 01:07:31 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:07:31 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:07:31 | INFO | nyxsys is now online.
+2017/06/27 | 01:08:11 | INFO | nyxsys is now offline.
+2017/06/27 | 01:08:13 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:08:13 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:08:13 | INFO | nyxsys is now online.
+2017/06/27 | 01:08:15 | INFO | nyxsys is now offline.
+2017/06/27 | 01:08:16 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:08:16 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:08:16 | INFO | nyxsys is now online.
+2017/06/27 | 01:08:19 | INFO | nyxsys is now offline.
+2017/06/27 | 01:08:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:08:19 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:08:19 | INFO | nyxsys is now online.
