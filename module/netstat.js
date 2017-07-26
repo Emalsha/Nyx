@@ -32,60 +32,6 @@ var ostb = require( 'os-toolbox' );
 module.exports = function App(io) {
     setInterval(function () {
 
-//Online Offline Status
-
-        //get these vals from the database
-        var p_s = 17;
-        var p_e = 8;
-
-        var status = "Offline";
-        var timeleft = "N\\A";
-        var uncommon = false;
-        var precent = 0;
-
-        var now = new Date();
-        var peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_s,0,0);
-        var peak_stop = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_e,0,0);
-        var next_peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate()+1,p_s,0,0);
-        var timetogo = new Date();
-        var timepassed = new Date();
-        if (p_e < p_s){
-            uncommon = true;
-            if (peak_start.getHours() <= now.getHours()){
-                peak_stop.setDate(now.getDate()+1);
-            }else {
-                next_peak_start.setDate(next_peak_start.getDate()-1);
-                peak_start.setDate(now.getDate()-1);
-            }
-        }else{
-            if (peak_stop.getHours() <= now.getHours()){
-                peak_start.setDate(now.getDate()+1);
-            }else {
-                next_peak_start.setDate(next_peak_start.getDate()-1);
-            }
-        } //i assume my logic is correct
-
-        //online status
-        if (peak_start.getTime() < now.getTime() && now.getTime() < peak_stop.getTime()){
-            //peak
-            status = "Offline";
-            timetogo = peak_stop.getTime()-now.getTime();
-            timepassed = now - peak_start.getTime();
-
-            timeleft = "Going online in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
-            precent = Math.floor(((now - peak_start)/(peak_stop - peak_start))*100)
-        }else {
-            //off peak
-            status = "Online";
-            timetogo = next_peak_start.getTime()-now.getTime();
-            timepassed = now - peak_stop;
-
-            timeleft = "Going offline in " + (Math.floor(timetogo/(1000*60*60))) + " hours " + Math.floor(timetogo/(1000*60))%60 + "mins and "+ (Math.floor(timetogo/(1000))%60)%60 + " secs.";
-            precent = Math.floor(((now - peak_stop)/(peak_stop - peak_start))*100)
-        }
-
-        io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
-
 
 //Net Stat
         let rxfn = netstat.usageRx({iface:reqIface,units:'bytes',sampleMs:'1000'},rx =>{

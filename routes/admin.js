@@ -35,6 +35,7 @@ router.get('/administration', aclfn, aclf, function (req, res) {
             title: 'NYX | Administrator',
             user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
             downloadRequest: downloads
+
         });
 
     });
@@ -71,6 +72,8 @@ router.post('/server', aclfn, aclf, function (req, res) {
             if (err) {
                 res.send(false);
             } else {
+                const am = require('../module/aria2center');
+                am.updatetime();
                 debug('save la;a');
                 tm.setTimer();
                 res.send(true);

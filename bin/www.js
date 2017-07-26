@@ -254,23 +254,10 @@ io.on('connection', function(socket){
 });
 
 
-// const request = require('request');
-// request({url: "http://ipv4.download.thinkbroadband.com/10MB.zip", method: 'HEAD'}, (err, status) => {
-//     if (err) {
-//         console.log("404");
-//     }else{
-//         if (status){
-//             console.log(status.headers['content-length']);
-//         }
-//     }
-// })
-
-// const am = require('../module/aria2center');
-// am.open();
-//
-// am.download(["https://www.google.lk/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png",1,565656,"10K",2], function(result) {
-//     console.log("SDSDS",result);
-// });
+const am = require('../module/aria2center');
+am.open();
+am.init(io);
+am.updatetime();
 
 function taskManager() {
     tm.setTimer();
