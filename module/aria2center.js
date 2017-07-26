@@ -191,7 +191,19 @@ aria2.onDownloadStop = function(gid) {
 
 aria2.onDownloadError = function(gid) {
     // console.log(gid);
-    cast.log("Download of GID:"+gid.gid + " Error.",7);
+    cast.log("Download of GID:"+gid.gid + " Error.",3);
+    Download.findOneAndUpdate({gid: gid.gid}, {
+        state: 'error',
+        download_end_date: new Date(),
+    }, (err, res) => {
+        if (err) {
+            cast.log("Error occured while updating the database occurring the error at download" +err,3);
+        }else{
+            cast.log("Database successfully updated after error occurred at downloading",3);
+            //TODO : Create ownership records according to file
+
+        }
+    });
 };
 
 function online_main() {
