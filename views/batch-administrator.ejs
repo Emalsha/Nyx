@@ -181,31 +181,6 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col s12 truncate contentbox_detail_field">
-                                                                Availability
-                                                            </div>
-                                                            <div class="col s12 truncate  contentbox_detail_value">
-                                                                <div class="row" style="padding: 5px">
-                                                                    <div class="col s12">
-                                                                        <div class="switch">
-                                                                            <label>
-                                                                                Private
-                                                                                <%
-                                                                                    let avai;
-                                                                                    if (data['availability'] === 'public') {
-                                                                                        avai = 'checked';
-                                                                                    }
-                                                                                %>
-                                                                                <input type="checkbox"
-                                                                                       id="availablity_switch"
-                                                                                        <%= avai %>>
-                                                                                <span class="lever"></span>
-                                                                                Public
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                             <input type="hidden" id="availability"
                                                                    name="availability">
                                                             <input type="hidden" id="tag_values"
