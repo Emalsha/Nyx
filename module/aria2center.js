@@ -129,7 +129,7 @@ aria2.onDownloadComplete = function (gid) {
 
     Download.find({gid: gid.gid}, function (err, downloads) {
         let download = downloads[0];
-        // console.log(download);
+        console.log(download);
         let fileNameArr = download.link.split('/');
         let fileName = fileNameArr[fileNameArr.length - 1];
         fileName = decodeURIComponent(fileName);

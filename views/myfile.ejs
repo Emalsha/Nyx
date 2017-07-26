@@ -129,16 +129,16 @@
                                 <div class="col s12 l9 truncate  contentbox_detail_value"><%=downDate.toDateString()  %></div>
 
                                 <div class="col s12 l3 truncate contentbox_detail_field">MD5</div>
-                                <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['md5'] %></div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value"><% if (data['md5'] === undefined){%> MD5 is Not Available <%}else{%> <%=data['md5']%> <%} %></div>
 
                                 <div class="col s12 l3 truncate contentbox_detail_field">Availability</div>
-                                <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['availability'] %></div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value"><% if (data['availability'] === undefined){%> MD5 is Not Available <%}else{%> <%=data['availability']%> <%} %></div>
 
                                 <div class="col s12 l3 truncate contentbox_detail_field">Administrator Notes</div>
-                                <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['admin_note'] %></div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value"><% if (data['admin_note'] === undefined){%> Admin notes are Not Available <%}else{%> <%=data['admin_note']%> <%} %></div>
 
                                 <div class="col s12 l3 truncate contentbox_detail_field">Description</div>
-                                <div class="col s12 l9 truncate  contentbox_detail_value"><%= data['description'] %></div>
+                                <div class="col s12 l9 truncate  contentbox_detail_value"><% if (data['description'] === undefined){%> Description is Not Available <%}else{%> <%=data['description']%> <%} %></div>
 
                                 <div class="col s12 l3 truncate contentbox_detail_field">Tags</div>
                                 <div class="col s12 l9 truncate  contentbox_detail_value">
