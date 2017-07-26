@@ -74,7 +74,7 @@
                                 <% let rdate = new Date(data['request_date']); %>
                                 <div class="col s2"><%= rdate.toDateString() %></div>
                                 <div class="col s4 right-align">
-                                    <a  class="custom_btn blue white-text" href="/users/download/<%= arr[leng]%>">Download</a>
+                                    <a  class="custom_btn blue white-text" href="/users/download/<%= data['_id']%>">Download</a>
                                 </div>
                             </div>
                             <div class="collapsible-body">
