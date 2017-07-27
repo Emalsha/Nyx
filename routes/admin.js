@@ -8,6 +8,7 @@ const acl = require('../module/acl_fn');
 const debug = require('debug')('nyx:adminRouter');
 const Download = require('../model/Download');
 const Time = require('../model/Time');
+const BW = require('../model/Bw_list');
 const tm = require('../module/task_manager');
 let passport = require('passport');
 
@@ -35,12 +36,32 @@ router.get('/administration', aclfn, aclf, function (req, res) {
         Time.findOne({})
             .sort({'edit_date': -1})
             .then(function (time) {
-                res.render('administrator', {
-                    title: 'NYX | Administrator',
-                    user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-                    downloadRequest: downloads,
-                    server:time,
+
+                BW.find({list_type:'white'},function (err, WList) {
+                    if(err){
+                        debug(err);
+                    }
+
+                    BW.find({list_type:'black'},function (err, BList) {
+                        if(err){
+                            debug(err);
+                        }
+
+                        res.render('administrator', {
+                            title: 'NYX | Administrator',
+                            user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                            downloadRequest: downloads,
+                            server:time,
+                            WList:WList,
+                            BList:BList
+                        });
+
+                    })
+
+
                 });
+
+
             })
 
     });

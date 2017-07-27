@@ -620,7 +620,14 @@
                     <div class="row settingrow">
                         <div class="col s4 m3 l2 setting-title">Whitelisted Domains</div>
                         <div class="col s8 m9 l8">
-                            <textarea class="max450"></textarea>
+                            <textarea class="max450">
+                                <% for(let i=0;i<WList.length;i++){
+                                    let itm = WList[i];
+                                %>
+                                <%=itm.domain%>
+
+                                <%}%>
+                            </textarea>
                             <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -635,7 +642,14 @@
                     <div class="row settingrow">
                         <div class="col s4 m3 l2 setting-title">Blacklisted Domains</div>
                         <div class="col s8 m9 l8">
-                            <textarea class="max450"></textarea>
+                            <textarea class="max450">
+                                <% for(let i=0;i<BList.length;i++){
+                                    let itm = BList[i];
+                                %>
+                                <%=itm.domain%>
+
+                                <%}%>
+                            </textarea>
                             <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
