@@ -396,28 +396,17 @@ var mainloop = setInterval(function () {
     var timeleft = "N\\A";
     var uncommon = false;
     var precent = 0;
+    console.log(p_s,p_e);
 
     var now = new Date();
     var peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_s,0,0);
     var peak_stop = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_e,0,0);
-    var next_peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate()+1,p_s,0,0);
+    var next_peak_start = peak_start;
     var timetogo = new Date();
     var timepassed = new Date();
-    if (p_e < p_s){
-        uncommon = true;
-        if (peak_start.getHours() <= now.getHours()){
-            peak_stop.setDate(now.getDate()+1);
-        }else {
-            next_peak_start.setDate(next_peak_start.getDate()-1);
-            peak_start.setDate(now.getDate()-1);
-        }
-    }else{
-        if (peak_stop.getHours() <= now.getHours()){
-            peak_start.setDate(now.getDate()+1);
-        }else {
-            next_peak_start.setDate(next_peak_start.getDate()-1);
-        }
-    } //i assume my logic is correct
+
+
+     //i assume my logic is correct
 
     //online status
     if (peak_start.getTime() < now.getTime() && now.getTime() < peak_stop.getTime()){
@@ -432,6 +421,16 @@ var mainloop = setInterval(function () {
         offline_main();
     }else {
         //off peak
+
+        if (peak_stop.getHours() <= now.getHours()){
+            next_peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate()+1,p_s,0,0);
+        }else {
+            next_peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_s,0,0);
+            peak_stop = new Date(now.getYear()+1900,now.getMonth(),now.getDate()-1,p_e,0,0);
+            peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate()-1,p_s,0,0);
+        }
+
+
         status = "Online";
         timetogo = next_peak_start.getTime()-now.getTime();
         timepassed = now - peak_stop;
@@ -443,7 +442,7 @@ var mainloop = setInterval(function () {
     }
 
     io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
-    // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
+    console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
 },1000);
 
 
