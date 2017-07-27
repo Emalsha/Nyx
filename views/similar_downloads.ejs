@@ -40,31 +40,7 @@
                             Files</a></li>
                     <li class="sidemenu_li"><a href="/users/publicfile" class="white-text"><i
                                     class="material-icons left" style="color: #ffffff;">work</i>Public Files</a></li>
-                    <% if(isManage){ %>
-                    <li class="sidemenu_li"><a href="/admin/management" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">supervisor_account</i>User
-                            Management </a></li>
-                    <% } if(isAdmin){ %>
-                    <li class="sidemenu_li"><a href="/admin/managepublicfiles" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">folder_special</i>File
-                            Management</a></li>
-                    <li class="sidemenu_li"><a href="/admin/diskmanagement" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">dns</i>Disk Management</a></li>
-                    <li class="sidemenu_li"><a href="/admin/administration" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a>
-                    </li>
-                    <% } %>
-                    <% if(isBatchAdmin){ %>
-                    <li class="sidemenu_li">
-                        <a href="/batch/administration" class="white-text">
-                            <i class="material-icons left" style="color: #ffffff;">toc</i>
-                            Requests
-                            <% //if(downloadRequest.length) {  %>
-                            <!--<span class="new badge red hide" id="request_count"></span>-->
-                            <% //}  %>
-                        </a>
-                    </li>
-                    <% } %>
+
                     <!--<li class="sidemenu_li"><a href="/users/help" class="white-text"><i class="material-icons left" style="color: #ffffff;">live_help</i>About</a></li>-->
                     <li class="sidemenu_li"><a href="/logout" class="white-text"><i class="material-icons left"
                                                                                     style="color: #ffffff;">settings_power</i>Logout</a>
@@ -133,17 +109,17 @@
                                 <div class="col s4 truncate"><%= data['link'] %></div>
 
                                 <%
-                                if(data['availabity'] === 'public'){
+                                if(data['availability'] === 'public' || data['owner'] === user['uname']){
                                 %>
                                 <div class="col s4 right-align">
                                     <a class="custom_btn blue white-text" href="/users/download/<%= data['_id']%>">Download</a>
                                 </div>
-                                <% }else if(data['availabity'] === 'private') %>
+                                <% } else if(data['availability'] === 'private') { %>
 
                                 <div class="col s4 right-align">
-                                    <a class="custom_btn blue white-text" href="/users/owner/<%= arr[leng] %>">Request</a>
+                                    <a class="custom_btn blue white-text" href="/users/ownership/<%= data['_id'] %>">Request</a>
                                 </div>
-                                <% }%>
+                                <% } %>
 
                             </div>
                             <div class="collapsible-body">

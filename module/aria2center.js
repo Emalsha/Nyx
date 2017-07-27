@@ -396,7 +396,7 @@ var mainloop = setInterval(function () {
     var timeleft = "N\\A";
     var uncommon = false;
     var precent = 0;
-    console.log(p_s,p_e);
+    // console.log(p_s,p_e);
 
     var now = new Date();
     var peak_start = new Date(now.getYear()+1900,now.getMonth(),now.getDate(),p_s,0,0);
@@ -442,7 +442,7 @@ var mainloop = setInterval(function () {
     }
 
     io.emit('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
-    console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
+    // console.log('online_status_info','{"status": "'+ status +'","eta": "'+ timeleft+'","precent":'+precent+'}' );
 },1000);
 
 
