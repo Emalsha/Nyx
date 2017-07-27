@@ -6,15 +6,18 @@ let Aria2 = require('aria2');
 let connected = false;
 let systemonline = false;
 let nothingtodownload = false;
+
+const fs = require('fs');
+const crypto = require('crypto');
+const os = require('os');
 const cast = require('../module/globalutils');
-const aria2secret = "ucscaria";
-const DOWNLOAD_ROOT = "/home/sulochana/Desktop/downloads/";
 const Time = require('../model/Time');
 const Download = require('../model/Download');
 const debug = require('debug')('nyx:aria2center');
 const Owner = require('../model/Owner');
-const fs = require('fs');
-const crypto = require('crypto');
+const aria2secret = "ucscaria";
+const DOWNLOAD_ROOT = os.homedir()+"/Desktop/downloads/";
+
 
 var MAX_CONCIRRENT_DOWNLOADS = 2;
 var statusnsp;

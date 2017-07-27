@@ -2929,3 +2929,205 @@
 2017/06/28 | 00:27:43 | AUTH | Administrator nyxsys connected from 1
 2017/06/28 | 00:27:43 | AUTH | nyxsys Authenticated from 1
 2017/06/28 | 00:27:43 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:41 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:42 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:42 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:45 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:45 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:45 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:47 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:47 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:47 | INFO | nyxsys is now online.
+2017/06/28 | 00:30:39 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:30:39 | INFO | Emalsha is now online.
+2017/06/28 | 00:31:21 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:31:21 | INFO | Emalsha is now online.
+2017/06/28 | 00:31:22 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:31:22 | INFO | Emalsha is now online.
+2017/06/28 | 00:32:38 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:32:38 | INFO | Emalsha is now online.
+2017/06/28 | 00:32:57 | INFO | nyxsys is now offline.
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:58 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:32:58 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:32:58 | INFO | nyxsys is now online.
+2017/06/28 | 00:33:02 | INFO | nyxsys is now offline.
+2017/06/28 | 00:33:03 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:33:03 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:03 | INFO | nyxsys is now online.
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:31 | ARIA | Adding 1501182211265 to download queue...
+2017/06/28 | 00:33:31 | INFO | Maxing out the download queue.
+2017/06/28 | 00:33:31 | ARIA | Adding 1501182211265 to download success...
+2017/06/28 | 00:33:31 | ARIA | Download of GID:5852c80dc3529de4 Initiated.
+2017/06/28 | 00:33:32 | CRIT | Download of GID:5852c80dc3529de4 Error.
+2017/06/28 | 00:33:32 | CRIT | Database successfully updated after error occurred at downloading
+2017/06/28 | 00:33:32 | INFO | No new approved download requests detected.
+2017/06/28 | 00:33:37 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:54 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:56 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:40 | INFO | Starting system.
+2017/06/28 | 00:36:40 | INFO | Initializing system components.
+2017/06/28 | 00:36:40 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:36:40 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:36:40 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:36:40 | INFO | System initialization completed.
+2017/06/28 | 00:36:40 | INFO | Database connection success.
+2017/06/28 | 00:36:40 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:36:40 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:36:41 | INFO | No new approved download requests detected.
+2017/06/28 | 00:36:42 | WARN | Issuing page refresh command to socket ID:d80KntYOJYj6gNUyAAAA REASON : User not found in active sessions
+2017/06/28 | 00:36:45 | WARN | Issuing page refresh command to socket ID:a4xXbrSuUUMCkG-HAAAC REASON : User not found in active sessions
+2017/06/28 | 00:36:50 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:36:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:36:50 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:50 | INFO | nyxsys is now online.
+2017/06/28 | 00:36:52 | INFO | nyxsys is now offline.
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:53 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:36:53 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:53 | INFO | nyxsys is now online.
+2017/06/28 | 00:37:00 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:37:00 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:00 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:07 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:07 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:09 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:09 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:11 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:11 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:13 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:13 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:19 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:19 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:21 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:21 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:49 | INFO | New downloads found.
+2017/06/28 | 00:37:49 | ARIA | Adding 1501182469585 to download queue...
+2017/06/28 | 00:37:49 | INFO | Maxing out the download queue.
+2017/06/28 | 00:37:49 | ARIA | Adding 1501182469585 to download success...
+2017/06/28 | 00:37:49 | ARIA | Download of GID:738ffdd88e7e3959 Initiated.
+2017/06/28 | 00:37:50 | CRIT | Download of GID:738ffdd88e7e3959 Error.
+2017/06/28 | 00:37:50 | CRIT | Database successfully updated after error occurred at downloading
+2017/06/28 | 00:37:50 | INFO | No new approved download requests detected.
+2017/06/28 | 00:37:57 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:57 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:59 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:59 | INFO | Emalsha is now online.
+2017/06/28 | 00:38:01 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:38:01 | INFO | Emalsha is now online.
+2017/06/28 | 00:38:03 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:38:03 | INFO | Emalsha is now online.
+2017/06/28 | 00:40:55 | INFO | Starting system.
+2017/06/28 | 00:40:55 | INFO | Initializing system components.
+2017/06/28 | 00:40:55 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:40:55 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:40:55 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:40:55 | INFO | System initialization completed.
+2017/06/28 | 00:40:55 | INFO | Database connection success.
+2017/06/28 | 00:40:55 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:40:55 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:40:56 | INFO | No new approved download requests detected.
+2017/06/28 | 00:40:58 | WARN | Issuing page refresh command to socket ID:r74DJL6Xg_mzfTtSAAAA REASON : User not found in active sessions
+2017/06/28 | 00:40:59 | WARN | Issuing page refresh command to socket ID:rKyJuLBb5vR4NAOlAAAB REASON : User not found in active sessions
+2017/06/28 | 00:41:31 | INFO | Starting system.
+2017/06/28 | 00:41:31 | INFO | Initializing system components.
+2017/06/28 | 00:41:31 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:41:31 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:41:31 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:41:31 | INFO | System initialization completed.
+2017/06/28 | 00:41:31 | INFO | Database connection success.
+2017/06/28 | 00:41:31 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:41:31 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:41:32 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:18 | INFO | Starting system.
+2017/06/28 | 00:42:18 | INFO | Initializing system components.
+2017/06/28 | 00:42:18 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:18 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:18 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:18 | INFO | System initialization completed.
+2017/06/28 | 00:42:18 | INFO | Database connection success.
+2017/06/28 | 00:42:18 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:18 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:19 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:43 | INFO | Starting system.
+2017/06/28 | 00:42:43 | INFO | Initializing system components.
+2017/06/28 | 00:42:43 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:43 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:43 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:43 | INFO | System initialization completed.
+2017/06/28 | 00:42:43 | INFO | Database connection success.
+2017/06/28 | 00:42:43 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:43 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:44 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:51 | INFO | Starting system.
+2017/06/28 | 00:42:51 | INFO | Initializing system components.
+2017/06/28 | 00:42:51 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:51 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:51 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:51 | INFO | System initialization completed.
+2017/06/28 | 00:42:51 | INFO | Database connection success.
+2017/06/28 | 00:42:51 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:51 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:52 | INFO | No new approved download requests detected.
+2017/06/28 | 00:43:13 | INFO | Starting system.
+2017/06/28 | 00:43:13 | INFO | Initializing system components.
+2017/06/28 | 00:43:13 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:43:13 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:43:13 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:43:13 | INFO | System initialization completed.
+2017/06/28 | 00:43:13 | INFO | Database connection success.
+2017/06/28 | 00:43:13 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:43:13 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:43:14 | INFO | No new approved download requests detected.
+2017/06/28 | 00:43:57 | INFO | Starting system.
+2017/06/28 | 00:43:57 | INFO | Initializing system components.
+2017/06/28 | 00:43:57 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:43:58 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:43:58 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:43:58 | INFO | System initialization completed.
+2017/06/28 | 00:43:58 | INFO | Database connection success.
+2017/06/28 | 00:43:58 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:43:58 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:43:59 | INFO | No new approved download requests detected.
+2017/06/28 | 00:44:08 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:44:09 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:09 | INFO | Emalsha is now online.
+2017/06/28 | 00:44:17 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:44:18 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:44:18 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:44:18 | INFO | nyxsys is now online.
+2017/06/28 | 00:44:20 | INFO | nyxsys is now offline.
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:44:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:44:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:44:40 | INFO | New downloads found.
+2017/06/28 | 00:44:40 | ARIA | Adding 1501182880488 to download queue...
+2017/06/28 | 00:44:40 | INFO | Maxing out the download queue.
+2017/06/28 | 00:44:40 | ARIA | Adding 1501182880488 to download success...
+2017/06/28 | 00:44:40 | ARIA | Download of GID:b5b7f0fbe5c5f845 Initiated.
+2017/06/28 | 00:44:41 | INFO | No new approved download requests detected.
+2017/06/28 | 00:44:42 | ARIA | Download of GID:b5b7f0fbe5c5f845 Completed.
+2017/06/28 | 00:44:42 | INFO | Attemting to rename trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:42 | INFO | Successfully renamed trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:42 | CRIT | Database successfully updated after renaming trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:46 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:46 | INFO | Emalsha is now online.
+2017/06/28 | 00:44:49 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:49 | INFO | Emalsha is now online.
