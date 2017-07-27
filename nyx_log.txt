@@ -3441,3 +3441,345 @@
 2017/06/28 | 01:55:07 | AUTH | Administrator nyxsys connected from 1
 2017/06/28 | 01:55:07 | AUTH | nyxsys Authenticated from 1
 2017/06/28 | 01:55:07 | INFO | nyxsys is now online.
+2017/06/28 | 01:56:28 | INFO | nyxsys is now offline.
+2017/06/28 | 01:56:29 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:56:29 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:56:29 | INFO | nyxsys is now online.
+2017/06/28 | 02:02:55 | INFO | Starting system.
+2017/06/28 | 02:02:55 | INFO | Initializing system components.
+2017/06/28 | 02:02:56 | INFO | Attempting to connect to the database.
+2017/06/28 | 02:02:56 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 02:02:56 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 02:02:56 | INFO | System initialization completed.
+2017/06/28 | 02:02:56 | ARIA | Opening aria2c socket success.
+2017/06/28 | 02:02:56 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 02:02:56 | INFO | Database connection success.
+2017/06/28 | 02:02:56 | WARN | Issuing page refresh command to socket ID:bZzOSKEAt4qyHcc8AAAA REASON : User not found in active sessions
+2017/06/28 | 02:02:57 | INFO | No new approved download requests detected.
+2017/06/28 | 02:06:08 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 02:06:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:06:09 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:06:09 | INFO | nyxsys is now online.
+2017/06/28 | 02:06:18 | INFO | nyxsys is now offline.
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:06:19 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:06:19 | INFO | nyxsys is now online.
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:26 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:48 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:08:00 | ARIA | Download of GID:1f4c22eb230fa142 Initiated.
+2017/06/28 | 02:08:00 | INFO | New downloads found.
+2017/06/28 | 02:08:00 | ARIA | Adding 1501187880553 to download queue...
+2017/06/28 | 02:08:00 | ARIA | Adding 1501187880553 to download success...
+2017/06/28 | 02:08:00 | ARIA | Download of GID:4414a32a09d1e213 Initiated.
+2017/06/28 | 02:08:00 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:08:01 | INFO | No new approved download requests detected.
+2017/06/28 | 02:08:02 | ARIA | Download of GID:1f4c22eb230fa142 Completed.
+2017/06/28 | 02:08:41 | INFO | Starting system.
+2017/06/28 | 02:08:41 | INFO | Initializing system components.
+2017/06/28 | 02:08:41 | INFO | Attempting to connect to the database.
+2017/06/28 | 02:08:41 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 02:08:41 | INFO | System initialization completed.
+2017/06/28 | 02:08:41 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 02:08:41 | INFO | Database connection success.
+2017/06/28 | 02:08:41 | ARIA | Opening aria2c socket success.
+2017/06/28 | 02:08:41 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 02:08:42 | INFO | No new approved download requests detected.
+2017/06/28 | 02:08:45 | WARN | Issuing page refresh command to socket ID:csgO_-GJKHzsER3CAAAA REASON : User not found in active sessions
+2017/06/28 | 02:08:56 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 02:08:57 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:08:57 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:08:57 | INFO | nyxsys is now online.
+2017/06/28 | 02:09:33 | INFO | nyxsys is now offline.
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:34 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:09:34 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:09:34 | INFO | nyxsys is now online.
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:07 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:47 | ARIA | Closing aria2c socket success.
+2017/06/28 | 02:10:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:53 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:53 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:54 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:54 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:55 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:55 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:56 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:56 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:57 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:57 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:58 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:58 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:10:59 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:59 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:00 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:00 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:01 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:01 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:02 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:02 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:03 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:03 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:04 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:04 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:05 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:05 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:05 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:11:06 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:06 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:07 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:07 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:07 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:11:08 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:08 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:09 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:09 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:10 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:10 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:11 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:11 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:12 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:12 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:13 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:13 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:14 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:14 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:15 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:15 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:16 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:16 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:17 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:17 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:18 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:18 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:19 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:19 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:20 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:20 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:21 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:21 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:22 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:22 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:23 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:23 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:24 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:24 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:25 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:25 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:26 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:26 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:27 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:27 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:28 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:28 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:29 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:29 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:30 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:30 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:31 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:31 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:32 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:32 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:33 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:33 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:34 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:34 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:35 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:35 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:36 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:36 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:37 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:37 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:38 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:38 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:39 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:39 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:40 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:40 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:41 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:41 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:42 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:42 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:43 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:43 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:44 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:44 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:45 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:45 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:46 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:46 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:47 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:47 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:53 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:53 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:54 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:54 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:55 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:55 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:56 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:56 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:57 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:57 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:58 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:58 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:59 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:59 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:00 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:00 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:01 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:01 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:02 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:02 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:03 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:03 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:04 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:04 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:05 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:05 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:06 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:06 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:07 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:07 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:08 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:08 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:09 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:09 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:10 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:10 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:11 | INFO | nyxsys is now offline.
+2017/06/28 | 02:12:11 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:11 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:12:12 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:12:12 | INFO | nyxsys is now online.
+2017/06/28 | 02:12:12 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:12 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:13 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:13 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:14 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:14 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:15 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:15 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:17 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:17 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:18 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:18 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:19 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:19 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:20 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:20 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:21 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:21 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:22 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:22 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:23 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:23 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:24 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:24 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:25 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:25 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:26 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:26 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:27 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:27 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:28 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:28 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:29 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:29 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:30 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:30 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:31 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:31 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:32 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:32 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:33 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:33 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:34 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:34 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:35 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:35 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:36 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:36 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:37 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:37 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:38 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:38 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:39 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:39 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:40 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:40 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:41 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:41 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:42 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:42 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:43 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:43 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:44 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:44 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:45 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:45 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:46 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:46 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:47 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:47 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.

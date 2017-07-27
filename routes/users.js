@@ -19,8 +19,8 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
         })
         .then((result) => {
             return Download.find({request_user: req.user.username, state: 'pending'})
-                .then((approvedList) => {
-                    result[1] = approvedList;
+                .then((pendingList) => {
+                    result[1] = pendingList;
                     return result;
                 })
         })
@@ -35,17 +35,29 @@ router.get('/dashboard', aclfn, aclf, function (req, res) {
                 })
         })
         .then((result) => {
-            let pendingDownload = result[0];
-            let approvedList = result[1];
+            return Download.find({
+                request_user: req.user.username,
+                state: 'approved'
+            })
+                .then((reqApproved) => {
+                    result[3] = reqApproved;
+                    return result;
+                })
+        })
+        .then((result) => {
+            let downloading = result[0];
+            let pending = result[1];
             let rejectedList = result[2];
+            let approved = result[3];
             res.render('dashboard', {
                 title: 'NYX | Dashboard',
                 message: req.flash('success'),
                 user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-                inprogress: pendingDownload,
-                pending: approvedList,
+                inprogress: downloading,
+                pending: pending,
                 rejected: rejectedList,
-                token:req.flash('token')
+                approved: approved,
+                token: req.flash('token')
             });
         });
 
@@ -100,11 +112,11 @@ router.get('/search', aclfn, aclf, function (req, res) {
             'admin': 1,
             'download_start_date': 1,
             'md5': 1,
-            'availability':1,
-            'admin_note':1,
-            'description':1,
-            'tags':1,
-            'size':1
+            'availability': 1,
+            'admin_note': 1,
+            'description': 1,
+            'tags': 1,
+            'size': 1
         })
         .then((searchResult) => {
             res.send(searchResult);
@@ -112,83 +124,81 @@ router.get('/search', aclfn, aclf, function (req, res) {
 });
 
 // download a file
-router.get('/download/:id', function(req, res, next) {
+router.get('/download/:id', function (req, res, next) {
 // download a file
-  let id=req.params.id;
-  Download.findById(id,function(err,download){
-      if(err){
-          debug(err);
-      }
+    let id = req.params.id;
+    Download.findById(id, function (err, download) {
+        if (err) {
+            debug(err);
+        }
 
-      let fileNameArr = download.link.split('/');
-      let fileName=fileNameArr[fileNameArr.length -1];
+        let fileNameArr = download.link.split('/');
+        let fileName = fileNameArr[fileNameArr.length - 1];
 
-      let filePath=download.file_path;
-      debug('fPath: '+filePath);
+        let filePath = download.file_path;
+        debug('fPath: ' + filePath);
 
-      res.download(filePath,fileName);
+        res.download(filePath, fileName);
 
-  });
+    });
 
 });
 
 
 // delete a file
- router.get('/delete/:id', function(req, res, next) {
+router.get('/delete/:id', function (req, res, next) {
 
-     let id=req.params.id;
-     Download.findById(id,function(err,download){
-         if(err){
-             debug(err);
-         }
+    let id = req.params.id;
+    Download.findById(id, function (err, download) {
+        if (err) {
+            debug(err);
+        }
 
-         // let fileNameArr = download.link.split('/');
-         // let fileName=fileNameArr[fileNameArr.length -1];
-         let filePath=download.file_path;
-         debug('fPath: '+filePath);
-         fs.unlink(filePath);
+        // let fileNameArr = download.link.split('/');
+        // let fileName=fileNameArr[fileNameArr.length -1];
+        let filePath = download.file_path;
+        debug('fPath: ' + filePath);
+        fs.unlink(filePath);
 
-         download.state = 'deleted';
+        download.state = 'deleted';
 
-         download.save(function (err) {
-             if(err){
-                 debug(err);
-             }
+        download.save(function (err) {
+            if (err) {
+                debug(err);
+            }
 
-             req.flash('success','File deleted.');
-             res.redirect('/users/myfile');
-         });
+            req.flash('success', 'File deleted.');
+            res.redirect('/users/myfile');
+        });
 
-     });
+    });
 
-   // let s=req.params.id;
-   // let x=req.params.id2;
-   //
-   // let filePath = "../test/"+s; // Or format the path using the `id` rest param
-   // let fileName = s; // The default name the browser will us
-   //
-   // fs.unlink(filePath);
-   // Download.findById(x,function(err,download){
-   //   if(err) {
-   //       debug(err);
-   //   }
-   //   download.state = 'deleted';
-   //
-   //   download.save(function (err) {
-   //       if(err){
-   //           debug(err);
-   //       }
-   //       console.log("deleted");
-   //       res.redirect('/users/myfile');
-   //   });
-   //
-   //
-   // });
-   // req.flash('success','File deleted.');
+    // let s=req.params.id;
+    // let x=req.params.id2;
+    //
+    // let filePath = "../test/"+s; // Or format the path using the `id` rest param
+    // let fileName = s; // The default name the browser will us
+    //
+    // fs.unlink(filePath);
+    // Download.findById(x,function(err,download){
+    //   if(err) {
+    //       debug(err);
+    //   }
+    //   download.state = 'deleted';
+    //
+    //   download.save(function (err) {
+    //       if(err){
+    //           debug(err);
+    //       }
+    //       console.log("deleted");
+    //       res.redirect('/users/myfile');
+    //   });
+    //
+    //
+    // });
+    // req.flash('success','File deleted.');
 
- });
-
-
+});
 
 
 module.exports = router;

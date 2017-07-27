@@ -339,8 +339,8 @@
                 <div class="col s12">
                     <ul class="tabs">
                         <!--<li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>-->
-                        <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test2">Downloads in progress</a></li>
+                        <li class="tab"><a class="red-text darken-4" href="#test5">Approved Request</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test3">Approval Pending</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test4">Rejected downloads</a></li>
                     </ul>
@@ -644,6 +644,128 @@
 
                         <div class="no-content">
                             No pending downloads available.
+
+                        </div>
+                        <% } %>
+
+                    </div>
+                </div>
+
+                <!--Approved list-->
+                <div id="test5" class="col l12 m12 s12">
+                    <div class="row">
+                        <%
+                        if(approved.length > 0){
+                        %>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <%
+                            for(let i = 0; i < approved.length;i++){
+                                let data = approved[i];
+                            %>
+
+                            <li>
+                                <%
+                                    var title;
+                                    if (data['file_title']) {
+                                        title = data['file_title'];
+                                    } else {
+                                        var ar = data['link'].split('/');
+                                        title = ar[ar.length-1];
+                                    } %>
+                                <div class="collapsible-header">
+                                    <!--<span class="new badge  yellow accent-3 black-text"-->
+                                    <!--data-badge-caption="Approval Pending"></span>-->
+                                    <i class="material-icons">place</i>
+                                    <%= title %>
+                                </div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">Status</div>
+                                            <div class="col s12 contentbox_main amber-text accent-4">Approved Request
+                                            </div>
+                                            <% let now = new Date();
+                                                let rdate = new Date(data['request_date']);
+                                                let gapd = now.getDay() - rdate.getDay();
+                                                let gaph = now.getHours() - rdate.getHours();
+                                                let gapm = now.getMinutes() - rdate.getMinutes();
+                                            %>
+                                            <div class="col s12 contentbox_txt_down"><%= gapd+'d' %>  <%= gaph %>
+                                                h <%= gapm %>mins
+                                            </div>
+                                        </div>
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">File Size</div>
+                                            <div class="col s12 contentbox_main"><%= data['size'] %></div>
+                                            <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
+                                        </div>
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">Estimated Time</div>
+                                            <div class="col s12 contentbox_main">3h 52 mins</div>
+                                            <div class="col s12 contentbox_txt_down">To complete download</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <h5>Download Details</h5>
+                                        </div>
+                                        <div class="col s12 l2 contentbox_detail_field">Download Link</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['link'] %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <% let rdata = new Date(data['request_date']); %>
+                                            <%= rdata.toDateString() %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">MD5</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            --
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Availability</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] || 'Not set' %></div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Description</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'none' %></div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Tags</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%
+                                                var tags = data['tags'];
+                                            if(tags != ''){
+                                            for(let i = 0; i < tags.length;i++){ %>
+                                            <div class="chip">
+                                                <%= tags[i] %>
+                                            </div>
+                                            <% }
+                                            } %>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 right-align">
+                                            <a class="waves-effect waves-light btn red white-text"><i
+                                                        class="material-icons left">not_interested</i>Cancel</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <%
+                            }
+                            %>
+                        </ul>
+                        <%
+                        } else{ %>
+
+                        <div class="no-content">
+                            No approved request available.
 
                         </div>
                         <% } %>
