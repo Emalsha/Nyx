@@ -2556,3 +2556,288 @@
 2017/06/27 | 23:03:09 | AUTH | Administrator nyxsys connected from 1
 2017/06/27 | 23:03:09 | AUTH | nyxsys Authenticated from 1
 2017/06/27 | 23:03:09 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:39 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:39 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:44 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:45 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:45 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:51 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:52 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:52 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:52 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:40 | INFO | nyxsys is now offline.
+2017/06/27 | 23:06:40 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:06:40 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:06:40 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:44 | INFO | nyxsys is now offline.
+2017/06/27 | 23:06:44 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:06:44 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:06:44 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:07:02 | INFO | nyxsys is now offline.
+2017/06/27 | 23:07:02 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:07:02 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:07:02 | INFO | nyxsys is now online.
+2017/06/27 | 23:07:07 | INFO | nyxsys is now offline.
+2017/06/27 | 23:07:07 | INFO | nyxsys logged out from the system : ::1
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:20 | INFO | Emalsha registered in the system from ::1
+2017/06/27 | 23:07:21 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:21 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:27 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:27 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:28 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:28 | INFO | Emalsha is now online.
+2017/06/27 | 23:08:01 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:08:01 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:08:01 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:08:01 | INFO | nyxsys is now online.
+2017/06/27 | 23:08:10 | INFO | nyxsys is now offline.
+2017/06/27 | 23:08:10 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:10 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:08:10 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:08:10 | INFO | nyxsys is now online.
+2017/06/27 | 23:08:11 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:08:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:23:07 | INFO | Starting system.
+2017/06/27 | 23:23:07 | INFO | Initializing system components.
+2017/06/27 | 23:23:07 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:23:07 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:23:07 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:23:07 | INFO | System initialization completed.
+2017/06/27 | 23:23:08 | INFO | Database connection success.
+2017/06/27 | 23:23:08 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:23:08 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:23:09 | INFO | No new approved download requests detected.
+2017/06/27 | 23:23:10 | WARN | Issuing page refresh command to socket ID:VJBDjuqf-qhjiSzgAAAA REASON : User not found in active sessions
+2017/06/27 | 23:23:15 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:23:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:23:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:23:34 | WARN | Issuing page refresh command to socket ID:oiOnv0GKAP_HBi1mAAAD REASON : User not found in active sessions
+2017/06/27 | 23:23:43 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:23:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:23:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:23:43 | INFO | nyxsys is now online.
+2017/06/27 | 23:23:46 | INFO | nyxsys is now offline.
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:23:46 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:23:46 | INFO | nyxsys is now online.
+2017/06/27 | 23:24:32 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:24:32 | INFO | Emalsha is now online.
+2017/06/27 | 23:25:24 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:25:24 | INFO | Emalsha is now online.
+2017/06/27 | 23:25:31 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:25:31 | INFO | Emalsha is now online.
+2017/06/27 | 23:27:52 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:27:52 | INFO | Emalsha is now online.
+2017/06/27 | 23:27:58 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:27:58 | INFO | Emalsha is now online.
+2017/06/27 | 23:29:11 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:29:11 | INFO | Emalsha is now online.
+2017/06/27 | 23:29:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:29:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:30:13 | INFO | Starting system.
+2017/06/27 | 23:30:13 | INFO | Initializing system components.
+2017/06/27 | 23:30:13 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:30:13 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:30:13 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:30:13 | INFO | System initialization completed.
+2017/06/27 | 23:30:13 | INFO | Database connection success.
+2017/06/27 | 23:30:13 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:30:13 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:30:13 | WARN | Issuing page refresh command to socket ID:hdLe12RuB12QGxSVAAAA REASON : User not found in active sessions
+2017/06/27 | 23:30:14 | INFO | No new approved download requests detected.
+2017/06/27 | 23:30:17 | WARN | Issuing page refresh command to socket ID:HfDB6KTZiMHYcT_xAAAC REASON : User not found in active sessions
+2017/06/27 | 23:30:25 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:30:26 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:30:26 | INFO | Emalsha is now online.
+2017/06/27 | 23:30:34 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:30:35 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:30:35 | INFO | nyxsys is now online.
+2017/06/27 | 23:30:35 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:30:36 | INFO | nyxsys is now offline.
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:30:37 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:30:37 | INFO | nyxsys is now online.
+2017/06/27 | 23:31:07 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:31:07 | INFO | Emalsha is now online.
+2017/06/27 | 23:33:04 | INFO | Starting system.
+2017/06/27 | 23:33:04 | INFO | Initializing system components.
+2017/06/27 | 23:33:04 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:33:04 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:33:04 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:33:04 | INFO | System initialization completed.
+2017/06/27 | 23:33:04 | INFO | Database connection success.
+2017/06/27 | 23:33:04 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:33:04 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:33:05 | INFO | No new approved download requests detected.
+2017/06/27 | 23:33:06 | WARN | Issuing page refresh command to socket ID:8JpRDjyYDhh2EkMMAAAA REASON : User not found in active sessions
+2017/06/27 | 23:33:14 | WARN | Issuing page refresh command to socket ID:84S0WpKpoN30FxulAAAC REASON : User not found in active sessions
+2017/06/27 | 23:33:19 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:33:19 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:33:19 | INFO | Emalsha is now online.
+2017/06/27 | 23:33:28 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:33:29 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:33:29 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:33:29 | INFO | nyxsys is now online.
+2017/06/27 | 23:33:29 | INFO | nyxsys is now offline.
+2017/06/27 | 23:33:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:33:30 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:33:30 | INFO | nyxsys is now online.
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:34:03 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:34:03 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:22 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:22 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:29 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:29 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:59 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:59 | INFO | Emalsha is now online.
+2017/06/27 | 23:38:03 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:38:03 | INFO | Emalsha is now online.
+2017/06/27 | 23:39:44 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:39:44 | INFO | Emalsha is now online.
+2017/06/27 | 23:40:01 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:40:01 | INFO | Emalsha is now online.
+2017/06/27 | 23:44:28 | INFO | Starting system.
+2017/06/27 | 23:44:28 | INFO | Initializing system components.
+2017/06/27 | 23:44:28 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:44:28 | INFO | System initialization completed.
+2017/06/27 | 23:44:28 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:44:28 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:44:28 | INFO | Database connection success.
+2017/06/27 | 23:44:28 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:44:28 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:44:28 | WARN | Issuing page refresh command to socket ID:srLCTv98WtFuMS9hAAAA REASON : User not found in active sessions
+2017/06/27 | 23:44:29 | INFO | No new approved download requests detected.
+2017/06/27 | 23:44:39 | WARN | Issuing page refresh command to socket ID:YN5ODAeCrjvPVqqSAAAC REASON : User not found in active sessions
+2017/06/27 | 23:44:50 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:44:51 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:44:51 | INFO | Emalsha is now online.
+2017/06/27 | 23:45:05 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:45:06 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:45:06 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:45:06 | INFO | nyxsys is now online.
+2017/06/27 | 23:45:08 | INFO | nyxsys is now offline.
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:45:09 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:45:09 | INFO | nyxsys is now online.
+2017/06/27 | 23:45:57 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:45:57 | INFO | Emalsha is now online.
+2017/06/27 | 23:48:10 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:48:10 | INFO | Emalsha is now online.
+2017/06/27 | 23:48:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:48:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:51:26 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:51:26 | INFO | Emalsha is now online.
+2017/06/27 | 23:51:36 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:51:36 | INFO | Emalsha is now online.
+2017/06/27 | 23:52:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:52:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:54:51 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:54:51 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:04 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:04 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:18 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:18 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:19 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:19 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:12 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:12 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:21 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:21 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:57 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:57 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:13 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:13 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:17 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:17 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:26 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:26 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:33 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:33 | INFO | Emalsha is now online.
+2017/06/28 | 00:04:54 | INFO | Starting system.
+2017/06/28 | 00:04:54 | INFO | Initializing system components.
+2017/06/28 | 00:04:54 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:04:54 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:04:54 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:04:54 | INFO | System initialization completed.
+2017/06/28 | 00:04:54 | INFO | Database connection success.
+2017/06/28 | 00:04:54 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:04:54 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:04:55 | WARN | Issuing page refresh command to socket ID:hglZ_BsbZhbTg0kFAAAA REASON : User not found in active sessions
+2017/06/28 | 00:05:08 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:05:08 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:05:08 | INFO | Emalsha is now online.
+2017/06/28 | 00:05:15 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:05:15 | INFO | Emalsha is now online.
+2017/06/28 | 00:05:20 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:05:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:05:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:05:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:05:22 | INFO | nyxsys is now offline.
+2017/06/28 | 00:05:23 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:05:23 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:05:23 | INFO | nyxsys is now online.
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:06:00 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:06:00 | INFO | Emalsha is now online.
+2017/06/28 | 00:07:15 | INFO | Starting system.
+2017/06/28 | 00:07:15 | INFO | Initializing system components.
+2017/06/28 | 00:07:15 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:07:15 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:07:15 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:07:15 | INFO | System initialization completed.
+2017/06/28 | 00:07:15 | INFO | Database connection success.
+2017/06/28 | 00:07:15 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:07:15 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:07:15 | WARN | Issuing page refresh command to socket ID:AUtf4Mkr-acWY2u0AAAA REASON : User not found in active sessions
+2017/06/28 | 00:07:15 | WARN | Issuing page refresh command to socket ID:SuNpM4NgBV6Gqa2_AAAB REASON : User not found in active sessions
+2017/06/28 | 00:07:21 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:07:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:07:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:07:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:07:23 | INFO | nyxsys is now offline.
+2017/06/28 | 00:07:23 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:07:23 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:07:23 | INFO | nyxsys is now online.
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:35 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:07:35 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:07:35 | INFO | Emalsha is now online.
+2017/06/28 | 00:07:53 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:07:53 | INFO | Emalsha is now online.
+2017/06/28 | 00:08:05 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:08:05 | INFO | Emalsha is now online.

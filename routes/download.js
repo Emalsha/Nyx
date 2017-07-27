@@ -13,38 +13,47 @@ let Bw_list = require('../model/Bw_list');
 
 router.post('/request', function (req, res) {
 
-    Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}, {state: 'downloaded'}]}, function (err, downloads) {
-        if (err) {
-            debug(err);
-        }
+    if (req.body.check === 'true') {
+        saveRequest();
+    } else {
 
-        if (downloads.length > 0) {
-            let dlinks = [];
-            for (let i = 0; i < downloads.length; i++) {
-                let ob = {
-                    _id:downloads[i]._id,
-                    link: downloads[i].link,
-                    availability: downloads[i].availability,
-                    owner: downloads[i].request_user,
-                    state: downloads[i].state,
-                    tags: downloads[i].tags,
-                    description: downloads[i].description,
 
-                };
-                dlinks.push(ob);
+        Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}, {state: 'downloaded'}]}, function (err, downloads) {
+            if (err) {
+                debug(err);
             }
 
-            let pre_object = returnDownloadRequest();
-            res.render('similar_downloads', {
-                title: 'NYX | Download Suggestions',
-                user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-                downloads: dlinks,
-                requested: pre_object,
-            });
-        } else {
-            saveRequest();
-        }
-    });
+            if (downloads.length > 0) {
+                let dlinks = [];
+                for (let i = 0; i < downloads.length; i++) {
+                    let ob = {
+                        _id: downloads[i]._id,
+                        link: downloads[i].link,
+                        title: downloads[i].file_title,
+                        availability: downloads[i].availability,
+                        owner: downloads[i].request_user,
+                        state: downloads[i].state,
+                        tags: downloads[i].tags,
+                        description: downloads[i].description,
+
+                    };
+                    dlinks.push(ob);
+                }
+
+                let pre_object = returnDownloadRequest();
+                console.log(pre_object);
+                res.render('similar_downloads', {
+                    title: 'NYX | Download Suggestions',
+                    user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                    downloads: dlinks,
+                    requested: pre_object,
+                });
+            } else {
+                saveRequest();
+            }
+        });
+    }
+
 
     function saveRequest() {
         let tags_array;
@@ -192,6 +201,7 @@ router.post('/request', function (req, res) {
         }
 
         let ob = {
+            link: req.body.link,
             tags_array: tags_array,
             availability: availability,
             file_path: file_path,

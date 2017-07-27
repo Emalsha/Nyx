@@ -32,10 +32,10 @@ $('#down_link_btn').click(function () {
                 if (state) {
                     $('#url_hi').val(link);
                     $('#url').val(link);
-                    $('#url_info').modal('open');
                     $('#fsize').val(state['size']);
                     $('#file_size').html(state['size']);
                     $('#size_bytes').val(state['size_bytes']);
+                        $('#url_info').modal('open');
 
                 } else {
                     x0p('Error','URL not exist.','error');
