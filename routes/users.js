@@ -75,6 +75,9 @@ router.get('/publicfile', aclfn, aclf, function (req, res) {
 
 });
 
+// router.get('/ownership',aclfn,aclf,function (req, res) {
+//
+// });
 
 
 // router.get('/similarDownloads', aclfn, aclf, function (req, res) {
