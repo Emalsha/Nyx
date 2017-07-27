@@ -22,7 +22,7 @@
 const aria2 = require('./aria2c_config').aria2obj;
 const debug = require('debug')('nyx:ariac');
 
-const Download = require('../model/Download');
+const Download = require('../../model/Download');
 
 let start_ariac = function () {
 

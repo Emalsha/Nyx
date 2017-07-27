@@ -12,6 +12,13 @@ $(document).ready(function() {
     $('.modal').modal();
     $('select').material_select();
 
+    if (status_socket !== undefined){
+        var i;
+        for (i=0;i<gid_lst.length;i++){
+            status_socket.emit('getstatus',{gid:gid_lst[i]})
+        }
+    }
+
 });
 
 

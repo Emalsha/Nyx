@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const app = require('../app');
 const tm = require('../module/task_manager');
-const aria2 = require('../module/aria2c_config').aria2obj;
+const aria2 = require('../module/junk/aria2c_config').aria2obj;
 
 const first_user = require('../module/first_user');
 

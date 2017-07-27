@@ -18,6 +18,7 @@ function getCookie(cname) {
 
 var authenticated = false;
 var socket = io.connect('localhost:3000');
+var status_socket = io('/status');
 console.log('Connected to Server Socket : ', socket.connected);
 
 socket.on('connect',function(){

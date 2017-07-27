@@ -3,8 +3,8 @@
  */
 const Aria2 = require('aria2');
 const debug = require('debug')('nyx:aria-config');
-const Download = require('../model/Download');
-const Owner = require('../model/Owner');
+const Download = require('../../model/Download');
+const Owner = require('../../model/Owner');
 const fs = require('fs');
 const crypto = require('crypto');
 

@@ -17,6 +17,7 @@ const fs = require('fs');
 const crypto = require('crypto');
 
 var MAX_CONCIRRENT_DOWNLOADS = 2;
+var statusnsp;
 
 //main variables
 
@@ -65,6 +66,25 @@ exports.download = function newDownloadRequest(data, callback) {
 exports.init = function (inc_io) {
     cast.log("Socket data passed to Aria2 Center");
     io = inc_io;
+    statusnsp = io.of('/status');
+
+    statusnsp.on('connection', function(socket){
+        socket.on('getstatus', function (data) {
+            console.log(data);
+            var dfd = setInterval(function () {
+                aria2.tellStatus(data.gid,function (err,data) {
+                    socket.emit('dlstatus_'+data.gid,data);
+                });
+                if (socket.disconnected){
+                    cast.log("Broadcasting stopped for " + socket.id);
+                    clearInterval(dfd);
+                }
+            },1000);
+        });
+
+
+    });
+
 };
 
 exports.updatetime = function updatetime(inc_io) {
@@ -130,53 +150,91 @@ aria2.onDownloadComplete = function (gid) {
     Download.find({gid: gid.gid}, function (err, downloads) {
         let download = downloads[0];
         console.log(download);
-        let fileNameArr = download.link.split('/');
-        let fileName = fileNameArr[fileNameArr.length - 1];
-        fileName = decodeURIComponent(fileName);
-        let dirPath = download.file_path;
-        let filePath = dirPath + '/' + fileName;
-        debug('fPath: ' + filePath);
-        // Generate hash value
-        fs.createReadStream(filePath).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
-            let hashVal = this.read(); //the hash
-            debug('fhash: ' + hashVal);
-            let newPath = dirPath + '/' + hashVal;
-            // Rename file to hash value
-            cast.log("Attemting to rename " + fileName + " to " + hashVal);
-            fs.rename(filePath, newPath, function (err) {
-                if (err) {
-                    cast.log("Error occured while renamed " + fileName + " to " + hashVal + ". " +err,3);
-                    // console.log('ERROR: ' + err);
-                }else{
-                    cast.log("Successfully renamed " + fileName + " to " + hashVal);
-
-                    // Update database
-                    Download.findOneAndUpdate({gid: gid.gid}, {
-                        state: 'downloaded',
-                        download_end_date: new Date(),
-                        file_path:newPath,
-                    }, (err, res) => {
-                        if (err) {
-                            cast.log("Error occured while updating the database after renaming " + fileName + " to " + hashVal + ". " +err,3);
-                        }else{
-                            cast.log("Database successfully updated after renaming " + fileName + " to " + hashVal,3);
-                            //TODO : Create ownership records according to file
-
-                        }
-                    });
-
+        var promise_a = new Promise(function (resolve,reject) {
+            var lock = true;
+            while (lock){
+                if (download.link !== undefined){
+                    lock = false;
+                    resolve(0);
                 }
-
-
-
-            });
+            }
         });
+
+        promise_a.then(function successHandler(result) {
+            let fileNameArr = download.link.split('/');
+            let fileName = fileNameArr[fileNameArr.length - 1];
+            fileName = decodeURIComponent(fileName);
+            let dirPath = download.file_path;
+            let filePath = dirPath + '/' + fileName;
+            debug('fPath: ' + filePath);
+            // Generate hash value
+            fs.createReadStream(filePath).pipe(crypto.createHash('sha1').setEncoding('hex')).on('finish', function () {
+                let hashVal = this.read(); //the hash
+                debug('fhash: ' + hashVal);
+                let newPath = dirPath + '/' + hashVal;
+                // Rename file to hash value
+                cast.log("Attemting to rename " + fileName + " to " + hashVal);
+                fs.rename(filePath, newPath, function (err) {
+                    if (err) {
+                        cast.log("Error occured while renamed " + fileName + " to " + hashVal + ". " +err,3);
+                        // console.log('ERROR: ' + err);
+                    }else{
+                        cast.log("Successfully renamed " + fileName + " to " + hashVal);
+
+                        // Update database
+                        Download.findOneAndUpdate({gid: gid.gid}, {
+                            state: 'downloaded',
+                            download_end_date: new Date(),
+                            file_path:newPath,
+                        }, (err, res) => {
+                            if (err) {
+                                cast.log("Error occured while updating the database after renaming " + fileName + " to " + hashVal + ". " +err,3);
+                            }else{
+                                cast.log("Database successfully updated after renaming " + fileName + " to " + hashVal,3);
+                                //TODO : Create ownership records according to file
+
+                            }
+                        });
+
+                    }
+
+
+
+                });
+            });
+        },function failureHandler(error) {
+
+        });
+
     });
 };
 
 aria2.onDownloadStart = function(gid) {
     // console.log(gid);
+    /*
+    * { bitfield: 'ffc0',
+     completedLength: '10485760',
+     connections: '0',
+     dir: '/home/sulochana/Desktop/downloads/1',
+     downloadSpeed: '0',
+     errorCode: '0',
+     files:
+     [ { completedLength: '10485760',
+     index: '1',
+     length: '10485760',
+     path: '/home/sulochana/Desktop/downloads/1/10MB.zip',
+     selected: 'true',
+     uris: [Object] } ],
+     gid: '608240877711e05b',
+     numPieces: '10',
+     pieceLength: '1048576',
+     status: 'complete',
+     totalLength: '10485760',
+     uploadLength: '0',
+     uploadSpeed: '0' }
+     */
     cast.log("Download of GID:"+gid.gid + " Initiated.",7);
+
 };
 
 aria2.onDownloadPause = function(gid) {
@@ -258,7 +316,7 @@ function online_main() {
                                 url = pendingDonwload[selection].link;
                                 mount = 1;
                                 file_id = new Date().getTime();
-                                speedlimit = "0";
+                                speedlimit = "2M";
                                 connections = 1;
 
                                 let options = {

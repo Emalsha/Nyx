@@ -4,7 +4,7 @@
 
 const ns = require('node-schedule');
 const debug = require('debug')('nyx:tm');
-const ar = require('./ariac_runner');
+const ar = require('./junk/ariac_runner');
 const Time = require('../model/Time');
 
 // Define rule sh - start hour , sm - start minute

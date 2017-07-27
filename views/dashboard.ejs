@@ -2,6 +2,8 @@
 <head>
 
     <% include includes/head.ejs %>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
 
 </head>
 <body>
@@ -37,6 +39,7 @@
 </div>
 
 <script>
+
     call_on_load.push("readyinfomodal");
     function readyinfomodal() {
         $('.modal').modal();
@@ -336,7 +339,10 @@
                             for(let i = 0; i < inprogress.length;i++){
                                 let data = inprogress[i];
                             %>
+
                             <li>
+
+
                                 <div class="collapsible-header"><!--<span class="new badge light-green accent-3 black-text"
                                                                       data-badge-caption="Downloading 32%"></span>--><i
                                             class="material-icons">library_books</i><%= data['link'] %>
@@ -345,25 +351,26 @@
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main">34%</div>
+                                            <div class="col s12 contentbox_main" id='precent_<%=data["gid"]%>'>00%</div>
                                             <div class="col s12 contentbox_txt_down">Downloaded</div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Speed</div>
-                                            <div class="col s12 contentbox_main">974.58 Kbps</div>
-                                            <div class="col s12 contentbox_txt_down">Max 4.2Mbps | Avg 955.75Kbps</div>
+                                            <div class="col s12 contentbox_main" id='speed_<%=data["gid"]%>'>0.00 Kbps</div>
+
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Estimated Time</div>
-                                            <div class="col s12 contentbox_main">3h 52 mins</div>
-                                            <div class="col s12 contentbox_txt_down">Total time 1h 21mins</div>
+                                            <div class="col s12 contentbox_main" id='eta_<%=data["gid"]%>'>N\A</div>
                                         </div>
 
                                     </div>
                                     <div class="row">
+
                                         <div class="col s12 l4">
-                                            <canvas id="myChart"></canvas>
+                                            <canvas id='chart_<%=data["gid"]%>' style="max-width: 240px;"></canvas>
                                         </div>
+
                                         <div class="col s12 l8">
                                             <div class="row">
                                                 <div class="col s12">
@@ -386,29 +393,14 @@
                                                     <%= adata.toDateString() %>
                                                 </div>
 
-                                                <div class="col s12 l2 contentbox_detail_field">Approved By</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">
-                                                    <%= data['admin'] %>
-                                                </div>
-
                                                 <div class="col s12 l2 contentbox_detail_field">Started Date</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">Sunday
                                                     2017/03/05 11:26:36 PM
                                                 </div>
 
-                                                <div class="col s12 l2 contentbox_detail_field">MD5</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value">n/a
-                                                </div>
-
                                                 <div class="col s12 l2 contentbox_detail_field">Availability</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] %></div>
 
-                                                <div class="col s12 l2 contentbox_detail_field">Administrator Notes
-                                                </div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['admin_note'] || 'None' %></div>
-
-                                                <div class="col s12 l2 contentbox_detail_field">Description</div>
-                                                <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] %></div>
 
                                                 <div class="col s12 l2 contentbox_detail_field">Tags</div>
                                                 <div class="col s12 l10 truncate  contentbox_detail_value">
@@ -437,9 +429,59 @@
                                         </div>
 
 
+
+
                                     </div>
 
                                 </div>
+
+                                <script>
+                                    gid_lst.push('<%=data["gid"]%>');
+
+                                    var ctx<%=data["gid"]%> = document.getElementById('chart_<%=data["gid"]%>').getContext('2d');
+                                    var chart<%=data["gid"]%> = new Chart(ctx<%=data["gid"]%>, {
+                                        // The type of chart we want to create
+                                        type: 'doughnut',
+
+                                        // The data for our dataset
+                                        data: {
+                                            datasets: [{
+                                                data: [10, 20],
+                                                backgroundColor: [
+                                                    'rgb(255, 255, 255)',
+                                                    'rgb(255, 99, 132)',
+                                                ],
+                                                borderColor: 'rgb(255, 99, 132)',
+                                            }],
+
+                                            // These labels appear in the legend and in the tooltips when hovering different arcs
+                                            labels: [
+
+                                                'Remaining',
+                                                'Downloaded'
+                                            ]
+                                        },
+
+                                        // Configuration options go here
+                                        options: {legend: {
+                                            display: false
+                                        }}
+                                    });
+
+                                    status_socket.on('dlstatus_<%=data["gid"]%>', function(msg){
+//                                    console.log(msg);
+                                        document.getElementById('precent_<%=data["gid"]%>').innerHTML = ((msg.completedLength/msg.totalLength)*100).toFixed(2) + "%";
+                                        document.getElementById('speed_<%=data["gid"]%>').innerHTML = (msg.downloadSpeed/(1024)).toFixed(2) + " kBps";
+                                        document.getElementById('eta_<%=data["gid"]%>').innerHTML = ((msg.totalLength - msg.completedLength)/(msg.downloadSpeed)).toFixed(2) + "s";
+                                        chart<%=data["gid"]%>.data.datasets[0].data = [(msg.totalLength-msg.completedLength),msg.completedLength];
+                                        chart<%=data["gid"]%>.update();
+
+
+                                    });
+
+                                </script>
+
+
                             </li>
                             <% }
                             %>
@@ -697,22 +739,6 @@
 
 </script>
 
-<script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        responsive: true,
-        maintainAspectRatio: false,
-        data: {
-            labels: ['10', '20', '30', '40', '50', '60', '70', '80', '90'],
-            datasets: [{
-                label: 'Download Speed',
-                data: [900, 1024, 500, 247, 304, 125, 420],
-                backgroundColor: "rgba(5, 176, 36,0.8)"
-            }]
-        }
-    });
-</script>
 
 <script type="text/javascript" src="../public/javascript/dashboard.js"></script>
 

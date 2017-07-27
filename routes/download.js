@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 const debug = require('debug')('nyx:router');
 
-const ar = require('../module/ariac_runner');
+const ar = require('../module/junk/ariac_runner');
 let Download = require('../model/Download');
 let Time = require('../model/Time');
 let Bw_list = require('../model/Bw_list');
