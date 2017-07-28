@@ -1879,3 +1879,1907 @@
 2017/06/27 | 01:08:19 | AUTH | Administrator nyxsys connected from 1
 2017/06/27 | 01:08:19 | AUTH | nyxsys Authenticated from 1
 2017/06/27 | 01:08:19 | INFO | nyxsys is now online.
+2017/06/27 | 01:52:39 | INFO | Starting system.
+2017/06/27 | 01:52:39 | INFO | Initializing system components.
+2017/06/27 | 01:52:39 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:52:39 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:52:39 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 01:52:39 | INFO | System initialization completed.
+2017/06/27 | 01:52:39 | INFO | Database connection success.
+2017/06/27 | 01:52:39 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:52:39 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:52:40 | WARN | Issuing page refresh command to socket ID:GDpZbLK1XztXvr5UAAAA REASON : User not found in active sessions
+2017/06/27 | 01:53:18 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 01:53:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:53:19 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:53:19 | INFO | nyxsys is now online.
+2017/06/27 | 01:53:24 | INFO | nyxsys is now offline.
+2017/06/27 | 01:53:25 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:53:25 | INFO | nyxsys is now online.
+2017/06/27 | 01:53:25 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:55:20 | INFO | nyxsys is now offline.
+2017/06/27 | 01:55:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:55:21 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:55:21 | INFO | nyxsys is now online.
+2017/06/27 | 01:55:27 | INFO | nyxsys is now offline.
+2017/06/27 | 01:55:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:55:27 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:55:27 | INFO | nyxsys is now online.
+2017/06/27 | 01:56:53 | INFO | nyxsys is now offline.
+2017/06/27 | 01:56:53 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:56:53 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:56:53 | INFO | nyxsys is now online.
+2017/06/27 | 01:57:42 | INFO | Starting system.
+2017/06/27 | 01:57:42 | INFO | Initializing system components.
+2017/06/27 | 01:57:42 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:57:42 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:57:42 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 01:57:42 | INFO | System initialization completed.
+2017/06/27 | 01:57:42 | INFO | Database connection success.
+2017/06/27 | 01:57:42 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:57:42 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:57:48 | INFO | Starting system.
+2017/06/27 | 01:57:48 | INFO | Initializing system components.
+2017/06/27 | 01:57:48 | INFO | Attempting to connect to the database.
+2017/06/27 | 01:57:48 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 01:57:48 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 01:57:48 | INFO | System initialization completed.
+2017/06/27 | 01:57:48 | INFO | Database connection success.
+2017/06/27 | 01:57:48 | ARIA | Opening aria2c socket success.
+2017/06/27 | 01:57:48 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 01:57:59 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 01:58:00 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:58:00 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:58:00 | INFO | nyxsys is now online.
+2017/06/27 | 01:58:02 | INFO | nyxsys is now offline.
+2017/06/27 | 01:58:02 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:58:02 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:58:02 | INFO | nyxsys is now online.
+2017/06/27 | 01:58:04 | INFO | nyxsys is now offline.
+2017/06/27 | 01:58:05 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:58:05 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:58:05 | INFO | nyxsys is now online.
+2017/06/27 | 01:59:38 | INFO | nyxsys is now offline.
+2017/06/27 | 01:59:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 01:59:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 01:59:39 | INFO | nyxsys is now online.
+2017/06/27 | 02:16:42 | INFO | Starting system.
+2017/06/27 | 02:16:42 | INFO | Initializing system components.
+2017/06/27 | 02:16:42 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:16:42 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:16:42 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:16:42 | INFO | System initialization completed.
+2017/06/27 | 02:16:42 | INFO | Database connection success.
+2017/06/27 | 02:16:42 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:16:42 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:16:44 | WARN | Issuing page refresh command to socket ID:dhWgTXyTPDE7LXRxAAAA REASON : User not found in active sessions
+2017/06/27 | 02:19:41 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:19:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:19:42 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:19:42 | INFO | nyxsys is now online.
+2017/06/27 | 02:21:22 | INFO | nyxsys is now offline.
+2017/06/27 | 02:21:22 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:21:22 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:21:22 | INFO | nyxsys is now online.
+2017/06/27 | 02:22:56 | INFO | Starting system.
+2017/06/27 | 02:22:56 | INFO | Initializing system components.
+2017/06/27 | 02:22:56 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:22:56 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:22:56 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:22:56 | INFO | System initialization completed.
+2017/06/27 | 02:22:56 | INFO | Database connection success.
+2017/06/27 | 02:22:56 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:22:56 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:22:57 | WARN | Issuing page refresh command to socket ID:zIodQJTBpo92rmkBAAAA REASON : User not found in active sessions
+2017/06/27 | 02:26:21 | INFO | Starting system.
+2017/06/27 | 02:26:21 | INFO | Initializing system components.
+2017/06/27 | 02:26:21 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:26:21 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:26:21 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:26:21 | INFO | System initialization completed.
+2017/06/27 | 02:26:21 | INFO | Database connection success.
+2017/06/27 | 02:26:21 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:26:21 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:31:10 | INFO | Starting system.
+2017/06/27 | 02:31:10 | INFO | Initializing system components.
+2017/06/27 | 02:31:10 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:31:10 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:31:10 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:31:10 | INFO | System initialization completed.
+2017/06/27 | 02:31:10 | INFO | Database connection success.
+2017/06/27 | 02:31:10 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:31:10 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:31:14 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:31:14 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:31:14 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:31:14 | INFO | nyxsys is now online.
+2017/06/27 | 02:31:33 | INFO | nyxsys is now offline.
+2017/06/27 | 02:31:33 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:31:33 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:31:33 | INFO | nyxsys is now online.
+2017/06/27 | 02:31:42 | INFO | nyxsys is now offline.
+2017/06/27 | 02:31:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:31:42 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:31:42 | INFO | nyxsys is now online.
+2017/06/27 | 02:32:42 | INFO | nyxsys is now offline.
+2017/06/27 | 02:32:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:32:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:32:43 | INFO | nyxsys is now online.
+2017/06/27 | 02:35:39 | INFO | Starting system.
+2017/06/27 | 02:35:39 | INFO | Initializing system components.
+2017/06/27 | 02:35:39 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:35:39 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:35:39 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:35:39 | INFO | System initialization completed.
+2017/06/27 | 02:35:39 | INFO | Database connection success.
+2017/06/27 | 02:35:39 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:35:39 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:35:40 | WARN | Issuing page refresh command to socket ID:SekXzmEQ1KVFZ2SlAAAA REASON : User not found in active sessions
+2017/06/27 | 02:35:44 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:35:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:35:45 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:35:45 | INFO | nyxsys is now online.
+2017/06/27 | 02:37:25 | INFO | Starting system.
+2017/06/27 | 02:37:25 | INFO | Initializing system components.
+2017/06/27 | 02:37:25 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:37:25 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:37:25 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:37:25 | INFO | System initialization completed.
+2017/06/27 | 02:37:25 | INFO | Database connection success.
+2017/06/27 | 02:37:25 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:37:25 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:37:25 | WARN | Issuing page refresh command to socket ID:SMJ8Nz5l0Yz9QUN5AAAA REASON : User not found in active sessions
+2017/06/27 | 02:37:34 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:37:35 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:37:35 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:37:35 | INFO | nyxsys is now online.
+2017/06/27 | 02:39:16 | INFO | nyxsys is now offline.
+2017/06/27 | 02:39:17 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:39:17 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:39:17 | INFO | nyxsys is now online.
+2017/06/27 | 02:40:25 | INFO | Starting system.
+2017/06/27 | 02:40:25 | INFO | Initializing system components.
+2017/06/27 | 02:40:25 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:40:25 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:40:25 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:40:25 | INFO | System initialization completed.
+2017/06/27 | 02:40:25 | INFO | Database connection success.
+2017/06/27 | 02:40:25 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:40:25 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:40:25 | WARN | Issuing page refresh command to socket ID:r8d_fMMuqCTNhYu0AAAA REASON : User not found in active sessions
+2017/06/27 | 02:40:30 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:40:31 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:40:31 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:40:31 | INFO | nyxsys is now online.
+2017/06/27 | 02:41:15 | INFO | Starting system.
+2017/06/27 | 02:41:15 | INFO | Initializing system components.
+2017/06/27 | 02:41:15 | INFO | Attempting to connect to the database.
+2017/06/27 | 02:41:15 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 02:41:15 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 02:41:15 | INFO | System initialization completed.
+2017/06/27 | 02:41:15 | INFO | Database connection success.
+2017/06/27 | 02:41:15 | ARIA | Opening aria2c socket success.
+2017/06/27 | 02:41:15 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 02:41:16 | WARN | Issuing page refresh command to socket ID:THTWTsLZ6D3tcUuSAAAA REASON : User not found in active sessions
+2017/06/27 | 02:41:23 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 02:41:23 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:41:23 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:41:23 | INFO | nyxsys is now online.
+2017/06/27 | 02:44:26 | INFO | nyxsys is now offline.
+2017/06/27 | 02:44:26 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:44:26 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:44:26 | INFO | nyxsys is now online.
+2017/06/27 | 02:44:27 | INFO | nyxsys is now offline.
+2017/06/27 | 02:44:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:44:27 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:44:27 | INFO | nyxsys is now online.
+2017/06/27 | 02:44:29 | INFO | nyxsys is now offline.
+2017/06/27 | 02:44:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:44:30 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:44:30 | INFO | nyxsys is now online.
+2017/06/27 | 02:45:55 | INFO | nyxsys is now offline.
+2017/06/27 | 02:45:56 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:45:56 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:45:56 | INFO | nyxsys is now online.
+2017/06/27 | 02:49:26 | INFO | nyxsys is now offline.
+2017/06/27 | 02:49:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:49:27 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:49:27 | INFO | nyxsys is now online.
+2017/06/27 | 02:49:34 | INFO | nyxsys is now offline.
+2017/06/27 | 02:49:35 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:49:35 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:49:35 | INFO | nyxsys is now online.
+2017/06/27 | 02:49:41 | INFO | nyxsys is now offline.
+2017/06/27 | 02:49:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 02:49:42 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 02:49:42 | INFO | nyxsys is now online.
+2017/06/27 | 03:17:20 | INFO | Starting system.
+2017/06/27 | 03:17:21 | INFO | Initializing system components.
+2017/06/27 | 03:17:21 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 03:17:21 | INFO | System initialization completed.
+2017/06/27 | 03:17:21 | INFO | Attempting to connect to the database.
+2017/06/27 | 03:17:21 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 03:17:21 | INFO | Database connection success.
+2017/06/27 | 03:17:21 | ARIA | Opening aria2c socket success.
+2017/06/27 | 03:17:21 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 03:19:16 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 03:19:16 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:19:16 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:19:16 | INFO | nyxsys is now online.
+2017/06/27 | 03:19:59 | INFO | nyxsys is now offline.
+2017/06/27 | 03:19:59 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:19:59 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:19:59 | INFO | nyxsys is now online.
+2017/06/27 | 03:20:53 | INFO | nyxsys is now offline.
+2017/06/27 | 03:22:39 | INFO | Starting system.
+2017/06/27 | 03:22:39 | INFO | Initializing system components.
+2017/06/27 | 03:22:39 | INFO | Attempting to connect to the database.
+2017/06/27 | 03:22:39 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 03:22:39 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 03:22:39 | INFO | System initialization completed.
+2017/06/27 | 03:22:39 | INFO | Database connection success.
+2017/06/27 | 03:22:39 | ARIA | Opening aria2c socket success.
+2017/06/27 | 03:22:39 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 03:22:42 | WARN | Issuing page refresh command to socket ID:W9cZTJ4iPymO9OwkAAAA REASON : User not found in active sessions
+2017/06/27 | 03:22:47 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 03:22:48 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:22:48 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:22:48 | INFO | nyxsys is now online.
+2017/06/27 | 03:22:56 | INFO | nyxsys is now offline.
+2017/06/27 | 03:24:32 | INFO | Starting system.
+2017/06/27 | 03:24:32 | INFO | Initializing system components.
+2017/06/27 | 03:24:33 | INFO | Attempting to connect to the database.
+2017/06/27 | 03:24:33 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 03:24:33 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 03:24:33 | INFO | System initialization completed.
+2017/06/27 | 03:24:33 | INFO | Database connection success.
+2017/06/27 | 03:24:33 | ARIA | Opening aria2c socket success.
+2017/06/27 | 03:24:33 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 03:24:37 | WARN | Issuing page refresh command to socket ID:B9aJt0rAZLxS7IGYAAAA REASON : User not found in active sessions
+2017/06/27 | 03:24:43 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 03:24:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:24:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:24:43 | INFO | nyxsys is now online.
+2017/06/27 | 03:24:59 | INFO | nyxsys is now offline.
+2017/06/27 | 03:24:59 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:24:59 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:24:59 | INFO | nyxsys is now online.
+2017/06/27 | 03:28:09 | INFO | nyxsys is now offline.
+2017/06/27 | 03:28:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:28:10 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:28:10 | INFO | nyxsys is now online.
+2017/06/27 | 03:28:17 | INFO | nyxsys is now offline.
+2017/06/27 | 03:28:17 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:28:17 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:28:17 | INFO | nyxsys is now online.
+2017/06/27 | 03:28:35 | INFO | nyxsys is now offline.
+2017/06/27 | 03:28:38 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:28:38 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:28:38 | INFO | nyxsys is now online.
+2017/06/27 | 03:29:08 | INFO | nyxsys is now offline.
+2017/06/27 | 03:29:16 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:29:16 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:29:16 | INFO | nyxsys is now online.
+2017/06/27 | 03:35:28 | INFO | nyxsys is now offline.
+2017/06/27 | 03:35:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:35:28 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:35:28 | INFO | nyxsys is now online.
+2017/06/27 | 03:35:31 | INFO | nyxsys is now offline.
+2017/06/27 | 03:35:32 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:35:32 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:35:32 | INFO | nyxsys is now online.
+2017/06/27 | 03:35:33 | INFO | nyxsys is now offline.
+2017/06/27 | 03:35:33 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:35:33 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:35:33 | INFO | nyxsys is now online.
+2017/06/27 | 03:35:51 | INFO | nyxsys is now offline.
+2017/06/27 | 03:35:51 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:35:51 | INFO | nyxsys is now online.
+2017/06/27 | 03:35:51 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:02 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:03 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:03 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:03 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:04 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:04 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:04 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:04 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:05 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:06 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:06 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:06 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:07 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:08 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:08 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:08 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:09 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:10 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:10 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:15 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:25 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:25 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:25 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:38 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:39 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:41 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:41 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:41 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:41 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:46 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:47 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:47 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:50 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:50 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:50 | INFO | nyxsys is now online.
+2017/06/27 | 03:36:51 | INFO | nyxsys is now offline.
+2017/06/27 | 03:36:51 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:36:51 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:36:51 | INFO | nyxsys is now online.
+2017/06/27 | 03:38:41 | INFO | nyxsys is now offline.
+2017/06/27 | 03:38:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 03:38:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 03:38:43 | INFO | nyxsys is now online.
+2017/06/27 | 10:20:02 | INFO | No new approved download requests detected.
+2017/06/27 | 21:27:10 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:28:22 | INFO | Starting system.
+2017/06/27 | 21:28:22 | INFO | Initializing system components.
+2017/06/27 | 21:28:22 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:28:22 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:28:22 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:28:22 | INFO | System initialization completed.
+2017/06/27 | 21:28:23 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:28:23 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:28:23 | INFO | Database connection success.
+2017/06/27 | 21:28:23 | WARN | Issuing page refresh command to socket ID:z97PPKNJXHDiQI9aAAAA REASON : User not found in active sessions
+2017/06/27 | 21:28:23 | INFO | No new approved download requests detected.
+2017/06/27 | 21:28:46 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 21:28:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:28:47 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:28:47 | INFO | nyxsys is now online.
+2017/06/27 | 21:28:55 | INFO | nyxsys is now offline.
+2017/06/27 | 21:28:55 | INFO | Broadcasting stopped for /status#vVKwwyhhzCV499BLAAAF
+2017/06/27 | 21:28:55 | INFO | Broadcasting stopped for /status#vVKwwyhhzCV499BLAAAF
+2017/06/27 | 21:28:55 | INFO | Broadcasting stopped for /status#vVKwwyhhzCV499BLAAAF
+2017/06/27 | 21:28:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:28:55 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:28:55 | INFO | nyxsys is now online.
+2017/06/27 | 21:28:56 | INFO | nyxsys is now offline.
+2017/06/27 | 21:28:56 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:28:56 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:28:56 | INFO | nyxsys is now online.
+2017/06/27 | 21:28:57 | INFO | nyxsys is now offline.
+2017/06/27 | 21:28:58 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:28:58 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:28:58 | INFO | nyxsys is now online.
+2017/06/27 | 21:34:33 | INFO | Starting system.
+2017/06/27 | 21:34:33 | INFO | Initializing system components.
+2017/06/27 | 21:34:33 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:34:33 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:34:33 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:34:33 | INFO | System initialization completed.
+2017/06/27 | 21:34:33 | INFO | Database connection success.
+2017/06/27 | 21:34:33 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:34:33 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:34:33 | WARN | Issuing page refresh command to socket ID:Yy93qAjENfXRH1MOAAAA REASON : User not found in active sessions
+2017/06/27 | 21:34:34 | INFO | No new approved download requests detected.
+2017/06/27 | 21:34:59 | INFO | Starting system.
+2017/06/27 | 21:34:59 | INFO | Initializing system components.
+2017/06/27 | 21:34:59 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:34:59 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:34:59 | INFO | System initialization completed.
+2017/06/27 | 21:34:59 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:34:59 | INFO | Database connection success.
+2017/06/27 | 21:34:59 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:34:59 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:35:00 | INFO | No new approved download requests detected.
+2017/06/27 | 21:35:07 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 21:35:08 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:35:08 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:35:08 | INFO | nyxsys is now online.
+2017/06/27 | 21:35:31 | INFO | nyxsys is now offline.
+2017/06/27 | 21:35:32 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:35:32 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:35:32 | INFO | nyxsys is now online.
+2017/06/27 | 21:35:32 | INFO | Broadcasting stopped for /status#UevLg3osjf6MY_TYAAAA
+2017/06/27 | 21:35:32 | INFO | Broadcasting stopped for /status#UevLg3osjf6MY_TYAAAA
+2017/06/27 | 21:35:32 | INFO | Broadcasting stopped for /status#UevLg3osjf6MY_TYAAAA
+2017/06/27 | 21:48:17 | INFO | Starting system.
+2017/06/27 | 21:48:17 | INFO | Initializing system components.
+2017/06/27 | 21:48:17 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:48:17 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:48:17 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:48:17 | INFO | System initialization completed.
+2017/06/27 | 21:48:17 | INFO | Database connection success.
+2017/06/27 | 21:48:17 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:48:17 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:48:18 | INFO | No new approved download requests detected.
+2017/06/27 | 21:48:24 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 21:48:25 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 21:48:25 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 21:48:25 | INFO | nyxsys is now online.
+2017/06/27 | 21:51:05 | INFO | Starting system.
+2017/06/27 | 21:51:05 | INFO | Initializing system components.
+2017/06/27 | 21:51:05 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:51:05 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:51:05 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:51:05 | INFO | System initialization completed.
+2017/06/27 | 21:51:05 | INFO | Database connection success.
+2017/06/27 | 21:51:05 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:51:05 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:51:05 | WARN | Issuing page refresh command to socket ID:Qpg65lfhliAe6-VtAAAA REASON : User not found in active sessions
+2017/06/27 | 21:51:06 | INFO | No new approved download requests detected.
+2017/06/27 | 21:51:54 | INFO | Starting system.
+2017/06/27 | 21:51:54 | INFO | Initializing system components.
+2017/06/27 | 21:51:54 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:51:54 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:51:54 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:51:54 | INFO | System initialization completed.
+2017/06/27 | 21:51:54 | INFO | Database connection success.
+2017/06/27 | 21:51:54 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:51:54 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:51:55 | INFO | No new approved download requests detected.
+2017/06/27 | 21:54:44 | INFO | Starting system.
+2017/06/27 | 21:54:44 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:54:44 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:54:44 | INFO | Initializing system components.
+2017/06/27 | 21:54:44 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:54:44 | INFO | System initialization completed.
+2017/06/27 | 21:54:44 | INFO | Database connection success.
+2017/06/27 | 21:54:44 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:54:44 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:54:45 | INFO | No new approved download requests detected.
+2017/06/27 | 21:55:43 | INFO | Starting system.
+2017/06/27 | 21:55:43 | INFO | Initializing system components.
+2017/06/27 | 21:55:43 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:55:43 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:55:43 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:55:43 | INFO | System initialization completed.
+2017/06/27 | 21:55:43 | INFO | Database connection success.
+2017/06/27 | 21:55:43 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:55:43 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:55:44 | INFO | No new approved download requests detected.
+2017/06/27 | 21:56:21 | INFO | Starting system.
+2017/06/27 | 21:56:21 | INFO | Initializing system components.
+2017/06/27 | 21:56:21 | INFO | Attempting to connect to the database.
+2017/06/27 | 21:56:21 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 21:56:21 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 21:56:21 | INFO | System initialization completed.
+2017/06/27 | 21:56:21 | INFO | Database connection success.
+2017/06/27 | 21:56:21 | ARIA | Opening aria2c socket success.
+2017/06/27 | 21:56:21 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 21:56:22 | INFO | No new approved download requests detected.
+2017/06/27 | 22:03:34 | INFO | Starting system.
+2017/06/27 | 22:03:34 | INFO | Initializing system components.
+2017/06/27 | 22:03:34 | INFO | Attempting to connect to the database.
+2017/06/27 | 22:03:34 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 22:03:34 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 22:03:34 | INFO | System initialization completed.
+2017/06/27 | 22:03:34 | INFO | Database connection success.
+2017/06/27 | 22:03:34 | ARIA | Opening aria2c socket success.
+2017/06/27 | 22:03:34 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 22:03:35 | INFO | No new approved download requests detected.
+2017/06/27 | 22:03:38 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 22:03:38 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:03:38 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:03:38 | INFO | nyxsys is now online.
+2017/06/27 | 22:03:49 | INFO | nyxsys is now offline.
+2017/06/27 | 22:03:49 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:03:49 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:03:49 | INFO | nyxsys is now online.
+2017/06/27 | 22:03:50 | INFO | Broadcasting stopped for /status#AFbLkIjZt6WKWkrmAAAA
+2017/06/27 | 22:03:50 | INFO | Broadcasting stopped for /status#AFbLkIjZt6WKWkrmAAAA
+2017/06/27 | 22:03:50 | INFO | Broadcasting stopped for /status#AFbLkIjZt6WKWkrmAAAA
+2017/06/27 | 22:05:41 | INFO | nyxsys is now offline.
+2017/06/27 | 22:06:37 | INFO | Starting system.
+2017/06/27 | 22:06:37 | INFO | Initializing system components.
+2017/06/27 | 22:06:37 | INFO | Attempting to connect to the database.
+2017/06/27 | 22:06:37 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 22:06:37 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 22:06:37 | INFO | System initialization completed.
+2017/06/27 | 22:06:37 | INFO | Database connection success.
+2017/06/27 | 22:06:37 | ARIA | Opening aria2c socket success.
+2017/06/27 | 22:06:37 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 22:06:38 | INFO | No new approved download requests detected.
+2017/06/27 | 22:06:40 | WARN | Issuing page refresh command to socket ID:0FUQTAv_IdAZbPIYAAAA REASON : User not found in active sessions
+2017/06/27 | 22:06:44 | WARN | Issuing page refresh command to socket ID:WIkdG0ySHMuzgqtbAAAB REASON : User not found in active sessions
+2017/06/27 | 22:06:48 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 22:06:49 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:06:49 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:06:49 | INFO | nyxsys is now online.
+2017/06/27 | 22:06:58 | INFO | nyxsys is now offline.
+2017/06/27 | 22:07:29 | INFO | Starting system.
+2017/06/27 | 22:07:29 | INFO | Initializing system components.
+2017/06/27 | 22:07:29 | INFO | Attempting to connect to the database.
+2017/06/27 | 22:07:29 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 22:07:29 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 22:07:29 | INFO | System initialization completed.
+2017/06/27 | 22:07:29 | INFO | Database connection success.
+2017/06/27 | 22:07:29 | ARIA | Opening aria2c socket success.
+2017/06/27 | 22:07:29 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 22:07:30 | INFO | No new approved download requests detected.
+2017/06/27 | 22:07:31 | WARN | Issuing page refresh command to socket ID:yNerpgLQEg6iszQjAAAA REASON : User not found in active sessions
+2017/06/27 | 22:07:36 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 22:07:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:07:37 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:07:37 | INFO | nyxsys is now online.
+2017/06/27 | 22:07:47 | INFO | nyxsys is now offline.
+2017/06/27 | 22:07:48 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:07:48 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:07:48 | INFO | nyxsys is now online.
+2017/06/27 | 22:07:48 | INFO | Broadcasting stopped for /status#_xNp6hLq2rJmkxn5AAAC
+2017/06/27 | 22:07:48 | INFO | Broadcasting stopped for /status#_xNp6hLq2rJmkxn5AAAC
+2017/06/27 | 22:07:48 | INFO | Broadcasting stopped for /status#_xNp6hLq2rJmkxn5AAAC
+2017/06/27 | 22:07:53 | INFO | nyxsys is now offline.
+2017/06/27 | 22:08:57 | INFO | Broadcasting stopped for /status#yNerpgLQEg6iszQjAAAA
+2017/06/27 | 22:08:57 | INFO | Broadcasting stopped for /status#yNerpgLQEg6iszQjAAAA
+2017/06/27 | 22:08:57 | INFO | Broadcasting stopped for /status#yNerpgLQEg6iszQjAAAA
+2017/06/27 | 22:10:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:10:50 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:10:50 | INFO | nyxsys is now online.
+2017/06/27 | 22:10:57 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:19 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:19 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:20 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:21 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:21 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:29 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:30 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:30 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:38 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:38 | INFO | Broadcasting stopped for /status#2V00ATmSuz0OHQF4AAAH
+2017/06/27 | 22:13:38 | INFO | Broadcasting stopped for /status#2V00ATmSuz0OHQF4AAAH
+2017/06/27 | 22:13:38 | INFO | Broadcasting stopped for /status#2V00ATmSuz0OHQF4AAAH
+2017/06/27 | 22:13:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:39 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:40 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:40 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:40 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:40 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:42 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:42 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:42 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:50 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:50 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:50 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:56 | INFO | nyxsys is now offline.
+2017/06/27 | 22:13:57 | INFO | Broadcasting stopped for /status#8SgacCHawclTRYI3AAAL
+2017/06/27 | 22:13:57 | INFO | Broadcasting stopped for /status#8SgacCHawclTRYI3AAAL
+2017/06/27 | 22:13:57 | INFO | Broadcasting stopped for /status#8SgacCHawclTRYI3AAAL
+2017/06/27 | 22:13:57 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:13:57 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:13:57 | INFO | nyxsys is now online.
+2017/06/27 | 22:13:58 | INFO | nyxsys is now offline.
+2017/06/27 | 22:17:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:17:28 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:17:28 | INFO | nyxsys is now online.
+2017/06/27 | 22:19:38 | INFO | Starting system.
+2017/06/27 | 22:19:38 | INFO | Initializing system components.
+2017/06/27 | 22:19:38 | INFO | Attempting to connect to the database.
+2017/06/27 | 22:19:38 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 22:19:38 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 22:19:38 | INFO | System initialization completed.
+2017/06/27 | 22:19:38 | INFO | Database connection success.
+2017/06/27 | 22:19:38 | ARIA | Opening aria2c socket success.
+2017/06/27 | 22:19:38 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 22:19:38 | WARN | Issuing page refresh command to socket ID:IxHwLo2W2qIOnBL7AAAA REASON : User not found in active sessions
+2017/06/27 | 22:19:39 | INFO | No new approved download requests detected.
+2017/06/27 | 22:19:44 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 22:19:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:19:45 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:19:45 | INFO | nyxsys is now online.
+2017/06/27 | 22:19:54 | INFO | nyxsys is now offline.
+2017/06/27 | 22:19:55 | INFO | Broadcasting stopped for /status#QiPAldaXixm20RJLAAAC
+2017/06/27 | 22:19:55 | INFO | Broadcasting stopped for /status#QiPAldaXixm20RJLAAAC
+2017/06/27 | 22:19:55 | INFO | Broadcasting stopped for /status#QiPAldaXixm20RJLAAAC
+2017/06/27 | 22:19:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:19:55 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:19:55 | INFO | nyxsys is now online.
+2017/06/27 | 22:49:43 | INFO | nyxsys is now offline.
+2017/06/27 | 22:49:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:49:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:49:43 | INFO | nyxsys is now online.
+2017/06/27 | 22:49:44 | INFO | Broadcasting stopped for /status#NaBExHRdS4RUKyrrAAAD
+2017/06/27 | 22:49:44 | INFO | Broadcasting stopped for /status#NaBExHRdS4RUKyrrAAAD
+2017/06/27 | 22:49:44 | INFO | Broadcasting stopped for /status#NaBExHRdS4RUKyrrAAAD
+2017/06/27 | 22:49:50 | INFO | nyxsys is now offline.
+2017/06/27 | 22:49:51 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:49:51 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:49:51 | INFO | nyxsys is now online.
+2017/06/27 | 22:57:10 | INFO | nyxsys is now offline.
+2017/06/27 | 22:57:11 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:57:11 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:57:11 | INFO | nyxsys is now online.
+2017/06/27 | 22:57:11 | INFO | Broadcasting stopped for /status#ikNOOlUjWIPI8qarAAAF
+2017/06/27 | 22:57:11 | INFO | Broadcasting stopped for /status#ikNOOlUjWIPI8qarAAAF
+2017/06/27 | 22:57:11 | INFO | Broadcasting stopped for /status#ikNOOlUjWIPI8qarAAAF
+2017/06/27 | 22:57:38 | INFO | nyxsys is now offline.
+2017/06/27 | 22:57:39 | INFO | Broadcasting stopped for /status#5ic9Ba7eVRZVOp7EAAAG
+2017/06/27 | 22:57:39 | INFO | Broadcasting stopped for /status#5ic9Ba7eVRZVOp7EAAAG
+2017/06/27 | 22:57:39 | INFO | Broadcasting stopped for /status#5ic9Ba7eVRZVOp7EAAAG
+2017/06/27 | 22:57:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:57:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:57:39 | INFO | nyxsys is now online.
+2017/06/27 | 22:58:47 | INFO | nyxsys is now offline.
+2017/06/27 | 22:58:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:58:47 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:58:47 | INFO | nyxsys is now online.
+2017/06/27 | 22:58:47 | INFO | Broadcasting stopped for /status#gzNM9-7yfPfS_znTAAAH
+2017/06/27 | 22:58:47 | INFO | Broadcasting stopped for /status#gzNM9-7yfPfS_znTAAAH
+2017/06/27 | 22:58:47 | INFO | Broadcasting stopped for /status#gzNM9-7yfPfS_znTAAAH
+2017/06/27 | 22:59:43 | INFO | nyxsys is now offline.
+2017/06/27 | 22:59:44 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 22:59:44 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 22:59:44 | INFO | nyxsys is now online.
+2017/06/27 | 22:59:44 | INFO | Broadcasting stopped for /status#npzwliQ00Sm9irCPAAAI
+2017/06/27 | 22:59:44 | INFO | Broadcasting stopped for /status#npzwliQ00Sm9irCPAAAI
+2017/06/27 | 22:59:44 | INFO | Broadcasting stopped for /status#npzwliQ00Sm9irCPAAAI
+2017/06/27 | 23:00:07 | INFO | nyxsys is now offline.
+2017/06/27 | 23:00:08 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:00:08 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:00:08 | INFO | nyxsys is now online.
+2017/06/27 | 23:00:13 | INFO | nyxsys is now offline.
+2017/06/27 | 23:00:13 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:00:13 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:00:13 | INFO | nyxsys is now online.
+2017/06/27 | 23:00:47 | INFO | nyxsys is now offline.
+2017/06/27 | 23:00:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:00:47 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:00:47 | INFO | nyxsys is now online.
+2017/06/27 | 23:00:48 | INFO | nyxsys is now offline.
+2017/06/27 | 23:00:49 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:00:49 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:00:49 | INFO | nyxsys is now online.
+2017/06/27 | 23:01:15 | INFO | nyxsys is now offline.
+2017/06/27 | 23:01:15 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:01:15 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:01:15 | INFO | nyxsys is now online.
+2017/06/27 | 23:01:19 | INFO | nyxsys is now offline.
+2017/06/27 | 23:01:20 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:01:20 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:01:20 | INFO | nyxsys is now online.
+2017/06/27 | 23:02:45 | INFO | nyxsys is now offline.
+2017/06/27 | 23:02:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:02:47 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:02:47 | INFO | nyxsys is now online.
+2017/06/27 | 23:03:09 | INFO | nyxsys is now offline.
+2017/06/27 | 23:03:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:03:09 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:03:09 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:39 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | INFO | Broadcasting stopped for /status#WfcHKO3CHK9xoXlWAAAS
+2017/06/27 | 23:05:39 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:39 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:39 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:44 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:45 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:45 | INFO | nyxsys is now online.
+2017/06/27 | 23:05:51 | INFO | nyxsys is now offline.
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:51 | INFO | Broadcasting stopped for /status#Xf4sDWUnhUWRliRoAAAU
+2017/06/27 | 23:05:52 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:05:52 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:05:52 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:40 | INFO | nyxsys is now offline.
+2017/06/27 | 23:06:40 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:06:40 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:06:40 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:44 | INFO | nyxsys is now offline.
+2017/06/27 | 23:06:44 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:06:44 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:06:44 | INFO | nyxsys is now online.
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:06:45 | INFO | Broadcasting stopped for /status#0bYeD2IB-TXs8baHAAAW
+2017/06/27 | 23:07:02 | INFO | nyxsys is now offline.
+2017/06/27 | 23:07:02 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:07:02 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:07:02 | INFO | nyxsys is now online.
+2017/06/27 | 23:07:07 | INFO | nyxsys is now offline.
+2017/06/27 | 23:07:07 | INFO | nyxsys logged out from the system : ::1
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:08 | INFO | Broadcasting stopped for /status#xTSW7xPNJKnbtaPJAAAY
+2017/06/27 | 23:07:20 | INFO | Emalsha registered in the system from ::1
+2017/06/27 | 23:07:21 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:21 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:27 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:27 | INFO | Emalsha is now online.
+2017/06/27 | 23:07:28 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:07:28 | INFO | Emalsha is now online.
+2017/06/27 | 23:08:01 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:08:01 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:08:01 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:08:01 | INFO | nyxsys is now online.
+2017/06/27 | 23:08:10 | INFO | nyxsys is now offline.
+2017/06/27 | 23:08:10 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:10 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:08:10 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:08:10 | INFO | nyxsys is now online.
+2017/06/27 | 23:08:11 | INFO | Broadcasting stopped for /status#6E2zjmfahG1a9nJjAAAg
+2017/06/27 | 23:08:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:08:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:23:07 | INFO | Starting system.
+2017/06/27 | 23:23:07 | INFO | Initializing system components.
+2017/06/27 | 23:23:07 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:23:07 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:23:07 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:23:07 | INFO | System initialization completed.
+2017/06/27 | 23:23:08 | INFO | Database connection success.
+2017/06/27 | 23:23:08 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:23:08 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:23:09 | INFO | No new approved download requests detected.
+2017/06/27 | 23:23:10 | WARN | Issuing page refresh command to socket ID:VJBDjuqf-qhjiSzgAAAA REASON : User not found in active sessions
+2017/06/27 | 23:23:15 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:23:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:23:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:23:34 | WARN | Issuing page refresh command to socket ID:oiOnv0GKAP_HBi1mAAAD REASON : User not found in active sessions
+2017/06/27 | 23:23:43 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:23:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:23:43 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:23:43 | INFO | nyxsys is now online.
+2017/06/27 | 23:23:46 | INFO | nyxsys is now offline.
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | INFO | Broadcasting stopped for /status#EkBAPAdoM05fw7X4AAAF
+2017/06/27 | 23:23:46 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:23:46 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:23:46 | INFO | nyxsys is now online.
+2017/06/27 | 23:24:32 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:24:32 | INFO | Emalsha is now online.
+2017/06/27 | 23:25:24 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:25:24 | INFO | Emalsha is now online.
+2017/06/27 | 23:25:31 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:25:31 | INFO | Emalsha is now online.
+2017/06/27 | 23:27:52 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:27:52 | INFO | Emalsha is now online.
+2017/06/27 | 23:27:58 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:27:58 | INFO | Emalsha is now online.
+2017/06/27 | 23:29:11 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:29:11 | INFO | Emalsha is now online.
+2017/06/27 | 23:29:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:29:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:30:13 | INFO | Starting system.
+2017/06/27 | 23:30:13 | INFO | Initializing system components.
+2017/06/27 | 23:30:13 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:30:13 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:30:13 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:30:13 | INFO | System initialization completed.
+2017/06/27 | 23:30:13 | INFO | Database connection success.
+2017/06/27 | 23:30:13 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:30:13 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:30:13 | WARN | Issuing page refresh command to socket ID:hdLe12RuB12QGxSVAAAA REASON : User not found in active sessions
+2017/06/27 | 23:30:14 | INFO | No new approved download requests detected.
+2017/06/27 | 23:30:17 | WARN | Issuing page refresh command to socket ID:HfDB6KTZiMHYcT_xAAAC REASON : User not found in active sessions
+2017/06/27 | 23:30:25 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:30:26 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:30:26 | INFO | Emalsha is now online.
+2017/06/27 | 23:30:34 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:30:35 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:30:35 | INFO | nyxsys is now online.
+2017/06/27 | 23:30:35 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:30:36 | INFO | nyxsys is now offline.
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:36 | INFO | Broadcasting stopped for /status#2Sl3dBvSooJqesO5AAAF
+2017/06/27 | 23:30:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:30:37 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:30:37 | INFO | nyxsys is now online.
+2017/06/27 | 23:31:07 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:31:07 | INFO | Emalsha is now online.
+2017/06/27 | 23:33:04 | INFO | Starting system.
+2017/06/27 | 23:33:04 | INFO | Initializing system components.
+2017/06/27 | 23:33:04 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:33:04 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:33:04 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:33:04 | INFO | System initialization completed.
+2017/06/27 | 23:33:04 | INFO | Database connection success.
+2017/06/27 | 23:33:04 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:33:04 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:33:05 | INFO | No new approved download requests detected.
+2017/06/27 | 23:33:06 | WARN | Issuing page refresh command to socket ID:8JpRDjyYDhh2EkMMAAAA REASON : User not found in active sessions
+2017/06/27 | 23:33:14 | WARN | Issuing page refresh command to socket ID:84S0WpKpoN30FxulAAAC REASON : User not found in active sessions
+2017/06/27 | 23:33:19 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:33:19 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:33:19 | INFO | Emalsha is now online.
+2017/06/27 | 23:33:28 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:33:29 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:33:29 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:33:29 | INFO | nyxsys is now online.
+2017/06/27 | 23:33:29 | INFO | nyxsys is now offline.
+2017/06/27 | 23:33:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:33:30 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:33:30 | INFO | nyxsys is now online.
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:33:30 | INFO | Broadcasting stopped for /status#J3uqyYXpqv8l9V62AAAF
+2017/06/27 | 23:34:03 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:34:03 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:22 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:22 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:29 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:29 | INFO | Emalsha is now online.
+2017/06/27 | 23:37:59 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:37:59 | INFO | Emalsha is now online.
+2017/06/27 | 23:38:03 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:38:03 | INFO | Emalsha is now online.
+2017/06/27 | 23:39:44 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:39:44 | INFO | Emalsha is now online.
+2017/06/27 | 23:40:01 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:40:01 | INFO | Emalsha is now online.
+2017/06/27 | 23:44:28 | INFO | Starting system.
+2017/06/27 | 23:44:28 | INFO | Initializing system components.
+2017/06/27 | 23:44:28 | INFO | Attempting to connect to the database.
+2017/06/27 | 23:44:28 | INFO | System initialization completed.
+2017/06/27 | 23:44:28 | ARIA | Manually opening aria2c socket ...
+2017/06/27 | 23:44:28 | INFO | Socket data passed to Aria2 Center
+2017/06/27 | 23:44:28 | INFO | Database connection success.
+2017/06/27 | 23:44:28 | ARIA | Opening aria2c socket success.
+2017/06/27 | 23:44:28 | ARIA | Manually opened aria2c socket.
+2017/06/27 | 23:44:28 | WARN | Issuing page refresh command to socket ID:srLCTv98WtFuMS9hAAAA REASON : User not found in active sessions
+2017/06/27 | 23:44:29 | INFO | No new approved download requests detected.
+2017/06/27 | 23:44:39 | WARN | Issuing page refresh command to socket ID:YN5ODAeCrjvPVqqSAAAC REASON : User not found in active sessions
+2017/06/27 | 23:44:50 | INFO | Emalsha logged in to the system from ::1
+2017/06/27 | 23:44:51 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:44:51 | INFO | Emalsha is now online.
+2017/06/27 | 23:45:05 | INFO | nyxsys logged in to the system from ::1
+2017/06/27 | 23:45:06 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:45:06 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:45:06 | INFO | nyxsys is now online.
+2017/06/27 | 23:45:08 | INFO | nyxsys is now offline.
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:08 | INFO | Broadcasting stopped for /status#Dq8Bep83fygVZS9YAAAF
+2017/06/27 | 23:45:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/27 | 23:45:09 | AUTH | nyxsys Authenticated from 1
+2017/06/27 | 23:45:09 | INFO | nyxsys is now online.
+2017/06/27 | 23:45:57 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:45:57 | INFO | Emalsha is now online.
+2017/06/27 | 23:48:10 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:48:10 | INFO | Emalsha is now online.
+2017/06/27 | 23:48:15 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:48:15 | INFO | Emalsha is now online.
+2017/06/27 | 23:51:26 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:51:26 | INFO | Emalsha is now online.
+2017/06/27 | 23:51:36 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:51:36 | INFO | Emalsha is now online.
+2017/06/27 | 23:52:25 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:52:25 | INFO | Emalsha is now online.
+2017/06/27 | 23:54:51 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:54:51 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:04 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:04 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:18 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:18 | INFO | Emalsha is now online.
+2017/06/27 | 23:55:19 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:55:19 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:12 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:12 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:21 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:21 | INFO | Emalsha is now online.
+2017/06/27 | 23:59:57 | AUTH | Emalsha Authenticated from 1
+2017/06/27 | 23:59:57 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:13 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:13 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:17 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:17 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:26 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:26 | INFO | Emalsha is now online.
+2017/06/28 | 00:00:33 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:00:33 | INFO | Emalsha is now online.
+2017/06/28 | 00:04:54 | INFO | Starting system.
+2017/06/28 | 00:04:54 | INFO | Initializing system components.
+2017/06/28 | 00:04:54 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:04:54 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:04:54 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:04:54 | INFO | System initialization completed.
+2017/06/28 | 00:04:54 | INFO | Database connection success.
+2017/06/28 | 00:04:54 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:04:54 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:04:55 | WARN | Issuing page refresh command to socket ID:hglZ_BsbZhbTg0kFAAAA REASON : User not found in active sessions
+2017/06/28 | 00:05:08 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:05:08 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:05:08 | INFO | Emalsha is now online.
+2017/06/28 | 00:05:15 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:05:15 | INFO | Emalsha is now online.
+2017/06/28 | 00:05:20 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:05:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:05:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:05:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:05:22 | INFO | nyxsys is now offline.
+2017/06/28 | 00:05:23 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:05:23 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:05:23 | INFO | nyxsys is now online.
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:05:23 | INFO | Broadcasting stopped for /status#OiIeAo0z7KFhD4F4AAAF
+2017/06/28 | 00:06:00 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:06:00 | INFO | Emalsha is now online.
+2017/06/28 | 00:07:15 | INFO | Starting system.
+2017/06/28 | 00:07:15 | INFO | Initializing system components.
+2017/06/28 | 00:07:15 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:07:15 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:07:15 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:07:15 | INFO | System initialization completed.
+2017/06/28 | 00:07:15 | INFO | Database connection success.
+2017/06/28 | 00:07:15 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:07:15 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:07:15 | WARN | Issuing page refresh command to socket ID:AUtf4Mkr-acWY2u0AAAA REASON : User not found in active sessions
+2017/06/28 | 00:07:15 | WARN | Issuing page refresh command to socket ID:SuNpM4NgBV6Gqa2_AAAB REASON : User not found in active sessions
+2017/06/28 | 00:07:21 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:07:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:07:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:07:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:07:23 | INFO | nyxsys is now offline.
+2017/06/28 | 00:07:23 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:07:23 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:07:23 | INFO | nyxsys is now online.
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:24 | INFO | Broadcasting stopped for /status#w_xFCGktYGQV_6Z2AAAE
+2017/06/28 | 00:07:35 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:07:35 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:07:35 | INFO | Emalsha is now online.
+2017/06/28 | 00:07:53 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:07:53 | INFO | Emalsha is now online.
+2017/06/28 | 00:08:05 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:08:05 | INFO | Emalsha is now online.
+2017/06/28 | 00:14:41 | INFO | nyxsys is now offline.
+2017/06/28 | 00:14:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:14:42 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:14:42 | INFO | nyxsys is now online.
+2017/06/28 | 00:15:04 | INFO | nyxsys is now offline.
+2017/06/28 | 00:15:04 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:15:04 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:15:04 | INFO | nyxsys is now online.
+2017/06/28 | 00:15:18 | INFO | nyxsys is now offline.
+2017/06/28 | 00:15:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:15:19 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:15:19 | INFO | nyxsys is now online.
+2017/06/28 | 00:15:39 | INFO | nyxsys is now offline.
+2017/06/28 | 00:15:40 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:15:40 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:15:40 | INFO | nyxsys is now online.
+2017/06/28 | 00:16:30 | INFO | nyxsys is now offline.
+2017/06/28 | 00:16:31 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:16:31 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:16:31 | INFO | nyxsys is now online.
+2017/06/28 | 00:16:53 | INFO | nyxsys is now offline.
+2017/06/28 | 00:16:54 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:16:54 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:16:54 | INFO | nyxsys is now online.
+2017/06/28 | 00:17:25 | INFO | nyxsys is now offline.
+2017/06/28 | 00:17:26 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:17:26 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:17:26 | INFO | nyxsys is now online.
+2017/06/28 | 00:17:44 | INFO | nyxsys is now offline.
+2017/06/28 | 00:17:44 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:17:44 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:17:44 | INFO | nyxsys is now online.
+2017/06/28 | 00:20:44 | INFO | nyxsys is now offline.
+2017/06/28 | 00:20:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:20:45 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:20:45 | INFO | nyxsys is now online.
+2017/06/28 | 00:20:55 | INFO | nyxsys is now offline.
+2017/06/28 | 00:20:56 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:20:56 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:20:56 | INFO | nyxsys is now online.
+2017/06/28 | 00:21:13 | INFO | nyxsys is now offline.
+2017/06/28 | 00:21:14 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:21:14 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:21:14 | INFO | nyxsys is now online.
+2017/06/28 | 00:21:29 | INFO | nyxsys is now offline.
+2017/06/28 | 00:21:30 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:21:30 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:21:30 | INFO | nyxsys is now online.
+2017/06/28 | 00:21:36 | INFO | nyxsys is now offline.
+2017/06/28 | 00:21:37 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:21:37 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:21:37 | INFO | nyxsys is now online.
+2017/06/28 | 00:21:44 | INFO | nyxsys is now offline.
+2017/06/28 | 00:21:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:21:45 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:21:45 | INFO | nyxsys is now online.
+2017/06/28 | 00:21:55 | INFO | nyxsys is now offline.
+2017/06/28 | 00:21:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:21:55 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:21:55 | INFO | nyxsys is now online.
+2017/06/28 | 00:24:01 | INFO | nyxsys is now offline.
+2017/06/28 | 00:24:02 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:24:02 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:24:02 | INFO | nyxsys is now online.
+2017/06/28 | 00:25:12 | INFO | nyxsys is now offline.
+2017/06/28 | 00:25:12 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:25:12 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:25:12 | INFO | nyxsys is now online.
+2017/06/28 | 00:25:50 | INFO | nyxsys is now offline.
+2017/06/28 | 00:25:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:25:50 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:25:50 | INFO | nyxsys is now online.
+2017/06/28 | 00:26:04 | INFO | nyxsys is now offline.
+2017/06/28 | 00:26:05 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:26:05 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:26:05 | INFO | nyxsys is now online.
+2017/06/28 | 00:26:36 | INFO | nyxsys is now offline.
+2017/06/28 | 00:26:36 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:26:36 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:26:36 | INFO | nyxsys is now online.
+2017/06/28 | 00:27:27 | INFO | nyxsys is now offline.
+2017/06/28 | 00:27:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:27:27 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:27:27 | INFO | nyxsys is now online.
+2017/06/28 | 00:27:42 | INFO | nyxsys is now offline.
+2017/06/28 | 00:27:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:27:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:27:43 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:41 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:42 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:42 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:45 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:45 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:45 | INFO | nyxsys is now online.
+2017/06/28 | 00:29:47 | INFO | nyxsys is now offline.
+2017/06/28 | 00:29:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:29:47 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:29:47 | INFO | nyxsys is now online.
+2017/06/28 | 00:30:39 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:30:39 | INFO | Emalsha is now online.
+2017/06/28 | 00:31:21 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:31:21 | INFO | Emalsha is now online.
+2017/06/28 | 00:31:22 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:31:22 | INFO | Emalsha is now online.
+2017/06/28 | 00:32:38 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:32:38 | INFO | Emalsha is now online.
+2017/06/28 | 00:32:57 | INFO | nyxsys is now offline.
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:57 | INFO | Broadcasting stopped for /status#iq1e3EAJbj3FrsQUAAAi
+2017/06/28 | 00:32:58 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:32:58 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:32:58 | INFO | nyxsys is now online.
+2017/06/28 | 00:33:02 | INFO | nyxsys is now offline.
+2017/06/28 | 00:33:03 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:33:03 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:03 | INFO | nyxsys is now online.
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:03 | INFO | Broadcasting stopped for /status#-wSiPKNkt4lhD9xGAAAn
+2017/06/28 | 00:33:31 | ARIA | Adding 1501182211265 to download queue...
+2017/06/28 | 00:33:31 | INFO | Maxing out the download queue.
+2017/06/28 | 00:33:31 | ARIA | Adding 1501182211265 to download success...
+2017/06/28 | 00:33:31 | ARIA | Download of GID:5852c80dc3529de4 Initiated.
+2017/06/28 | 00:33:32 | CRIT | Download of GID:5852c80dc3529de4 Error.
+2017/06/28 | 00:33:32 | CRIT | Database successfully updated after error occurred at downloading
+2017/06/28 | 00:33:32 | INFO | No new approved download requests detected.
+2017/06/28 | 00:33:37 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | INFO | Broadcasting stopped for /status#vRvWrbmHKkc194nmAAAr
+2017/06/28 | 00:33:52 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:54 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:33:56 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:40 | INFO | Starting system.
+2017/06/28 | 00:36:40 | INFO | Initializing system components.
+2017/06/28 | 00:36:40 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:36:40 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:36:40 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:36:40 | INFO | System initialization completed.
+2017/06/28 | 00:36:40 | INFO | Database connection success.
+2017/06/28 | 00:36:40 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:36:40 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:36:41 | INFO | No new approved download requests detected.
+2017/06/28 | 00:36:42 | WARN | Issuing page refresh command to socket ID:d80KntYOJYj6gNUyAAAA REASON : User not found in active sessions
+2017/06/28 | 00:36:45 | WARN | Issuing page refresh command to socket ID:a4xXbrSuUUMCkG-HAAAC REASON : User not found in active sessions
+2017/06/28 | 00:36:50 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:36:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:36:50 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:50 | INFO | nyxsys is now online.
+2017/06/28 | 00:36:52 | INFO | nyxsys is now offline.
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:52 | INFO | Broadcasting stopped for /status#XyHsqgMptAJPYqX4AAAE
+2017/06/28 | 00:36:53 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:36:53 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:36:53 | INFO | nyxsys is now online.
+2017/06/28 | 00:37:00 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:37:00 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:00 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:07 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:07 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:09 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:09 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:11 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:11 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:13 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:13 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:19 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:19 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:21 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:21 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:49 | INFO | New downloads found.
+2017/06/28 | 00:37:49 | ARIA | Adding 1501182469585 to download queue...
+2017/06/28 | 00:37:49 | INFO | Maxing out the download queue.
+2017/06/28 | 00:37:49 | ARIA | Adding 1501182469585 to download success...
+2017/06/28 | 00:37:49 | ARIA | Download of GID:738ffdd88e7e3959 Initiated.
+2017/06/28 | 00:37:50 | CRIT | Download of GID:738ffdd88e7e3959 Error.
+2017/06/28 | 00:37:50 | CRIT | Database successfully updated after error occurred at downloading
+2017/06/28 | 00:37:50 | INFO | No new approved download requests detected.
+2017/06/28 | 00:37:57 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:57 | INFO | Emalsha is now online.
+2017/06/28 | 00:37:59 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:37:59 | INFO | Emalsha is now online.
+2017/06/28 | 00:38:01 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:38:01 | INFO | Emalsha is now online.
+2017/06/28 | 00:38:03 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:38:03 | INFO | Emalsha is now online.
+2017/06/28 | 00:40:55 | INFO | Starting system.
+2017/06/28 | 00:40:55 | INFO | Initializing system components.
+2017/06/28 | 00:40:55 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:40:55 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:40:55 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:40:55 | INFO | System initialization completed.
+2017/06/28 | 00:40:55 | INFO | Database connection success.
+2017/06/28 | 00:40:55 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:40:55 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:40:56 | INFO | No new approved download requests detected.
+2017/06/28 | 00:40:58 | WARN | Issuing page refresh command to socket ID:r74DJL6Xg_mzfTtSAAAA REASON : User not found in active sessions
+2017/06/28 | 00:40:59 | WARN | Issuing page refresh command to socket ID:rKyJuLBb5vR4NAOlAAAB REASON : User not found in active sessions
+2017/06/28 | 00:41:31 | INFO | Starting system.
+2017/06/28 | 00:41:31 | INFO | Initializing system components.
+2017/06/28 | 00:41:31 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:41:31 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:41:31 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:41:31 | INFO | System initialization completed.
+2017/06/28 | 00:41:31 | INFO | Database connection success.
+2017/06/28 | 00:41:31 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:41:31 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:41:32 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:18 | INFO | Starting system.
+2017/06/28 | 00:42:18 | INFO | Initializing system components.
+2017/06/28 | 00:42:18 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:18 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:18 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:18 | INFO | System initialization completed.
+2017/06/28 | 00:42:18 | INFO | Database connection success.
+2017/06/28 | 00:42:18 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:18 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:19 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:43 | INFO | Starting system.
+2017/06/28 | 00:42:43 | INFO | Initializing system components.
+2017/06/28 | 00:42:43 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:43 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:43 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:43 | INFO | System initialization completed.
+2017/06/28 | 00:42:43 | INFO | Database connection success.
+2017/06/28 | 00:42:43 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:43 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:44 | INFO | No new approved download requests detected.
+2017/06/28 | 00:42:51 | INFO | Starting system.
+2017/06/28 | 00:42:51 | INFO | Initializing system components.
+2017/06/28 | 00:42:51 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:42:51 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:42:51 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:42:51 | INFO | System initialization completed.
+2017/06/28 | 00:42:51 | INFO | Database connection success.
+2017/06/28 | 00:42:51 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:42:51 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:42:52 | INFO | No new approved download requests detected.
+2017/06/28 | 00:43:13 | INFO | Starting system.
+2017/06/28 | 00:43:13 | INFO | Initializing system components.
+2017/06/28 | 00:43:13 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:43:13 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:43:13 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:43:13 | INFO | System initialization completed.
+2017/06/28 | 00:43:13 | INFO | Database connection success.
+2017/06/28 | 00:43:13 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:43:13 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:43:14 | INFO | No new approved download requests detected.
+2017/06/28 | 00:43:57 | INFO | Starting system.
+2017/06/28 | 00:43:57 | INFO | Initializing system components.
+2017/06/28 | 00:43:57 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:43:58 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:43:58 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:43:58 | INFO | System initialization completed.
+2017/06/28 | 00:43:58 | INFO | Database connection success.
+2017/06/28 | 00:43:58 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:43:58 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:43:59 | INFO | No new approved download requests detected.
+2017/06/28 | 00:44:08 | INFO | Emalsha logged in to the system from ::1
+2017/06/28 | 00:44:09 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:09 | INFO | Emalsha is now online.
+2017/06/28 | 00:44:17 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 00:44:18 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:44:18 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:44:18 | INFO | nyxsys is now online.
+2017/06/28 | 00:44:20 | INFO | nyxsys is now offline.
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:20 | INFO | Broadcasting stopped for /status#hLC3kYXtxKQOwu-QAAAB
+2017/06/28 | 00:44:21 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:44:21 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:44:21 | INFO | nyxsys is now online.
+2017/06/28 | 00:44:40 | INFO | New downloads found.
+2017/06/28 | 00:44:40 | ARIA | Adding 1501182880488 to download queue...
+2017/06/28 | 00:44:40 | INFO | Maxing out the download queue.
+2017/06/28 | 00:44:40 | ARIA | Adding 1501182880488 to download success...
+2017/06/28 | 00:44:40 | ARIA | Download of GID:b5b7f0fbe5c5f845 Initiated.
+2017/06/28 | 00:44:41 | INFO | No new approved download requests detected.
+2017/06/28 | 00:44:42 | ARIA | Download of GID:b5b7f0fbe5c5f845 Completed.
+2017/06/28 | 00:44:42 | INFO | Attemting to rename trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:42 | INFO | Successfully renamed trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:42 | CRIT | Database successfully updated after renaming trolltunga-9064-1920x1200.jpg to f1780939abdda95fa81cb974be584f13e70ccf70
+2017/06/28 | 00:44:46 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:46 | INFO | Emalsha is now online.
+2017/06/28 | 00:44:49 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:44:49 | INFO | Emalsha is now online.
+2017/06/28 | 00:45:47 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:45:47 | INFO | Emalsha is now online.
+2017/06/28 | 00:45:57 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:45:57 | INFO | Emalsha is now online.
+2017/06/28 | 00:45:59 | AUTH | Emalsha Authenticated from 1
+2017/06/28 | 00:45:59 | INFO | Emalsha is now online.
+2017/06/28 | 00:46:12 | INFO | nyxsys is now offline.
+2017/06/28 | 00:46:13 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:46:13 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:46:13 | INFO | nyxsys is now online.
+2017/06/28 | 00:46:15 | INFO | nyxsys is now offline.
+2017/06/28 | 00:46:15 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:46:15 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:46:15 | INFO | nyxsys is now online.
+2017/06/28 | 00:46:16 | INFO | nyxsys is now offline.
+2017/06/28 | 00:46:17 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:46:17 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:46:17 | INFO | nyxsys is now online.
+2017/06/28 | 00:46:19 | INFO | nyxsys is now offline.
+2017/06/28 | 00:46:20 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:46:20 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:46:20 | INFO | nyxsys is now online.
+2017/06/28 | 00:46:42 | INFO | nyxsys is now offline.
+2017/06/28 | 00:46:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 00:46:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 00:46:43 | INFO | nyxsys is now online.
+2017/06/28 | 00:49:28 | INFO | Starting system.
+2017/06/28 | 00:49:28 | INFO | Initializing system components.
+2017/06/28 | 00:49:28 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:49:28 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:49:28 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:49:28 | INFO | System initialization completed.
+2017/06/28 | 00:49:28 | INFO | Database connection success.
+2017/06/28 | 00:49:28 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:49:28 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:49:29 | WARN | Issuing page refresh command to socket ID:K4KN9cZWTkdG2Rg2AAAA REASON : User not found in active sessions
+2017/06/28 | 00:49:29 | WARN | Issuing page refresh command to socket ID:ksWRQWsIhT5ZyAGCAAAB REASON : User not found in active sessions
+2017/06/28 | 00:49:29 | INFO | No new approved download requests detected.
+2017/06/28 | 00:59:18 | INFO | Starting system.
+2017/06/28 | 00:59:18 | INFO | Initializing system components.
+2017/06/28 | 00:59:18 | INFO | Attempting to connect to the database.
+2017/06/28 | 00:59:18 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 00:59:18 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 00:59:18 | INFO | System initialization completed.
+2017/06/28 | 00:59:18 | INFO | Database connection success.
+2017/06/28 | 00:59:18 | ARIA | Opening aria2c socket success.
+2017/06/28 | 00:59:18 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 00:59:19 | INFO | No new approved download requests detected.
+2017/06/28 | 01:07:55 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:07:56 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:07:56 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:07:56 | INFO | nyxsys is now online.
+2017/06/28 | 01:08:00 | INFO | nyxsys is now offline.
+2017/06/28 | 01:08:01 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:08:01 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:08:01 | INFO | nyxsys is now online.
+2017/06/28 | 01:08:01 | INFO | Broadcasting stopped for /status#rUjHFfzQpteSbxbAAAAB
+2017/06/28 | 01:08:01 | INFO | Broadcasting stopped for /status#rUjHFfzQpteSbxbAAAAB
+2017/06/28 | 01:08:01 | INFO | Broadcasting stopped for /status#rUjHFfzQpteSbxbAAAAB
+2017/06/28 | 01:09:26 | INFO | nyxsys is now offline.
+2017/06/28 | 01:09:27 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:09:27 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:09:27 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:12 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:14 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:14 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:14 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:19 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:20 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:20 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:20 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:23 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:24 | INFO | Broadcasting stopped for /status#plc_3QybEn7Y2O06AAAF
+2017/06/28 | 01:13:24 | INFO | Broadcasting stopped for /status#plc_3QybEn7Y2O06AAAF
+2017/06/28 | 01:13:24 | INFO | Broadcasting stopped for /status#plc_3QybEn7Y2O06AAAF
+2017/06/28 | 01:13:24 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:24 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:24 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:27 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:28 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:28 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:28 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:30 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:30 | INFO | Broadcasting stopped for /status#GFlwWap_D32JECCXAAAH
+2017/06/28 | 01:13:30 | INFO | Broadcasting stopped for /status#GFlwWap_D32JECCXAAAH
+2017/06/28 | 01:13:30 | INFO | Broadcasting stopped for /status#GFlwWap_D32JECCXAAAH
+2017/06/28 | 01:13:31 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:31 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:31 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:31 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:32 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:32 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:32 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:35 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:36 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:36 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:36 | INFO | nyxsys is now online.
+2017/06/28 | 01:13:41 | INFO | nyxsys is now offline.
+2017/06/28 | 01:13:42 | INFO | Broadcasting stopped for /status#VJLQrzHt81a0g7clAAAK
+2017/06/28 | 01:13:42 | INFO | Broadcasting stopped for /status#VJLQrzHt81a0g7clAAAK
+2017/06/28 | 01:13:42 | INFO | Broadcasting stopped for /status#VJLQrzHt81a0g7clAAAK
+2017/06/28 | 01:13:42 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:13:42 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:13:42 | INFO | nyxsys is now online.
+2017/06/28 | 01:22:44 | INFO | Starting system.
+2017/06/28 | 01:22:44 | INFO | Initializing system components.
+2017/06/28 | 01:22:44 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:22:45 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:22:45 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:22:45 | INFO | System initialization completed.
+2017/06/28 | 01:22:45 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:22:45 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:22:45 | INFO | Database connection success.
+2017/06/28 | 01:22:46 | INFO | No new approved download requests detected.
+2017/06/28 | 01:22:48 | WARN | Issuing page refresh command to socket ID:5BYiMXSoday4Sm1HAAAA REASON : User not found in active sessions
+2017/06/28 | 01:23:12 | INFO | Starting system.
+2017/06/28 | 01:23:12 | INFO | Initializing system components.
+2017/06/28 | 01:23:12 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:23:12 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:23:12 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:23:12 | INFO | System initialization completed.
+2017/06/28 | 01:23:12 | INFO | Database connection success.
+2017/06/28 | 01:23:12 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:23:12 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:23:13 | INFO | No new approved download requests detected.
+2017/06/28 | 01:25:27 | INFO | Starting system.
+2017/06/28 | 01:25:27 | INFO | Initializing system components.
+2017/06/28 | 01:25:27 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:25:27 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:25:27 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:25:27 | INFO | System initialization completed.
+2017/06/28 | 01:25:27 | INFO | Database connection success.
+2017/06/28 | 01:25:28 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:25:28 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:25:28 | INFO | No new approved download requests detected.
+2017/06/28 | 01:25:35 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:25:36 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:25:36 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:25:36 | INFO | nyxsys is now online.
+2017/06/28 | 01:25:37 | INFO | nyxsys is now offline.
+2017/06/28 | 01:25:38 | INFO | Broadcasting stopped for /status#Ys8EbaUI7HN-hvDCAAAA
+2017/06/28 | 01:25:38 | INFO | Broadcasting stopped for /status#Ys8EbaUI7HN-hvDCAAAA
+2017/06/28 | 01:25:38 | INFO | Broadcasting stopped for /status#Ys8EbaUI7HN-hvDCAAAA
+2017/06/28 | 01:25:58 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:25:58 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:25:58 | INFO | nyxsys is now online.
+2017/06/28 | 01:25:59 | INFO | nyxsys is now offline.
+2017/06/28 | 01:26:00 | INFO | Broadcasting stopped for /status#WDlkN-U7ixqR9zwmAAAB
+2017/06/28 | 01:26:00 | INFO | Broadcasting stopped for /status#WDlkN-U7ixqR9zwmAAAB
+2017/06/28 | 01:26:00 | INFO | Broadcasting stopped for /status#WDlkN-U7ixqR9zwmAAAB
+2017/06/28 | 01:26:00 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:26:00 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:26:00 | INFO | nyxsys is now online.
+2017/06/28 | 01:27:41 | INFO | Starting system.
+2017/06/28 | 01:27:41 | INFO | Initializing system components.
+2017/06/28 | 01:27:41 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:27:41 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:27:41 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:27:41 | INFO | System initialization completed.
+2017/06/28 | 01:27:41 | INFO | Database connection success.
+2017/06/28 | 01:27:41 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:27:41 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:27:42 | WARN | Issuing page refresh command to socket ID:1i68ID00Q4dNm4yfAAAA REASON : User not found in active sessions
+2017/06/28 | 01:27:42 | INFO | No new approved download requests detected.
+2017/06/28 | 01:27:46 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:27:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:27:47 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:27:47 | INFO | nyxsys is now online.
+2017/06/28 | 01:27:47 | INFO | nyxsys is now offline.
+2017/06/28 | 01:27:48 | INFO | Broadcasting stopped for /status#aOpxj6TglTWv0n5-AAAC
+2017/06/28 | 01:27:48 | INFO | Broadcasting stopped for /status#aOpxj6TglTWv0n5-AAAC
+2017/06/28 | 01:27:48 | INFO | Broadcasting stopped for /status#aOpxj6TglTWv0n5-AAAC
+2017/06/28 | 01:27:48 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:27:48 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:27:48 | INFO | nyxsys is now online.
+2017/06/28 | 01:28:58 | INFO | Starting system.
+2017/06/28 | 01:28:58 | INFO | Initializing system components.
+2017/06/28 | 01:28:58 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:28:58 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:28:58 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:28:58 | INFO | System initialization completed.
+2017/06/28 | 01:28:58 | INFO | Database connection success.
+2017/06/28 | 01:28:58 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:28:58 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:28:59 | INFO | No new approved download requests detected.
+2017/06/28 | 01:29:14 | WARN | Issuing page refresh command to socket ID:q4e3ByoSpuEu5XdfAAAA REASON : User not found in active sessions
+2017/06/28 | 01:31:52 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:31:53 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:31:53 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:31:53 | INFO | nyxsys is now online.
+2017/06/28 | 01:31:54 | INFO | nyxsys is now offline.
+2017/06/28 | 01:31:54 | INFO | Broadcasting stopped for /status#yg-p4n037U3zgGwoAAAC
+2017/06/28 | 01:31:54 | INFO | Broadcasting stopped for /status#yg-p4n037U3zgGwoAAAC
+2017/06/28 | 01:31:54 | INFO | Broadcasting stopped for /status#yg-p4n037U3zgGwoAAAC
+2017/06/28 | 01:31:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:31:55 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:31:55 | INFO | nyxsys is now online.
+2017/06/28 | 01:32:44 | INFO | nyxsys is now offline.
+2017/06/28 | 01:32:45 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:32:45 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:32:45 | INFO | nyxsys is now online.
+2017/06/28 | 01:34:10 | INFO | nyxsys is now offline.
+2017/06/28 | 01:34:10 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:34:10 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:34:10 | INFO | nyxsys is now online.
+2017/06/28 | 01:34:39 | INFO | Starting system.
+2017/06/28 | 01:34:39 | INFO | Initializing system components.
+2017/06/28 | 01:34:39 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:34:39 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:34:39 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:34:39 | INFO | System initialization completed.
+2017/06/28 | 01:34:39 | INFO | Database connection success.
+2017/06/28 | 01:34:39 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:34:39 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:34:40 | INFO | No new approved download requests detected.
+2017/06/28 | 01:34:41 | WARN | Issuing page refresh command to socket ID:RxAfJXJGmhYftNP3AAAA REASON : User not found in active sessions
+2017/06/28 | 01:34:50 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:34:50 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:34:50 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:34:50 | INFO | nyxsys is now online.
+2017/06/28 | 01:34:55 | INFO | nyxsys is now offline.
+2017/06/28 | 01:34:55 | INFO | Broadcasting stopped for /status#G9b4-Mu3iiCLGeSEAAAC
+2017/06/28 | 01:34:55 | INFO | Broadcasting stopped for /status#G9b4-Mu3iiCLGeSEAAAC
+2017/06/28 | 01:34:55 | INFO | Broadcasting stopped for /status#G9b4-Mu3iiCLGeSEAAAC
+2017/06/28 | 01:34:55 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:34:55 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:34:55 | INFO | nyxsys is now online.
+2017/06/28 | 01:36:08 | INFO | Starting system.
+2017/06/28 | 01:36:08 | INFO | Initializing system components.
+2017/06/28 | 01:36:09 | INFO | Attempting to connect to the database.
+2017/06/28 | 01:36:09 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 01:36:09 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 01:36:09 | INFO | System initialization completed.
+2017/06/28 | 01:36:09 | INFO | Database connection success.
+2017/06/28 | 01:36:09 | ARIA | Opening aria2c socket success.
+2017/06/28 | 01:36:09 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 01:36:10 | INFO | No new approved download requests detected.
+2017/06/28 | 01:36:15 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 01:36:16 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:36:16 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:36:16 | INFO | nyxsys is now online.
+2017/06/28 | 01:36:16 | INFO | nyxsys is now offline.
+2017/06/28 | 01:36:17 | INFO | Broadcasting stopped for /status#5V30lU4ugajYtfxoAAAB
+2017/06/28 | 01:36:17 | INFO | Broadcasting stopped for /status#5V30lU4ugajYtfxoAAAB
+2017/06/28 | 01:36:17 | INFO | Broadcasting stopped for /status#5V30lU4ugajYtfxoAAAB
+2017/06/28 | 01:36:17 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:36:17 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:36:17 | INFO | nyxsys is now online.
+2017/06/28 | 01:36:52 | INFO | nyxsys is now offline.
+2017/06/28 | 01:38:34 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:38:34 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:38:34 | INFO | nyxsys is now online.
+2017/06/28 | 01:39:59 | INFO | nyxsys is now offline.
+2017/06/28 | 01:40:00 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:40:00 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:40:00 | INFO | nyxsys is now online.
+2017/06/28 | 01:40:53 | INFO | nyxsys is now offline.
+2017/06/28 | 01:40:54 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:40:54 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:40:54 | INFO | nyxsys is now online.
+2017/06/28 | 01:41:11 | INFO | Broadcasting stopped for /status#tu83YKyateq9PiXeAAAG
+2017/06/28 | 01:41:11 | INFO | Broadcasting stopped for /status#tu83YKyateq9PiXeAAAG
+2017/06/28 | 01:41:11 | INFO | Broadcasting stopped for /status#tu83YKyateq9PiXeAAAG
+2017/06/28 | 01:41:12 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:41:32 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:41:34 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:45:02 | INFO | nyxsys is now offline.
+2017/06/28 | 01:45:03 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:45:03 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:45:03 | INFO | nyxsys is now online.
+2017/06/28 | 01:45:16 | INFO | Broadcasting stopped for /status#FOUbbRFOhopurpjdAAAN
+2017/06/28 | 01:45:16 | INFO | Broadcasting stopped for /status#FOUbbRFOhopurpjdAAAN
+2017/06/28 | 01:45:16 | INFO | Broadcasting stopped for /status#FOUbbRFOhopurpjdAAAN
+2017/06/28 | 01:45:17 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:46:42 | INFO | nyxsys is now offline.
+2017/06/28 | 01:46:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:46:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:46:43 | INFO | nyxsys is now online.
+2017/06/28 | 01:47:01 | INFO | nyxsys is now offline.
+2017/06/28 | 01:47:02 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:47:02 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:47:02 | INFO | nyxsys is now online.
+2017/06/28 | 01:47:23 | INFO | Broadcasting stopped for /status#4c8Y78kqNBZZ2_WoAAAT
+2017/06/28 | 01:47:23 | INFO | Broadcasting stopped for /status#4c8Y78kqNBZZ2_WoAAAT
+2017/06/28 | 01:47:23 | INFO | Broadcasting stopped for /status#4c8Y78kqNBZZ2_WoAAAT
+2017/06/28 | 01:47:24 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:52:13 | INFO | nyxsys is now offline.
+2017/06/28 | 01:52:14 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:52:14 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:52:14 | INFO | nyxsys is now online.
+2017/06/28 | 01:54:42 | INFO | nyxsys is now offline.
+2017/06/28 | 01:54:43 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:54:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:54:43 | INFO | nyxsys is now online.
+2017/06/28 | 01:54:46 | INFO | nyxsys is now offline.
+2017/06/28 | 01:54:47 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:54:47 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:54:47 | INFO | nyxsys is now online.
+2017/06/28 | 01:54:48 | INFO | nyxsys is now offline.
+2017/06/28 | 01:54:49 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:54:49 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:54:49 | INFO | nyxsys is now online.
+2017/06/28 | 01:55:05 | INFO | nyxsys is now offline.
+2017/06/28 | 01:55:06 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:55:06 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:55:06 | INFO | nyxsys is now online.
+2017/06/28 | 01:55:06 | INFO | nyxsys is now offline.
+2017/06/28 | 01:55:07 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:55:07 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:55:07 | INFO | nyxsys is now online.
+2017/06/28 | 01:56:28 | INFO | nyxsys is now offline.
+2017/06/28 | 01:56:29 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 01:56:29 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 01:56:29 | INFO | nyxsys is now online.
+2017/06/28 | 02:02:55 | INFO | Starting system.
+2017/06/28 | 02:02:55 | INFO | Initializing system components.
+2017/06/28 | 02:02:56 | INFO | Attempting to connect to the database.
+2017/06/28 | 02:02:56 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 02:02:56 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 02:02:56 | INFO | System initialization completed.
+2017/06/28 | 02:02:56 | ARIA | Opening aria2c socket success.
+2017/06/28 | 02:02:56 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 02:02:56 | INFO | Database connection success.
+2017/06/28 | 02:02:56 | WARN | Issuing page refresh command to socket ID:bZzOSKEAt4qyHcc8AAAA REASON : User not found in active sessions
+2017/06/28 | 02:02:57 | INFO | No new approved download requests detected.
+2017/06/28 | 02:06:08 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 02:06:09 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:06:09 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:06:09 | INFO | nyxsys is now online.
+2017/06/28 | 02:06:18 | INFO | nyxsys is now offline.
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:18 | INFO | Broadcasting stopped for /status#VvAf2E3hlC3mrlPPAAAC
+2017/06/28 | 02:06:19 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:06:19 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:06:19 | INFO | nyxsys is now online.
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | INFO | Broadcasting stopped for /status#11yEVv8y1EmPZgw-AAAE
+2017/06/28 | 02:06:43 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:25 | INFO | Broadcasting stopped for /status#hPwp8oRz5x_XMKzSAAAG
+2017/06/28 | 02:07:26 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:48 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:07:49 | INFO | Broadcasting stopped for /status#TU40WfQIgI4DJ6ICAAAI
+2017/06/28 | 02:08:00 | ARIA | Download of GID:1f4c22eb230fa142 Initiated.
+2017/06/28 | 02:08:00 | INFO | New downloads found.
+2017/06/28 | 02:08:00 | ARIA | Adding 1501187880553 to download queue...
+2017/06/28 | 02:08:00 | ARIA | Adding 1501187880553 to download success...
+2017/06/28 | 02:08:00 | ARIA | Download of GID:4414a32a09d1e213 Initiated.
+2017/06/28 | 02:08:00 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:08:01 | INFO | No new approved download requests detected.
+2017/06/28 | 02:08:02 | ARIA | Download of GID:1f4c22eb230fa142 Completed.
+2017/06/28 | 02:08:41 | INFO | Starting system.
+2017/06/28 | 02:08:41 | INFO | Initializing system components.
+2017/06/28 | 02:08:41 | INFO | Attempting to connect to the database.
+2017/06/28 | 02:08:41 | INFO | Socket data passed to Aria2 Center
+2017/06/28 | 02:08:41 | INFO | System initialization completed.
+2017/06/28 | 02:08:41 | ARIA | Manually opening aria2c socket ...
+2017/06/28 | 02:08:41 | INFO | Database connection success.
+2017/06/28 | 02:08:41 | ARIA | Opening aria2c socket success.
+2017/06/28 | 02:08:41 | ARIA | Manually opened aria2c socket.
+2017/06/28 | 02:08:42 | INFO | No new approved download requests detected.
+2017/06/28 | 02:08:45 | WARN | Issuing page refresh command to socket ID:csgO_-GJKHzsER3CAAAA REASON : User not found in active sessions
+2017/06/28 | 02:08:56 | INFO | nyxsys logged in to the system from ::1
+2017/06/28 | 02:08:57 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:08:57 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:08:57 | INFO | nyxsys is now online.
+2017/06/28 | 02:09:33 | INFO | nyxsys is now offline.
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:33 | INFO | Broadcasting stopped for /status#iLlUZzIaWkO39InwAAAC
+2017/06/28 | 02:09:34 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:09:34 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:09:34 | INFO | nyxsys is now online.
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:06 | INFO | Broadcasting stopped for /status#hwGjha_zolpbncicAAAE
+2017/06/28 | 02:10:07 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:10 | INFO | Broadcasting stopped for /status#csgO_-GJKHzsER3CAAAA
+2017/06/28 | 02:10:47 | ARIA | Closing aria2c socket success.
+2017/06/28 | 02:10:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:53 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:53 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:54 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:54 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:55 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:55 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:56 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:56 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:57 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:57 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:58 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:58 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | INFO | Broadcasting stopped for /status#WSwPlQqoyMX5Q-unAAAG
+2017/06/28 | 02:10:58 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:10:59 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:10:59 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:00 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:00 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:01 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:01 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:02 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:02 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:03 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:03 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:04 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:04 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:05 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:05 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:05 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:11:06 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:06 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:07 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:07 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:07 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:11:08 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:08 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:09 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:09 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:10 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:10 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:11 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:11 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:12 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:12 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:13 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:13 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:14 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:14 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:15 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:15 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:16 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:16 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:17 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:17 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:18 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:18 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:19 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:19 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:20 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:20 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:21 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:21 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:22 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:22 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:23 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:23 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:24 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:24 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:25 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:25 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:26 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:26 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:27 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:27 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:28 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:28 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:29 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:29 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:30 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:30 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:31 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:31 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:32 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:32 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:33 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:33 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:34 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:34 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:35 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:35 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:36 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:36 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:37 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:37 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:38 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:38 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:39 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:39 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:40 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:40 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:41 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:41 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:42 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:42 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:43 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:43 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:44 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:44 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:45 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:45 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:46 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:46 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:47 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:47 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:53 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:53 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:54 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:54 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:55 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:55 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:56 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:56 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:57 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:57 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:58 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:11:58 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:59 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:11:59 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:00 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:00 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:01 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:01 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:02 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:02 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:03 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:03 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:04 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:04 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:05 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:05 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:06 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:06 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:07 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:07 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:08 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:08 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:09 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:09 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:10 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:10 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:11 | INFO | nyxsys is now offline.
+2017/06/28 | 02:12:11 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:11 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | INFO | Broadcasting stopped for /status#3Cd8L_xjVzTrQ__0AAAJ
+2017/06/28 | 02:12:12 | AUTH | Administrator nyxsys connected from 1
+2017/06/28 | 02:12:12 | AUTH | nyxsys Authenticated from 1
+2017/06/28 | 02:12:12 | INFO | nyxsys is now online.
+2017/06/28 | 02:12:12 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:12 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:13 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:13 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:14 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:14 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:15 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:15 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:17 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:17 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:18 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:18 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:19 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:19 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:20 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:20 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:21 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:21 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:22 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:22 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:23 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:23 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:24 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:24 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:25 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:25 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:26 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:26 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:27 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:27 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:28 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:28 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:29 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:29 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:30 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:30 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:31 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:31 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:32 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:32 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:33 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:33 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:34 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:34 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:35 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:35 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:36 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:36 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:37 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:37 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:38 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:38 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:39 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:39 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:40 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:40 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:41 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:41 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:42 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:42 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:43 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:43 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:44 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:44 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:45 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:45 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:46 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:46 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:47 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:47 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:48 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:48 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:49 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:49 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:50 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:50 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:51 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:51 | CRIT | New downloads were not queued as the ongoing download list was not recieved.
+2017/06/28 | 02:12:52 | ERRR | Error occurred while retrieving the active downloads from Aria2c
+2017/06/28 | 02:12:52 | CRIT | New downloads were not queued as the ongoing download list was not recieved.

@@ -63,8 +63,16 @@
                             let requestedDate = new Date(data['request_date']);
                         %>
                         <li>
+                            <%
+                                var title;
+                                if (data['file_title']) {
+                                    title = data['file_title'];
+                                } else {
+                                    var ar = data['link'].split('/');
+                                    title = ar[ar.length-1];
+                                } %>
                             <div class="collapsible-header">
-                                <div class="col s4 truncate"><%= data['link'] %> </div>
+                                <div class="col s4 truncate"><%= title %> </div>
                                 <div class="col s2 truncate"><%= data['request_user'] %></div>
                                 <div class="col s2 truncate"><%= requestedDate.toDateString() %></div>
                                 <div class="col s4 truncate">

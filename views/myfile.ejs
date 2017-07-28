@@ -94,8 +94,16 @@
                         let data = myfile[i];
                     %>
                     <li>
+                        <%
+                            var title;
+                            if (data['file_title']) {
+                                title = data['file_title'];
+                            } else {
+                                var ar = data['link'].split('/');
+                                title = ar[ar.length-1];
+                            } %>
                         <div class="collapsible-header">
-                            <div class="col s4 truncate"><%= data['link'] %></div>
+                            <div class="col s4 truncate"><%= title %></div>
                             <div class="col s2"><%= data['size'] %></div>
                             <% let rdate = new Date(data['request_date']);%>
                             <div class="col s2"><%= rdate.toDateString() %></div>

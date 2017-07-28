@@ -27,7 +27,7 @@ const donwloadSchema = new Schema({
     file_path:String, // TODO
     hashName:String,
     size_in_byte:Number,
-    file_name:String,
+    file_title:String,
 
 });
 

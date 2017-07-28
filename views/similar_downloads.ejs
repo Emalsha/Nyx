@@ -6,8 +6,109 @@
     <% include includes/head.ejs %>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+
 </head>
 <body>
+
+<!-- Download URL info Modal -->
+<div id="url_info" class="modal">
+    <form action="/download/request" method="post" id="url_info_form" style="margin: 0;">
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="URL" id="url" type="text" class="validate deep-orange-text accent-3"
+                           value="<%= requested.link %>" disabled>
+                    <label for="url">URL</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                    <input placeholder="Download Title" id="download_title" type="text" name="file_title"
+                           value="<%= requested.file_title %>">
+                    <label for="download_title">Download Title</label>
+                    <div class="infotext">Provide a name to this download request so you can identify it later.</div>
+                </div>
+                <br>
+                <br>
+                <div class="input-field col s12">
+                    <div class="chips black-text" id="url_tags"></div>
+                    <label for="url_tags">Tags</label>
+                    <!--TODO not completed tag including -->
+                    <div class="infotext">Provide <b>tags</b> to help the administrators and other members (if public)
+                        to identify the downloading file. Separate the tags using the <b>ENTER</b> key
+                    </div>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="url_desc" type="text" class="validate" name="description"
+                           value="<%= requested.description %>">
+                    <label for="url_desc">Description</label>
+                </div>
+
+
+                <div class="col s3">
+                    <div class="col s12 contentbox_txt_up">Availability</div>
+                    <br>
+                    <div class="switch">
+                        <label>
+                            Private
+                            <%
+                            var avai;
+                            if (requested.availability === 'public') {
+                                avai = 'checked';
+                            }
+                            %>
+                            <input type="checkbox"
+                                   id="url_availablity_switch">
+                            <%= avai %>
+                            <span class="lever"></span>
+                            Public
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col s3">
+                    <div class="col s12 contentbox_txt_up">File Size</div>
+                    <div class="col s12 contentbox_main" id="file_size"><%= requested.size %></div>
+                </div>
+
+                <div class="col s3">
+                    <div class="col s12 contentbox_txt_up">Automatic Confirmation</div>
+                    <div class="col s12 contentbox_main" id="file_size">Unavailable</div>
+                </div>
+
+                <div class="col s3">
+                    <div class="col s12 contentbox_txt_up">Default Priority</div>
+                    <div class="col s12 contentbox_main" id="file_size">Normal</div>
+                </div>
+
+                <input type="hidden" id="url_hi" name="link" value="<%=requested.link%>">
+                <input type="hidden" id="availability"
+                       name="availability" value="<%=requested.availability%>">
+                <input type="hidden" id="tag_values"
+                       name="tags" value="<%=requested.tags_array%>">
+                <input type="hidden" id="fsize" name="size" value="<%=requested.size%>">
+                <input type="hidden" id="size_bytes" name="size_bytes" value="<%=requested.size_in_byte%>">
+                <input type="hidden" name="check" value="true">
+
+            </div>
+            <div class="infotext"><b>IMPORTANT NOTE :</b><br> By clicking Confirm Request, you confirm that you have
+                read and agree our Terms and Usage Policy. Breaking the system's Terms or Usage policies will lead up to
+                account termination without prior warning.
+            </div>
+        </div>
+
+        <div class="modal-footer" style="width: auto;margin-right: 10px;">
+            <button type="submit" class="waves-effect modal-action waves-green btn" id="url_send_btn">
+                Confirm Request
+                <i class="material-icons right">send</i>
+            </button>
+            <button type="reset" class="modal-action modal-close waves-effect waves-red btn-flat">
+                Cancel
+            </button>
+        </div>
+    </form>
+</div>
 
 <div class="row">
     <!--side menu-->
@@ -40,31 +141,7 @@
                             Files</a></li>
                     <li class="sidemenu_li"><a href="/users/publicfile" class="white-text"><i
                                     class="material-icons left" style="color: #ffffff;">work</i>Public Files</a></li>
-                    <% if(isManage){ %>
-                    <li class="sidemenu_li"><a href="/admin/management" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">supervisor_account</i>User
-                            Management </a></li>
-                    <% } if(isAdmin){ %>
-                    <li class="sidemenu_li"><a href="/admin/managepublicfiles" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">folder_special</i>File
-                            Management</a></li>
-                    <li class="sidemenu_li"><a href="/admin/diskmanagement" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">dns</i>Disk Management</a></li>
-                    <li class="sidemenu_li"><a href="/admin/administration" class="white-text"><i
-                                    class="material-icons left" style="color: #ffffff;">settings_input_composite</i>Administration</a>
-                    </li>
-                    <% } %>
-                    <% if(isBatchAdmin){ %>
-                    <li class="sidemenu_li">
-                        <a href="/batch/administration" class="white-text">
-                            <i class="material-icons left" style="color: #ffffff;">toc</i>
-                            Requests
-                            <% //if(downloadRequest.length) {  %>
-                            <!--<span class="new badge red hide" id="request_count"></span>-->
-                            <% //}  %>
-                        </a>
-                    </li>
-                    <% } %>
+
                     <!--<li class="sidemenu_li"><a href="/users/help" class="white-text"><i class="material-icons left" style="color: #ffffff;">live_help</i>About</a></li>-->
                     <li class="sidemenu_li"><a href="/logout" class="white-text"><i class="material-icons left"
                                                                                     style="color: #ffffff;">settings_power</i>Logout</a>
@@ -129,21 +206,29 @@
                         %>
 
                         <li>
+                            <%
+                                var title;
+                                if (data['file_title']) {
+                                    title = data['file_title'];
+                                } else {
+                                    var ar = data['link'].split('/');
+                                    title = ar[ar.length - 1];
+                                } %>
                             <div class="collapsible-header">
-                                <div class="col s4 truncate"><%= data['link'] %></div>
+                                <div class="col s4 truncate"><%= title %></div>
 
                                 <%
-                                if(data['availabity'] === 'public'){
+                                if(data['availability'] === 'public' || data['owner'] === user['uname']){
                                 %>
                                 <div class="col s4 right-align">
-                                    <a class="custom_btn blue white-text" href="/users/download/<%= data['_id']%>">Download</a>
+                                    <a class="custom_btn blue white-text" href="/users/download/<%= data['_id'] %>">Download</a>
                                 </div>
-                                <% }else if(data['availabity'] === 'private') %>
+                                <% } else if(data['availability'] === 'private') { %>
 
                                 <div class="col s4 right-align">
-                                    <a class="custom_btn blue white-text" href="/users/owner/<%= arr[leng] %>">Request</a>
+                                    <a class="custom_btn blue white-text" href="#">Request</a>
                                 </div>
-                                <% }%>
+                                <% } %>
 
                             </div>
                             <div class="collapsible-body">
@@ -191,6 +276,13 @@
                     </div>
                     <% } %>
                 </div>
+
+                <div class="row">
+                    <button class="waves-effect modal-action waves-green btn" id="continue">
+                        Continue Download
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- end of body container -->
@@ -209,6 +301,16 @@
         }
     );
 
+    $(document).ready(function () {
+        $('#url_info').modal();
+        $('#url_tags').material_chip();
+
+        $('#continue').click(function () {
+            console.log('sls');
+            $('#url_info').modal('open');
+        });
+
+    });
 </script>
 </body>
 </html>

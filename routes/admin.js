@@ -8,6 +8,7 @@ const acl = require('../module/acl_fn');
 const debug = require('debug')('nyx:adminRouter');
 const Download = require('../model/Download');
 const Time = require('../model/Time');
+const BW = require('../model/Bw_list');
 const tm = require('../module/task_manager');
 let passport = require('passport');
 
@@ -31,12 +32,37 @@ router.get('/administration', aclfn, aclf, function (req, res) {
         if (err) {
             debug(err);
         }
-        res.render('administrator', {
-            title: 'NYX | Administrator',
-            user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-            downloadRequest: downloads
 
-        });
+        Time.findOne({})
+            .sort({'edit_date': -1})
+            .then(function (time) {
+
+                BW.find({list_type:'white'},function (err, WList) {
+                    if(err){
+                        debug(err);
+                    }
+
+                    BW.find({list_type:'black'},function (err, BList) {
+                        if(err){
+                            debug(err);
+                        }
+
+                        res.render('administrator', {
+                            title: 'NYX | Administrator',
+                            user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                            downloadRequest: downloads,
+                            server:time,
+                            WList:WList,
+                            BList:BList
+                        });
+
+                    })
+
+
+                });
+
+
+            })
 
     });
 
@@ -87,7 +113,7 @@ router.post('/server', aclfn, aclf, function (req, res) {
 
 router.get('/server_time', function (req, res) {
     Time.findOne({})
-        .sort({'edit_date':-1})
+        .sort({'edit_date': -1})
         .select({'_id': 0, 'start': 1, 'end': 1,})
         .then(function (time) {
             res.send(time);
@@ -113,7 +139,7 @@ router.get('/diskmanagement', aclfn, aclf, function (req, res) {
         title: 'NYX | Dashboard',
         message: req.flash('success'),
         user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-        token:req.flash('token')
+        token: req.flash('token')
     });
 
 });
@@ -121,40 +147,39 @@ router.get('/diskmanagement', aclfn, aclf, function (req, res) {
 //delete public files
 // delete a file
 
- router.get('/delete/:id/:id2', function(req, res, next) {
+router.get('/delete/:id/:id2', function (req, res, next) {
 
-   var s=req.params.id;
-   var x=req.params.id2;
+    var s = req.params.id;
+    var x = req.params.id2;
 
-   console.log(x);
-   const fs = require('fs');
-   //res.redirect('/');
-   var filePath = "../test/"+s; // Or format the path using the `id` rest param
-   var fileName = s; // The default name the browser will us
+    console.log(x);
+    const fs = require('fs');
+    //res.redirect('/');
+    var filePath = "../test/" + s; // Or format the path using the `id` rest param
+    var fileName = s; // The default name the browser will us
 
-   fs.unlink(filePath);
-   Download.findById(x,function(err,download){
-     if(err) {
-         debug(err);
-     }
-     download.state = 'deleted';
+    fs.unlink(filePath);
+    Download.findById(x, function (err, download) {
+        if (err) {
+            debug(err);
+        }
+        download.state = 'deleted';
 
-     download.save(function (err) {
-         if(err){
-             debug(err);
-         }
-         console.log("deleted");
-         res.redirect('/admin/managepublicfiles');
-     });
+        download.save(function (err) {
+            if (err) {
+                debug(err);
+            }
+            console.log("deleted");
+            res.redirect('/admin/managepublicfiles');
+        });
 
 
-   })
-   req.flash('success','File deleted.');
-  //  res.download(filePath, fileName);
-   //res.render('index', { title: 'Express' });
+    })
+    req.flash('success', 'File deleted.');
+    //  res.download(filePath, fileName);
+    //res.render('index', { title: 'Express' });
 
- });
-
+});
 
 
 //// for indivudual member registration
@@ -181,9 +206,9 @@ router.post('/register', function (req, res, done) {
         }
 
         debug('New user registering.');
-            acl.aclobj.addUserRoles(user.username,user.role);
-            req.flash('success', "New account is successfully registered");
-            res.redirect('/users/dashboard');
+        acl.aclobj.addUserRoles(user.username, user.role);
+        req.flash('success', "New account is successfully registered");
+        res.redirect('/users/dashboard');
 
 
     })

@@ -13,34 +13,47 @@ let Bw_list = require('../model/Bw_list');
 
 router.post('/request', function (req, res) {
 
-    Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}, {state:{$ne:'deleted'}}]}, function (err, downloads) {
-        if (err) {
-            debug(err);
-        }
+    if (req.body.check === 'true') {
+        saveRequest();
+    } else {
 
-        if (downloads.length > 0) {
-            let dlinks = [];
-            for (let i = 0; i < downloads.length; i++) {
-                let ob = {
-                    link: downloads[i].link,
-                    availability: downloads[i].availability,
-                    owner: downloads[i].request_user,
-                    state: downloads[i].state,
-                    tags: downloads[i].tags,
-                    description: downloads[i].description,
 
-                };
-                dlinks.push(ob);
+        Download.find({$and: [{size_in_byte: req.body.size_bytes}, {admin_decision: true}, {state: 'downloaded'}]}, function (err, downloads) {
+            if (err) {
+                debug(err);
             }
-            res.render('similar_downloads', {
-                title: 'NYX | Download Suggestions',
-                user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
-                downloads: dlinks
-            });
-        } else {
-            saveRequest();
-        }
-    });
+
+            if (downloads.length > 0) {
+                let dlinks = [];
+                for (let i = 0; i < downloads.length; i++) {
+                    let ob = {
+                        _id: downloads[i]._id,
+                        link: downloads[i].link,
+                        title: downloads[i].file_title,
+                        availability: downloads[i].availability,
+                        owner: downloads[i].request_user,
+                        state: downloads[i].state,
+                        tags: downloads[i].tags,
+                        description: downloads[i].description,
+
+                    };
+                    dlinks.push(ob);
+                }
+
+                let pre_object = returnDownloadRequest();
+                console.log(pre_object);
+                res.render('similar_downloads', {
+                    title: 'NYX | Download Suggestions',
+                    user: {uname: req.user.username, name: req.user.fname + ' ' + req.user.lname},
+                    downloads: dlinks,
+                    requested: pre_object,
+                });
+            } else {
+                saveRequest();
+            }
+        });
+    }
+
 
     function saveRequest() {
         let tags_array;
@@ -48,6 +61,7 @@ router.post('/request', function (req, res) {
         let description;
         let size;
         let file_path;
+        let file_title;
         let state = 'pending';
         let admin_decision;
         let admin_decision_date;
@@ -70,8 +84,12 @@ router.post('/request', function (req, res) {
         file_path = __dirname + '/../tempDownload';
 
         if (req.body.description) {
+            description = req.body.description;
         }
-        description = req.body.description;
+
+        if (req.body.file_title) {
+            file_title = req.body.file_title;
+        }
 
         if (req.body.size) {
             size = req.body.size;
@@ -131,6 +149,7 @@ router.post('/request', function (req, res) {
                     admin: admin,
                     admin_note: admin_note,
                     size_in_byte: size_in_byte,
+                    file_title: file_title,
                 });
 
                 newDownload.save(function (err) {
@@ -142,10 +161,57 @@ router.post('/request', function (req, res) {
                 })
 
 
-                // console.log(newDownload);
-                // console.log(state);
-
             });
+    }
+
+    function returnDownloadRequest() {
+
+        let tags_array;
+        let availability;
+        let description;
+        let size;
+        let file_path;
+        let file_title;
+        let size_in_byte;
+
+        if (req.body.tags) {
+            let st = req.body.tags;
+            tags_array = st.split(',');
+        }
+
+        if (req.body.availability === 'true') {
+            availability = 'public';
+        } else {
+            availability = 'private';
+        }
+
+        file_path = __dirname + '/../tempDownload';
+
+        if (req.body.description) {
+            description = req.body.description;
+        }
+
+        if (req.body.file_title) {
+            file_title = req.body.file_title;
+        }
+
+        if (req.body.size) {
+            size = req.body.size;
+            size_in_byte = req.body.size_bytes;
+        }
+
+        let ob = {
+            link: req.body.link,
+            tags_array: tags_array,
+            availability: availability,
+            file_path: file_path,
+            file_title: file_title,
+            description: description,
+            size: size,
+            size_in_byte: size_in_byte,
+        };
+
+        return ob;
     }
 
 

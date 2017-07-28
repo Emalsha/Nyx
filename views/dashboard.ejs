@@ -14,7 +14,7 @@
         <div class="ajaxbox_title" id="ajaxbox_title">
             Waiting for Server
         </div>
-        <div class="ajaxbox_desc" id="ajaxbox_desc" ></div>
+        <div class="ajaxbox_desc" id="ajaxbox_desc"></div>
 
     </div>
     <div class="progress blue lighten-3">
@@ -23,7 +23,8 @@
     <div class="modal-content" style="padding-top: 0px;">
 
         <div style="text-align: center;">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat  blue darken-2 white-text">Send to Background</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat  blue darken-2 white-text">Send
+                to Background</a>
         </div>
 
     </div>
@@ -48,7 +49,6 @@
 </script>
 <% } %>
 
-
 <!-- Download URL info Modal -->
 <div id="url_info" class="modal">
     <form action="/download/request" method="post" id="url_info_form" style="margin: 0;">
@@ -61,7 +61,7 @@
 
 
                 <div class="input-field col s12">
-                    <input placeholder="Download Title" id="download_title" type="text">
+                    <input placeholder="Download Title" id="download_title" type="text" name="file_title">
                     <label for="download_title">Download Title</label>
                     <div class="infotext">Provide a name to this download request so you can identify it later.</div>
                 </div>
@@ -70,12 +70,14 @@
                 <div class="input-field col s12">
                     <div class="chips black-text" id="url_tags"></div>
                     <label for="url_tags">Tags</label>
-                    <div class="infotext">Provide <b>tags</b> to help the administrators and other memebers (if public) to identify the downloading file. for an example if you are downloading a Ubuntu ISO image you can include tags like linux, ubuntu16, 64bit, os. Separate the tags using the <b>ENTER</b> key</div>
+                    <div class="infotext">Provide <b>tags</b> to help the administrators and other members (if public)
+                        to identify the downloading file. Separate the tags using the <b>ENTER</b> key
+                    </div>
                 </div>
 
                 <div class="input-field col s12">
-                    <input  id="url_desc" type="text" class="validate" name="description">
-                    <label for="url_desc" >Description</label>
+                    <input id="url_desc" type="text" class="validate" name="description">
+                    <label for="url_desc">Description</label>
                 </div>
 
 
@@ -115,9 +117,13 @@
                        name="tags">
                 <input type="hidden" id="fsize" name="size">
                 <input type="hidden" id="size_bytes" name="size_bytes">
+                <input type="hidden" name="check" value="false">
 
             </div>
-            <div class="infotext"><b>IMPORTANT NOTE :</b><br> By clicking Confirm Request, you confirm that you have read and agree our Terms and Usage Policy. Breaking the system's Terms or Usage policies will lead up to account termination without prior warning.</div>
+            <div class="infotext"><b>IMPORTANT NOTE :</b><br> By clicking Confirm Request, you confirm that you have
+                read and agree our Terms and Usage Policy. Breaking the system's Terms or Usage policies will lead up to
+                account termination without prior warning.
+            </div>
         </div>
 
         <div class="modal-footer" style="width: auto;margin-right: 10px;">
@@ -131,7 +137,6 @@
         </div>
     </form>
 </div>
-
 
 
 <div class="row">
@@ -188,16 +193,20 @@
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Administrators
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main teal-text lighten-2" id="admin_available_status">Unknown</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="admin_available_count">Unknown</div>
+                        <div class="col s12 m12 l12 truncate contentbox_main teal-text lighten-2"
+                             id="admin_available_status">Unknown
+                        </div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2"
+                             id="admin_available_count">Unknown
+                        </div>
 
                     </div>
 
                     <script>
                         var admin_available_status = document.getElementById('admin_available_status');
                         var admin_available_count = document.getElementById('admin_available_count');
-                        socket.on('admin_count', function(msg){
-                            if (msg.count > 0){
+                        socket.on('admin_count', function (msg) {
+                            if (msg.count > 0) {
                                 admin_available_status.innerHTML = "Available";
                                 admin_available_count.innerHTML = msg.count + " Administrator(s) online";
 
@@ -205,7 +214,7 @@
                                 admin_available_status.classList.add('lighten-2');
                                 admin_available_status.classList.remove('deep-orange-text');
                                 admin_available_status.classList.remove('accent-3');
-                            }else{
+                            } else {
                                 admin_available_status.innerHTML = "Unavailable";
                                 admin_available_count.innerHTML = "0 Administrators online";
 
@@ -223,8 +232,11 @@
                     <div class="col s6 m3 l3 contentbox_mainbox">
                         <div class="col s12 m12 l12 truncate contentbox_txt_up blue-grey-text lighten-2">Disk Space
                         </div>
-                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text" id="storage_used">Unknown</div>
-                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="storage_total">Unknown</div>
+                        <div class="col s12 m12 l12 truncate contentbox_main blue-grey-text" id="storage_used">Unknown
+                        </div>
+                        <div class="col s12 m12 l12 truncate contentbox_txt_down  blue-grey-text lighten-2"
+                             id="storage_total">Unknown
+                        </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress">
                                 <div class="determinate" style="width: 0%" id="storage_progress"></div>
@@ -236,11 +248,11 @@
                         var storage_used = document.getElementById('storage_used');
                         var storage_total = document.getElementById('storage_total');
                         var storage_progress = document.getElementById('storage_progress');
-                        socket.on('user_storage_usage', function(msg){
+                        socket.on('user_storage_usage', function (msg) {
                             var obj = JSON.parse(msg);
                             storage_used.innerHTML = obj.used + " " + obj.usedUnit;
                             storage_total.innerHTML = obj.used + " " + obj.usedUnit + " of " + obj.allocated + " " + obj.allocatedUnit;
-                            storage_progress.style.width = obj.progress+"%";
+                            storage_progress.style.width = obj.progress + "%";
                         });
 
                     </script>
@@ -248,11 +260,16 @@
                     <!--Download manager up time status-->
                     <div class="col s4 m3 contentbox_mainbox">
                         <div class="col s12 truncate contentbox_txt_up blue-grey-text lighten-2">Download Manager</div>
-                        <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">Unknown</div>
-                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2" id="online_status_eta">Unknown</div>
+                        <div class="col s12 truncate contentbox_main deep-orange-text accent-3" id="online_status_code">
+                            Unknown
+                        </div>
+                        <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2"
+                             id="online_status_eta">Unknown
+                        </div>
                         <div class="col s12 truncate contentbox_txt_down  blue-grey-text lighten-2">
                             <div class="progress deep-orange  lighten-4" id="online_status_progress_outer">
-                                <div class="determinate deep-orange" style="width: 20%" id="online_status_progress"></div>
+                                <div class="determinate deep-orange" style="width: 20%"
+                                     id="online_status_progress"></div>
                             </div>
                         </div>
                     </div>
@@ -262,13 +279,13 @@
                         var online_status_eta = document.getElementById('online_status_eta');
                         var online_status_progress = document.getElementById('online_status_progress');
                         var online_status_progress_outer = document.getElementById('online_status_progress_outer');
-                        socket.on('online_status_info', function(msg){
+                        socket.on('online_status_info', function (msg) {
                             var obj = JSON.parse(msg);
                             online_status_code.innerHTML = obj.status;
                             online_status_eta.innerHTML = obj.eta;
-                            online_status_progress.style.width = obj.precent+"%";
+                            online_status_progress.style.width = obj.precent + "%";
 
-                            if (obj.status == "Online"){
+                            if (obj.status == "Online") {
                                 online_status_code.classList.add('teal-text');
                                 online_status_code.classList.add('lighten-2');
                                 online_status_code.classList.remove('deep-orange-text');
@@ -277,7 +294,7 @@
                                 online_status_progress.classList.remove('deep-orange');
                                 online_status_progress_outer.classList.remove('deep-orange');
                                 online_status_progress_outer.classList.remove('lighten-4');
-                            }else{
+                            } else {
                                 online_status_code.classList.remove('teal-text');
                                 online_status_code.classList.remove('lighten-2');
                                 online_status_code.classList.add('deep-orange-text');
@@ -297,10 +314,15 @@
                     <li class="collection-item">
                         <div class="col s12">
                             <h5>New Download Request</h5>
-                            <div class="infotext">This system is only capable of downloading files using DDLs (Direct Download Links) and if you provide a link other than a direct download link or a link with temporary link availability/validity the system may not be able to complete your download request.</div>
+                            <div class="infotext">This system is only capable of downloading files using DDLs (Direct
+                                Download Links) and if you provide a link other than a direct download link or a link
+                                with temporary link availability/validity the system may not be able to complete your
+                                download request.
+                            </div>
                             <div class="row">
                                 <div class="input-field">
-                                    <input type="text" id="down_link" class="validate" value="http://ipv4.download.thinkbroadband.com/10MB.zip">
+                                    <input type="text" id="down_link" class="validate"
+                                           value="http://ipv4.download.thinkbroadband.com/10MB.zip">
                                     <label for="down_link">Direct Download link</label>
                                 </div>
                                 <div class="right-align">
@@ -313,14 +335,12 @@
                 </ul>
 
 
-
-
                 <!--Navigation bar-->
                 <div class="col s12">
                     <ul class="tabs">
                         <!--<li class="tab"><a class="red-text darken-4" href="#test1">All Downloads</a></li>-->
-                        <!-- <li class="tab"><a class="red-text darken-4" href="#test3">Sheduled Downloads</a></li> -->
                         <li class="tab"><a class="red-text darken-4" href="#test2">Downloads in progress</a></li>
+                        <li class="tab"><a class="red-text darken-4" href="#test5">Approved Request</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test3">Approval Pending</a></li>
                         <li class="tab"><a class="red-text darken-4" href="#test4">Rejected downloads</a></li>
                     </ul>
@@ -332,7 +352,7 @@
                     <div class="row">
 
                         <%
-                           if(inprogress.length > 0){
+                        if(inprogress.length > 0){
                         %>
                         <ul class="collapsible" data-collapsible="accordion">
                             <%
@@ -342,33 +362,43 @@
 
                             <li>
 
-
+                                <%
+                                    var title;
+                                    if (data['file_title']) {
+                                        title = data['file_title'];
+                                    } else {
+                                        var ar = data['link'].split('/');
+                                        title = ar[ar.length-1];
+                                    } %>
                                 <div class="collapsible-header"><!--<span class="new badge light-green accent-3 black-text"
                                                                       data-badge-caption="Downloading 32%"></span>--><i
-                                            class="material-icons">library_books</i><%= data['link'] %>
+                                            class="material-icons">library_books</i><%= title %>
                                 </div>
                                 <div class="collapsible-body">
                                     <div class="row">
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Status</div>
-                                            <div class="col s12 contentbox_main" id='precent_<%=data["gid"]%>'>00%</div>
+                                            <div class="col s12 contentbox_main" id='precent_<%= data["gid"] %>'>00%
+                                            </div>
                                             <div class="col s12 contentbox_txt_down">Downloaded</div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Speed</div>
-                                            <div class="col s12 contentbox_main" id='speed_<%=data["gid"]%>'>0.00 Kbps</div>
+                                            <div class="col s12 contentbox_main" id='speed_<%= data["gid"] %>'>0.00
+                                                Kbps
+                                            </div>
 
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">Estimated Time</div>
-                                            <div class="col s12 contentbox_main" id='eta_<%=data["gid"]%>'>N\A</div>
+                                            <div class="col s12 contentbox_main" id='eta_<%= data["gid"] %>'>N\A</div>
                                         </div>
 
                                     </div>
                                     <div class="row">
 
                                         <div class="col s12 l4">
-                                            <canvas id='chart_<%=data["gid"]%>' style="max-width: 240px;"></canvas>
+                                            <canvas id='chart_<%= data["gid"] %>' style="max-width: 240px;"></canvas>
                                         </div>
 
                                         <div class="col s12 l8">
@@ -419,16 +449,15 @@
                                             <div class="row">
                                                 <div class="col s12 right-align">
                                                     <!--<a class="waves-effect waves-light btn green white-text"><i-->
-                                                                <!--class="material-icons left">play_arrow</i>Resume</a>-->
+                                                    <!--class="material-icons left">play_arrow</i>Resume</a>-->
                                                     <!--<a class="waves-effect waves-light btn yellow black-text"><i-->
-                                                                <!--class="material-icons left ">pause</i>Pause</a>-->
-                                                    <a href="/users/download/<%= data['gid']%>" class="waves-effect waves-light btn red white-text"><i
+                                                    <!--class="material-icons left ">pause</i>Pause</a>-->
+                                                    <a href="#"
+                                                       class="waves-effect waves-light btn red white-text"><i
                                                                 class="material-icons left">not_interested</i>Cancel</a>
                                                 </div>
                                             </div>
                                         </div>
-
-
 
 
                                     </div>
@@ -436,10 +465,10 @@
                                 </div>
 
                                 <script>
-                                    gid_lst.push('<%=data["gid"]%>');
+                                    gid_lst.push('<%= data["gid"] %>');
 
-                                    var ctx<%=data["gid"]%> = document.getElementById('chart_<%=data["gid"]%>').getContext('2d');
-                                    var chart<%=data["gid"]%> = new Chart(ctx<%=data["gid"]%>, {
+                                    var ctx<%= data["gid"] %> = document.getElementById('chart_<%= data["gid"] %>').getContext('2d');
+                                    var chart<%= data["gid"] %> = new Chart(ctx<%= data["gid"] %>, {
                                         // The type of chart we want to create
                                         type: 'doughnut',
 
@@ -463,17 +492,19 @@
                                         },
 
                                         // Configuration options go here
-                                        options: {legend: {
-                                            display: false
-                                        }}
+                                        options: {
+                                            legend: {
+                                                display: false
+                                            }
+                                        }
                                     });
 
-                                    status_socket.on('dlstatus_<%=data["gid"]%>', function(msg){
+                                    status_socket.on('dlstatus_<%= data["gid"] %>', function (msg) {
 //                                    console.log(msg);
-                                        document.getElementById('precent_<%=data["gid"]%>').innerHTML = ((msg.completedLength/msg.totalLength)*100).toFixed(2) + "%";
-                                        document.getElementById('speed_<%=data["gid"]%>').innerHTML = (msg.downloadSpeed/(1024)).toFixed(2) + " kBps";
-                                        document.getElementById('eta_<%=data["gid"]%>').innerHTML = ((msg.totalLength - msg.completedLength)/(msg.downloadSpeed)).toFixed(2) + "s";
-                                        chart<%=data["gid"]%>.data.datasets[0].data = [(msg.totalLength-msg.completedLength),msg.completedLength];
+                                        document.getElementById('precent_<%= data["gid"] %>').innerHTML = ((msg.completedLength / msg.totalLength) * 100).toFixed(2) + "%";
+                                        document.getElementById('speed_<%= data["gid"] %>').innerHTML = (msg.downloadSpeed / (1024)).toFixed(2) + " kBps";
+                                        document.getElementById('eta_<%= data["gid"] %>').innerHTML = ((msg.totalLength - msg.completedLength) / (msg.downloadSpeed)).toFixed(2) + "s";
+                                        chart<%= data["gid"] %>.data.datasets[0].data = [(msg.totalLength - msg.completedLength), msg.completedLength];
                                         chart<%=data["gid"]%>.update();
 
 
@@ -486,16 +517,14 @@
                             <% }
                             %>
                         </ul>
-                            <%
-                            } else{%>
+                        <%
+                        } else{ %>
 
-                            <div class="no-content">
-                                No ongoing downloads in progress.
+                        <div class="no-content">
+                            No ongoing downloads in progress.
 
-                            </div>
-                            <%}%>
-
-
+                        </div>
+                        <% } %>
 
                     </div>
                 </div>
@@ -503,10 +532,9 @@
                 <!--pending downloads-->
                 <div id="test3" class="col l12 m12 s12">
                     <div class="row">
-                            <%
-                            if(pending.length >0){
-
-                            %>
+                        <%
+                        if(pending.length > 0){
+                        %>
                         <ul class="collapsible" data-collapsible="accordion">
                             <%
                             for(let i = 0; i < pending.length;i++){
@@ -514,11 +542,19 @@
                             %>
 
                             <li>
+                                <%
+                                    var title;
+                                    if (data['file_title']) {
+                                        title = data['file_title'];
+                                    } else {
+                                        var ar = data['link'].split('/');
+                                        title = ar[ar.length-1];
+                                    } %>
                                 <div class="collapsible-header">
                                     <!--<span class="new badge  yellow accent-3 black-text"-->
-                                          <!--data-badge-caption="Approval Pending"></span>-->
+                                    <!--data-badge-caption="Approval Pending"></span>-->
                                     <i class="material-icons">place</i>
-                                    <%= data['link'] %>
+                                    <%= title %>
                                 </div>
                                 <div class="collapsible-body">
                                     <div class="row">
@@ -532,7 +568,9 @@
                                                 let gaph = now.getHours() - rdate.getHours();
                                                 let gapm = now.getMinutes() - rdate.getMinutes();
                                             %>
-                                            <div class="col s12 contentbox_txt_down"><%=gapd+'d'%>  <%=gaph%>h <%=gapm%>mins</div>
+                                            <div class="col s12 contentbox_txt_down"><%= gapd+'d' %>  <%= gaph %>
+                                                h <%= gapm %>mins
+                                            </div>
                                         </div>
                                         <div class="col s12 l4 contentbox">
                                             <div class="col s12 contentbox_txt_up">File Size</div>
@@ -602,13 +640,135 @@
                             %>
                         </ul>
                         <%
-                        } else{%>
+                        } else{ %>
 
                         <div class="no-content">
                             No pending downloads available.
 
                         </div>
-                        <%}%>
+                        <% } %>
+
+                    </div>
+                </div>
+
+                <!--Approved list-->
+                <div id="test5" class="col l12 m12 s12">
+                    <div class="row">
+                        <%
+                        if(approved.length > 0){
+                        %>
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <%
+                            for(let i = 0; i < approved.length;i++){
+                                let data = approved[i];
+                            %>
+
+                            <li>
+                                <%
+                                    var title;
+                                    if (data['file_title']) {
+                                        title = data['file_title'];
+                                    } else {
+                                        var ar = data['link'].split('/');
+                                        title = ar[ar.length-1];
+                                    } %>
+                                <div class="collapsible-header">
+                                    <!--<span class="new badge  yellow accent-3 black-text"-->
+                                    <!--data-badge-caption="Approval Pending"></span>-->
+                                    <i class="material-icons">place</i>
+                                    <%= title %>
+                                </div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">Status</div>
+                                            <div class="col s12 contentbox_main amber-text accent-4">Approved Request
+                                            </div>
+                                            <% let now = new Date();
+                                                let rdate = new Date(data['request_date']);
+                                                let gapd = now.getDay() - rdate.getDay();
+                                                let gaph = now.getHours() - rdate.getHours();
+                                                let gapm = now.getMinutes() - rdate.getMinutes();
+                                            %>
+                                            <div class="col s12 contentbox_txt_down"><%= gapd+'d' %>  <%= gaph %>
+                                                h <%= gapm %>mins
+                                            </div>
+                                        </div>
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">File Size</div>
+                                            <div class="col s12 contentbox_main"><%= data['size'] %></div>
+                                            <!--<div class="col s12 contentbox_txt_down">Avg Speed 255.75Kbps</div>-->
+                                        </div>
+                                        <div class="col s12 l4 contentbox">
+                                            <div class="col s12 contentbox_txt_up">Estimated Time</div>
+                                            <div class="col s12 contentbox_main">3h 52 mins</div>
+                                            <div class="col s12 contentbox_txt_down">To complete download</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <h5>Download Details</h5>
+                                        </div>
+                                        <div class="col s12 l2 contentbox_detail_field">Download Link</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%= data['link'] %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Requested Date</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <% let rdata = new Date(data['request_date']); %>
+                                            <%= rdata.toDateString() %>
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">MD5</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            --
+                                        </div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Availability</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['availability'] || 'Not set' %></div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Description</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value"><%= data['description'] || 'none' %></div>
+
+                                        <div class="col s12 l2 contentbox_detail_field">Tags</div>
+                                        <div class="col s12 l10 truncate  contentbox_detail_value">
+                                            <%
+                                                var tags = data['tags'];
+                                            if(tags != ''){
+                                            for(let i = 0; i < tags.length;i++){ %>
+                                            <div class="chip">
+                                                <%= tags[i] %>
+                                            </div>
+                                            <% }
+                                            } %>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 right-align">
+                                            <a class="waves-effect waves-light btn red white-text"><i
+                                                        class="material-icons left">not_interested</i>Cancel</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <%
+                            }
+                            %>
+                        </ul>
+                        <%
+                        } else{ %>
+
+                        <div class="no-content">
+                            No approved request available.
+
+                        </div>
+                        <% } %>
 
                     </div>
                 </div>
@@ -616,9 +776,9 @@
                 <!--Rejected download-->
                 <div id="test4" class="col l12 m12 s12">
                     <div class="row">
-                            <%
-                            if(rejected.length >0){
-                            %>
+                        <%
+                        if(rejected.length > 0){
+                        %>
                         <ul class="collapsible" data-collapsible="accordion">
                             <%
                             for(let i = 0; i < rejected.length;i++){
@@ -626,9 +786,17 @@
                             %>
 
                             <li>
+                                <%
+                                    var title;
+                                    if (data['file_title']) {
+                                        title = data['file_title'];
+                                    } else {
+                                        var ar = data['link'].split('/');
+                                        title = ar[ar.length-1];
+                                    } %>
                                 <div class="collapsible-header">
                                     <!--<span class="new badge  red darken-1 white-text" data-badge-caption="Rejected"></span>-->
-                                    s<i class="material-icons">filter_drama</i> <%= data['link'] %>
+                                    s<i class="material-icons">filter_drama</i> <%= title %>
                                 </div>
                                 <div class="collapsible-body">
                                     <div class="row">
@@ -709,13 +877,13 @@
                             %>
                         </ul>
                         <%
-                        } else{%>
+                        } else{ %>
 
                         <div class="no-content">
                             No rejected download requests.
 
                         </div>
-                        <%}%>
+                        <% } %>
                     </div>
                 </div>
 
