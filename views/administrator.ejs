@@ -586,7 +586,7 @@
                                     <label>End of Peak Hour</label>
                                 </div>
 
-                                <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="infotext">All the download requests are saved in the system and not going to start download those requested files until server starts. Downloading server is going to runs on system peak hours and it will consider about requested downloads. Requested downloads are downloading until the end of system peak hours.</div>
                         </div>
                     </div>
 
@@ -602,7 +602,20 @@
                                 <option value="audi">Custom Scheduler</option>
                             </select>
 
-                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="infotext">Job scheduler is responsible for scheduling the downloads and  determining the order of downloads list. There are several scheduling methods available for the administrator to select. First in First Out, Last In First Out, Round Robin and Random are some of the scheduling methods the administrator can select. Depending on the situation, the administrator can select the best suited job scheduler for the system.</div>
+                        </div>
+                    </div>
+
+
+                    <!--Maximum concurrent downloads-->
+                    <div class="row settingrow">
+                        <div class="col s4 m3 l2 setting-title">Max Downloads</div>
+                        <div class="col s8 m9 l8">
+                            <p class="range-field max450">
+                                <input type="range" id="test5" min="2" max="20" />
+                            </p>
+
+                            <div class="infotext">Administrator can select maximum concurrent downloads according to the available Internet traffic and bandwidth. The recommended max concurrent downloads in peak hours is 2 and the recommended max download in off peak hours is 5 for the current bandwidth. If the size of the pending downloads is less, the administrator can increase the max downloads number to increase the downloads throughput of the system.</div>
                         </div>
                     </div>
 
@@ -611,7 +624,7 @@
                         <div class="col s4 m3 l2 setting-title">Whitelisted Domains</div>
                         <div class="col s8 m9 l8">
                             <textarea class="max450"></textarea>
-                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="infotext">Administrator and batch representative is the responsible person for accepting download requests. But with the huge number of download requests those responsible persons will help less. For that kind of situations, the whitelisted domain concept will come in. Whitelisted domains are the domains which are having acceptable downloads. In here administrator can add whitelisted domain name and after adding this the download requests from that domain will accept automatically. Else when administrator accept five requests from same domain, that domain name will automatically add as a whitelisted domain.</div>
                         </div>
                     </div>
 
@@ -620,7 +633,7 @@
                         <div class="col s4 m3 l2 setting-title">Blacklisted Domains</div>
                         <div class="col s8 m9 l8">
                             <textarea class="max450"></textarea>
-                            <div class="infotext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <div class="infotext">Blacklisted domains are the domains which are having not acceptable download files. In here administrator can add blacklisted domain names. If administrator reject a download request, then that domain name of the download request will be added as blacklisted domain name.</div>
                         </div>
                     </div>
 
